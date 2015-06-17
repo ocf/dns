@@ -1,0 +1,78 @@
+$ORIGIN asuc.org.
+$TTL 5m
+
+@ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
+2015052400 ; serial number
+                         1d         ; slave refresh schedule interval
+                         30m        ; slave retry on failure interval
+                         4w         ; slave expiration of zone data
+                         30m        ; negative TTL
+                       )
+
+@ IN NS ns1.ocf.berkeley.edu.
+@ IN NS ns2.ocf.berkeley.edu.
+
+@ IN MX 1 aspmx.l.google.com.
+@ IN MX 5 alt1.aspmx.l.google.com.
+@ IN MX 5 alt2.aspmx.l.google.com.
+@ IN MX 10 aspmx2.googlemail.com.
+@ IN MX 10 aspmx3.googlemail.com.
+
+@ IN TXT "google-site-verification=hxbVM0Dyi3ZD8WK551bJxjQ3sNd4fqom1nWncOMMWuw"
+
+; TODO: remove the +ip4: (seems to be an old HostGator IP?)
+; TODO: include anthrax, in case they send some mail
+@ IN TXT "v=spf1 +a +mx +ip4:198.57.247.129 include:_spf.google.com ?all"
+
+@	IN A	169.229.10.23
+www	IN CNAME	@
+
+dancemarathon	IN A	192.254.186.13
+www.dancemarathon	IN CNAME	dancemarathon
+
+elections	IN A	192.254.186.13
+www.elections	IN CNAME	elections
+
+wellnesscenter	IN A	192.254.186.13
+www.wellnesscenter	IN CNAME	wellnesscenter
+
+committees	IN A	192.254.186.13
+www.committees	IN CNAME	committees
+
+handbook	IN A	192.254.186.13
+www.handbook	IN CNAME	handbook
+
+wiki	IN A	169.229.10.23
+www.wiki	IN CNAME	wiki
+
+modern	IN A	169.229.10.23
+www.modern	IN CNAME modern
+
+perspectives	IN A	192.254.186.13
+www.perspectives	IN CNAME	perspectives
+
+pantry	IN A	192.254.186.13
+www.pantry	IN CNAME	pantry
+
+wellness	IN A	192.254.186.13
+www.wellness	IN CNAME	wellness
+
+president	IN A	192.254.186.13
+www.president	IN CNAME	president
+
+senate	IN A	192.254.186.13
+www.senate	IN CNAME	senate
+
+oldarchive	IN A	192.254.186.13
+
+archive	IN A	169.229.10.23
+www.archive	IN CNAME	archive
+
+evp	IN A	192.254.186.13
+www.evp	IN CNAME	evp
+
+aavp	IN A	192.254.186.13
+www.aavp	IN CNAME	aavp
+
+bsf	IN A	192.254.186.13
+www.bsf	IN CNAME	bsf

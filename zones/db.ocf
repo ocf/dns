@@ -1,0 +1,197 @@
+; ns.ocf is master server and hostmaster@ocf is technical contact
+@ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
+2015060702 ; serial number
+                         1d         ; slave refresh schedule interval
+                         30m        ; slave retry on failure interval
+                         4w         ; slave expiration of zone data
+                         30m        ; negative TTL
+                       )
+
+; iodine DNS proxy
+i IN NS mudslide
+a IN NS raptors
+
+firewall		IN	CNAME	ocf-1.eac.berkeley.edu.
+
+; Server aliases
+account			IN	CNAME	earthquake
+accounts		IN	CNAME	earthquake
+admin			IN	CNAME	supernova
+api-dev.asuc		IN	CNAME	biohazard
+api.asuc		IN	CNAME	biohazard
+web.asuc		IN	CNAME	death
+apphost			IN	CNAME	biohazard
+apt			IN	CNAME	fallingrocks
+athena			IN	CNAME	hal
+contrib			IN	CNAME	death
+cronhost		IN	CNAME	tsunami
+csgo			IN	CNAME	zombies
+decal			IN	CNAME	death
+dev-account		IN	CNAME	dev-earthquake
+dev-accounts		IN	CNAME	dev-earthquake
+dev-dev-vhost		IN	CNAME	dev-death
+dev-printhost		IN	CNAME	dev-pollution
+dev-vhost		IN	CNAME	death
+dev-www			IN	CNAME	dev-death
+dhcp			IN	CNAME	pestilence
+docs			IN	CNAME	death
+filehost		IN	CNAME	pandemic
+hello			IN	CNAME	death
+homes			IN	CNAME	pandemic
+hoserbox		IN	CNAME	riot
+irc			IN	CNAME	flood
+jabber			IN	CNAME	flood
+jenkins			IN	CNAME	reaper
+k			IN	CNAME	death
+kerberos		IN	CNAME	firestorm
+kiosk			IN	CNAME	death
+kochira			IN	CNAME   locusts
+ldap			IN	CNAME	firestorm
+mail			IN	CNAME	anthrax
+mirrors			IN	CNAME	fallingrocks
+mon			IN	CNAME	mudslide
+mouse                   IN      CNAME   death
+mudslide-secure		IN	CNAME	mudslide
+mumble			IN	CNAME	mudslide
+munin                   IN      CNAME   dementors
+mysql			IN	CNAME	maelstrom
+ns 			IN	CNAME	pestilence
+ns1 			IN	A	169.229.10.22
+ns2 			IN	A	169.229.10.22
+ntp1			IN	CNAME	hal
+ntp2			IN	CNAME	pandemic
+ntp3			IN	CNAME	jaws
+opt			IN	CNAME	pandemic
+p			IN	CNAME	pollution
+phpmyadmin		IN	CNAME	death
+plaque			IN	CNAME	plague
+pma			IN	CNAME	death
+postmortem		IN	CNAME	death
+printhost		IN	CNAME	pollution
+puppet			IN	CNAME	lightning
+qdb			IN	CNAME	locusts
+rt			IN	CNAME	typhoon
+secure			IN	CNAME	death
+services		IN	CNAME	pandemic
+smtp			IN	CNAME	anthrax
+srcds			IN	CNAME	zombies
+ssh			IN	CNAME	tsunami
+staff			IN	CNAME	death
+stats			IN	CNAME	dementors
+systemstatus		IN	CNAME	mudslide
+wiki			IN	CNAME	blight
+www			IN	CNAME	death
+yolo			IN	CNAME	tornado
+
+*.apphost		IN	CNAME	biohazard
+*.blacksheep		IN	CNAME	blacksheep
+
+; the domain name itself
+@ IN A 169.229.10.23
+
+; There's no host like localhost
+localhost IN A 127.0.0.1
+
+
+; networking infrastructure
+blackhole	IN A 169.229.10.2
+
+; hypervisors
+hal	IN A 169.229.10.10
+hal-mgmt	IN A 169.229.10.11
+jaws	IN A 169.229.10.12
+jaws-mgmt	IN A 169.229.10.13
+pandemic	IN A 169.229.10.14
+pandemic-mgmt	IN A 169.229.10.15
+
+; production/service-providing servers
+firestorm	IN A 169.229.10.20
+lightning	IN A 169.229.10.21
+pestilence	IN A 169.229.10.22
+death	IN A 169.229.10.23
+sandstorm	IN A 169.229.10.24
+tsunami	IN A 169.229.10.25
+blight	IN A 169.229.10.26
+maelstrom	IN A 169.229.10.27
+typhoon	IN A 169.229.10.28
+pollution	IN A 169.229.10.29
+fallingrocks	IN A 169.229.10.30
+flood	IN A 169.229.10.31
+plague	IN A 169.229.10.32
+dementors	IN A 169.229.10.33
+biohazard	IN A 169.229.10.34
+anthrax	IN A 169.229.10.35
+supernova	IN A 169.229.10.36
+dev-death	IN A 169.229.10.37
+dev-firestorm	IN A 169.229.10.38
+dev-anthrax	IN A 169.229.10.39
+dev-sandstorm	IN A 169.229.10.40
+earthquake	IN A 169.229.10.41
+dev-earthquake	IN A 169.229.10.42
+dev-pollution	IN A 169.229.10.43
+zombies		IN A 169.229.10.44
+icestorm	IN A 169.229.10.45
+windstorm	IN A 169.229.10.46
+arsenic		IN A 169.229.10.47
+reaper		IN A 169.229.10.48
+
+$GENERATE 50-89 hozer-$ IN A 169.229.10.$
+
+; lab equipment
+tornado	IN A 169.229.10.90
+deforestation	IN A 169.229.10.91
+logjam	IN A 169.229.10.92
+
+; desktops
+eruption	IN A 169.229.10.100
+avalanche	IN A 169.229.10.101
+bigbang	IN A 169.229.10.102
+blizzard	IN A 169.229.10.103
+cyclone	IN A 169.229.10.104
+destruction	IN A 169.229.10.105
+hurricane	IN A 169.229.10.106
+madcow	IN A 169.229.10.107
+outbreak	IN A 169.229.10.108
+volcano	IN A 169.229.10.109
+famine	IN A 169.229.10.110
+hailstorm	IN A 169.229.10.111
+headcrash	IN A 169.229.10.112
+heatwave	IN A 169.229.10.113
+
+radiation	IN A 169.229.10.129
+$GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
+
+; hozers (200-249)
+raptors	IN A 169.229.10.200
+locusts	IN A 169.229.10.201
+mudslide	IN A 169.229.10.202
+limniceruption	IN A 169.229.10.204
+meltdown	IN A 169.229.10.205
+gnats	IN A 169.229.10.207
+revolution	IN A 169.229.10.208
+kamikaze	IN A 169.229.10.209
+blacksheep	IN A 169.229.10.210
+blackrain	IN A 169.229.10.211
+quicksand	IN A 169.229.10.213
+meteorstorm	IN A 169.229.10.214
+yearbook	IN A 169.229.10.216
+despair	IN A 169.229.10.217
+smallpox	IN A 169.229.10.218
+
+; unused names with CNAMEs in berkeley.edu, feel free to take one
+acid IN A 169.229.10.255
+armageddon IN A 169.229.10.255
+asteroid IN A 169.229.10.255
+blackout IN A 169.229.10.255
+cyanide IN A 169.229.10.255
+epidemic IN A 169.229.10.255
+firewhirl IN A 169.229.10.255
+monsoon IN A 169.229.10.255
+pileup IN A 169.229.10.255
+pox IN A 169.229.10.255
+ragnarok IN A 169.229.10.255
+sinkhole IN A 169.229.10.255
+surge IN A 169.229.10.255
+tempest IN A 169.229.10.255
+war IN A 169.229.10.255
+whirlwind IN A 169.229.10.255

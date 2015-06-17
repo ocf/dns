@@ -1,0 +1,37 @@
+zone "ocf.berkeley.edu" {
+  type master;
+  notify yes;
+  file "/etc/bind/db.ocf.berkeley.edu";
+};
+
+zone "ocf.io" {
+  type master;
+  notify no;
+  file "/etc/bind/db.ocf.io";
+};
+
+zone "ocf.sexy" {
+  type master;
+  notify no;
+  file "/etc/bind/db.ocf.sexy";
+};
+
+zone "open.cf" {
+  type master;
+  notify no;
+  file "/etc/bind/db.open.cf";
+};
+
+zone "asuc.org" {
+  type master;
+  notify no;
+  file "/etc/bind/db.asuc.org";
+};
+
+// We are not actually authoritative for our reverse DNS, but we pretend to be
+// for our own sake.
+zone "10.229.169.in-addr.arpa" {
+  type master;
+  notify no;
+  file "/etc/bind/db.10.229.169";
+};

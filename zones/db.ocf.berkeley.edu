@@ -1,0 +1,40 @@
+$ORIGIN ocf.berkeley.edu.
+$TTL 5m
+@ IN NS adns1.berkeley.edu.
+@ IN NS adns2.berkeley.edu.
+
+$INCLUDE /etc/bind/db.ocf
+
+; Mail delivery
+;@ IN MX 1 try-next
+;@ IN MX 5 sandstorm
+;@ IN MX 50 go-away
+@ IN MX 1 aspmx.l.google.com.
+@ IN MX 5 alt1.aspmx.l.google.com.
+@ IN MX 5 alt2.aspmx.l.google.com.
+@ IN MX 10 aspmx2.googlemail.com.
+@ IN MX 10 aspmx3.googlemail.com.
+
+; Sender Policy Framework (SPF), DKIM, and DMARC records
+@ IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu a:sandstorm.ocf.berkeley.edu include:_spf.google.com -all"
+google._domainkey IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUsl2ZABLG1e/Ut9xoDA8dvOgTvyOMxW5P5gh4PwcS1pwV99YtNWjlPZhQS1tFx8TD0HaAGDjC5DbB1E7gD4hDuBmtz96glIplbu+ONAZp60NgHR0/NtUB8oV+4x6SD9+7BZhlRFDpgp3N86b4nqcMT0SzNGopQMQJIqnGZMbZ/QIDAQAB"
+_dmarc IN TXT "v=DMARC1; p=none"
+
+; for systemstatus blog, only works on ocf.berkeley.edu domain (ocfblog.blogspot.com)
+;status IN CNAME	ghs.google.com.
+;status IN NS dave.ns.cloudflare.com.
+;status IN NS val.ns.cloudflare.com.
+status IN A 216.239.32.21
+status IN A 216.239.34.21
+status IN A 216.239.36.21
+status IN A 216.239.38.21
+; status IN TXT "google-site-verification=Cgnhs9CYQkwmF5-hkz1n-b7XcJHKO2NtC4Yjjq1vWTY"
+
+g IN MX 1 aspmx.l.google.com.
+g IN MX 5 alt1.aspmx.l.google.com.
+g IN MX 5 alt2.aspmx.l.google.com.
+g IN MX 10 aspmx2.googlemail.com.
+g IN MX 10 aspmx3.googlemail.com.
+g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
+
+blacksheep IN TXT "v=spf1 ip4:169.229.10.210 -all"
