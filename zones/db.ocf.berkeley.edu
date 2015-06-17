@@ -3,7 +3,7 @@ $TTL 5m
 @ IN NS adns1.berkeley.edu.
 @ IN NS adns2.berkeley.edu.
 
-$INCLUDE /etc/bind/db.ocf
+$INCLUDE /srv/dns/zones/db.ocf
 
 ; Mail delivery
 ;@ IN MX 1 try-next
