@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015052400 ; serial number
+2015062500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -26,6 +26,9 @@ $TTL 5m
 
 @	IN A	169.229.10.23
 www	IN CNAME	@
+
+; TODO: remove this after migration to OCF
+ftp	IN A	192.254.186.13
 
 dancemarathon	IN A	192.254.186.13
 www.dancemarathon	IN CNAME	dancemarathon
