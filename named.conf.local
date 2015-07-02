@@ -28,6 +28,12 @@ zone "asuc.org" {
   file "/srv/dns/zones/db.asuc.org";
 };
 
+zone "squelched.com" {
+  type master;
+  notify no;
+  file "/srv/dns/zones/db.squelched.com";
+};
+
 // We are not actually authoritative for our reverse DNS, but we pretend to be
 // for our own sake.
 zone "10.229.169.in-addr.arpa" {
