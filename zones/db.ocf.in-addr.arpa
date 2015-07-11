@@ -34,7 +34,6 @@
 44 IN PTR zombies.OCF.Berkeley.EDU.
 45 IN PTR icestorm.OCF.Berkeley.EDU.
 46 IN PTR windstorm.OCF.Berkeley.EDU.
-47 IN PTR arsenic.OCF.Berkeley.EDU.
 48 IN PTR reaper.OCF.Berkeley.EDU.
 
 $GENERATE 50-89 $ IN PTR hozer-$.OCF.Berkeley.EDU.
@@ -57,6 +56,14 @@ $GENERATE 50-89 $ IN PTR hozer-$.OCF.Berkeley.EDU.
 111 IN PTR hailstorm.OCF.Berkeley.EDU.
 112 IN PTR headcrash.OCF.Berkeley.EDU.
 113 IN PTR heatwave.OCF.Berkeley.EDU.
+114 IN PTR acid.OCF.Berkeley.EDU.
+115 IN PTR asteroid.OCF.Berkeley.EDU.
+116 IN PTR cyanide.OCF.Berkeley.EDU.
+117 IN PTR firewhirl.OCF.Berkeley.EDU.
+118 IN PTR blackout.OCF.Berkeley.EDU.
+119 IN PTR drought.OCF.Berkeley.EDU.
+120 IN PTR arsenic.OCF.Berkeley.EDU.
+121 IN PTR wildfire.OCF.Berkeley.EDU.
 
 129 IN PTR radiation.OCF.Berkeley.EDU.
 

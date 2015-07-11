@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015062700 ; serial number
+2015071100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -133,7 +133,7 @@ dev-pollution	IN A 169.229.10.43
 zombies		IN A 169.229.10.44
 icestorm	IN A 169.229.10.45
 windstorm	IN A 169.229.10.46
-arsenic		IN A 169.229.10.47
+; UNUSED: xxxx		IN A 169.229.10.47
 reaper		IN A 169.229.10.48
 
 $GENERATE 50-89 hozer-$ IN A 169.229.10.$
@@ -158,6 +158,14 @@ famine	IN A 169.229.10.110
 hailstorm	IN A 169.229.10.111
 headcrash	IN A 169.229.10.112
 heatwave	IN A 169.229.10.113
+acid	IN A 169.229.10.114
+asteroid	IN A 169.229.10.115
+cyanide	IN A 169.229.10.116
+firewhirl	IN A 169.229.10.117
+blackout	IN A 169.229.10.118
+drought	IN A 169.229.10.119
+arsenic	IN A 169.229.10.120
+wildfire	IN A 169.229.10.121
 
 radiation	IN A 169.229.10.129
 $GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
@@ -180,13 +188,8 @@ despair	IN A 169.229.10.217
 smallpox	IN A 169.229.10.218
 
 ; unused names with CNAMEs in berkeley.edu, feel free to take one
-acid IN A 169.229.10.255
 armageddon IN A 169.229.10.255
-asteroid IN A 169.229.10.255
-blackout IN A 169.229.10.255
-cyanide IN A 169.229.10.255
 epidemic IN A 169.229.10.255
-firewhirl IN A 169.229.10.255
 monsoon IN A 169.229.10.255
 pileup IN A 169.229.10.255
 pox IN A 169.229.10.255
