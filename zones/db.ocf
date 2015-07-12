@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015071101 ; serial number
+2015071102 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -22,10 +22,8 @@ api.asuc		IN	CNAME	biohazard
 web.asuc		IN	CNAME	death
 apphost			IN	CNAME	biohazard
 apt			IN	CNAME	fallingrocks
-athena			IN	CNAME	hal
 contrib			IN	CNAME	death
 create			IN	CNAME	supernova
-cronhost		IN	CNAME	tsunami
 csgo			IN	CNAME	zombies
 decal			IN	CNAME	death
 dev-account		IN	CNAME	dev-earthquake
@@ -40,21 +38,15 @@ docs			IN	CNAME	death
 filehost		IN	CNAME	pandemic
 hello			IN	CNAME	death
 homes			IN	CNAME	pandemic
-hoserbox		IN	CNAME	riot
 irc			IN	CNAME	flood
-jabber			IN	CNAME	flood
 jenkins			IN	CNAME	reaper
-k			IN	CNAME	death
 kerberos		IN	CNAME	firestorm
-kiosk			IN	CNAME	death
 kochira			IN	CNAME   locusts
 ldap			IN	CNAME	firestorm
 mail			IN	CNAME	anthrax
 mirrors			IN	CNAME	fallingrocks
-mon			IN	CNAME	mudslide
 mouse                   IN      CNAME   death
 mudslide-secure		IN	CNAME	mudslide
-mumble			IN	CNAME	mudslide
 munin                   IN      CNAME   dementors
 mysql			IN	CNAME	maelstrom
 ns 			IN	CNAME	pestilence
@@ -64,26 +56,19 @@ ntp1			IN	CNAME	hal
 ntp2			IN	CNAME	pandemic
 ntp3			IN	CNAME	jaws
 opt			IN	CNAME	pandemic
-p			IN	CNAME	pollution
 phpmyadmin		IN	CNAME	death
-plaque			IN	CNAME	plague
 pma			IN	CNAME	death
-postmortem		IN	CNAME	death
 printhost		IN	CNAME	pollution
 puppet			IN	CNAME	lightning
-qdb			IN	CNAME	locusts
 rt			IN	CNAME	typhoon
 secure			IN	CNAME	death
 services		IN	CNAME	pandemic
 smtp			IN	CNAME	anthrax
-srcds			IN	CNAME	zombies
 ssh			IN	CNAME	tsunami
 staff			IN	CNAME	death
 stats			IN	CNAME	dementors
-systemstatus		IN	CNAME	mudslide
 wiki			IN	CNAME	blight
 www			IN	CNAME	death
-yolo			IN	CNAME	tornado
 
 *.apphost		IN	CNAME	biohazard
 *.blacksheep		IN	CNAME	blacksheep
