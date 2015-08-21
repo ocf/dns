@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015062500 ; serial number
+2015082000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -30,8 +30,8 @@ www	IN CNAME	@
 ; TODO: remove this after migration to OCF
 ftp	IN A	192.254.186.13
 
-dancemarathon	IN A	192.254.186.13
-www.dancemarathon	IN CNAME	dancemarathon
+dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
+www.dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 
 elections	IN A	192.254.186.13
 www.elections	IN CNAME	elections
@@ -45,11 +45,11 @@ www.committees	IN CNAME	committees
 handbook	IN A	192.254.186.13
 www.handbook	IN CNAME	handbook
 
-wiki	IN A	169.229.10.23
-www.wiki	IN CNAME	wiki
+wiki	IN CNAME	death.OCF.Berkeley.EDU.
+www.wiki	IN CNAME	death.OCF.Berkeley.EDU.
 
-modern	IN A	169.229.10.23
-www.modern	IN CNAME modern
+modern	IN CNAME	death.OCF.Berkeley.EDU.
+www.modern	IN CNAME death.OCF.Berkeley.EDU.
 
 perspectives	IN A	192.254.186.13
 www.perspectives	IN CNAME	perspectives
@@ -68,8 +68,8 @@ www.senate	IN CNAME	senate
 
 oldarchive	IN A	192.254.186.13
 
-archive	IN A	169.229.10.23
-www.archive	IN CNAME	archive
+archive	IN CNAME	death.OCF.Berkeley.EDU.
+www.archive	IN CNAME	death.OCF.Berkeley.EDU.
 
 evp	IN A	192.254.186.13
 www.evp	IN CNAME	evp
