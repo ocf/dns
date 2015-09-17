@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015082000 ; serial number
+2015091600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -54,8 +54,8 @@ www.modern	IN CNAME death.OCF.Berkeley.EDU.
 perspectives	IN A	192.254.186.13
 www.perspectives	IN CNAME	perspectives
 
-pantry	IN A	192.254.186.13
-www.pantry	IN CNAME	pantry
+pantry	IN CNAME	death.OCF.Berkeley.EDU.
+www.pantry	IN CNAME	death.OCF.Berkeley.EDU.
 
 wellness	IN A	192.254.186.13
 www.wellness	IN CNAME	wellness
