@@ -34,6 +34,7 @@
 44 IN PTR zombies.OCF.Berkeley.EDU.
 45 IN PTR icestorm.OCF.Berkeley.EDU.
 46 IN PTR windstorm.OCF.Berkeley.EDU.
+47 IN PTR coma.OCF.Berkeley.EDU.
 48 IN PTR reaper.OCF.Berkeley.EDU.
 
 $GENERATE 50-89 $ IN PTR hozer-$.OCF.Berkeley.EDU.

@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015082100 ; serial number
+2015092900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -121,7 +121,7 @@ dev-pollution	IN A 169.229.10.43
 zombies		IN A 169.229.10.44
 icestorm	IN A 169.229.10.45
 windstorm	IN A 169.229.10.46
-; UNUSED: xxxx		IN A 169.229.10.47
+coma	IN A 169.229.10.47
 reaper		IN A 169.229.10.48
 
 $GENERATE 50-89 hozer-$ IN A 169.229.10.$
