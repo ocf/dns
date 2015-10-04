@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015092901 ; serial number
+2015100400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -164,18 +164,32 @@ $GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
 raptors	IN A 169.229.10.200
 locusts	IN A 169.229.10.201
 mudslide	IN A 169.229.10.202
+solarflare	IN A 169.229.10.203
 limniceruption	IN A 169.229.10.204
 meltdown	IN A 169.229.10.205
+tempest	IN A 169.229.10.206
 gnats	IN A 169.229.10.207
 revolution	IN A 169.229.10.208
-kamikaze	IN A 169.229.10.209
+vampires	IN A 169.229.10.209
 blacksheep	IN A 169.229.10.210
 blackrain	IN A 169.229.10.211
+war	IN A 169.229.10.212
 quicksand	IN A 169.229.10.213
 meteorstorm	IN A 169.229.10.214
+skynet	IN A 169.229.10.215
 yearbook	IN A 169.229.10.216
 despair	IN A 169.229.10.217
 smallpox	IN A 169.229.10.218
+zerg	IN A 169.229.10.219
+snowstorm	IN A 169.229.10.220
+fire	IN A 169.229.10.221
+malaria	IN A 169.229.10.222
+walpurgisnacht	IN A 169.229.10.223
+aliens	IN A 169.229.10.224
+rapture	IN A 169.229.10.225
+fireball	IN A 169.229.10.226
+coldwave	IN A 169.229.10.227
+masterspark	IN A 169.229.10.228
 
 ; unused names with CNAMEs in berkeley.edu, feel free to take one
 armageddon IN A 169.229.10.255
@@ -186,6 +200,6 @@ pox IN A 169.229.10.255
 ragnarok IN A 169.229.10.255
 sinkhole IN A 169.229.10.255
 surge IN A 169.229.10.255
-tempest IN A 169.229.10.255
-war IN A 169.229.10.255
 whirlwind IN A 169.229.10.255
+
+; vim noet
