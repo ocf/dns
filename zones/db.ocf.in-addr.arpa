@@ -99,3 +99,4 @@ $GENERATE 130-199 $ IN PTR dhcp-169-229-10-$.OCF.Berkeley.EDU.
 226 IN PTR fireball.OCF.Berkeley.EDU.
 227 IN PTR coldwave.OCF.Berkeley.EDU.
 228 IN PTR masterspark.OCF.Berkeley.EDU.
+229 IN PTR epidemic.OCF.Berkeley.EDU.
