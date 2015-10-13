@@ -83,7 +83,6 @@ $GENERATE 130-199 $ IN PTR dhcp-169-229-10-$.OCF.Berkeley.EDU.
 211 IN PTR blackrain.OCF.Berkeley.EDU.
 212 IN PTR war.OCF.Berkeley.EDU.
 213 IN PTR quicksand.OCF.Berkeley.EDU.
-214 IN PTR meteorstorm.OCF.Berkeley.EDU.
 215 IN PTR skynet.OCF.Berkeley.EDU.
 216 IN PTR yearbook.OCF.Berkeley.EDU.
 217 IN PTR memleak.OCF.Berkeley.EDU.
