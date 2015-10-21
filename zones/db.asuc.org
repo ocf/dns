@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015091600 ; serial number
+2015102100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -79,3 +79,5 @@ www.aavp	IN CNAME	aavp
 
 bsf	IN A	192.254.186.13
 www.bsf	IN CNAME	bsf
+
+decal IN CNAME  death.OCF.Berkeley.EDU.
