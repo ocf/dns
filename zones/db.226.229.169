@@ -1,4 +1,4 @@
-$ORIGIN 10.229.169.in-addr.arpa.
+$ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
 2015110500 ; serial number
@@ -12,7 +12,7 @@ $TTL 1d
 $GENERATE 0-1 $ IN NS adns1.Berkeley.EDU.
 $GENERATE 0-1 $ IN NS adns2.Berkeley.EDU.
 
-$INCLUDE /srv/dns/zones/db.ocf.in-addr.arpa
+$INCLUDE /srv/dns/zones/db.ocf.in-addr.arpa.new
 
 $GENERATE 253-255 $ IN NS adns1.Berkeley.EDU.
 $GENERATE 253-255 $ IN NS adns2.Berkeley.EDU.
