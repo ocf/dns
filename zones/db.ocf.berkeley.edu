@@ -38,6 +38,3 @@ g IN MX 10 aspmx3.googlemail.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
 
 blacksheep IN TXT "v=spf1 ip4:169.229.10.210 -all"
-
-$ORIGIN new.ocf.berkeley.edu.
-$INCLUDE /srv/dns/zones/db.ocf.new
