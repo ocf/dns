@@ -1,4 +1,4 @@
-2  IN PTR blackhole.new.OCF.Berkeley.EDU.
+2  IN PTR blackhole.OCF.Berkeley.EDU.
 3  IN PTR hearst.new.OCF.Berkeley.EDU.
 4  IN PTR mlk.OCF.Berkeley.EDU.
 
@@ -68,7 +68,7 @@ $GENERATE 50-89 $ IN PTR hozer-$.new.OCF.Berkeley.EDU.
 120 IN PTR arsenic.new.OCF.Berkeley.EDU.
 121 IN PTR wildfire.new.OCF.Berkeley.EDU.
 
-129 IN PTR radiation.new.OCF.Berkeley.EDU.
+129 IN PTR radiation.OCF.Berkeley.EDU.
 
 $GENERATE 130-199 $ IN PTR dhcp-169-229-226-$.new.OCF.Berkeley.EDU.
 
