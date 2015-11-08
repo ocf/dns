@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015110700 ; serial number
+2015110701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -87,7 +87,7 @@ localhost	IN A	127.0.0.1
 
 
 ; networking infrastructure
-blackhole	IN A	169.229.10.2
+blackhole	IN A	169.229.226.2
 hearst	IN A	169.229.10.3
 mlk	IN A	169.229.226.4
 
@@ -161,8 +161,9 @@ drought	IN A	169.229.10.119
 arsenic	IN A	169.229.10.120
 wildfire	IN A	169.229.10.121
 
-radiation	IN A	169.229.10.129
+radiation	IN A	169.229.226.129
 $GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
+$GENERATE 130-199 dhcp-169-229-226-$ IN A 169.229.226.$
 
 ; hozers (200-249)
 raptors	IN A	169.229.10.200
