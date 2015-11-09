@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015110701 ; serial number
+2015110800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -112,7 +112,6 @@ typhoon	IN A	169.229.10.28
 pollution	IN A	169.229.10.29
 fallingrocks	IN A	169.229.10.30
 flood	IN A	169.229.10.31
-plague	IN A	169.229.10.32
 dementors	IN A	169.229.10.33
 biohazard	IN A	169.229.10.34
 anthrax	IN A	169.229.10.35
@@ -160,7 +159,15 @@ blackout	IN A	169.229.10.118
 drought	IN A	169.229.10.119
 arsenic	IN A	169.229.10.120
 wildfire	IN A	169.229.10.121
+blight	IN A	169.229.10.122
+meteorstorm	IN A	169.229.10.123
+chaos	IN A	169.229.10.124
+depression	IN A	169.229.10.125
+plague	IN A	169.229.10.126
+surge	IN A	169.229.10.127
+sinkhole	IN A	169.229.10.128
 
+; TODO: make more space here
 radiation	IN A	169.229.226.129
 $GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
 $GENERATE 130-199 dhcp-169-229-226-$ IN A 169.229.226.$
@@ -203,10 +210,6 @@ monsoon	IN A	169.229.10.255
 pileup	IN A	169.229.10.255
 pox	IN A	169.229.10.255
 ragnarok	IN A	169.229.10.255
-sinkhole	IN A	169.229.10.255
-surge	IN A	169.229.10.255
 whirlwind	IN A	169.229.10.255
-blight	IN A	169.229.10.255
-meteorstorm	IN A	169.229.10.255
 
 ; vim: noet ts=16 sts=16 sw=16

@@ -20,7 +20,6 @@
 29 IN PTR pollution.OCF.Berkeley.EDU.
 30 IN PTR fallingrocks.OCF.Berkeley.EDU.
 31 IN PTR flood.OCF.Berkeley.EDU.
-32 IN PTR plague.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
 34 IN PTR biohazard.OCF.Berkeley.EDU.
 35 IN PTR anthrax.OCF.Berkeley.EDU.
@@ -66,6 +65,13 @@ $GENERATE 50-89 $ IN PTR hozer-$.OCF.Berkeley.EDU.
 119 IN PTR drought.OCF.Berkeley.EDU.
 120 IN PTR arsenic.OCF.Berkeley.EDU.
 121 IN PTR wildfire.OCF.Berkeley.EDU.
+122 IN PTR blight.OCF.Berkeley.EDU.
+123 IN PTR meteorstorm.OCF.Berkeley.EDU.
+124 IN PTR chaos.OCF.Berkeley.EDU.
+125 IN PTR depression.OCF.Berkeley.EDU.
+126 IN PTR plague.OCF.Berkeley.EDU.
+127 IN PTR surge.OCF.Berkeley.EDU.
+128 IN PTR sinkhole.OCF.Berkeley.EDU.
 
 129 IN PTR radiation.OCF.Berkeley.EDU.
 
