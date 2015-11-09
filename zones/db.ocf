@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015110801 ; serial number
+2015110802 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -74,6 +74,7 @@ staff	IN CNAME	death
 static	IN CNAME	coma
 stats	IN CNAME	dementors
 templates	IN CNAME	death
+wifi	IN CNAME	radiation
 wiki	IN CNAME	death
 www	IN CNAME	death
 
@@ -113,6 +114,7 @@ typhoon	IN A	169.229.10.28
 pollution	IN A	169.229.10.29
 fallingrocks	IN A	169.229.10.30
 flood	IN A	169.229.10.31
+radiation	IN A	169.229.226.32
 dementors	IN A	169.229.10.33
 biohazard	IN A	169.229.10.34
 anthrax	IN A	169.229.10.35
@@ -168,10 +170,8 @@ plague	IN A	169.229.10.126
 surge	IN A	169.229.10.127
 sinkhole	IN A	169.229.10.128
 
-; TODO: make more space here
-radiation	IN A	169.229.226.129
-$GENERATE 130-199 dhcp-169-229-10-$ IN A 169.229.10.$
-$GENERATE 130-199 dhcp-169-229-226-$ IN A 169.229.226.$
+$GENERATE 140-199 dhcp-169-229-10-$ IN A 169.229.10.$
+$GENERATE 140-199 dhcp-169-229-226-$ IN A 169.229.226.$
 
 ; hozers (200-249)
 raptors	IN A	169.229.10.200

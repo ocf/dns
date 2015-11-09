@@ -21,6 +21,7 @@
 29 IN PTR pollution.new.OCF.Berkeley.EDU.
 30 IN PTR fallingrocks.new.OCF.Berkeley.EDU.
 31 IN PTR flood.new.OCF.Berkeley.EDU.
+32 IN PTR radiation.OCF.Berkeley.EDU.
 33 IN PTR dementors.new.OCF.Berkeley.EDU.
 34 IN PTR biohazard.new.OCF.Berkeley.EDU.
 35 IN PTR anthrax.new.OCF.Berkeley.EDU.
@@ -73,8 +74,6 @@ $GENERATE 50-89 $ IN PTR hozer-$.new.OCF.Berkeley.EDU.
 126 IN PTR plague.new.OCF.Berkeley.EDU.
 127 IN PTR surge.new.OCF.Berkeley.EDU.
 128 IN PTR sinkhole.new.OCF.Berkeley.EDU.
-
-129 IN PTR radiation.OCF.Berkeley.EDU.
 
 $GENERATE 130-199 $ IN PTR dhcp-169-229-226-$.new.OCF.Berkeley.EDU.
 
