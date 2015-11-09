@@ -55,6 +55,7 @@ phpmyadmin	IN CNAME	death
 pma	IN CNAME	death
 printhost	IN CNAME	pollution
 puppet	IN CNAME	lightning
+rancid	IN CNAME	pestilence
 rt	IN CNAME	typhoon
 secure	IN CNAME	death
 services	IN CNAME	pandemic
