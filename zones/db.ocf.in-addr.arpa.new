@@ -75,7 +75,7 @@ $GENERATE 50-89 $ IN PTR hozer-$.new.OCF.Berkeley.EDU.
 127 IN PTR surge.new.OCF.Berkeley.EDU.
 128 IN PTR sinkhole.new.OCF.Berkeley.EDU.
 
-$GENERATE 130-199 $ IN PTR dhcp-169-229-226-$.new.OCF.Berkeley.EDU.
+$GENERATE 140-199 $ IN PTR dhcp-169-229-226-$.new.OCF.Berkeley.EDU.
 
 200 IN PTR raptors.new.OCF.Berkeley.EDU.
 201 IN PTR locusts.new.OCF.Berkeley.EDU.
