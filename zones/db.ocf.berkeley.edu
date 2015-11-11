@@ -1,6 +1,10 @@
 $ORIGIN ocf.berkeley.edu.
 $TTL 5m
-@ IN NS ns-master1.berkeley.edu.
+
+@ IN NS srb-infoblox-nsm1.berkeley.edu.
+@ IN NS sut-infoblox-nsm2.berkeley.edu.
+@ IN NS cornell-infoblox-nsm3.berkeley.edu.
+
 
 $INCLUDE /srv/dns/zones/db.ocf
 
