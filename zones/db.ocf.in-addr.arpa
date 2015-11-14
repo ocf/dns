@@ -33,8 +33,6 @@
 42 IN PTR dev-earthquake.OCF.Berkeley.EDU.
 43 IN PTR dev-pollution.OCF.Berkeley.EDU.
 44 IN PTR zombies.OCF.Berkeley.EDU.
-45 IN PTR icestorm.OCF.Berkeley.EDU.
-46 IN PTR windstorm.OCF.Berkeley.EDU.
 47 IN PTR coma.OCF.Berkeley.EDU.
 48 IN PTR reaper.OCF.Berkeley.EDU.
 
@@ -92,7 +90,6 @@ $GENERATE 140-199 $ IN PTR dhcp-169-229-10-$.OCF.Berkeley.EDU.
 213 IN PTR quicksand.OCF.Berkeley.EDU.
 214 IN PTR deathwing.OCF.Berkeley.EDU.
 215 IN PTR skynet.OCF.Berkeley.EDU.
-216 IN PTR yearbook.OCF.Berkeley.EDU.
 217 IN PTR memleak.OCF.Berkeley.EDU.
 218 IN PTR smallpox.OCF.Berkeley.EDU.
 219 IN PTR zerg.OCF.Berkeley.EDU.

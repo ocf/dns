@@ -1,24 +1,13 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015111301 ; serial number
+2015111302 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
                          30m        ; negative TTL
                        )
 
-; iodine DNS proxy
-i IN NS mudslide
-a IN NS raptors
-
-test4	IN A	169.229.226.255
-test5	IN A	169.229.226.255
-test6	IN A	169.229.226.255
-test7	IN A	169.229.226.255
-test8	IN A	169.229.226.255
-test9	IN A	169.229.226.255
-
-firewall	IN CNAME	ocf-1.eac.berkeley.edu.
+firewall	IN CNAME	ocf-2.eac.berkeley.edu.
 
 ; Server aliases
 account	IN CNAME	earthquake
@@ -38,7 +27,7 @@ dev-account	IN CNAME	dev-earthquake
 dev-accounts	IN CNAME	dev-earthquake
 dev-dev-vhost	IN CNAME	dev-death
 dev-printhost	IN CNAME	dev-pollution
-dev-vhost	IN A	169.229.10.23
+dev-vhost	IN A	169.229.226.23
 dev-vhost	IN MX	5 sandstorm
 dev-www	IN CNAME	dev-death
 dhcp	IN CNAME	pestilence
@@ -58,8 +47,8 @@ mudslide-secure	IN CNAME	mudslide
 munin	IN CNAME	dementors
 mysql	IN CNAME	maelstrom
 ns 	IN CNAME	pestilence
-ns1 	IN A	169.229.10.22
-ns2 	IN A	169.229.10.22
+ns1 	IN A	169.229.226.22
+ns2 	IN A	169.229.226.22
 ntp1	IN CNAME	hal
 ntp2	IN CNAME	pandemic
 ntp3	IN CNAME	jaws
@@ -99,7 +88,7 @@ hearst	IN A	169.229.10.3
 mlk	IN A	169.229.226.4
 
 ; hypervisors
-hal	IN A	169.229.10.10
+hal	IN A	169.229.226.10
 hal-mgmt	IN A	169.229.10.11
 jaws	IN A	169.229.10.12
 jaws-mgmt	IN A	169.229.10.13
@@ -108,114 +97,111 @@ pandemic-mgmt	IN A	169.229.10.15
 
 ; production/service-providing servers
 firestorm	IN A	169.229.10.20
-lightning	IN A	169.229.10.21
+lightning	IN A	169.229.226.21
 pestilence	IN A	169.229.10.22
 death	IN A	169.229.10.23
-sandstorm	IN A	169.229.10.24
-tsunami	IN A	169.229.10.25
-despair	IN A	169.229.10.26
+sandstorm	IN A	169.229.226.24
+tsunami	IN A	169.229.226.25
+despair	IN A	169.229.226.26
 maelstrom	IN A	169.229.10.27
-typhoon	IN A	169.229.10.28
-pollution	IN A	169.229.10.29
-fallingrocks	IN A	169.229.10.30
-flood	IN A	169.229.10.31
+typhoon	IN A	169.229.226.28
+pollution	IN A	169.229.226.29
+fallingrocks	IN A	169.229.226.30
+flood	IN A	169.229.226.31
 radiation	IN A	169.229.226.32
 dementors	IN A	169.229.10.33
 biohazard	IN A	169.229.10.34
 anthrax	IN A	169.229.10.35
-supernova	IN A	169.229.10.36
-dev-death	IN A	169.229.10.37
-dev-firestorm	IN A	169.229.10.38
-dev-anthrax	IN A	169.229.10.39
-dev-sandstorm	IN A	169.229.10.40
-earthquake	IN A	169.229.10.41
-dev-earthquake	IN A	169.229.10.42
-dev-pollution	IN A	169.229.10.43
-zombies	IN A	169.229.10.44
-icestorm	IN A	169.229.10.45
-windstorm	IN A	169.229.10.46
+supernova	IN A	169.229.226.36
+dev-death	IN A	169.229.226.37
+dev-firestorm	IN A	169.229.226.38
+dev-anthrax	IN A	169.229.226.39
+dev-sandstorm	IN A	169.229.226.40
+earthquake	IN A	169.229.226.41
+dev-earthquake	IN A	169.229.226.42
+dev-pollution	IN A	169.229.226.43
+zombies	IN A	169.229.226.44
 coma	IN A	169.229.10.47
-reaper	IN A	169.229.10.48
+reaper	IN A	169.229.226.48
 
 $GENERATE 50-89 hozer-$ IN A 169.229.10.$
 
 ; lab equipment
-tornado	IN A	169.229.10.90
-deforestation	IN A	169.229.10.91
-logjam	IN A	169.229.10.92
+tornado	IN A	169.229.226.90
+deforestation	IN A	169.229.226.91
+logjam	IN A	169.229.226.92
 
 ; desktops
-eruption	IN A	169.229.10.100
-avalanche	IN A	169.229.10.101
-bigbang	IN A	169.229.10.102
-blizzard	IN A	169.229.10.103
-cyclone	IN A	169.229.10.104
-destruction	IN A	169.229.10.105
-hurricane	IN A	169.229.10.106
-madcow	IN A	169.229.10.107
-outbreak	IN A	169.229.10.108
-volcano	IN A	169.229.10.109
-famine	IN A	169.229.10.110
-hailstorm	IN A	169.229.10.111
-headcrash	IN A	169.229.10.112
-heatwave	IN A	169.229.10.113
-acid	IN A	169.229.10.114
-asteroid	IN A	169.229.10.115
-cyanide	IN A	169.229.10.116
-firewhirl	IN A	169.229.10.117
-blackout	IN A	169.229.10.118
-drought	IN A	169.229.10.119
-arsenic	IN A	169.229.10.120
-wildfire	IN A	169.229.10.121
-blight	IN A	169.229.10.122
-meteorstorm	IN A	169.229.10.123
-chaos	IN A	169.229.10.124
-depression	IN A	169.229.10.125
-plague	IN A	169.229.10.126
-surge	IN A	169.229.10.127
-sinkhole	IN A	169.229.10.128
+eruption	IN A	169.229.226.100
+avalanche	IN A	169.229.226.101
+bigbang	IN A	169.229.226.102
+blizzard	IN A	169.229.226.103
+cyclone	IN A	169.229.226.104
+destruction	IN A	169.229.226.105
+hurricane	IN A	169.229.226.106
+madcow	IN A	169.229.226.107
+outbreak	IN A	169.229.226.108
+volcano	IN A	169.229.226.109
+famine	IN A	169.229.226.110
+hailstorm	IN A	169.229.226.111
+headcrash	IN A	169.229.226.112
+heatwave	IN A	169.229.226.113
+acid	IN A	169.229.226.114
+asteroid	IN A	169.229.226.115
+cyanide	IN A	169.229.226.116
+firewhirl	IN A	169.229.226.117
+blackout	IN A	169.229.226.118
+drought	IN A	169.229.226.119
+arsenic	IN A	169.229.226.120
+wildfire	IN A	169.229.226.121
+blight	IN A	169.229.226.122
+meteorstorm	IN A	169.229.226.123
+chaos	IN A	169.229.226.124
+depression	IN A	169.229.226.125
+plague	IN A	169.229.226.126
+surge	IN A	169.229.226.127
+sinkhole	IN A	169.229.226.128
 
 $GENERATE 140-199 dhcp-169-229-10-$ IN A 169.229.10.$
 $GENERATE 140-199 dhcp-169-229-226-$ IN A 169.229.226.$
 
 ; hozers (200-249)
-raptors	IN A	169.229.10.200
-locusts	IN A	169.229.10.201
-mudslide	IN A	169.229.10.202
-solarflare	IN A	169.229.10.203
-limniceruption	IN A	169.229.10.204
-meltdown	IN A	169.229.10.205
-tempest	IN A	169.229.10.206
-gnats	IN A	169.229.10.207
-revolution	IN A	169.229.10.208
-vampires	IN A	169.229.10.209
-blacksheep	IN A	169.229.10.210
-blackrain	IN A	169.229.10.211
-war	IN A	169.229.10.212
-quicksand	IN A	169.229.10.213
-deathwing	IN A	169.229.10.214
-skynet	IN A	169.229.10.215
-yearbook	IN A	169.229.10.216
-memleak	IN A	169.229.10.217
-smallpox	IN A	169.229.10.218
-zerg	IN A	169.229.10.219
-snowstorm	IN A	169.229.10.220
-fire	IN A	169.229.10.221
-malaria	IN A	169.229.10.222
-walpurgisnacht	IN A	169.229.10.223
-aliens	IN A	169.229.10.224
-rapture	IN A	169.229.10.225
-fireball	IN A	169.229.10.226
-coldwave	IN A	169.229.10.227
-masterspark	IN A	169.229.10.228
-epidemic	IN A	169.229.10.229
+raptors	IN A	169.229.226.200
+locusts	IN A	169.229.226.201
+mudslide	IN A	169.229.226.202
+solarflare	IN A	169.229.226.203
+limniceruption	IN A	169.229.226.204
+meltdown	IN A	169.229.226.205
+tempest	IN A	169.229.226.206
+gnats	IN A	169.229.226.207
+revolution	IN A	169.229.226.208
+vampires	IN A	169.229.226.209
+blacksheep	IN A	169.229.226.210
+blackrain	IN A	169.229.226.211
+war	IN A	169.229.226.212
+quicksand	IN A	169.229.226.213
+deathwing	IN A	169.229.226.214
+skynet	IN A	169.229.226.215
+memleak	IN A	169.229.226.217
+smallpox	IN A	169.229.226.218
+zerg	IN A	169.229.226.219
+snowstorm	IN A	169.229.226.220
+fire	IN A	169.229.226.221
+malaria	IN A	169.229.226.222
+walpurgisnacht	IN A	169.229.226.223
+aliens	IN A	169.229.226.224
+rapture	IN A	169.229.226.225
+fireball	IN A	169.229.226.226
+coldwave	IN A	169.229.226.227
+masterspark	IN A	169.229.226.228
+epidemic	IN A	169.229.226.229
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
-armageddon	IN A	169.229.10.255
-monsoon	IN A	169.229.10.255
-pileup	IN A	169.229.10.255
-pox	IN A	169.229.10.255
-ragnarok	IN A	169.229.10.255
-whirlwind	IN A	169.229.10.255
+armageddon	IN A	169.229.226.255
+monsoon	IN A	169.229.226.255
+pileup	IN A	169.229.226.255
+pox	IN A	169.229.226.255
+ragnarok	IN A	169.229.226.255
+whirlwind	IN A	169.229.226.255
 
 ; vim: noet ts=16 sts=16 sw=16
