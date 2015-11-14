@@ -76,7 +76,7 @@ www	IN CNAME	death
 *.blacksheep	IN CNAME	blacksheep
 
 ; the domain name itself
-@	IN A	169.229.10.23
+@	IN A	169.229.226.23
 
 ; There's no host like localhost
 localhost	IN A	127.0.0.1
@@ -89,29 +89,29 @@ mlk	IN A	169.229.226.4
 
 ; hypervisors
 hal	IN A	169.229.226.10
-hal-mgmt	IN A	169.229.10.11
-jaws	IN A	169.229.10.12
-jaws-mgmt	IN A	169.229.10.13
-pandemic	IN A	169.229.10.14
-pandemic-mgmt	IN A	169.229.10.15
+hal-mgmt	IN A	169.229.226.11
+jaws	IN A	169.229.226.12
+jaws-mgmt	IN A	169.229.226.13
+pandemic	IN A	169.229.226.14
+pandemic-mgmt	IN A	169.229.226.15
 
 ; production/service-providing servers
-firestorm	IN A	169.229.10.20
+firestorm	IN A	169.229.226.20
 lightning	IN A	169.229.226.21
-pestilence	IN A	169.229.10.22
-death	IN A	169.229.10.23
+pestilence	IN A	169.229.226.22
+death	IN A	169.229.226.23
 sandstorm	IN A	169.229.226.24
 tsunami	IN A	169.229.226.25
 despair	IN A	169.229.226.26
-maelstrom	IN A	169.229.10.27
+maelstrom	IN A	169.229.226.27
 typhoon	IN A	169.229.226.28
 pollution	IN A	169.229.226.29
 fallingrocks	IN A	169.229.226.30
 flood	IN A	169.229.226.31
 radiation	IN A	169.229.226.32
-dementors	IN A	169.229.10.33
-biohazard	IN A	169.229.10.34
-anthrax	IN A	169.229.10.35
+dementors	IN A	169.229.226.33
+biohazard	IN A	169.229.226.34
+anthrax	IN A	169.229.226.35
 supernova	IN A	169.229.226.36
 dev-death	IN A	169.229.226.37
 dev-firestorm	IN A	169.229.226.38
@@ -121,10 +121,10 @@ earthquake	IN A	169.229.226.41
 dev-earthquake	IN A	169.229.226.42
 dev-pollution	IN A	169.229.226.43
 zombies	IN A	169.229.226.44
-coma	IN A	169.229.10.47
+coma	IN A	169.229.226.47
 reaper	IN A	169.229.226.48
 
-$GENERATE 50-89 hozer-$ IN A 169.229.10.$
+$GENERATE 50-89 hozer-$ IN A 169.229.226.$
 
 ; lab equipment
 tornado	IN A	169.229.226.90
@@ -162,7 +162,7 @@ plague	IN A	169.229.226.126
 surge	IN A	169.229.226.127
 sinkhole	IN A	169.229.226.128
 
-$GENERATE 140-199 dhcp-169-229-10-$ IN A 169.229.10.$
+$GENERATE 140-199 dhcp-169-229-10-$ IN A 169.229.226.$
 $GENERATE 140-199 dhcp-169-229-226-$ IN A 169.229.226.$
 
 ; hozers (200-249)
