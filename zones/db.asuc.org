@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015111400 ; serial number
+2015111600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -35,15 +35,19 @@ www.dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 
 elections	IN A	192.254.186.13
 www.elections	IN CNAME	elections
+elections.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 wellnesscenter	IN A	192.254.186.13
 www.wellnesscenter	IN CNAME	wellnesscenter
+wellnesscenter.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 committees	IN A	192.254.186.13
 www.committees	IN CNAME	committees
+committees.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 handbook	IN A	192.254.186.13
 www.handbook	IN CNAME	handbook
+handbook.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 wiki	IN CNAME	death.OCF.Berkeley.EDU.
 www.wiki	IN CNAME	death.OCF.Berkeley.EDU.
@@ -53,31 +57,39 @@ www.modern	IN CNAME death.OCF.Berkeley.EDU.
 
 perspectives	IN A	192.254.186.13
 www.perspectives	IN CNAME	perspectives
+perspectives.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 pantry	IN CNAME	death.OCF.Berkeley.EDU.
 www.pantry	IN CNAME	death.OCF.Berkeley.EDU.
 
 wellness	IN A	192.254.186.13
 www.wellness	IN CNAME	wellness
+wellness.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 president	IN A	192.254.186.13
 www.president	IN CNAME	president
+president.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 senate	IN A	192.254.186.13
 www.senate	IN CNAME	senate
+senate.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 oldarchive	IN A	192.254.186.13
+oldarchive.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 archive	IN CNAME	death.OCF.Berkeley.EDU.
 www.archive	IN CNAME	death.OCF.Berkeley.EDU.
 
 evp	IN A	192.254.186.13
 www.evp	IN CNAME	evp
+evp.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 aavp	IN A	192.254.186.13
 www.aavp	IN CNAME	aavp
+aavp.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 bsf	IN A	192.254.186.13
 www.bsf	IN CNAME	bsf
+bsf.new   IN CNAME    death.OCF.Berkeley.EDU.
 
 decal IN CNAME  death.OCF.Berkeley.EDU.
