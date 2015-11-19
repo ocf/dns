@@ -1,5 +1,6 @@
 2  IN PTR blackhole.OCF.Berkeley.EDU.
 3  IN PTR hearst.OCF.Berkeley.EDU.
+4  IN PTR mlk.OCF.Berkeley.EDU.
 
 10 IN PTR hal.OCF.Berkeley.EDU.
 11 IN PTR hal-mgmt.OCF.Berkeley.EDU.
@@ -72,7 +73,7 @@ $GENERATE 50-89 $ IN PTR hozer-$.OCF.Berkeley.EDU.
 127 IN PTR surge.OCF.Berkeley.EDU.
 128 IN PTR sinkhole.OCF.Berkeley.EDU.
 
-$GENERATE 140-199 $ IN PTR dhcp-169-229-10-$.OCF.Berkeley.EDU.
+$GENERATE 140-199 $ IN PTR dhcp-169-229-226-$.OCF.Berkeley.EDU.
 
 200 IN PTR raptors.OCF.Berkeley.EDU.
 201 IN PTR locusts.OCF.Berkeley.EDU.
