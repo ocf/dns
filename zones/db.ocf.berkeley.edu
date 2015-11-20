@@ -3,14 +3,11 @@ $TTL 5m
 
 @ IN NS srb-infoblox-nsm1.berkeley.edu.
 @ IN NS sut-infoblox-nsm2.berkeley.edu.
-
+@ IN NS cornell-infoblox-nsm3.berkeley.edu.
 
 $INCLUDE /srv/dns/zones/db.ocf
 
 ; Mail delivery
-;@ IN MX 1 try-next
-;@ IN MX 5 sandstorm
-;@ IN MX 50 go-away
 @ IN MX 1 aspmx.l.google.com.
 @ IN MX 5 alt1.aspmx.l.google.com.
 @ IN MX 5 alt2.aspmx.l.google.com.
@@ -23,14 +20,10 @@ google._domainkey IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
 _dmarc IN TXT "v=DMARC1; p=none"
 
 ; for systemstatus blog, only works on ocf.berkeley.edu domain (ocfblog.blogspot.com)
-;status IN CNAME	ghs.google.com.
-;status IN NS dave.ns.cloudflare.com.
-;status IN NS val.ns.cloudflare.com.
 status IN A 216.239.32.21
 status IN A 216.239.34.21
 status IN A 216.239.36.21
 status IN A 216.239.38.21
-; status IN TXT "google-site-verification=Cgnhs9CYQkwmF5-hkz1n-b7XcJHKO2NtC4Yjjq1vWTY"
 
 g IN MX 1 aspmx.l.google.com.
 g IN MX 5 alt1.aspmx.l.google.com.
