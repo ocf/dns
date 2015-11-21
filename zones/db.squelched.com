@@ -16,5 +16,5 @@ $TTL 5m
 
 @ IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu a:sandstorm.ocf.berkeley.edu ~all"
 
-@	IN A	169.229.10.23
+@	IN A	169.229.226.23
 www	IN CNAME	@

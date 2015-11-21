@@ -36,12 +36,6 @@ zone "squelched.com" {
 
 // We are not actually authoritative for our reverse DNS, but we pretend to be
 // for our own sake.
-zone "10.229.169.in-addr.arpa" {
-  type master;
-  notify no;
-  file "/srv/dns/zones/db.10.229.169";
-};
-
 zone "226.229.169.in-addr.arpa" {
   type master;
   notify no;

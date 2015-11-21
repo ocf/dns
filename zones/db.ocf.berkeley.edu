@@ -31,9 +31,3 @@ g IN MX 5 alt2.aspmx.l.google.com.
 g IN MX 10 aspmx2.googlemail.com.
 g IN MX 10 aspmx3.googlemail.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
-
-$ORIGIN new.ocf.berkeley.edu.
-$INCLUDE /srv/dns/zones/db.ocf.new
-
-$ORIGIN old.ocf.berkeley.edu.
-$INCLUDE /srv/dns/zones/db.ocf.old
