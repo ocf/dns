@@ -88,7 +88,6 @@ localhost	IN A	127.0.0.1
 
 ; networking infrastructure
 blackhole	IN A	169.229.226.2
-mlk	IN A	169.229.226.4
 
 ; hypervisors
 hal	IN A	169.229.226.10
