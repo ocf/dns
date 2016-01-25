@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015111600 ; serial number
+2016012500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -33,9 +33,8 @@ ftp	IN A	192.254.186.13
 dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 www.dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 
-elections	IN A	192.254.186.13
-www.elections	IN CNAME	elections
-elections.new   IN CNAME    death.OCF.Berkeley.EDU.
+elections	IN CNAME	death.OCF.Berkeley.EDU.
+www.elections	IN CNAME	death.OCF.Berkeley.EDU.
 
 wellnesscenter	IN A	192.254.186.13
 www.wellnesscenter	IN CNAME	wellnesscenter
