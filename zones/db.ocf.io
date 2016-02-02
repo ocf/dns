@@ -1,6 +1,6 @@
 $ORIGIN ocf.io.
 $TTL 1h
-@ IN NS ns.ocf.berkeley.edu.
-@ IN NS ns6.gandi.net.
+@ IN NS ns1.ocf.berkeley.edu.
+@ IN NS ns2.ocf.berkeley.edu.
 
 $INCLUDE /srv/dns/zones/db.ocf
