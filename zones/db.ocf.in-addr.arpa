@@ -87,6 +87,7 @@ $GENERATE 140-199 $ IN PTR dhcp-169-229-226-$.OCF.Berkeley.EDU.
 213 IN PTR quicksand.OCF.Berkeley.EDU.
 214 IN PTR deathwing.OCF.Berkeley.EDU.
 215 IN PTR skynet.OCF.Berkeley.EDU.
+216 IN PTR pelee.OCF.Berkeley.EDU.
 217 IN PTR memleak.OCF.Berkeley.EDU.
 218 IN PTR smallpox.OCF.Berkeley.EDU.
 219 IN PTR zerg.OCF.Berkeley.EDU.
