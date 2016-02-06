@@ -31,3 +31,8 @@ g IN MX 5 alt2.aspmx.l.google.com.
 g IN MX 10 aspmx2.googlemail.com.
 g IN MX 10 aspmx3.googlemail.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
+
+; Jabber/XMPP c2s and s2s connections
+_xmpp-client._tcp IN SRV 5 0 5222 flood
+_xmpp-server._tcp IN SRV 5 0 5269 flood
+_xmpp-server._tcp.conference IN SRV 5 0 5269 flood
