@@ -70,6 +70,7 @@ staff	IN CNAME	death
 static	IN CNAME	coma
 stats	IN CNAME	dementors
 templates	IN CNAME	death
+tv	IN CNAME	tornado
 wifi	IN CNAME	radiation
 wiki	IN CNAME	death
 www	IN CNAME	death
