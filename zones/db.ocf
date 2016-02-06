@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016020500 ; serial number
+2016020501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -76,7 +76,6 @@ wiki	IN CNAME	death
 www	IN CNAME	death
 
 *.apphost	IN CNAME	biohazard
-*.blacksheep	IN CNAME	blacksheep
 
 ; the domain name itself
 @	IN A	169.229.226.23
@@ -118,6 +117,8 @@ dev-death	IN A	169.229.226.37
 dev-firestorm	IN A	169.229.226.38
 dev-anthrax	IN A	169.229.226.39
 dev-sandstorm	IN A	169.229.226.40
+dev-tsunami	IN A	169.229.226.41
+dev-biohazard	IN A	169.229.226.42
 dev-pollution	IN A	169.229.226.43
 zombies	IN A	169.229.226.44
 coma	IN A	169.229.226.47
