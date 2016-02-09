@@ -18,3 +18,5 @@ $TTL 5m
 
 @	IN A	169.229.226.23
 www	IN CNAME	@
+
+; vim: noet ts=16 sts=16 sw=16 ft=bindzone

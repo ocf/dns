@@ -1,0 +1,8 @@
+; TODO: generate this file automatically
+
+$ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
+
+0.0.2.0 IN PTR raptors.ocf.berkeley.edu.
+0.1.2.0 IN PTR blacksheep.ocf.berkeley.edu.
+
+; vim: noet ts=16 sts=16 sw=16 ft=bindzone

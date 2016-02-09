@@ -1,7 +1,7 @@
-$ORIGIN 226.229.169.in-addr.arpa.
+$ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2015110500 ; serial number
+2016020800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -9,12 +9,14 @@ $TTL 1d
                        )
 @ IN NS ns.ocf.berkeley.edu.
 
-$GENERATE 0-1 $ IN NS adns1.Berkeley.EDU.
-$GENERATE 0-1 $ IN NS adns2.Berkeley.EDU.
+; gateway
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 IN NS adns1.Berkeley.EDU.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 IN NS adns2.Berkeley.EDU.
 
-$INCLUDE /srv/dns/zones/db.ocf.in-addr.arpa
+; firewall
+5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 IN NS adns1.Berkeley.EDU.
+5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 IN NS adns2.Berkeley.EDU.
 
-$GENERATE 253-255 $ IN NS adns1.Berkeley.EDU.
-$GENERATE 253-255 $ IN NS adns2.Berkeley.EDU.
+$INCLUDE /srv/dns/zones/db.ocf.ip6.arpa
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone

@@ -103,3 +103,5 @@ $GENERATE 140-199 $ IN PTR dhcp-169-229-226-$.OCF.Berkeley.EDU.
 227 IN PTR coldwave.OCF.Berkeley.EDU.
 228 IN PTR masterspark.OCF.Berkeley.EDU.
 229 IN PTR epidemic.OCF.Berkeley.EDU.
+
+; vim: noet ts=16 sts=16 sw=16 ft=bindzone

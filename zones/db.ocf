@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016020703 ; serial number
+2016020800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -167,12 +167,7 @@ $GENERATE 140-199 dhcp-169-229-226-$ IN A 169.229.226.$
 
 ; hozers (200-249)
 raptors	IN A	169.229.226.200
-
-; TODO: testing records for IPv6 support, remove eventually (rt#2287)
-raptors.ipv6	IN AAAA	2607:f140:8801::1:200
-raptors.both	IN A	169.229.226.200
-raptors.both	IN AAAA	2607:f140:8801::1:200
-
+raptors	IN AAAA	2607:f140:8801::1:200
 locusts	IN A	169.229.226.201
 mudslide	IN A	169.229.226.202
 solarflare	IN A	169.229.226.203
@@ -183,6 +178,7 @@ gnats	IN A	169.229.226.207
 revolution	IN A	169.229.226.208
 vampires	IN A	169.229.226.209
 blacksheep	IN A	169.229.226.210
+blacksheep	IN AAAA	2607:f140:8801::1:210
 blackrain	IN A	169.229.226.211
 war	IN A	169.229.226.212
 quicksand	IN A	169.229.226.213
@@ -211,4 +207,4 @@ pox	IN A	169.229.226.255
 ragnarok	IN A	169.229.226.255
 whirlwind	IN A	169.229.226.255
 
-; vim: noet ts=16 sts=16 sw=16
+; vim: noet ts=16 sts=16 sw=16 ft=bindzone

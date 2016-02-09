@@ -76,3 +76,5 @@ bsf	IN CNAME	death.OCF.Berkeley.EDU.
 www.bsf	IN CNAME	death.OCF.Berkeley.EDU.
 
 decal IN CNAME  death.OCF.Berkeley.EDU.
+
+; vim: noet ts=16 sts=16 sw=16 ft=bindzone
