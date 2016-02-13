@@ -1,6 +1,6 @@
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016021100 ; serial number
+2016021200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -26,7 +26,7 @@ csgo	IN CNAME	zombies
 decal	IN CNAME	death
 dev	IN CNAME	death
 dev-accounts	IN CNAME	dev-death
-dev-apphost	IN CNAME	biohazard
+dev-apphost	IN CNAME	dev-werewolves
 dev-dev-vhost	IN CNAME	dev-death
 dev-hello	IN CNAME	dev-death
 dev-ocf-io	IN CNAME	dev-death
@@ -122,6 +122,7 @@ dev-firestorm	IN A	169.229.226.38
 dev-anthrax	IN A	169.229.226.39
 dev-sandstorm	IN A	169.229.226.40
 dev-tsunami	IN A	169.229.226.41
+dev-werewolves	IN A	169.229.226.42
 dev-pollution	IN A	169.229.226.43
 zombies	IN A	169.229.226.44
 coma	IN A	169.229.226.47
