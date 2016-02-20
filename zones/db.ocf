@@ -1,7 +1,7 @@
 ; TODO: generate this file automatically
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016021701 ; serial number
+2016021900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -160,6 +160,7 @@ $GENERATE 50-89 hozer-$ IN A 169.229.226.$
 
 ; lab equipment
 tornado	IN A	169.229.226.90
+tornado	IN AAAA	2607:f140:8801::1:90
 deforestation	IN A	169.229.226.91
 logjam	IN A	169.229.226.92
 

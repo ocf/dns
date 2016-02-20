@@ -34,6 +34,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.4.0.0 IN PTR coma.ocf.berkeley.edu.
 8.4.0.0 IN PTR reaper.ocf.berkeley.edu.
 9.4.0.0 IN PTR werewolves.ocf.berkeley.edu.
+0.9.0.0 IN PTR tornado.ocf.berkeley.edu.
 0.0.1.0 IN PTR eruption.ocf.berkeley.edu.
 1.0.1.0 IN PTR avalanche.ocf.berkeley.edu.
 2.0.1.0 IN PTR bigbang.ocf.berkeley.edu.
