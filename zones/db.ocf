@@ -1,7 +1,7 @@
 ; TODO: generate this file automatically
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016021900 ; serial number
+2016022000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -17,6 +17,7 @@ api-dev.asuc	IN CNAME	werewolves
 api.asuc	IN CNAME	werewolves
 apphost	IN CNAME	werewolves
 apt	IN CNAME	fallingrocks
+chronos	IN CNAME	hozer-70
 contrib	IN CNAME	death
 create	IN CNAME	supernova
 csgo	IN CNAME	zombies
@@ -33,6 +34,7 @@ dev-vhost	IN MX	5 sandstorm
 dev-wiki	IN CNAME	dev-death
 dev-www	IN CNAME	dev-death
 dhcp	IN CNAME	pestilence
+docker	IN CNAME	hozer-70
 docs	IN CNAME	death
 filehost	IN CNAME	pandemic
 hello	IN CNAME	death
@@ -44,6 +46,7 @@ kochira	IN CNAME	locusts
 labstats	IN CNAME	dementors
 ldap	IN CNAME	firestorm
 mail	IN CNAME	anthrax
+mesos	IN CNAME	hozer-70
 mirrors	IN CNAME	fallingrocks
 mouse	IN CNAME	death
 mudslide-secure	IN CNAME	mudslide
