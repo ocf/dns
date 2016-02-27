@@ -1,7 +1,7 @@
 ; TODO: generate this file automatically
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016022001 ; serial number
+2016022601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -29,6 +29,7 @@ dev-dev-vhost	IN CNAME	dev-death
 dev-hello	IN CNAME	dev-death
 dev-ocf-io	IN CNAME	dev-death
 dev-printhost	IN CNAME	dev-pollution
+dev-ssh	IN CNAME	dev-tsunami
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN MX	5 sandstorm
 dev-wiki	IN CNAME	dev-death
