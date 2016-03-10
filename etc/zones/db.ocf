@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016030904 ; serial number
+2016030905 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -39,6 +39,7 @@ dev-dev-vhost	IN CNAME	dev-death
 dev-hello	IN CNAME	dev-death
 dev-ocf-io	IN CNAME	dev-death
 dev-printhost	IN CNAME	dev-pollution
+dev-ssh	IN CNAME	dev-tsunami
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN MX	5 sandstorm
 dev-wiki	IN CNAME	dev-death
@@ -46,9 +47,9 @@ dev-www	IN CNAME	dev-death
 dhcp	IN CNAME	pestilence
 docker	IN CNAME	hozer-70
 docs	IN CNAME	death
-filehost	IN CNAME	pandemic
+filehost	IN CNAME	jaws
 hello	IN CNAME	death
-homes	IN CNAME	pandemic
+homes	IN CNAME	jaws
 irc	IN CNAME	flood
 jenkins	IN CNAME	reaper
 kerberos	IN CNAME	firestorm
@@ -69,7 +70,7 @@ ntp1	IN CNAME	hal
 ntp2	IN CNAME	pandemic
 ntp3	IN CNAME	jaws
 ocfweb	IN CNAME	coma
-opt	IN CNAME	pandemic
+opt	IN CNAME	jaws
 phpmyadmin	IN CNAME	death
 pma	IN CNAME	death
 printhost	IN CNAME	pollution
@@ -78,7 +79,7 @@ pypi	IN CNAME	hozer-70
 rancid	IN CNAME	pestilence
 rt	IN CNAME	typhoon
 secure	IN CNAME	death
-services	IN CNAME	pandemic
+services	IN CNAME	jaws
 smtp	IN CNAME	anthrax
 ssh	IN CNAME	tsunami
 staff	IN CNAME	death
@@ -94,13 +95,7 @@ www	IN CNAME	death
 
 ; the domain name itself
 @	IN A	169.229.226.23
-
-; There's no host like localhost
-localhost	IN A	127.0.0.1
-
-
-; networking infrastructure
-blackhole	IN A	169.229.226.2
+@	IN A	2607:f140:8801::1:23
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
