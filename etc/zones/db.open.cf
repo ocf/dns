@@ -2,7 +2,7 @@ $ORIGIN open.cf.
 $TTL 1h
 @ IN NS ns.ocf.berkeley.edu.
 
-$INCLUDE /srv/dns/zones/db.ocf
+$INCLUDE /srv/dns/etc/zones/db.ocf
 
 ; Sender Policy Framework (SPF) record
 @ IN TXT "v=spf1 -all"

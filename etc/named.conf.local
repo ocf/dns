@@ -1,37 +1,37 @@
 zone "ocf.berkeley.edu" {
   type master;
   notify yes;
-  file "/srv/dns/zones/db.ocf.berkeley.edu";
+  file "/srv/dns/etc/zones/db.ocf.berkeley.edu";
 };
 
 zone "ocf.io" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.ocf.io";
+  file "/srv/dns/etc/zones/db.ocf.io";
 };
 
 zone "ocf.sexy" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.ocf.sexy";
+  file "/srv/dns/etc/zones/db.ocf.sexy";
 };
 
 zone "open.cf" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.open.cf";
+  file "/srv/dns/etc/zones/db.open.cf";
 };
 
 zone "asuc.org" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.asuc.org";
+  file "/srv/dns/etc/zones/db.asuc.org";
 };
 
 zone "squelched.com" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.squelched.com";
+  file "/srv/dns/etc/zones/db.squelched.com";
 };
 
 // We are not actually authoritative for our reverse DNS, but we pretend to be
@@ -39,11 +39,11 @@ zone "squelched.com" {
 zone "226.229.169.in-addr.arpa" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.226.229.169";
+  file "/srv/dns/etc/zones/db.226.229.169";
 };
 
 zone "0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa" {
   type master;
   notify no;
-  file "/srv/dns/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa";
+  file "/srv/dns/etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa";
 };
