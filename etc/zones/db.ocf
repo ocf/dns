@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016031003 ; serial number
+2016031004 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -145,6 +145,11 @@ dementors	IN AAAA	2607:f140:8801::1:33
 labstats	IN CNAME	dementors
 munin	IN CNAME	dementors
 stats	IN CNAME	dementors
+
+; dev-maelstrom (server), roles: [ocf_mysql]
+dev-maelstrom	IN A	169.229.226.34
+dev-maelstrom	IN AAAA	2607:f140:8801::1:34
+dev-mysql	IN CNAME	dev-maelstrom
 
 ; anthrax (server), roles: [ocf_mail, ocf_mail::site_ocf]
 anthrax	IN A	169.229.226.35
