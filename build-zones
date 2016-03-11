@@ -104,6 +104,13 @@ class Host(namedtuple('Host', ('hostname',))):
             yield '{self.hostname}\tIN A\t{self.ipv4}'.format(self=self)
         if self.ipv6:
             yield '{self.hostname}\tIN AAAA\t{self.ipv6}'.format(self=self)
+        for cname in self.ldap_attrs.get('dnsCname', []):
+            yield '{}\tIN CNAME\t{self.hostname}'.format(cname, self=self)
+        for a in self.ldap_attrs.get('dnsA', []):
+            # These are like CNAMEs but for special cases where CNAMEs are illegal.
+            # Some examples: domain root, things used in MX or NS records.
+            yield '{}\tIN A\t{self.ipv4}'.format(a, self=self)
+            yield '{}\tIN AAAA\t{self.ipv6}'.format(a, self=self)
 
     def reverse_dns_records_v4(self):
         """Return reverse IPv4 DNS records."""
