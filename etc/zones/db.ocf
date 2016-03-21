@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016031004 ; serial number
+2016032000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -22,6 +22,7 @@ dev-vhost	IN MX	5 sandstorm
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
+blackhole	IN AAAA	2607:f140:8801::1:2
 
 ; hal (server), roles: [ocf_backups, ocf_kvm]
 hal	IN A	169.229.226.10
@@ -133,10 +134,12 @@ mirrors	IN CNAME	fallingrocks
 ; flood (server), roles: [ocf_ssl]
 flood	IN A	169.229.226.31
 flood	IN AAAA	2607:f140:8801::1:31
+chat	IN CNAME	flood
 irc	IN CNAME	flood
 
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
 
 ; dementors (server), roles: [ocf_stats]
@@ -336,7 +339,7 @@ hozer-75	IN AAAA	2607:f140:8801::1:75
 hozer-76	IN A	169.229.226.76
 hozer-76	IN AAAA	2607:f140:8801::1:76
 
-; hozer-77 (server), roles: [ocf_mesos::slave]
+; hozer-77 (server), roles: [ocf::packages::docker]
 hozer-77	IN A	169.229.226.77
 hozer-77	IN AAAA	2607:f140:8801::1:77
 
