@@ -16,12 +16,6 @@ zone "ocf.sexy" {
   file "/srv/dns/etc/zones/db.ocf.sexy";
 };
 
-zone "open.cf" {
-  type master;
-  notify no;
-  file "/srv/dns/etc/zones/db.open.cf";
-};
-
 zone "asuc.org" {
   type master;
   notify no;
