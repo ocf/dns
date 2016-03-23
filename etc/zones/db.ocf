@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016032000 ; serial number
+2016032200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -222,10 +222,11 @@ jenkins	IN CNAME	reaper
 ; werewolves (server), roles: [ocf_apphost]
 werewolves	IN A	169.229.226.49
 werewolves	IN AAAA	2607:f140:8801::1:49
+*.apphost	IN CNAME	werewolves
 api-dev.asuc	IN CNAME	werewolves
 api.asuc	IN CNAME	werewolves
 apphost	IN CNAME	werewolves
-*.apphost	IN CNAME	werewolves
+dev-app	IN CNAME	werewolves
 
 ; hozer-50 (server)
 hozer-50	IN A	169.229.226.50
