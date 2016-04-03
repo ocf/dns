@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016033000 ; serial number
+2016040300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -179,6 +179,8 @@ dev-www	IN CNAME	dev-death
 ; dev-firestorm (server), roles: [ocf_kerberos, ocf_ldap]
 dev-firestorm	IN A	169.229.226.38
 dev-firestorm	IN AAAA	2607:f140:8801::1:38
+dev-kerberos	IN CNAME	dev-firestorm
+dev-ldap	IN CNAME	dev-firestorm
 
 ; dev-anthrax (server)
 dev-anthrax	IN A	169.229.226.39
@@ -249,7 +251,7 @@ hozer-53	IN AAAA	2607:f140:8801::1:53
 hozer-54	IN A	169.229.226.54
 hozer-54	IN AAAA	2607:f140:8801::1:54
 
-; hozer-55 (server)
+; hozer-55 (server), owner=tmochida
 hozer-55	IN A	169.229.226.55
 hozer-55	IN AAAA	2607:f140:8801::1:55
 
