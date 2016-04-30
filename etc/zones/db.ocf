@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016042600 ; serial number
+2016043000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -201,17 +201,12 @@ dev-werewolves	IN AAAA	2607:f140:8801::1:42
 dev-apphost	IN CNAME	dev-werewolves
 dev-dev-app	IN CNAME	dev-werewolves
 
-; dev-pollution (server), roles: [ocf_printhost]
-dev-pollution	IN A	169.229.226.43
-dev-pollution	IN AAAA	2607:f140:8801::1:43
-dev-printhost	IN CNAME	dev-pollution
-
 ; zombies (server), roles: [ocf_csgo]
 zombies	IN A	169.229.226.44
 zombies	IN AAAA	2607:f140:8801::1:44
 csgo	IN CNAME	zombies
 
-; whiteout (server)
+; whiteout (server), roles: [ocf_printhost]
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
 

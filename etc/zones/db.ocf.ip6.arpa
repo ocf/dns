@@ -37,7 +37,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 0.4.0.0 IN PTR dev-sandstorm.ocf.berkeley.edu.
 1.4.0.0 IN PTR dev-tsunami.ocf.berkeley.edu.
 2.4.0.0 IN PTR dev-werewolves.ocf.berkeley.edu.
-3.4.0.0 IN PTR dev-pollution.ocf.berkeley.edu.
 4.4.0.0 IN PTR zombies.ocf.berkeley.edu.
 5.4.0.0 IN PTR whiteout.ocf.berkeley.edu.
 7.4.0.0 IN PTR coma.ocf.berkeley.edu.
