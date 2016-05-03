@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016043000 ; serial number
+2016050300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -120,11 +120,6 @@ typhoon	IN A	169.229.226.28
 typhoon	IN AAAA	2607:f140:8801::1:28
 rt	IN CNAME	typhoon
 
-; pollution (server), roles: [ocf_printhost]
-pollution	IN A	169.229.226.29
-pollution	IN AAAA	2607:f140:8801::1:29
-printhost	IN CNAME	pollution
-
 ; fallingrocks (server), roles: [ocf_apt, ocf_mirrors]
 fallingrocks	IN A	169.229.226.30
 fallingrocks	IN AAAA	2607:f140:8801::1:30
@@ -209,6 +204,7 @@ csgo	IN CNAME	zombies
 ; whiteout (server), roles: [ocf_printhost]
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
+printhost	IN CNAME	whiteout
 
 ; coma (server), roles: [ocf_www::ocfweb]
 coma	IN A	169.229.226.47

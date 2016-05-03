@@ -23,7 +23,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.2.0.0 IN PTR despair.ocf.berkeley.edu.
 7.2.0.0 IN PTR maelstrom.ocf.berkeley.edu.
 8.2.0.0 IN PTR typhoon.ocf.berkeley.edu.
-9.2.0.0 IN PTR pollution.ocf.berkeley.edu.
 0.3.0.0 IN PTR fallingrocks.ocf.berkeley.edu.
 1.3.0.0 IN PTR flood.ocf.berkeley.edu.
 2.3.0.0 IN PTR radiation.ocf.berkeley.edu.
