@@ -5,3 +5,7 @@ all: build
 .PHONY: build
 build:
 	./build-zones
+
+.PHONY: test
+test:
+	pre-commit run --all-files
