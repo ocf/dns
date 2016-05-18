@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016051501 ; serial number
+2016051800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -27,11 +27,7 @@ blackhole	IN AAAA	2607:f140:8801::1:2
 ; hal (server), roles: [ocf_backups, ocf_kvm]
 hal	IN A	169.229.226.10
 hal	IN AAAA	2607:f140:8801::1:10
-filehost	IN CNAME	hal
-homes	IN CNAME	hal
 ntp1	IN CNAME	hal
-opt	IN CNAME	hal
-services	IN CNAME	hal
 
 ; hal-mgmt (ipmi)
 hal-mgmt	IN A	169.229.226.11
@@ -39,7 +35,10 @@ hal-mgmt	IN A	169.229.226.11
 ; jaws (server), roles: [ocf_filehost, ocf_kvm]
 jaws	IN A	169.229.226.12
 jaws	IN AAAA	2607:f140:8801::1:12
+filehost	IN CNAME	jaws
+homes	IN CNAME	jaws
 ntp3	IN CNAME	jaws
+services	IN CNAME	jaws
 
 ; jaws-mgmt (ipmi)
 jaws-mgmt	IN A	169.229.226.13
