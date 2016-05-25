@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016051800 ; serial number
+2016052500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -125,10 +125,9 @@ fallingrocks	IN AAAA	2607:f140:8801::1:30
 apt	IN CNAME	fallingrocks
 mirrors	IN CNAME	fallingrocks
 
-; flood (server), roles: [ocf_ssl]
+; flood (server), roles: [ocf_irc]
 flood	IN A	169.229.226.31
 flood	IN AAAA	2607:f140:8801::1:31
-chat	IN CNAME	flood
 irc	IN CNAME	flood
 
 ; radiation (wifi)
@@ -194,6 +193,11 @@ dev-werewolves	IN A	169.229.226.42
 dev-werewolves	IN AAAA	2607:f140:8801::1:42
 dev-apphost	IN CNAME	dev-werewolves
 dev-dev-app	IN CNAME	dev-werewolves
+
+; dev-flood (server), roles: [ocf_irc]
+dev-flood	IN A	169.229.226.43
+dev-flood	IN AAAA	2607:f140:8801::1:43
+dev-irc	IN CNAME	dev-flood
 
 ; zombies (server), roles: [ocf_csgo]
 zombies	IN A	169.229.226.44
