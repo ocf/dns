@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016052500 ; serial number
+2016052900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -24,7 +24,7 @@ dev-vhost	IN MX	5 sandstorm
 blackhole	IN A	169.229.226.2
 blackhole	IN AAAA	2607:f140:8801::1:2
 
-; hal (server), roles: [ocf_backups, ocf_kvm]
+; hal (server), roles: [ocf_backups, ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
 hal	IN A	169.229.226.10
 hal	IN AAAA	2607:f140:8801::1:10
 ntp1	IN CNAME	hal
@@ -32,7 +32,7 @@ ntp1	IN CNAME	hal
 ; hal-mgmt (ipmi)
 hal-mgmt	IN A	169.229.226.11
 
-; jaws (server), roles: [ocf_filehost, ocf_kvm]
+; jaws (server), roles: [ocf_filehost, ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
 jaws	IN A	169.229.226.12
 jaws	IN AAAA	2607:f140:8801::1:12
 filehost	IN CNAME	jaws
@@ -43,7 +43,7 @@ services	IN CNAME	jaws
 ; jaws-mgmt (ipmi)
 jaws-mgmt	IN A	169.229.226.13
 
-; pandemic (server), roles: [ocf_kvm]
+; pandemic (server), roles: [ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
 pandemic	IN A	169.229.226.14
 pandemic	IN AAAA	2607:f140:8801::1:14
 ntp2	IN CNAME	pandemic
@@ -208,6 +208,10 @@ csgo	IN CNAME	zombies
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
 printhost	IN CNAME	whiteout
+
+; biohazard (server)
+biohazard	IN A	169.229.226.46
+biohazard	IN AAAA	2607:f140:8801::1:46
 
 ; coma (server), roles: [ocf_www::ocfweb]
 coma	IN A	169.229.226.47
@@ -885,7 +889,6 @@ epidemic	IN AAAA	2607:f140:8801::1:229
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255
-biohazard	IN A	169.229.226.255
 monsoon	IN A	169.229.226.255
 pileup	IN A	169.229.226.255
 pox	IN A	169.229.226.255

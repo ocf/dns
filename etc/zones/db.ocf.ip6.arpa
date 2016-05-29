@@ -39,6 +39,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 3.4.0.0 IN PTR dev-flood.ocf.berkeley.edu.
 4.4.0.0 IN PTR zombies.ocf.berkeley.edu.
 5.4.0.0 IN PTR whiteout.ocf.berkeley.edu.
+6.4.0.0 IN PTR biohazard.ocf.berkeley.edu.
 7.4.0.0 IN PTR coma.ocf.berkeley.edu.
 8.4.0.0 IN PTR reaper.ocf.berkeley.edu.
 9.4.0.0 IN PTR werewolves.ocf.berkeley.edu.
