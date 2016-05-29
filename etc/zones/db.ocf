@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016052900 ; serial number
+2016052901 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -209,9 +209,10 @@ whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
 printhost	IN CNAME	whiteout
 
-; biohazard (server)
+; biohazard (server), roles: [ocf_docker]
 biohazard	IN A	169.229.226.46
 biohazard	IN AAAA	2607:f140:8801::1:46
+docker	IN CNAME	biohazard
 
 ; coma (server), roles: [ocf_www::ocfweb]
 coma	IN A	169.229.226.47
