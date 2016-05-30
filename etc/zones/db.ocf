@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016052902 ; serial number
+2016053000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -118,6 +118,11 @@ mysql	IN CNAME	maelstrom
 typhoon	IN A	169.229.226.28
 typhoon	IN AAAA	2607:f140:8801::1:28
 rt	IN CNAME	typhoon
+
+; climatechange (server)
+climatechange	IN A	169.229.226.29
+climatechange	IN AAAA	2607:f140:8801::1:29
+broker	IN CNAME	climatechange
 
 ; fallingrocks (server), roles: [ocf_apt, ocf_mirrors]
 fallingrocks	IN A	169.229.226.30
