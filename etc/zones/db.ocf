@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016053101 ; serial number
+2016053102 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -239,10 +239,10 @@ api.asuc	IN CNAME	werewolves
 apphost	IN CNAME	werewolves
 dev-app	IN CNAME	werewolves
 
-; whirlwhind (server), roles: [ocf_mesos::master]
-whirlwhind	IN A	169.229.226.50
-whirlwhind	IN AAAA	2607:f140:8801::1:50
-mesos0	IN CNAME	whirlwhind
+; whirlwind (server), roles: [ocf_mesos::master]
+whirlwind	IN A	169.229.226.50
+whirlwind	IN AAAA	2607:f140:8801::1:50
+mesos0	IN CNAME	whirlwind
 
 ; pileup (server), roles: [ocf_mesos::master]
 pileup	IN A	169.229.226.51
