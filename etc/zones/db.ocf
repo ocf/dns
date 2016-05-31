@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016053000 ; serial number
+2016053100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -119,7 +119,7 @@ typhoon	IN A	169.229.226.28
 typhoon	IN AAAA	2607:f140:8801::1:28
 rt	IN CNAME	typhoon
 
-; climatechange (server)
+; climatechange (server), roles: [ocf_broker]
 climatechange	IN A	169.229.226.29
 climatechange	IN AAAA	2607:f140:8801::1:29
 broker	IN CNAME	climatechange
@@ -239,45 +239,20 @@ api.asuc	IN CNAME	werewolves
 apphost	IN CNAME	werewolves
 dev-app	IN CNAME	werewolves
 
-; hozer-50 (server)
-hozer-50	IN A	169.229.226.50
-hozer-50	IN AAAA	2607:f140:8801::1:50
+; whirlwhind (server), roles: [ocf_mesos::master]
+whirlwhind	IN A	169.229.226.50
+whirlwhind	IN AAAA	2607:f140:8801::1:50
+mesos0	IN CNAME	whirlwhind
 
-; hozer-51 (server), roles: [ocf_kerberos, ocf_ldap]
-hozer-51	IN A	169.229.226.51
-hozer-51	IN AAAA	2607:f140:8801::1:51
+; pileup (server), roles: [ocf_mesos::master]
+pileup	IN A	169.229.226.51
+pileup	IN AAAA	2607:f140:8801::1:51
+mesos1	IN CNAME	pileup
 
-; hozer-52 (server)
-hozer-52	IN A	169.229.226.52
-hozer-52	IN AAAA	2607:f140:8801::1:52
-
-; hozer-53 (server)
-hozer-53	IN A	169.229.226.53
-hozer-53	IN AAAA	2607:f140:8801::1:53
-
-; hozer-54 (server)
-hozer-54	IN A	169.229.226.54
-hozer-54	IN AAAA	2607:f140:8801::1:54
-
-; hozer-55 (server), owner=tmochida
-hozer-55	IN A	169.229.226.55
-hozer-55	IN AAAA	2607:f140:8801::1:55
-
-; hozer-56 (server)
-hozer-56	IN A	169.229.226.56
-hozer-56	IN AAAA	2607:f140:8801::1:56
-
-; hozer-57 (server)
-hozer-57	IN A	169.229.226.57
-hozer-57	IN AAAA	2607:f140:8801::1:57
-
-; hozer-58 (server)
-hozer-58	IN A	169.229.226.58
-hozer-58	IN AAAA	2607:f140:8801::1:58
-
-; hozer-59 (server)
-hozer-59	IN A	169.229.226.59
-hozer-59	IN AAAA	2607:f140:8801::1:59
+; monsoon (server), roles: [ocf_mesos::master]
+monsoon	IN A	169.229.226.52
+monsoon	IN AAAA	2607:f140:8801::1:52
+mesos2	IN CNAME	monsoon
 
 ; hozer-60 (server), roles: [ocf_ns]
 hozer-60	IN A	169.229.226.60
@@ -893,10 +868,7 @@ epidemic	IN AAAA	2607:f140:8801::1:229
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255
-monsoon	IN A	169.229.226.255
-pileup	IN A	169.229.226.255
 pox	IN A	169.229.226.255
 ragnarok	IN A	169.229.226.255
-whirlwind	IN A	169.229.226.255
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
