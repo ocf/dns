@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016053100 ; serial number
+2016053101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -254,7 +254,7 @@ monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 mesos2	IN CNAME	monsoon
 
-; hozer-60 (server), roles: [ocf_ns]
+; hozer-60 (server)
 hozer-60	IN A	169.229.226.60
 hozer-60	IN AAAA	2607:f140:8801::1:60
 
@@ -294,39 +294,39 @@ hozer-68	IN AAAA	2607:f140:8801::1:68
 hozer-69	IN A	169.229.226.69
 hozer-69	IN AAAA	2607:f140:8801::1:69
 
-; hozer-70 (server), roles: [ocf_mesos::master]
+; hozer-70 (server)
 hozer-70	IN A	169.229.226.70
 hozer-70	IN AAAA	2607:f140:8801::1:70
 
-; hozer-71 (server), roles: [ocf_mesos::slave]
+; hozer-71 (server)
 hozer-71	IN A	169.229.226.71
 hozer-71	IN AAAA	2607:f140:8801::1:71
 
-; hozer-72 (server), roles: [ocf_mesos::slave]
+; hozer-72 (server)
 hozer-72	IN A	169.229.226.72
 hozer-72	IN AAAA	2607:f140:8801::1:72
 
-; hozer-73 (server), roles: [ocf_mesos::slave]
+; hozer-73 (server)
 hozer-73	IN A	169.229.226.73
 hozer-73	IN AAAA	2607:f140:8801::1:73
 
-; hozer-74 (server), roles: [ocf_mesos::slave]
+; hozer-74 (server)
 hozer-74	IN A	169.229.226.74
 hozer-74	IN AAAA	2607:f140:8801::1:74
 
-; hozer-75 (server), roles: [ocf_mesos::slave]
+; hozer-75 (server)
 hozer-75	IN A	169.229.226.75
 hozer-75	IN AAAA	2607:f140:8801::1:75
 
-; hozer-76 (server), roles: [ocf_mesos::slave]
+; hozer-76 (server)
 hozer-76	IN A	169.229.226.76
 hozer-76	IN AAAA	2607:f140:8801::1:76
 
-; hozer-77 (server), roles: [ocf::packages::docker]
+; hozer-77 (server)
 hozer-77	IN A	169.229.226.77
 hozer-77	IN AAAA	2607:f140:8801::1:77
 
-; hozer-78 (server), roles: [ocf_mesos::slave]
+; hozer-78 (server)
 hozer-78	IN A	169.229.226.78
 hozer-78	IN AAAA	2607:f140:8801::1:78
 
