@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016053102 ; serial number
+2016053103 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -24,7 +24,7 @@ dev-vhost	IN MX	5 sandstorm
 blackhole	IN A	169.229.226.2
 blackhole	IN AAAA	2607:f140:8801::1:2
 
-; hal (server), roles: [ocf_backups, ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
+; hal (server), roles: [ocf_backups, ocf_kvm, ocf_mesos::slave]
 hal	IN A	169.229.226.10
 hal	IN AAAA	2607:f140:8801::1:10
 ntp1	IN CNAME	hal
@@ -32,7 +32,7 @@ ntp1	IN CNAME	hal
 ; hal-mgmt (ipmi)
 hal-mgmt	IN A	169.229.226.11
 
-; jaws (server), roles: [ocf_filehost, ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
+; jaws (server), roles: [ocf_filehost, ocf_kvm, ocf_mesos::slave]
 jaws	IN A	169.229.226.12
 jaws	IN AAAA	2607:f140:8801::1:12
 filehost	IN CNAME	jaws
@@ -43,7 +43,7 @@ services	IN CNAME	jaws
 ; jaws-mgmt (ipmi)
 jaws-mgmt	IN A	169.229.226.13
 
-; pandemic (server), roles: [ocf_kvm, ocf_mesos::master, ocf_mesos::slave]
+; pandemic (server), roles: [ocf_kvm, ocf_mesos::slave]
 pandemic	IN A	169.229.226.14
 pandemic	IN AAAA	2607:f140:8801::1:14
 ntp2	IN CNAME	pandemic
@@ -242,17 +242,32 @@ dev-app	IN CNAME	werewolves
 ; whirlwind (server), roles: [ocf_mesos::master]
 whirlwind	IN A	169.229.226.50
 whirlwind	IN AAAA	2607:f140:8801::1:50
+marathon0	IN CNAME	whirlwind
 mesos0	IN CNAME	whirlwind
+mesos	IN A	169.229.226.50
+mesos	IN AAAA	2607:f140:8801::1:50
+marathon	IN A	169.229.226.50
+marathon	IN AAAA	2607:f140:8801::1:50
 
 ; pileup (server), roles: [ocf_mesos::master]
 pileup	IN A	169.229.226.51
 pileup	IN AAAA	2607:f140:8801::1:51
+marathon1	IN CNAME	pileup
 mesos1	IN CNAME	pileup
+mesos	IN A	169.229.226.51
+mesos	IN AAAA	2607:f140:8801::1:51
+marathon	IN A	169.229.226.51
+marathon	IN AAAA	2607:f140:8801::1:51
 
 ; monsoon (server), roles: [ocf_mesos::master]
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
+marathon2	IN CNAME	monsoon
 mesos2	IN CNAME	monsoon
+mesos	IN A	169.229.226.52
+mesos	IN AAAA	2607:f140:8801::1:52
+marathon	IN A	169.229.226.52
+marathon	IN AAAA	2607:f140:8801::1:52
 
 ; hozer-60 (server)
 hozer-60	IN A	169.229.226.60
