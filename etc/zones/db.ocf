@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016060800 ; serial number
+2016060802 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -105,9 +105,10 @@ tsunami	IN A	169.229.226.25
 tsunami	IN AAAA	2607:f140:8801::1:25
 ssh	IN CNAME	tsunami
 
-; despair (server)
-despair	IN A	169.229.226.26
-despair	IN AAAA	2607:f140:8801::1:26
+; thunder (server), roles: [ocf_puppetdb]
+thunder	IN A	169.229.226.26
+thunder	IN AAAA	2607:f140:8801::1:26
+puppetdb	IN CNAME	thunder
 
 ; maelstrom (server), roles: [ocf_mysql]
 maelstrom	IN A	169.229.226.27
@@ -886,5 +887,6 @@ epidemic	IN AAAA	2607:f140:8801::1:229
 armageddon	IN A	169.229.226.255
 pox	IN A	169.229.226.255
 ragnarok	IN A	169.229.226.255
+despair	IN A	169.229.226.255
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
