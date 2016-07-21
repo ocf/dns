@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016060802 ; serial number
+2016072000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -260,6 +260,12 @@ mesos	IN A	169.229.226.51
 mesos	IN AAAA	2607:f140:8801::1:51
 marathon	IN A	169.229.226.51
 marathon	IN AAAA	2607:f140:8801::1:51
+
+; lb (server)
+lb	IN A	169.229.226.51
+lb	IN AAAA	2607:f140:8801::1:51
+fluffy	IN CNAME	lb
+rt2	IN CNAME	lb
 
 ; monsoon (server), roles: [ocf_mesos::master]
 monsoon	IN A	169.229.226.52
