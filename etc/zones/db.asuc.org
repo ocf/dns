@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016020301 ; serial number
+2016073000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -44,10 +44,10 @@ wiki	IN CNAME	death.OCF.Berkeley.EDU.
 www.wiki	IN CNAME	death.OCF.Berkeley.EDU.
 
 modern	IN CNAME	death.OCF.Berkeley.EDU.
-www.modern	IN CNAME death.OCF.Berkeley.EDU.
+www.modern	IN CNAME	death.OCF.Berkeley.EDU.
 
 perspectives	IN CNAME	death.OCF.Berkeley.EDU.
-www.perspectives	IN CNAME	death.OCF.Berkeley.EDU.
+www.perspective	IN CNAME	death.OCF.Berkeley.EDU.
 
 pantry	IN CNAME	death.OCF.Berkeley.EDU.
 www.pantry	IN CNAME	death.OCF.Berkeley.EDU.
@@ -58,16 +58,16 @@ www.wellness	IN CNAME	death.OCF.Berkeley.EDU.
 president	IN CNAME	death.OCF.Berkeley.EDU.
 www.president	IN CNAME	death.OCF.Berkeley.EDU.
 
-senate	IN CNAME    death.OCF.Berkeley.EDU.
-www.senate	IN CNAME    death.OCF.Berkeley.EDU.
+senate	IN CNAME	death.OCF.Berkeley.EDU.
+www.senate	IN CNAME	death.OCF.Berkeley.EDU.
 
 oldarchive	IN CNAME	death.OCF.Berkeley.EDU.
 
 archive	IN CNAME	death.OCF.Berkeley.EDU.
 www.archive	IN CNAME	death.OCF.Berkeley.EDU.
 
-evp	IN CNAME    death.OCF.Berkeley.EDU.
-www.evp	IN CNAME	    death.OCF.Berkeley.EDU.
+evp	IN CNAME	death.OCF.Berkeley.EDU.
+www.evp	IN CNAME	death.OCF.Berkeley.EDU.
 
 aavp	IN CNAME	death.OCF.Berkeley.EDU.
 www.aavp	IN CNAME	death.OCF.Berkeley.EDU.
@@ -75,6 +75,8 @@ www.aavp	IN CNAME	death.OCF.Berkeley.EDU.
 bsf	IN CNAME	death.OCF.Berkeley.EDU.
 www.bsf	IN CNAME	death.OCF.Berkeley.EDU.
 
-decal IN CNAME  death.OCF.Berkeley.EDU.
+decal	IN CNAME	death.OCF.Berkeley.EDU.
 
-; vim: noet ts=16 sts=16 sw=16 ft=bindzone
+ocf	IN CNAME	death.OCF.Berkeley.EDU.
+
+; vim: noet ts=20 sts=20 sw=20 ft=bindzone
