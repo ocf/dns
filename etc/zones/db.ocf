@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016072001 ; serial number
+2016073100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -276,6 +276,11 @@ lb	IN A	169.229.226.53
 fluffy	IN CNAME	lb
 rt2	IN CNAME	lb
 
+; dev-lightning (server), roles: [ocf_puppet]
+dev-lightning	IN A	169.229.226.54
+dev-lightning	IN AAAA	2607:f140:8801::1:54
+dev-puppet	IN CNAME	dev-lightning
+
 ; hozer-60 (server)
 hozer-60	IN A	169.229.226.60
 hozer-60	IN AAAA	2607:f140:8801::1:60
@@ -396,7 +401,7 @@ hozer-88	IN AAAA	2607:f140:8801::1:88
 hozer-89	IN A	169.229.226.89
 hozer-89	IN AAAA	2607:f140:8801::1:89
 
-; tornado (server), roles: [ocf_desktop::drivers, ocf_desktop::steam, ocf_tv]
+; tornado (server), roles: [ocf_tv]
 tornado	IN A	169.229.226.90
 tornado	IN AAAA	2607:f140:8801::1:90
 tv	IN CNAME	tornado
