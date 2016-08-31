@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016073100 ; serial number
+2016083103 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -181,7 +181,7 @@ dev-firestorm	IN AAAA	2607:f140:8801::1:38
 dev-kerberos	IN CNAME	dev-firestorm
 dev-ldap	IN CNAME	dev-firestorm
 
-; dev-anthrax (server)
+; dev-anthrax (server), roles: [ocf_mail]
 dev-anthrax	IN A	169.229.226.39
 dev-anthrax	IN AAAA	2607:f140:8801::1:39
 
@@ -809,7 +809,7 @@ gnats	IN AAAA	2607:f140:8801::1:207
 revolution	IN A	169.229.226.208
 revolution	IN AAAA	2607:f140:8801::1:208
 
-; vampires (server), owner=slobo
+; vampires (server), roles: [ocf_ssl], owner=slobo
 vampires	IN A	169.229.226.209
 vampires	IN AAAA	2607:f140:8801::1:209
 
@@ -877,7 +877,7 @@ aliens	IN AAAA	2607:f140:8801::1:224
 rapture	IN A	169.229.226.225
 rapture	IN AAAA	2607:f140:8801::1:225
 
-; fireball (server), owner=jvperrin
+; fireball (server), roles: [ocf_ocfweb::dev_config, ocf_ssl], owner=jvperrin
 fireball	IN A	169.229.226.226
 fireball	IN AAAA	2607:f140:8801::1:226
 
@@ -893,9 +893,12 @@ masterspark	IN AAAA	2607:f140:8801::1:228
 epidemic	IN A	169.229.226.229
 epidemic	IN AAAA	2607:f140:8801::1:229
 
+; pox (server), owner=mcint
+pox	IN A	169.229.226.230
+pox	IN AAAA	2607:f140:8801::1:230
+
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255
-pox	IN A	169.229.226.255
 ragnarok	IN A	169.229.226.255
 despair	IN A	169.229.226.255
 

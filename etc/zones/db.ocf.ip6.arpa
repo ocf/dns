@@ -198,5 +198,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.2.2.0 IN PTR coldwave.ocf.berkeley.edu.
 8.2.2.0 IN PTR masterspark.ocf.berkeley.edu.
 9.2.2.0 IN PTR epidemic.ocf.berkeley.edu.
+0.3.2.0 IN PTR pox.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
