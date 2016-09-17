@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016083103 ; serial number
+2016091600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -18,7 +18,8 @@
                        )
 
 firewall	IN CNAME	ocf-2.eac.berkeley.edu.
-dev-vhost	IN MX	5 sandstorm
+dev-vhost	IN MX	5 anthrax
+dev-dev-vhost	IN MX	5 dev-anthrax
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
@@ -169,11 +170,12 @@ create	IN CNAME	supernova
 dev-death	IN A	169.229.226.37
 dev-death	IN AAAA	2607:f140:8801::1:37
 dev-accounts	IN CNAME	dev-death
-dev-dev-vhost	IN CNAME	dev-death
 dev-hello	IN CNAME	dev-death
 dev-ocf-io	IN CNAME	dev-death
 dev-wiki	IN CNAME	dev-death
 dev-www	IN CNAME	dev-death
+dev-dev-vhost	IN A	169.229.226.37
+dev-dev-vhost	IN AAAA	2607:f140:8801::1:37
 
 ; dev-firestorm (server), roles: [ocf_kerberos, ocf_ldap]
 dev-firestorm	IN A	169.229.226.38
@@ -853,7 +855,7 @@ smallpox	IN AAAA	2607:f140:8801::1:218
 zerg	IN A	169.229.226.219
 zerg	IN AAAA	2607:f140:8801::1:219
 
-; snowstorm (server), owner=tianrui
+; snowstorm (server), roles: [ocf_ssl], owner=tianrui
 snowstorm	IN A	169.229.226.220
 snowstorm	IN AAAA	2607:f140:8801::1:220
 
