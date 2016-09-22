@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016091600 ; serial number
+2016092200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -417,7 +417,7 @@ logjam	IN A	169.229.226.92
 ; papercut (printer)
 papercut	IN A	169.229.226.93
 
-; eruption (desktop)
+; eruption (desktop), owner=mcint
 eruption	IN A	169.229.226.100
 eruption	IN AAAA	2607:f140:8801::1:100
 
@@ -461,7 +461,7 @@ volcano	IN AAAA	2607:f140:8801::1:109
 famine	IN A	169.229.226.110
 famine	IN AAAA	2607:f140:8801::1:110
 
-; hailstorm (desktop)
+; hailstorm (desktop), owner=mcint
 hailstorm	IN A	169.229.226.111
 hailstorm	IN AAAA	2607:f140:8801::1:111
 
@@ -477,7 +477,7 @@ heatwave	IN AAAA	2607:f140:8801::1:113
 acid	IN A	169.229.226.114
 acid	IN AAAA	2607:f140:8801::1:114
 
-; asteroid (desktop)
+; asteroid (desktop), owner=mcint
 asteroid	IN A	169.229.226.115
 asteroid	IN AAAA	2607:f140:8801::1:115
 
@@ -898,6 +898,9 @@ epidemic	IN AAAA	2607:f140:8801::1:229
 ; pox (server), owner=mcint
 pox	IN A	169.229.226.230
 pox	IN AAAA	2607:f140:8801::1:230
+
+; TODO: remove this after downtime
+offsite-www	IN A	104.154.99.200
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255
