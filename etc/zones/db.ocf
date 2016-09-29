@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016092501 ; serial number
+2016092800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -898,6 +898,10 @@ epidemic	IN AAAA	2607:f140:8801::1:229
 ; pox (server), owner=mcint
 pox	IN A	169.229.226.230
 pox	IN AAAA	2607:f140:8801::1:230
+
+; nyx (server), owner=abizer
+nyx	IN A	169.229.226.231
+nyx	IN AAAA	2607:f140:8801::1:231
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255
