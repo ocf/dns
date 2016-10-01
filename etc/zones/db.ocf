@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016092800 ; serial number
+2016093000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -97,10 +97,6 @@ www	IN CNAME	death
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
 
-; sandstorm (server), roles: [sandstorm]
-sandstorm	IN A	169.229.226.24
-sandstorm	IN AAAA	2607:f140:8801::1:24
-
 ; tsunami (server), roles: [ocf_ssh]
 tsunami	IN A	169.229.226.25
 tsunami	IN AAAA	2607:f140:8801::1:25
@@ -159,6 +155,8 @@ anthrax	IN A	169.229.226.35
 anthrax	IN AAAA	2607:f140:8801::1:35
 mail	IN CNAME	anthrax
 smtp	IN CNAME	anthrax
+sandstorm	IN A	169.229.226.35
+sandstorm	IN AAAA	2607:f140:8801::1:35
 
 ; supernova (server), roles: [ocf_admin]
 supernova	IN A	169.229.226.36
