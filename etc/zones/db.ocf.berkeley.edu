@@ -14,7 +14,7 @@ $INCLUDE /srv/dns/etc/zones/db.ocf
 @ IN MX 10 aspmx3.googlemail.com.
 
 ; Sender Policy Framework (SPF), DKIM, and DMARC records
-@ IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu a:sandstorm.ocf.berkeley.edu include:_spf.google.com -all"
+@ IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu include:_spf.google.com -all"
 google._domainkey IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUsl2ZABLG1e/Ut9xoDA8dvOgTvyOMxW5P5gh4PwcS1pwV99YtNWjlPZhQS1tFx8TD0HaAGDjC5DbB1E7gD4hDuBmtz96glIplbu+ONAZp60NgHR0/NtUB8oV+4x6SD9+7BZhlRFDpgp3N86b4nqcMT0SzNGopQMQJIqnGZMbZ/QIDAQAB"
 _dmarc IN TXT "v=DMARC1; p=none"
 

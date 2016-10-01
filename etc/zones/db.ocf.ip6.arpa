@@ -33,7 +33,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.3.0.0 IN PTR dev-death.ocf.berkeley.edu.
 8.3.0.0 IN PTR dev-firestorm.ocf.berkeley.edu.
 9.3.0.0 IN PTR dev-anthrax.ocf.berkeley.edu.
-0.4.0.0 IN PTR dev-sandstorm.ocf.berkeley.edu.
 1.4.0.0 IN PTR dev-tsunami.ocf.berkeley.edu.
 2.4.0.0 IN PTR dev-werewolves.ocf.berkeley.edu.
 3.4.0.0 IN PTR dev-flood.ocf.berkeley.edu.
