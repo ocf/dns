@@ -10,8 +10,8 @@ $INCLUDE /srv/dns/etc/zones/db.ocf
 @ IN MX 1 aspmx.l.google.com.
 @ IN MX 5 alt1.aspmx.l.google.com.
 @ IN MX 5 alt2.aspmx.l.google.com.
-@ IN MX 10 aspmx2.googlemail.com.
-@ IN MX 10 aspmx3.googlemail.com.
+@ IN MX 10 alt3.aspmx.l.google.com.
+@ IN MX 10 alt4.aspmx.l.google.com.
 
 ; Sender Policy Framework (SPF), DKIM, and DMARC records
 @ IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu include:_spf.google.com -all"
@@ -27,8 +27,8 @@ status IN A 216.239.38.21
 g IN MX 1 aspmx.l.google.com.
 g IN MX 5 alt1.aspmx.l.google.com.
 g IN MX 5 alt2.aspmx.l.google.com.
-g IN MX 10 aspmx2.googlemail.com.
-g IN MX 10 aspmx3.googlemail.com.
+g IN MX 10 alt3.aspmx.l.google.com.
+g IN MX 10 alt4.aspmx.l.google.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
