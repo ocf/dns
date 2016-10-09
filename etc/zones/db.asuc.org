@@ -80,14 +80,4 @@ decal	IN CNAME	death.OCF.Berkeley.EDU.
 
 ocf	IN CNAME	death.OCF.Berkeley.EDU.
 
-advocate	IN A	169.229.226.23
-advocate	IN AAAA	2607:f140:8801::1:23
-www.advocate	IN CNAME	death.OCF.Berkeley.EDU.
-advocate	IN MX 1 aspmx.l.google.com.
-advocate	IN MX 5 alt1.aspmx.l.google.com.
-advocate	IN MX 5 alt2.aspmx.l.google.com.
-advocate	IN MX 10 alt3.aspmx.l.google.com.
-advocate	IN MX 10 alt4.aspmx.l.google.com.
-
-
 ; vim: noet ts=20 sts=20 sw=20 ft=bindzone
