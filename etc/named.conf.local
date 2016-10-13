@@ -10,12 +10,6 @@ zone "ocf.io" {
   file "/srv/dns/etc/zones/db.ocf.io";
 };
 
-zone "ocf.sexy" {
-  type master;
-  notify no;
-  file "/srv/dns/etc/zones/db.ocf.sexy";
-};
-
 zone "asuc.org" {
   type master;
   notify no;
