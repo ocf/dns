@@ -82,6 +82,7 @@
 91 IN PTR pagefault.OCF.Berkeley.EDU.
 92 IN PTR logjam.OCF.Berkeley.EDU.
 93 IN PTR papercut.OCF.Berkeley.EDU.
+94 IN PTR overheat.OCF.Berkeley.EDU.
 100 IN PTR eruption.OCF.Berkeley.EDU.
 101 IN PTR avalanche.OCF.Berkeley.EDU.
 102 IN PTR bigbang.OCF.Berkeley.EDU.
