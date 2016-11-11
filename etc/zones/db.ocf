@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016110400 ; serial number
+2016111000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -88,7 +88,6 @@ phpmyadmin	IN CNAME	death
 pma	IN CNAME	death
 secure	IN CNAME	death
 staff	IN CNAME	death
-templates	IN CNAME	death
 wiki	IN CNAME	death
 www	IN CNAME	death
 @	IN A	169.229.226.23
@@ -268,6 +267,7 @@ dev	IN CNAME	lb
 fluffy	IN CNAME	lb
 rt	IN CNAME	lb
 static	IN CNAME	lb
+templates	IN CNAME	lb
 
 ; dev-lightning (server), roles: [ocf_puppet]
 dev-lightning	IN A	169.229.226.54
@@ -412,6 +412,7 @@ papercut	IN A	169.229.226.93
 overheat	IN A	169.229.226.94
 overheat	IN AAAA	2607:f140:8801::1:94
 pi	IN CNAME	overheat
+sign	IN CNAME	overheat
 
 ; eruption (desktop)
 eruption	IN A	169.229.226.100
@@ -875,7 +876,7 @@ aliens	IN AAAA	2607:f140:8801::1:224
 rapture	IN A	169.229.226.225
 rapture	IN AAAA	2607:f140:8801::1:225
 
-; fireball (server), roles: [ocf_ocfweb::dev_config, ocf_ssl], owner=jvperrin
+; fireball (server), roles: [ocf::packages::docker, ocf_ocfweb::dev_config, ocf_ssl], owner=jvperrin
 fireball	IN A	169.229.226.226
 fireball	IN AAAA	2607:f140:8801::1:226
 
