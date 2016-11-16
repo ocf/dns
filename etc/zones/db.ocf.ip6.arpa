@@ -21,7 +21,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.2.0.0 IN PTR tsunami.ocf.berkeley.edu.
 6.2.0.0 IN PTR thunder.ocf.berkeley.edu.
 7.2.0.0 IN PTR maelstrom.ocf.berkeley.edu.
-8.2.0.0 IN PTR typhoon.ocf.berkeley.edu.
 9.2.0.0 IN PTR climatechange.ocf.berkeley.edu.
 0.3.0.0 IN PTR fallingrocks.ocf.berkeley.edu.
 1.3.0.0 IN PTR flood.ocf.berkeley.edu.
@@ -39,7 +38,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 4.4.0.0 IN PTR zombies.ocf.berkeley.edu.
 5.4.0.0 IN PTR whiteout.ocf.berkeley.edu.
 6.4.0.0 IN PTR biohazard.ocf.berkeley.edu.
-7.4.0.0 IN PTR coma.ocf.berkeley.edu.
 8.4.0.0 IN PTR reaper.ocf.berkeley.edu.
 9.4.0.0 IN PTR werewolves.ocf.berkeley.edu.
 0.5.0.0 IN PTR whirlwind.ocf.berkeley.edu.

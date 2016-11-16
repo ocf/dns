@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016111400 ; serial number
+2016111500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -111,10 +111,6 @@ maelstrom	IN A	169.229.226.27
 maelstrom	IN AAAA	2607:f140:8801::1:27
 mysql	IN CNAME	maelstrom
 
-; typhoon (server), roles: [ocf_rt]
-typhoon	IN A	169.229.226.28
-typhoon	IN AAAA	2607:f140:8801::1:28
-
 ; climatechange (server), roles: [ocf_broker]
 climatechange	IN A	169.229.226.29
 climatechange	IN AAAA	2607:f140:8801::1:29
@@ -212,11 +208,6 @@ biohazard	IN A	169.229.226.46
 biohazard	IN AAAA	2607:f140:8801::1:46
 docker	IN CNAME	biohazard
 docker-push	IN CNAME	biohazard
-
-; coma (server), roles: [ocf_www::ocfweb]
-coma	IN A	169.229.226.47
-coma	IN AAAA	2607:f140:8801::1:47
-ocfweb	IN CNAME	coma
 
 ; reaper (server), roles: [ocf_jenkins]
 reaper	IN A	169.229.226.48
