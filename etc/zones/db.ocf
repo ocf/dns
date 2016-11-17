@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016111500 ; serial number
+2016111600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -803,10 +803,6 @@ revolution	IN AAAA	2607:f140:8801::1:208
 ; vampires (server), roles: [ocf_ssl], owner=slobo
 vampires	IN A	169.229.226.209
 vampires	IN AAAA	2607:f140:8801::1:209
-
-; blacksheep (server), owner=lynntsai
-blacksheep	IN A	169.229.226.210
-blacksheep	IN AAAA	2607:f140:8801::1:210
 
 ; blackrain (server), owner=tmochida
 blackrain	IN A	169.229.226.211

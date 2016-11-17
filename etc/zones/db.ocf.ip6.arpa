@@ -175,7 +175,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.0.2.0 IN PTR gnats.ocf.berkeley.edu.
 8.0.2.0 IN PTR revolution.ocf.berkeley.edu.
 9.0.2.0 IN PTR vampires.ocf.berkeley.edu.
-0.1.2.0 IN PTR blacksheep.ocf.berkeley.edu.
 1.1.2.0 IN PTR blackrain.ocf.berkeley.edu.
 2.1.2.0 IN PTR war.ocf.berkeley.edu.
 3.1.2.0 IN PTR quicksand.ocf.berkeley.edu.
