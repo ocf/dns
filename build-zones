@@ -75,7 +75,7 @@ class Host(namedtuple('Host', ('hostname',))):
 
     @cached_property
     def ipv6(self):
-        host_type, = self.ldap_attrs['type']
+        host_type = self.ldap_attrs['type']
         if host_type in HOST_TYPES_WITH_IPV6:
             ipv6 = ipv4_to_ipv6(self.ipv4)
             assert is_ocf_ip(ipv6), ipv6  # just in case
