@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016111700 ; serial number
+2016112000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -25,7 +25,7 @@ dev-dev-vhost	IN MX	5 dev-anthrax
 blackhole	IN A	169.229.226.2
 blackhole	IN AAAA	2607:f140:8801::1:2
 
-; hal (server), roles: [ocf_backups, ocf_kvm, ocf_mesos::slave]
+; hal (server)
 hal	IN A	169.229.226.10
 hal	IN AAAA	2607:f140:8801::1:10
 ntp1	IN CNAME	hal
@@ -33,7 +33,7 @@ ntp1	IN CNAME	hal
 ; hal-mgmt (ipmi)
 hal-mgmt	IN A	169.229.226.11
 
-; jaws (server), roles: [ocf_filehost, ocf_kvm, ocf_mesos::slave]
+; jaws (server)
 jaws	IN A	169.229.226.12
 jaws	IN AAAA	2607:f140:8801::1:12
 filehost	IN CNAME	jaws
@@ -44,7 +44,7 @@ services	IN CNAME	jaws
 ; jaws-mgmt (ipmi)
 jaws-mgmt	IN A	169.229.226.13
 
-; pandemic (server), roles: [ocf_kvm, ocf_mesos::slave]
+; pandemic (server)
 pandemic	IN A	169.229.226.14
 pandemic	IN AAAA	2607:f140:8801::1:14
 ntp2	IN CNAME	pandemic
@@ -52,18 +52,18 @@ ntp2	IN CNAME	pandemic
 ; pandemic-mgmt (ipmi)
 pandemic-mgmt	IN A	169.229.226.15
 
-; firestorm (server), roles: [ocf_kerberos, ocf_ldap]
+; firestorm (server)
 firestorm	IN A	169.229.226.20
 firestorm	IN AAAA	2607:f140:8801::1:20
 kerberos	IN CNAME	firestorm
 ldap	IN CNAME	firestorm
 
-; lightning (server), roles: [ocf_puppet]
+; lightning (server)
 lightning	IN A	169.229.226.21
 lightning	IN AAAA	2607:f140:8801::1:21
 puppet	IN CNAME	lightning
 
-; pestilence (server), roles: [ocf_dhcp, ocf_ns, ocf_rancid]
+; pestilence (server)
 pestilence	IN A	169.229.226.22
 pestilence	IN AAAA	2607:f140:8801::1:22
 dhcp	IN CNAME	pestilence
@@ -75,7 +75,7 @@ ns1	IN AAAA	2607:f140:8801::1:22
 ns2	IN A	169.229.226.22
 ns2	IN AAAA	2607:f140:8801::1:22
 
-; death (server), roles: [ocf_www]
+; death (server)
 death	IN A	169.229.226.23
 death	IN AAAA	2607:f140:8801::1:23
 accounts	IN CNAME	death
@@ -96,33 +96,33 @@ xkcd	IN CNAME	death
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
 
-; tsunami (server), roles: [ocf_ssh]
+; tsunami (server)
 tsunami	IN A	169.229.226.25
 tsunami	IN AAAA	2607:f140:8801::1:25
 ssh	IN CNAME	tsunami
 
-; thunder (server), roles: [ocf_puppetdb]
+; thunder (server)
 thunder	IN A	169.229.226.26
 thunder	IN AAAA	2607:f140:8801::1:26
 puppetdb	IN CNAME	thunder
 
-; maelstrom (server), roles: [ocf_mysql]
+; maelstrom (server)
 maelstrom	IN A	169.229.226.27
 maelstrom	IN AAAA	2607:f140:8801::1:27
 mysql	IN CNAME	maelstrom
 
-; climatechange (server), roles: [ocf_broker]
+; climatechange (server)
 climatechange	IN A	169.229.226.29
 climatechange	IN AAAA	2607:f140:8801::1:29
 broker	IN CNAME	climatechange
 
-; fallingrocks (server), roles: [ocf_apt, ocf_mirrors]
+; fallingrocks (server)
 fallingrocks	IN A	169.229.226.30
 fallingrocks	IN AAAA	2607:f140:8801::1:30
 apt	IN CNAME	fallingrocks
 mirrors	IN CNAME	fallingrocks
 
-; flood (server), roles: [ocf_irc]
+; flood (server)
 flood	IN A	169.229.226.31
 flood	IN AAAA	2607:f140:8801::1:31
 irc	IN CNAME	flood
@@ -132,31 +132,31 @@ radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
 
-; dementors (server), roles: [ocf_stats]
+; dementors (server)
 dementors	IN A	169.229.226.33
 dementors	IN AAAA	2607:f140:8801::1:33
 labstats	IN CNAME	dementors
 munin	IN CNAME	dementors
 stats	IN CNAME	dementors
 
-; dev-maelstrom (server), roles: [ocf_mysql]
+; dev-maelstrom (server)
 dev-maelstrom	IN A	169.229.226.34
 dev-maelstrom	IN AAAA	2607:f140:8801::1:34
 dev-mysql	IN CNAME	dev-maelstrom
 
-; anthrax (server), roles: [ocf_mail, ocf_mail::site_ocf]
+; anthrax (server)
 anthrax	IN A	169.229.226.35
 anthrax	IN AAAA	2607:f140:8801::1:35
 mail	IN CNAME	anthrax
 smtp	IN CNAME	anthrax
 
-; supernova (server), roles: [ocf_admin]
+; supernova (server)
 supernova	IN A	169.229.226.36
 supernova	IN AAAA	2607:f140:8801::1:36
 admin	IN CNAME	supernova
 create	IN CNAME	supernova
 
-; dev-death (server), roles: [ocf_www]
+; dev-death (server)
 dev-death	IN A	169.229.226.37
 dev-death	IN AAAA	2607:f140:8801::1:37
 dev-accounts	IN CNAME	dev-death
@@ -167,54 +167,54 @@ dev-www	IN CNAME	dev-death
 dev-dev-vhost	IN A	169.229.226.37
 dev-dev-vhost	IN AAAA	2607:f140:8801::1:37
 
-; dev-firestorm (server), roles: [ocf_kerberos, ocf_ldap]
+; dev-firestorm (server)
 dev-firestorm	IN A	169.229.226.38
 dev-firestorm	IN AAAA	2607:f140:8801::1:38
 dev-kerberos	IN CNAME	dev-firestorm
 dev-ldap	IN CNAME	dev-firestorm
 
-; dev-anthrax (server), roles: [ocf_mail]
+; dev-anthrax (server)
 dev-anthrax	IN A	169.229.226.39
 dev-anthrax	IN AAAA	2607:f140:8801::1:39
 
-; dev-tsunami (server), roles: [ocf_ssh]
+; dev-tsunami (server)
 dev-tsunami	IN A	169.229.226.41
 dev-tsunami	IN AAAA	2607:f140:8801::1:41
 dev-ssh	IN CNAME	dev-tsunami
 
-; dev-werewolves (server), roles: [ocf_apphost]
+; dev-werewolves (server)
 dev-werewolves	IN A	169.229.226.42
 dev-werewolves	IN AAAA	2607:f140:8801::1:42
 dev-apphost	IN CNAME	dev-werewolves
 dev-dev-app	IN CNAME	dev-werewolves
 
-; dev-flood (server), roles: [ocf_irc]
+; dev-flood (server)
 dev-flood	IN A	169.229.226.43
 dev-flood	IN AAAA	2607:f140:8801::1:43
 dev-irc	IN CNAME	dev-flood
 
-; zombies (server), roles: [ocf_csgo]
+; zombies (server)
 zombies	IN A	169.229.226.44
 zombies	IN AAAA	2607:f140:8801::1:44
 csgo	IN CNAME	zombies
 
-; whiteout (server), roles: [ocf_printhost]
+; whiteout (server)
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
 printhost	IN CNAME	whiteout
 
-; biohazard (server), roles: [ocf_docker]
+; biohazard (server)
 biohazard	IN A	169.229.226.46
 biohazard	IN AAAA	2607:f140:8801::1:46
 docker	IN CNAME	biohazard
 docker-push	IN CNAME	biohazard
 
-; reaper (server), roles: [ocf_jenkins]
+; reaper (server)
 reaper	IN A	169.229.226.48
 reaper	IN AAAA	2607:f140:8801::1:48
 jenkins	IN CNAME	reaper
 
-; werewolves (server), roles: [ocf_apphost]
+; werewolves (server)
 werewolves	IN A	169.229.226.49
 werewolves	IN AAAA	2607:f140:8801::1:49
 *.apphost	IN CNAME	werewolves
@@ -223,7 +223,7 @@ api.asuc	IN CNAME	werewolves
 apphost	IN CNAME	werewolves
 dev-app	IN CNAME	werewolves
 
-; whirlwind (server), roles: [ocf_mesos::master]
+; whirlwind (server)
 whirlwind	IN A	169.229.226.50
 whirlwind	IN AAAA	2607:f140:8801::1:50
 marathon0	IN CNAME	whirlwind
@@ -233,7 +233,7 @@ mesos	IN AAAA	2607:f140:8801::1:50
 marathon	IN A	169.229.226.50
 marathon	IN AAAA	2607:f140:8801::1:50
 
-; pileup (server), roles: [ocf_mesos::master]
+; pileup (server)
 pileup	IN A	169.229.226.51
 pileup	IN AAAA	2607:f140:8801::1:51
 marathon1	IN CNAME	pileup
@@ -243,7 +243,7 @@ mesos	IN AAAA	2607:f140:8801::1:51
 marathon	IN A	169.229.226.51
 marathon	IN AAAA	2607:f140:8801::1:51
 
-; monsoon (server), roles: [ocf_mesos::master]
+; monsoon (server)
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 marathon2	IN CNAME	monsoon
@@ -253,7 +253,7 @@ mesos	IN AAAA	2607:f140:8801::1:52
 marathon	IN A	169.229.226.52
 marathon	IN AAAA	2607:f140:8801::1:52
 
-; lb (printer)
+; lb (vip)
 lb	IN A	169.229.226.53
 dev	IN CNAME	lb
 fluffy	IN CNAME	lb
@@ -262,7 +262,7 @@ static	IN CNAME	lb
 templates	IN CNAME	lb
 thelounge	IN CNAME	lb
 
-; dev-lightning (server), roles: [ocf_puppet]
+; dev-lightning (server)
 dev-lightning	IN A	169.229.226.54
 dev-lightning	IN AAAA	2607:f140:8801::1:54
 dev-puppet	IN CNAME	dev-lightning
@@ -387,7 +387,7 @@ hozer-88	IN AAAA	2607:f140:8801::1:88
 hozer-89	IN A	169.229.226.89
 hozer-89	IN AAAA	2607:f140:8801::1:89
 
-; tornado (server), roles: [ocf_tv]
+; tornado (server)
 tornado	IN A	169.229.226.90
 tornado	IN AAAA	2607:f140:8801::1:90
 tv	IN CNAME	tornado
@@ -763,129 +763,129 @@ dhcp-169-229-226-198	IN AAAA	2607:f140:8801::1:198
 dhcp-169-229-226-199	IN A	169.229.226.199
 dhcp-169-229-226-199	IN AAAA	2607:f140:8801::1:199
 
-; raptors (server), roles: [ocf_ssl], owner=ckuehl
+; raptors (staffvm)
 raptors	IN A	169.229.226.200
 raptors	IN AAAA	2607:f140:8801::1:200
 
-; locusts (server), owner=waf
+; locusts (staffvm)
 locusts	IN A	169.229.226.201
 locusts	IN AAAA	2607:f140:8801::1:201
 kochira	IN CNAME	locusts
 
-; mudslide (server), owner=daradib
+; mudslide (staffvm)
 mudslide	IN A	169.229.226.202
 mudslide	IN AAAA	2607:f140:8801::1:202
 mudslide-secure	IN CNAME	mudslide
 
-; solarflare (server), owner=nspatel
+; solarflare (staffvm)
 solarflare	IN A	169.229.226.203
 solarflare	IN AAAA	2607:f140:8801::1:203
 
-; limniceruption (server), owner=peterwu
+; limniceruption (staffvm)
 limniceruption	IN A	169.229.226.204
 limniceruption	IN AAAA	2607:f140:8801::1:204
 
-; meltdown (server), roles: [ocf_ssl], owner=mattmcal
+; meltdown (staffvm)
 meltdown	IN A	169.229.226.205
 meltdown	IN AAAA	2607:f140:8801::1:205
 
-; tempest (server), owner=wml
+; tempest (staffvm)
 tempest	IN A	169.229.226.206
 tempest	IN AAAA	2607:f140:8801::1:206
 
-; gnats (server), owner=kpengboy
+; gnats (staffvm)
 gnats	IN A	169.229.226.207
 gnats	IN AAAA	2607:f140:8801::1:207
 
-; revolution (server), owner=nickimp
+; revolution (staffvm)
 revolution	IN A	169.229.226.208
 revolution	IN AAAA	2607:f140:8801::1:208
 
-; vampires (server), roles: [ocf_ssl], owner=slobo
+; vampires (staffvm)
 vampires	IN A	169.229.226.209
 vampires	IN AAAA	2607:f140:8801::1:209
 
-; blackrain (server), owner=tmochida
+; blackrain (staffvm)
 blackrain	IN A	169.229.226.211
 blackrain	IN AAAA	2607:f140:8801::1:211
 
-; war (server), owner=andycui
+; war (staffvm)
 war	IN A	169.229.226.212
 war	IN AAAA	2607:f140:8801::1:212
 
-; quicksand (desktop), owner=willh
+; quicksand (staffvm)
 quicksand	IN A	169.229.226.213
 quicksand	IN AAAA	2607:f140:8801::1:213
 
-; deathwing (server), owner=mprat
+; deathwing (staffvm)
 deathwing	IN A	169.229.226.214
 deathwing	IN AAAA	2607:f140:8801::1:214
 
-; skynet (server), owner=zdong
+; skynet (staffvm)
 skynet	IN A	169.229.226.215
 skynet	IN AAAA	2607:f140:8801::1:215
 
-; pelee (server), owner=aapeli
+; pelee (staffvm)
 pelee	IN A	169.229.226.216
 pelee	IN AAAA	2607:f140:8801::1:216
 
-; memleak (server), owner=tnn
+; memleak (staffvm)
 memleak	IN A	169.229.226.217
 memleak	IN AAAA	2607:f140:8801::1:217
 
-; smallpox (server), owner=tzhu
+; smallpox (staffvm)
 smallpox	IN A	169.229.226.218
 smallpox	IN AAAA	2607:f140:8801::1:218
 
-; zerg (server), owner=shasan
+; zerg (staffvm)
 zerg	IN A	169.229.226.219
 zerg	IN AAAA	2607:f140:8801::1:219
 
-; snowstorm (server), roles: [ocf_ssl], owner=tianrui
+; snowstorm (staffvm)
 snowstorm	IN A	169.229.226.220
 snowstorm	IN AAAA	2607:f140:8801::1:220
 
-; fire (server), owner=kuoh
+; fire (staffvm)
 fire	IN A	169.229.226.221
 fire	IN AAAA	2607:f140:8801::1:221
 
-; malaria (server), owner=kevinma
+; malaria (staffvm)
 malaria	IN A	169.229.226.222
 malaria	IN AAAA	2607:f140:8801::1:222
 
-; walpurgisnacht (server), owner=lilulu
+; walpurgisnacht (staffvm)
 walpurgisnacht	IN A	169.229.226.223
 walpurgisnacht	IN AAAA	2607:f140:8801::1:223
 
-; aliens (server), owner=shaurya
+; aliens (staffvm)
 aliens	IN A	169.229.226.224
 aliens	IN AAAA	2607:f140:8801::1:224
 
-; rapture (server), owner=baisang
+; rapture (staffvm)
 rapture	IN A	169.229.226.225
 rapture	IN AAAA	2607:f140:8801::1:225
 
-; fireball (server), roles: [ocf::packages::docker, ocf_ocfweb::dev_config, ocf_ssl], owner=jvperrin
+; fireball (staffvm)
 fireball	IN A	169.229.226.226
 fireball	IN AAAA	2607:f140:8801::1:226
 
-; coldwave (server), owner=ldw
+; coldwave (staffvm)
 coldwave	IN A	169.229.226.227
 coldwave	IN AAAA	2607:f140:8801::1:227
 
-; masterspark (server), owner=auskim
+; masterspark (staffvm)
 masterspark	IN A	169.229.226.228
 masterspark	IN AAAA	2607:f140:8801::1:228
 
-; epidemic (server), owner=samtay
+; epidemic (staffvm)
 epidemic	IN A	169.229.226.229
 epidemic	IN AAAA	2607:f140:8801::1:229
 
-; pox (server), owner=mcint
+; pox (staffvm)
 pox	IN A	169.229.226.230
 pox	IN AAAA	2607:f140:8801::1:230
 
-; nyx (server), owner=abizer
+; nyx (staffvm)
 nyx	IN A	169.229.226.231
 nyx	IN AAAA	2607:f140:8801::1:231
 

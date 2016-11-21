@@ -52,19 +52,7 @@ class Host(namedtuple('Host', ('hostname',))):
     @cached_property
     def description(self):
         d = '{self.hostname} ({self.ldap_attrs[type]})'.format(self=self)
-        if 'puppetClass' in self.ldap_attrs:
-            d += ', roles: [{}]'.format(', '.join(sorted(self.ldap_attrs['puppetClass'])))
-        if self.owner:
-            d += ', owner={}'.format(self.owner)
         return d
-
-    @cached_property
-    def owner(self):
-        """Return owner, or None."""
-        for pvar in self.ldap_attrs.get('puppetVar', []):
-            match = re.match('^owner=([a-z]{3,16})$', pvar)
-            if match:
-                return match.group(1)
 
     @cached_property
     def ipv4(self):
