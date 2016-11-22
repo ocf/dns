@@ -201,5 +201,6 @@
 229 IN PTR epidemic.OCF.Berkeley.EDU.
 230 IN PTR pox.OCF.Berkeley.EDU.
 231 IN PTR nyx.OCF.Berkeley.EDU.
+232 IN PTR nuke.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
