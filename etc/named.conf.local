@@ -4,6 +4,11 @@ zone "ocf.berkeley.edu" {
   file "/srv/dns/etc/zones/db.ocf.berkeley.edu";
 };
 
+zone "mesos" {
+  type forward;
+  forwarders { 169.229.226.50; 169.229.226.51; 169.229.226.52; };
+};
+
 zone "ocf.io" {
   type master;
   notify no;
