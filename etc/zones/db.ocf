@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2016112202 ; serial number
+2016112500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -228,30 +228,36 @@ whirlwind	IN A	169.229.226.50
 whirlwind	IN AAAA	2607:f140:8801::1:50
 marathon0	IN CNAME	whirlwind
 mesos0	IN CNAME	whirlwind
-mesos	IN A	169.229.226.50
-mesos	IN AAAA	2607:f140:8801::1:50
+*.agent.mesos	IN A	169.229.226.50
+*.agent.mesos	IN AAAA	2607:f140:8801::1:50
 marathon	IN A	169.229.226.50
 marathon	IN AAAA	2607:f140:8801::1:50
+mesos	IN A	169.229.226.50
+mesos	IN AAAA	2607:f140:8801::1:50
 
 ; pileup (server)
 pileup	IN A	169.229.226.51
 pileup	IN AAAA	2607:f140:8801::1:51
 marathon1	IN CNAME	pileup
 mesos1	IN CNAME	pileup
-mesos	IN A	169.229.226.51
-mesos	IN AAAA	2607:f140:8801::1:51
+*.agent.mesos	IN A	169.229.226.51
+*.agent.mesos	IN AAAA	2607:f140:8801::1:51
 marathon	IN A	169.229.226.51
 marathon	IN AAAA	2607:f140:8801::1:51
+mesos	IN A	169.229.226.51
+mesos	IN AAAA	2607:f140:8801::1:51
 
 ; monsoon (server)
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 marathon2	IN CNAME	monsoon
 mesos2	IN CNAME	monsoon
-mesos	IN A	169.229.226.52
-mesos	IN AAAA	2607:f140:8801::1:52
+*.agent.mesos	IN A	169.229.226.52
+*.agent.mesos	IN AAAA	2607:f140:8801::1:52
 marathon	IN A	169.229.226.52
 marathon	IN AAAA	2607:f140:8801::1:52
+mesos	IN A	169.229.226.52
+mesos	IN AAAA	2607:f140:8801::1:52
 
 ; lb (vip)
 lb	IN A	169.229.226.53
