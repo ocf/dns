@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017010100 ; serial number
+2017010101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -950,6 +950,7 @@ spy	IN A	169.229.226.255
 strike	IN A	169.229.226.255
 thunderstorm	IN A	169.229.226.255
 typhoon	IN A	169.229.226.255
+tyranny	IN A	169.229.226.255
 walkout	IN A	169.229.226.255
 y2k	IN A	169.229.226.255
 
