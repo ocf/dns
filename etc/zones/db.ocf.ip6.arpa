@@ -14,6 +14,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 0.1.0.0 IN PTR hal.ocf.berkeley.edu.
 2.1.0.0 IN PTR jaws.ocf.berkeley.edu.
 4.1.0.0 IN PTR pandemic.ocf.berkeley.edu.
+6.1.0.0 IN PTR segfault.ocf.berkeley.edu.
 0.2.0.0 IN PTR firestorm.ocf.berkeley.edu.
 1.2.0.0 IN PTR lightning.ocf.berkeley.edu.
 2.2.0.0 IN PTR pestilence.ocf.berkeley.edu.

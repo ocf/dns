@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017010200 ; serial number
+2017012400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -51,6 +51,14 @@ ntp2	IN CNAME	pandemic
 
 ; pandemic-mgmt (ipmi)
 pandemic-mgmt	IN A	169.229.226.15
+
+; segfault (server)
+segfault	IN A	169.229.226.16
+segfault	IN AAAA	2607:f140:8801::1:16
+ntp4	IN CNAME	segfault
+
+; segfault-mgmt (ipmi)
+segfault-mgmt	IN A	169.229.226.17
 
 ; firestorm (server)
 firestorm	IN A	169.229.226.20
@@ -944,7 +952,6 @@ ragnarok	IN A	169.229.226.255
 riot	IN A	169.229.226.255
 riptide	IN A	169.229.226.255
 sandstorm	IN A	169.229.226.255
-segfault	IN A	169.229.226.255
 shipwreck	IN A	169.229.226.255
 shockwave	IN A	169.229.226.255
 spike	IN A	169.229.226.255
