@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017013101 ; serial number
+2017020500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -913,6 +913,10 @@ nyx	IN AAAA	2607:f140:8801::1:231
 nuke	IN A	169.229.226.232
 nuke	IN AAAA	2607:f140:8801::1:232
 
+; ragnarok (staffvm)
+ragnarok	IN A	169.229.226.233
+ragnarok	IN AAAA	2607:f140:8801::1:233
+
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 apocalypse	IN A	169.229.226.255
 armageddon	IN A	169.229.226.255
@@ -949,7 +953,6 @@ netsplit	IN A	169.229.226.255
 oilspill	IN A	169.229.226.255
 pollution	IN A	169.229.226.255
 quasar	IN A	169.229.226.255
-ragnarok	IN A	169.229.226.255
 riot	IN A	169.229.226.255
 sandstorm	IN A	169.229.226.255
 segfault	IN A	169.229.226.255
