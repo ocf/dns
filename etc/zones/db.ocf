@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017020500 ; serial number
+2017021200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -219,6 +219,10 @@ biohazard	IN A	169.229.226.46
 biohazard	IN AAAA	2607:f140:8801::1:46
 docker	IN CNAME	biohazard
 docker-push	IN CNAME	biohazard
+
+; dev-whiteout (server)
+dev-whiteout	IN A	169.229.226.47
+dev-whiteout	IN AAAA	2607:f140:8801::1:47
 
 ; reaper (server)
 reaper	IN A	169.229.226.48
@@ -795,7 +799,6 @@ kochira	IN CNAME	locusts
 ; mudslide (staffvm)
 mudslide	IN A	169.229.226.202
 mudslide	IN AAAA	2607:f140:8801::1:202
-mudslide-secure	IN CNAME	mudslide
 
 ; solarflare (staffvm)
 solarflare	IN A	169.229.226.203
