@@ -1,33 +1,23 @@
-// check out code
-stage name: 'check-out-code'
-
 node('slave') {
-    dir('src') {
-        checkout scm
+    stage('check-out-code') {
+        dir('src') {
+            checkout scm
+        }
     }
-    stash 'src'
-}
 
+    stage('test') {
+        dir('src') {
+            sh 'make test'
+        }
+    }
 
-// run tests
-stage name: 'test'
-
-node('slave') {
-    unstash 'src'
-    dir('src') {
-        sh 'make test'
+    if (env.BRANCH_NAME == 'master') {
+        stage('deploy-to-prod') {
+            build job: 'puppet-trigger', parameters: [
+                [$class: 'StringParameterValue', name: 'server', value: 'ns'],
+            ]
+        }
     }
 }
-
-
-// deploy to prod
-if (env.BRANCH_NAME == 'master') {
-    stage name: 'deploy-to-prod'
-
-    build job: 'puppet-trigger', parameters: [
-        [$class: 'StringParameterValue', name: 'server', value: 'ns'],
-    ]
-}
-
 
 // vim: ft=groovy
