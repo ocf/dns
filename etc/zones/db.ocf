@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017022101 ; serial number
+2017022400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -807,9 +807,9 @@ kochira	IN CNAME	locusts
 mudslide	IN A	169.229.226.202
 mudslide	IN AAAA	2607:f140:8801::1:202
 
-; solarflare (staffvm)
-solarflare	IN A	169.229.226.203
-solarflare	IN AAAA	2607:f140:8801::1:203
+; leprosy (staffvm)
+leprosy	IN A	169.229.226.203
+leprosy	IN AAAA	2607:f140:8801::1:203
 
 ; limniceruption (staffvm)
 limniceruption	IN A	169.229.226.204
@@ -847,17 +847,17 @@ war	IN AAAA	2607:f140:8801::1:212
 quicksand	IN A	169.229.226.213
 quicksand	IN AAAA	2607:f140:8801::1:213
 
-; deathwing (staffvm)
-deathwing	IN A	169.229.226.214
-deathwing	IN AAAA	2607:f140:8801::1:214
+; emp (staffvm)
+emp	IN A	169.229.226.214
+emp	IN AAAA	2607:f140:8801::1:214
 
 ; skynet (staffvm)
 skynet	IN A	169.229.226.215
 skynet	IN AAAA	2607:f140:8801::1:215
 
-; pelee (staffvm)
-pelee	IN A	169.229.226.216
-pelee	IN AAAA	2607:f140:8801::1:216
+; sauron (staffvm)
+sauron	IN A	169.229.226.216
+sauron	IN AAAA	2607:f140:8801::1:216
 
 ; memleak (staffvm)
 memleak	IN A	169.229.226.217
@@ -871,9 +871,9 @@ smallpox	IN AAAA	2607:f140:8801::1:218
 zerg	IN A	169.229.226.219
 zerg	IN AAAA	2607:f140:8801::1:219
 
-; snowstorm (staffvm)
-snowstorm	IN A	169.229.226.220
-snowstorm	IN AAAA	2607:f140:8801::1:220
+; quasar (staffvm)
+quasar	IN A	169.229.226.220
+quasar	IN AAAA	2607:f140:8801::1:220
 
 ; fire (staffvm)
 fire	IN A	169.229.226.221
@@ -903,13 +903,13 @@ fireball	IN AAAA	2607:f140:8801::1:226
 coldwave	IN A	169.229.226.227
 coldwave	IN AAAA	2607:f140:8801::1:227
 
-; masterspark (staffvm)
-masterspark	IN A	169.229.226.228
-masterspark	IN AAAA	2607:f140:8801::1:228
+; vortex (staffvm)
+vortex	IN A	169.229.226.228
+vortex	IN AAAA	2607:f140:8801::1:228
 
-; epidemic (staffvm)
-epidemic	IN A	169.229.226.229
-epidemic	IN AAAA	2607:f140:8801::1:229
+; apophis (staffvm)
+apophis	IN A	169.229.226.229
+apophis	IN AAAA	2607:f140:8801::1:229
 
 ; pox (staffvm)
 pox	IN A	169.229.226.230
@@ -927,47 +927,50 @@ nuke	IN AAAA	2607:f140:8801::1:232
 ragnarok	IN A	169.229.226.233
 ragnarok	IN AAAA	2607:f140:8801::1:233
 
+; apocalypse (staffvm)
+apocalypse	IN A	169.229.226.234
+apocalypse	IN AAAA	2607:f140:8801::1:234
+
+; cloudburst (staffvm)
+cloudburst	IN A	169.229.226.235
+cloudburst	IN AAAA	2607:f140:8801::1:235
+
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
-apocalypse	IN A	169.229.226.255
 armageddon	IN A	169.229.226.255
 blackice	IN A	169.229.226.255
 borg	IN A	169.229.226.255
-budgetcut	IN A	169.229.226.255
 bushfire	IN A	169.229.226.255
 cataclysm	IN A	169.229.226.255
 cavein	IN A	169.229.226.255
-cloudburst	IN A	169.229.226.255
 collision	IN A	169.229.226.255
 coma	IN A	169.229.226.255
 conquest	IN A	169.229.226.255
 coupdetat	IN A	169.229.226.255
 cyberwar	IN A	169.229.226.255
 darkness	IN A	169.229.226.255
-deathbymonkeys	IN A	169.229.226.255
 demolition	IN A	169.229.226.255
 despair	IN A	169.229.226.255
 doom	IN A	169.229.226.255
 earthquake	IN A	169.229.226.255
-emp	IN A	169.229.226.255
+epidemic	IN A	169.229.226.255
 explosion	IN A	169.229.226.255
 fallout	IN A	169.229.226.255
 fleas	IN A	169.229.226.255
-heisenbug	IN A	169.229.226.255
 inferno	IN A	169.229.226.255
 jabberwocky	IN A	169.229.226.255
 kamikaze	IN A	169.229.226.255
 krakatoa	IN A	169.229.226.255
-lotso	IN A	169.229.226.255
 meteorite	IN A	169.229.226.255
 netsplit	IN A	169.229.226.255
 oilspill	IN A	169.229.226.255
 pollution	IN A	169.229.226.255
-quasar	IN A	169.229.226.255
 riot	IN A	169.229.226.255
 sandstorm	IN A	169.229.226.255
 segfault	IN A	169.229.226.255
 shipwreck	IN A	169.229.226.255
 shockwave	IN A	169.229.226.255
+snowstorm	IN A	169.229.226.255
+solarflare	IN A	169.229.226.255
 spike	IN A	169.229.226.255
 spy	IN A	169.229.226.255
 strike	IN A	169.229.226.255
