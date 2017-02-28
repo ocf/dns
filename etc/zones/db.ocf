@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017022400 ; serial number
+2017022700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -934,6 +934,10 @@ apocalypse	IN AAAA	2607:f140:8801::1:234
 ; cloudburst (staffvm)
 cloudburst	IN A	169.229.226.235
 cloudburst	IN AAAA	2607:f140:8801::1:235
+
+; riot (staffvm)
+riot	IN A	169.229.226.236
+riot	IN AAAA	2607:f140:8801::1:236
 
 ; unused names (some with CNAMEs in berkeley.edu), feel free to take one
 armageddon	IN A	169.229.226.255

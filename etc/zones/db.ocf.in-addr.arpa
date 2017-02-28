@@ -210,5 +210,6 @@
 233 IN PTR ragnarok.OCF.Berkeley.EDU.
 234 IN PTR apocalypse.OCF.Berkeley.EDU.
 235 IN PTR cloudburst.OCF.Berkeley.EDU.
+236 IN PTR riot.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
