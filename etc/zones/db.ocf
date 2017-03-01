@@ -115,6 +115,8 @@ puppetdb	IN CNAME	thunder
 maelstrom	IN A	169.229.226.27
 maelstrom	IN AAAA	2607:f140:8801::1:27
 mysql	IN CNAME	maelstrom
+mariadb	IN CNAME	maelstrom
+
 
 ; democracy (server)
 democracy	IN A	169.229.226.28
