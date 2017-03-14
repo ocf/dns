@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017031801 ; serial number
+2017031802 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -947,5 +947,30 @@ riot	IN AAAA	2607:f140:8801::1:236
 ; meteorite (staffvm)
 meteorite	IN A	169.229.226.237
 meteorite	IN AAAA	2607:f140:8801::1:237
+
+; unused names (some with CNAMEs in berkeley.edu), feel free to take one
+armageddon	IN A	169.229.226.255
+cataclysm	IN A	169.229.226.255
+collision	IN A	169.229.226.255
+coma	IN A	169.229.226.255
+coupdetat	IN A	169.229.226.255
+cyberwar	IN A	169.229.226.255
+demolition	IN A	169.229.226.255
+doom	IN A	169.229.226.255
+earthquake	IN A	169.229.226.255
+explosion	IN A	169.229.226.255
+fallout	IN A	169.229.226.255
+fleas	IN A	169.229.226.255
+inferno	IN A	169.229.226.255
+oilspill	IN A	169.229.226.255
+pollution	IN A	169.229.226.255
+sandstorm	IN A	169.229.226.255
+shipwreck	IN A	169.229.226.255
+shockwave	IN A	169.229.226.255
+snowstorm	IN A	169.229.226.255
+solarflare	IN A	169.229.226.255
+thunderstorm	IN A	169.229.226.255
+typhoon	IN A	169.229.226.255
+tyranny	IN A	169.229.226.255
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
