@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017031801 ; serial number
+2017031802 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -558,6 +558,10 @@ sinkhole	IN AAAA	2607:f140:8801::1:128
 ; invasion (desktop)
 invasion	IN A	169.229.226.129
 invasion	IN AAAA	2607:f140:8801::1:129
+
+; calfootball (desktop)
+calfootball	IN A	169.229.226.130
+calfootball	IN AAAA	2607:f140:8801::1:130
 
 ; dhcp-169-229-226-140 (dhcp)
 dhcp-169-229-226-140	IN A	169.229.226.140
