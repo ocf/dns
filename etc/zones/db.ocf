@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017031803 ; serial number
+2017032700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -213,6 +213,7 @@ csgo	IN CNAME	zombies
 ; whiteout (server)
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
+p	IN CNAME	whiteout
 printhost	IN CNAME	whiteout
 
 ; biohazard (server)
@@ -923,6 +924,7 @@ apophis	IN AAAA	2607:f140:8801::1:229
 ; pox (staffvm)
 pox	IN A	169.229.226.230
 pox	IN AAAA	2607:f140:8801::1:230
+*.pox	IN CNAME	pox
 
 ; nyx (staffvm)
 nyx	IN A	169.229.226.231
