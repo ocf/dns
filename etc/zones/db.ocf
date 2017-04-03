@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017032700 ; serial number
+2017040300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -93,6 +93,7 @@ docs	IN CNAME	death
 hello	IN CNAME	death
 secure	IN CNAME	death
 staff	IN CNAME	death
+unavailable	IN CNAME	death
 wiki	IN CNAME	death
 www	IN CNAME	death
 xkcd	IN CNAME	death
