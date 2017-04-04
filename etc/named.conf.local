@@ -1,6 +1,8 @@
 zone "ocf.berkeley.edu" {
   type master;
   notify yes;
+  auto-dnssec maintain;
+  inline-signing yes;
   file "/srv/dns/etc/zones/db.ocf.berkeley.edu";
 };
 
@@ -12,6 +14,8 @@ zone "mesos" {
 zone "ocf.io" {
   type master;
   notify no;
+  auto-dnssec maintain;
+  inline-signing yes;
   file "/srv/dns/etc/zones/db.ocf.io";
 };
 
