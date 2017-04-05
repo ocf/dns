@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017040300 ; serial number
+2017040500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -59,6 +59,14 @@ ntp4	IN CNAME	riptide
 
 ; riptide-mgmt (ipmi)
 riptide-mgmt	IN A	169.229.226.17
+
+; corruption (server)
+corruption	IN A	169.229.226.18
+corruption	IN AAAA	2607:f140:8801::1:18
+ntp5	IN CNAME	corruption
+
+; corruption-mgmt (ipmi)
+corruption-mgmt	IN A	169.229.226.19
 
 ; firestorm (server)
 firestorm	IN A	169.229.226.20
