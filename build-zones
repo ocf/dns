@@ -16,7 +16,7 @@ from operator import attrgetter
 
 import ldap3
 from cached_property import cached_property
-from ocflib.constants import OCF_LDAP_HOSTS
+from ocflib.infra.ldap import OCF_LDAP_HOSTS
 from ocflib.infra.hosts import HOST_TYPES_WITH_IPV6
 from ocflib.infra.net import ipv4_to_ipv6
 from ocflib.infra.net import is_ocf_ip
