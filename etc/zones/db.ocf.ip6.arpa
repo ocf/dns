@@ -210,5 +210,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.3.2.0 IN PTR cloudburst.ocf.berkeley.edu.
 6.3.2.0 IN PTR riot.ocf.berkeley.edu.
 7.3.2.0 IN PTR meteorite.ocf.berkeley.edu.
+0.5.2.0 IN PTR test.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
