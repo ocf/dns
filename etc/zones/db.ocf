@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017041103 ; serial number
+2017041104 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -975,11 +975,11 @@ riot	IN AAAA	2607:f140:8801::1:236
 meteorite	IN A	169.229.226.237
 meteorite	IN AAAA	2607:f140:8801::1:237
 
-; pompeii (server)
+; pompeii (staffvm)
 pompeii	IN A	169.229.226.238
 pompeii	IN AAAA	2607:f140:8801::1:238
 
-; oilspill (server)
+; oilspill (staffvm)
 oilspill	IN A	169.229.226.239
 oilspill	IN AAAA	2607:f140:8801::1:239
 

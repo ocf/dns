@@ -9,12 +9,12 @@ $TTL 1d
                        )
 @ IN NS ns.ocf.berkeley.edu.
 
-$GENERATE 0-1 $ IN NS adns1.Berkeley.EDU.
-$GENERATE 0-1 $ IN NS adns2.Berkeley.EDU.
+; gateway
+1 IN PTR vlan635.inr-350-reccev.berkeley.edu.
+
+; firewall
+253 IN PTR ocf-2.eac.berkeley.edu.
 
 $INCLUDE /srv/dns/etc/zones/db.ocf.in-addr.arpa
-
-$GENERATE 253-255 $ IN NS adns1.Berkeley.EDU.
-$GENERATE 253-255 $ IN NS adns2.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
