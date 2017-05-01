@@ -48,10 +48,6 @@ from LDAP and bumping the serial number.
 Sanity-check the diff before commiting to make sure the changes in LDAP make
 sense. If not, don't push!
 
-Keep in mind **we are not authoritative for our own reverse DNS**, so you need
-to run [dns-reconcile][dns-reconcile] and request changes from the university
-hostmaster when updating PTRs.
-
 Some zones under `etc/zones` are not automatically generated (e.g. `asuc.org`).
 These have to be manually edited. Be sure to bump the serial.
 
@@ -60,6 +56,3 @@ The Makefile targets you're intended to run are:
 - `make`: update the DNS
 - `make test`: run pre-commit hooks
 - `make install-hooks`: install pre-commit hooks so that they run automatically
-
-
-[dns-reconcile]: https://github.com/ocf/utils/blob/master/staff/dns/dns-reconcile
