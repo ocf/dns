@@ -56,3 +56,9 @@ The Makefile targets you're intended to run are:
 - `make`: update the DNS
 - `make test`: run pre-commit hooks
 - `make install-hooks`: install pre-commit hooks so that they run automatically
+
+
+## Hostname suggestions
+
+A list of proposed hostnames, if you can't think of one, is located at
+`~staff/server_name_ideas`.
