@@ -1,7 +1,6 @@
 $ORIGIN ocf.berkeley.edu.
 $TTL 5m
 
-@ IN NS ns.ocf.berkeley.edu.
 @ IN NS adns1.berkeley.edu.
 @ IN NS adns2.berkeley.edu.
 @ IN NS adns3.berkeley.edu.

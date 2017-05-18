@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017051600 ; serial number
+2017051800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -20,6 +20,7 @@
 firewall	IN CNAME	ocf-2.eac.berkeley.edu.
 dev-vhost	IN MX	5 anthrax
 dev-dev-vhost	IN MX	5 dev-anthrax
+test	IN A	169.229.226.255
 
 ; https://sslmate.com/labs/caa/
 ; legacy CAA records (we need bind >= 9.9.6 to use real ones)
