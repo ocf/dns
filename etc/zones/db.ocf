@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017052500 ; serial number
+2017052501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -122,6 +122,8 @@ xkcd	IN CNAME	death
 @	IN AAAA	2607:f140:8801::1:23
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
+dev-vhost-alias	IN A	169.229.226.23
+dev-vhost-alias	IN AAAA	2607:f140:8801::1:23
 
 ; tsunami (server)
 tsunami	IN A	169.229.226.25
@@ -194,6 +196,8 @@ dev-wiki	IN CNAME	dev-death
 dev-www	IN CNAME	dev-death
 dev-dev-vhost	IN A	169.229.226.37
 dev-dev-vhost	IN AAAA	2607:f140:8801::1:37
+dev-dev-vhost-alias	IN A	169.229.226.37
+dev-dev-vhost-alias	IN AAAA	2607:f140:8801::1:37
 
 ; dev-firestorm (server)
 dev-firestorm	IN A	169.229.226.38
