@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017052700 ; serial number
+2017052701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -26,6 +26,9 @@ $TTL 5m
 @	IN AAAA	2607:f140:8801::1:23
 www	IN CNAME	@
 
+; Note to readers: all these www CNAMEs were imported when asuc.org
+; transitioned from HostGator to OCF. Please don't add any new ones.
+
 dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 www.dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
 
@@ -48,7 +51,6 @@ modern	IN CNAME	death.OCF.Berkeley.EDU.
 www.modern	IN CNAME	death.OCF.Berkeley.EDU.
 
 perspectives	IN CNAME	death.OCF.Berkeley.EDU.
-www.perspectives	IN CNAME	death.OCF.Berkeley.EDU.
 
 pantry	IN CNAME	death.OCF.Berkeley.EDU.
 www.pantry	IN CNAME	death.OCF.Berkeley.EDU.
@@ -63,7 +65,6 @@ senate	IN CNAME	death.OCF.Berkeley.EDU.
 www.senate	IN CNAME	death.OCF.Berkeley.EDU.
 
 oldarchive	IN CNAME	death.OCF.Berkeley.EDU.
-www.oldarchive	IN CNAME	death.OCF.Berkeley.EDU.
 
 archive	IN CNAME	death.OCF.Berkeley.EDU.
 www.archive	IN CNAME	death.OCF.Berkeley.EDU.
