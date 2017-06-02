@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017052701 ; serial number
+2017060200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -21,6 +21,10 @@ firewall	IN CNAME	ocf-2.eac.berkeley.edu.
 dev-vhost	IN MX	5 anthrax
 dev-dev-vhost	IN MX	5 dev-anthrax
 test	IN A	169.229.226.255
+
+; DNSSEC DS records to be published in the berkeley.edu zone
+@	IN DS	24784 8 1 49843D73409C0C76C35C1DC380B59F0013363AC4
+@	IN DS	24784 8 2 F54DA8CE8E213127A6FFE64FCC33696C6C77F6305C8B2002E0CCADD047BA86CD
 
 ; https://sslmate.com/labs/caa/
 ; legacy CAA records (we need bind >= 9.9.6 to use real ones)

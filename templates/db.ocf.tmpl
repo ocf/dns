@@ -14,6 +14,10 @@ dev-vhost	IN MX	5 anthrax
 dev-dev-vhost	IN MX	5 dev-anthrax
 test	IN A	169.229.226.255
 
+; DNSSEC DS records to be published in the berkeley.edu zone
+@	IN DS	24784 8 1 49843D73409C0C76C35C1DC380B59F0013363AC4
+@	IN DS	24784 8 2 F54DA8CE8E213127A6FFE64FCC33696C6C77F6305C8B2002E0CCADD047BA86CD
+
 ; https://sslmate.com/labs/caa/
 ; legacy CAA records (we need bind >= 9.9.6 to use real ones)
 ; TODO(ckuehl|2017-04-09): replace with these records:
