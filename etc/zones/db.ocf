@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017060200 ; serial number
+2017061500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -460,9 +460,6 @@ tv	IN CNAME	tornado
 
 ; pagefault (printer)
 pagefault	IN A	169.229.226.91
-
-; logjam (printer)
-logjam	IN A	169.229.226.92
 
 ; papercut (printer)
 papercut	IN A	169.229.226.93
