@@ -217,5 +217,6 @@
 237 IN PTR meteorite.OCF.Berkeley.EDU.
 238 IN PTR pompeii.OCF.Berkeley.EDU.
 239 IN PTR oilspill.OCF.Berkeley.EDU.
+240 IN PTR spriggs.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
