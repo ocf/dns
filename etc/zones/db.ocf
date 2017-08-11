@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017080100 ; serial number
+2017081000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -20,6 +20,8 @@
 firewall	IN CNAME	ocf-2.eac.berkeley.edu.
 dev-vhost	IN MX	5 anthrax
 dev-dev-vhost	IN MX	5 dev-anthrax
+decal		IN MX	5 anthrax
+
 test	IN A	169.229.226.255
 
 ; DNSSEC DS records to be published in the berkeley.edu zone
@@ -113,7 +115,6 @@ death	IN A	169.229.226.23
 death	IN AAAA	2607:f140:8801::1:23
 accounts	IN CNAME	death
 contrib	IN CNAME	death
-decal	IN CNAME	death
 docs	IN CNAME	death
 hello	IN CNAME	death
 secure	IN CNAME	death
@@ -124,6 +125,8 @@ www	IN CNAME	death
 xkcd	IN CNAME	death
 @	IN A	169.229.226.23
 @	IN AAAA	2607:f140:8801::1:23
+decal	IN A	169.229.226.23
+decal	IN AAAA	2607:f140:8801::1:23
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
 dev-vhost-alias	IN A	169.229.226.23
