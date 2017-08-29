@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild DNS config based on LDAP and template files.
 
-The eventual goal is to build almost all of DNS from LDAP, including things
-like CNAMEs, and just use this script to generate the zones.
-
-Right now, it only generates A/AAAA and reverse-DNS records for hosts, and the
-result needs to be checked in to git.
+Right now, it generates A/AAAA, CNAME, and reverse-DNS records for hosts, and
+the result needs to be checked in to git.
 """
 import re
 import time
