@@ -10,7 +10,7 @@ build:
 venv: vendor/venv-update Makefile
 	vendor/venv-update \
 		venv= $@ -ppython3 \
-		install= ckuehl-pre-commit-types==0.7.6.dev1
+		install= -r requirements-dev.txt
 
 .PHONY: test
 test: venv install-hooks
@@ -19,3 +19,7 @@ test: venv install-hooks
 .PHONY: install-hooks
 install-hooks: venv
 	venv/bin/pre-commit install -f --install-hooks
+
+.PHONY: clean
+clean:
+	rm -rf venv

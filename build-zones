@@ -4,7 +4,6 @@
 Right now, it generates A/AAAA, CNAME, and reverse-DNS records for hosts, and
 the result needs to be checked in to git.
 """
-import re
 import time
 from collections import namedtuple
 from ipaddress import ip_address
@@ -13,11 +12,11 @@ from operator import attrgetter
 
 import ldap3
 from cached_property import cached_property
-from ocflib.infra.ldap import OCF_LDAP_HOSTS
 from ocflib.infra.hosts import HOST_TYPES_WITH_IPV6
+from ocflib.infra.ldap import ldap_ocf
+from ocflib.infra.ldap import OCF_LDAP_HOSTS
 from ocflib.infra.net import ipv4_to_ipv6
 from ocflib.infra.net import is_ocf_ip
-from ocflib.infra.ldap import ldap_ocf
 
 
 BANNER = '''\
@@ -82,7 +81,6 @@ class Host(namedtuple('Host', ('hostname',))):
         """Return the last quad from this host's IP address."""
         return self.ipv4.packed[3]
 
-
     def forward_dns_records(self):
         """Return forward DNS records."""
         if self.ipv4:
@@ -92,22 +90,27 @@ class Host(namedtuple('Host', ('hostname',))):
         for cname in self.ldap_attrs.get('dnsCname', []):
             yield '{}\tIN CNAME\t{self.hostname}'.format(cname, self=self)
         for a in self.ldap_attrs.get('dnsA', []):
-            # These are like CNAMEs but for special cases where CNAMEs are illegal.
-            # Some examples: domain root, things used in MX or NS records.
+            # These are like CNAMEs but for special cases where CNAMEs are
+            # illegal. Some examples: domain root, things used in MX or NS
+            # records.
             yield '{}\tIN A\t{self.ipv4}'.format(a, self=self)
             yield '{}\tIN AAAA\t{self.ipv6}'.format(a, self=self)
 
     def reverse_dns_records_v4(self):
         """Return reverse IPv4 DNS records."""
         if self.ipv4:
-            yield '{self.last_quad} IN PTR {self.hostname}.OCF.Berkeley.EDU.'.format(self=self)
+            yield '{self.last_quad} IN PTR ' \
+                  '{self.hostname}.OCF.Berkeley.EDU.'.format(self=self)
 
     def reverse_dns_records_v6(self):
         """Return reverse IPv6 DNS records."""
         last_quad_dotted = '.'.join(reversed(str(self.last_quad).zfill(4)))
         # TODO: uppercase these properly like IPv4
         if self.ipv6:
-            yield '{} IN PTR {self.hostname}.ocf.berkeley.edu.'.format(last_quad_dotted, self=self)
+            yield '{} IN PTR {self.hostname}.ocf.berkeley.edu.'.format(
+                last_quad_dotted,
+                self=self,
+            )
 
     def __str__(self):
         return '{self.hostname}\tIN A\t{self.ipv4}'.format(self=self)
@@ -131,10 +134,10 @@ def forward_file(hosts, serial):
         records='\n\n'.join(
             '\n'.join(
                 ['; {}'.format(host.description)] +
-                list(host.forward_dns_records())
+                list(host.forward_dns_records()),
             )
             for host in sorted(hosts, key=attrgetter('ipv4'))
-        )
+        ),
     )
 
 
@@ -145,7 +148,7 @@ def reverse_file_v4(hosts, serial):
         records='\n'.join(chain.from_iterable(
             host.reverse_dns_records_v4()
             for host in sorted(hosts, key=attrgetter('ipv4'))
-        ))
+        )),
     )
 
 
@@ -155,8 +158,11 @@ def reverse_file_v6(hosts, serial):
         serial=serial,
         records='\n'.join(chain.from_iterable(
             host.reverse_dns_records_v6()
-            for host in sorted(filter(lambda host: host.ipv6, hosts), key=attrgetter('ipv6'))
-        ))
+            for host in sorted(
+                filter(lambda host: host.ipv6, hosts),
+                key=attrgetter('ipv6'),
+            )
+        )),
     )
 
 
@@ -177,7 +183,6 @@ def next_serial():
     except IOError:
         pass
     return date_as_str + '00'
-
 
 
 def main(argv=None):
