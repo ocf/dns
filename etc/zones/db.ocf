@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017090700 ; serial number
+2017100800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -482,6 +482,8 @@ sign	IN CNAME	overheat
 ; eruption (desktop)
 eruption	IN A	169.229.226.100
 eruption	IN AAAA	2607:f140:8801::1:100
+staffdesk	IN A	169.229.226.100
+staffdesk	IN AAAA	2607:f140:8801::1:100
 
 ; avalanche (desktop)
 avalanche	IN A	169.229.226.101
@@ -603,6 +605,8 @@ invasion	IN AAAA	2607:f140:8801::1:129
 ; typhoon (desktop)
 typhoon	IN A	169.229.226.130
 typhoon	IN AAAA	2607:f140:8801::1:130
+staffdesk	IN A	169.229.226.130
+staffdesk	IN AAAA	2607:f140:8801::1:130
 
 ; dhcp-169-229-226-140 (dhcp)
 dhcp-169-229-226-140	IN A	169.229.226.140
