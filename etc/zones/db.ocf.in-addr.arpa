@@ -11,6 +11,7 @@
 2 IN PTR blackhole.OCF.Berkeley.EDU.
 7 IN PTR crisis.OCF.Berkeley.EDU.
 8 IN PTR ransomware.OCF.Berkeley.EDU.
+9 IN PTR ponzi.OCF.Berkeley.EDU.
 10 IN PTR hal.OCF.Berkeley.EDU.
 11 IN PTR hal-mgmt.OCF.Berkeley.EDU.
 12 IN PTR jaws.OCF.Berkeley.EDU.

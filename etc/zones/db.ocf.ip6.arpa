@@ -19,6 +19,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 2.0.0.0 IN PTR blackhole.ocf.berkeley.edu.
 7.0.0.0 IN PTR crisis.ocf.berkeley.edu.
 8.0.0.0 IN PTR ransomware.ocf.berkeley.edu.
+9.0.0.0 IN PTR ponzi.ocf.berkeley.edu.
 0.1.0.0 IN PTR hal.ocf.berkeley.edu.
 2.1.0.0 IN PTR jaws.ocf.berkeley.edu.
 4.1.0.0 IN PTR pandemic.ocf.berkeley.edu.
