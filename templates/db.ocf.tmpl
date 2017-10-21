@@ -21,16 +21,10 @@ test	IN A	169.229.226.255
 @	IN DS	24784 8 2 F54DA8CE8E213127A6FFE64FCC33696C6C77F6305C8B2002E0CCADD047BA86CD
 
 ; https://sslmate.com/labs/caa/
-; legacy CAA records (we need bind >= 9.9.6 to use real ones)
-; TODO(ckuehl|2017-04-09): replace with these records:
-;@	IN	CAA	0 issue "comodoca.com"
-;@	IN	CAA	0 issue "letsencrypt.org"
-;@	IN	CAA	0 issuewild "comodoca.com"
-;@	IN	CAA	0 iodef "mailto:security@ocf.berkeley.edu"
-@	IN	TYPE257	\# 19 00056973737565636F6D6F646F63612E636F6D
-@	IN	TYPE257	\# 22 000569737375656C657473656E63727970742E6F7267
-@	IN	TYPE257	\# 23 0009697373756577696C64636F6D6F646F63612E636F6D
-@	IN	TYPE257	\# 39 0005696F6465666D61696C746F3A7365637572697479406F63662E6265726B656C65792E656475
+@	IN	CAA	0 issue "comodoca.com"
+@	IN	CAA	0 issue "letsencrypt.org"
+@	IN	CAA	0 issuewild "comodoca.com"
+@	IN	CAA	0 iodef "mailto:security@ocf.berkeley.edu"
 
 {records}
 
