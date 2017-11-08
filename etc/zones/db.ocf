@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017110700 ; serial number
+2017110701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1014,5 +1014,13 @@ oilspill	IN AAAA	2607:f140:8801::1:239
 ; doom (staffvm)
 doom	IN A	169.229.226.240
 doom	IN AAAA	2607:f140:8801::1:240
+
+; miasma (staffvm)
+miasma	IN A	169.229.226.241
+miasma	IN AAAA	2607:f140:8801::1:241
+
+; cataclysm (staffvm)
+cataclysm	IN A	169.229.226.242
+cataclysm	IN AAAA	2607:f140:8801::1:242
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone

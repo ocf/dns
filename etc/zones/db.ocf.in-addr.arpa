@@ -221,5 +221,7 @@
 238 IN PTR pompeii.OCF.Berkeley.EDU.
 239 IN PTR oilspill.OCF.Berkeley.EDU.
 240 IN PTR doom.OCF.Berkeley.EDU.
+241 IN PTR miasma.OCF.Berkeley.EDU.
+242 IN PTR cataclysm.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone

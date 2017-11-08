@@ -222,5 +222,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 8.3.2.0 IN PTR pompeii.ocf.berkeley.edu.
 9.3.2.0 IN PTR oilspill.ocf.berkeley.edu.
 0.4.2.0 IN PTR doom.ocf.berkeley.edu.
+1.4.2.0 IN PTR miasma.ocf.berkeley.edu.
+2.4.2.0 IN PTR cataclysm.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
