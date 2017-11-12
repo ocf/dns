@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017111002 ; serial number
+2017111100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1030,5 +1030,9 @@ falsevacuum	IN AAAA	2607:f140:8801::1:243
 ; virus (staffvm)
 virus	IN A	169.229.226.244
 virus	IN AAAA	2607:f140:8801::1:244
+
+; shipwreck (staffvm)
+shipwreck	IN A	169.229.226.245
+shipwreck	IN AAAA	2607:f140:8801::1:245
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone

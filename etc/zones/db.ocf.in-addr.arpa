@@ -225,5 +225,6 @@
 242 IN PTR cataclysm.OCF.Berkeley.EDU.
 243 IN PTR falsevacuum.OCF.Berkeley.EDU.
 244 IN PTR virus.OCF.Berkeley.EDU.
+245 IN PTR shipwreck.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
