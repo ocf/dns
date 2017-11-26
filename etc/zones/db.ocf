@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017112001 ; serial number
+2017112600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -334,6 +334,7 @@ mb	IN CNAME	lb
 metabase	IN CNAME	lb
 phpmyadmin	IN CNAME	lb
 pma	IN CNAME	lb
+puppetboard	IN CNAME	lb
 rt	IN CNAME	lb
 static	IN CNAME	lb
 templates	IN CNAME	lb
