@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2017112700 ; serial number
+2017120800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -338,7 +338,6 @@ pma	IN CNAME	lb
 rt	IN CNAME	lb
 static	IN CNAME	lb
 templates	IN CNAME	lb
-thelounge	IN CNAME	lb
 
 ; dev-lightning (server)
 dev-lightning	IN A	169.229.226.54
