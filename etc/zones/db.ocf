@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018011300 ; serial number
+2018011700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1047,5 +1047,9 @@ shipwreck	IN AAAA	2607:f140:8801::1:245
 ; coma (staffvm)
 coma	IN A	169.229.226.246
 coma	IN AAAA	2607:f140:8801::1:246
+
+; fukushima (staffvm)
+fukushima	IN A	169.229.226.247
+fukushima	IN AAAA	2607:f140:8801::1:247
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
