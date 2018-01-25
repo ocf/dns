@@ -3,6 +3,9 @@ $TTL 5m
 
 @ IN NS srb-infoblox-nsm1.berkeley.edu.
 @ IN NS sut-infoblox-nsm2.berkeley.edu.
+@ IN NS adns1.berkeley.edu.
+@ IN NS adns2.berkeley.edu.
+@ IN NS adns3.berkeley.edu.
 
 $INCLUDE /srv/dns/etc/zones/db.ocf
 
