@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018012400 ; serial number
+2018012600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -358,6 +358,10 @@ fraud	IN AAAA	2607:f140:8801::1:56
 ; hozer-60 (server)
 hozer-60	IN A	169.229.226.60
 hozer-60	IN AAAA	2607:f140:8801::1:60
+
+; lowgpa (server)
+lowgpa	IN A	169.229.226.60
+lowgpa	IN AAAA	2607:f140:8801::1:60
 
 ; hozer-61 (server)
 hozer-61	IN A	169.229.226.61
