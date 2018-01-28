@@ -63,6 +63,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.5.0.0 IN PTR fraud.ocf.berkeley.edu.
 0.6.0.0 IN PTR hozer-60.ocf.berkeley.edu.
 0.6.0.0 IN PTR lowgpa.ocf.berkeley.edu.
+1.6.0.0 IN PTR segfault.ocf.berkeley.edu.
 1.6.0.0 IN PTR hozer-61.ocf.berkeley.edu.
 2.6.0.0 IN PTR hozer-62.ocf.berkeley.edu.
 3.6.0.0 IN PTR hozer-63.ocf.berkeley.edu.
