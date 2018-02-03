@@ -231,5 +231,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.4.2.0 IN PTR shipwreck.ocf.berkeley.edu.
 6.4.2.0 IN PTR coma.ocf.berkeley.edu.
 7.4.2.0 IN PTR fukushima.ocf.berkeley.edu.
+8.4.2.0 IN PTR sarin.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
