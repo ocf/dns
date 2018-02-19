@@ -21,10 +21,10 @@ pipeline {
       when {
         branch 'master'
       }
+      agent {
+        label 'deploy'
+      }
       steps {
-        agent {
-          label 'deploy'
-        }
         puppetTrigger('ns')
       }
     }
