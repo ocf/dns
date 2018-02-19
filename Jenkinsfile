@@ -22,11 +22,10 @@ pipeline {
         branch 'master'
       }
       steps {
-        script {
-          build job: 'puppet-trigger', parameters: [
-            [$class: 'StringParameterValue', name: 'server', value: 'ns'],
-          ]
+        agent {
+          label 'deploy'
         }
+        puppetTrigger('ns')
       }
     }
   }
