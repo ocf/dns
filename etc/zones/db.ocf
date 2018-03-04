@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018020200 ; serial number
+2018030300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -616,7 +616,7 @@ sinkhole	IN AAAA	2607:f140:8801::1:128
 invasion	IN A	169.229.226.129
 invasion	IN AAAA	2607:f140:8801::1:129
 
-; typhoon (desktop)
+; typhoon (server)
 typhoon	IN A	169.229.226.130
 typhoon	IN AAAA	2607:f140:8801::1:130
 staffdesk	IN A	169.229.226.130
@@ -902,6 +902,10 @@ revolution	IN AAAA	2607:f140:8801::1:208
 ; vampires (staffvm)
 vampires	IN A	169.229.226.209
 vampires	IN AAAA	2607:f140:8801::1:209
+
+; panic (staffvm)
+panic	IN A	169.229.226.210
+panic	IN AAAA	2607:f140:8801::1:210
 
 ; blackrain (staffvm)
 blackrain	IN A	169.229.226.211
