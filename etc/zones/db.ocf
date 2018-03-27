@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018030300 ; serial number
+2018032600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -362,6 +362,8 @@ decal	IN AAAA	2607:f140:8801::1:60
 ; segfault (server)
 segfault	IN A	169.229.226.61
 segfault	IN AAAA	2607:f140:8801::1:61
+hpcctl	IN CNAME	segfault
+hpcdb	IN CNAME	segfault
 
 ; hozer-62 (server)
 hozer-62	IN A	169.229.226.62
@@ -619,8 +621,6 @@ invasion	IN AAAA	2607:f140:8801::1:129
 ; typhoon (server)
 typhoon	IN A	169.229.226.130
 typhoon	IN AAAA	2607:f140:8801::1:130
-staffdesk	IN A	169.229.226.130
-staffdesk	IN AAAA	2607:f140:8801::1:130
 
 ; dhcp-169-229-226-140 (dhcp)
 dhcp-169-229-226-140	IN A	169.229.226.140
