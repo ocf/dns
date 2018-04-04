@@ -201,7 +201,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 4.1.2.0 IN PTR emp.ocf.berkeley.edu.
 5.1.2.0 IN PTR skynet.ocf.berkeley.edu.
 6.1.2.0 IN PTR sauron.ocf.berkeley.edu.
-7.1.2.0 IN PTR memleak.ocf.berkeley.edu.
+7.1.2.0 IN PTR alamo.ocf.berkeley.edu.
 8.1.2.0 IN PTR smallpox.ocf.berkeley.edu.
 9.1.2.0 IN PTR zerg.ocf.berkeley.edu.
 0.2.2.0 IN PTR quasar.ocf.berkeley.edu.

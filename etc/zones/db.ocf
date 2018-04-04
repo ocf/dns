@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018032600 ; serial number
+2018040300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -931,9 +931,9 @@ skynet	IN AAAA	2607:f140:8801::1:215
 sauron	IN A	169.229.226.216
 sauron	IN AAAA	2607:f140:8801::1:216
 
-; memleak (staffvm)
-memleak	IN A	169.229.226.217
-memleak	IN AAAA	2607:f140:8801::1:217
+; alamo (staffvm)
+alamo	IN A	169.229.226.217
+alamo	IN AAAA	2607:f140:8801::1:217
 
 ; smallpox (staffvm)
 smallpox	IN A	169.229.226.218
