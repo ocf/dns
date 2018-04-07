@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018040600 ; serial number
+2018040701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1055,5 +1055,9 @@ fukushima	IN AAAA	2607:f140:8801::1:247
 ; sarin (staffvm)
 sarin	IN A	169.229.226.248
 sarin	IN AAAA	2607:f140:8801::1:248
+
+; hozer-90 (server)
+hozer-90	IN A	169.229.226.249
+hozer-90	IN AAAA	2607:f140:8801::1:249
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
