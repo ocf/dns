@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018040300 ; serial number
+2018040600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -978,10 +978,6 @@ coldwave	IN AAAA	2607:f140:8801::1:227
 ; vortex (staffvm)
 vortex	IN A	169.229.226.228
 vortex	IN AAAA	2607:f140:8801::1:228
-
-; apophis (staffvm)
-apophis	IN A	169.229.226.229
-apophis	IN AAAA	2607:f140:8801::1:229
 
 ; pox (staffvm)
 pox	IN A	169.229.226.230
