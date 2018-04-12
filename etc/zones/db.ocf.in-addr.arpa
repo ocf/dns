@@ -232,5 +232,6 @@
 247 IN PTR fukushima.OCF.Berkeley.EDU.
 248 IN PTR sarin.OCF.Berkeley.EDU.
 249 IN PTR hozer-90.OCF.Berkeley.EDU.
+250 IN PTR fallout.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
