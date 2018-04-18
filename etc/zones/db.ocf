@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018041300 ; serial number
+2018041802 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -365,13 +365,13 @@ segfault	IN AAAA	2607:f140:8801::1:61
 hpcctl	IN CNAME	segfault
 hpcdb	IN CNAME	segfault
 
-; hozer-62 (server)
-hozer-62	IN A	169.229.226.62
-hozer-62	IN AAAA	2607:f140:8801::1:62
+; drm (server)
+drm	IN A	169.229.226.62
+drm	IN AAAA	2607:f140:8801::1:62
 
-; hozer-63 (server)
-hozer-63	IN A	169.229.226.63
-hozer-63	IN AAAA	2607:f140:8801::1:63
+; dev-fallingrocks (server)
+dev-fallingrocks	IN A	169.229.226.63
+dev-fallingrocks	IN AAAA	2607:f140:8801::1:63
 
 ; hozer-64 (server)
 hozer-64	IN A	169.229.226.64
@@ -381,10 +381,6 @@ hozer-64	IN AAAA	2607:f140:8801::1:64
 hozer-65	IN A	169.229.226.65
 hozer-65	IN AAAA	2607:f140:8801::1:65
 broker	IN CNAME	hozer-65
-
-; drm (server)
-drm	IN A	169.229.226.66
-drm	IN AAAA	2607:f140:8801::1:66
 
 ; hozer-67 (server)
 hozer-67	IN A	169.229.226.67
