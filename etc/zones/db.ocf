@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018042100 ; serial number
+2018042600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -38,9 +38,9 @@ test	IN A	169.229.226.255
 blackhole	IN A	169.229.226.2
 blackhole	IN AAAA	2607:f140:8801::1:2
 
-; crisis (server)
-crisis	IN A	169.229.226.7
-crisis	IN AAAA	2607:f140:8801::1:7
+; deceit (server)
+deceit	IN A	169.229.226.7
+deceit	IN AAAA	2607:f140:8801::1:7
 
 ; ransomware (server)
 ransomware	IN A	169.229.226.8
