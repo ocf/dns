@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018042600 ; serial number
+2018050501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -37,6 +37,14 @@ test	IN A	169.229.226.255
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
 blackhole	IN AAAA	2607:f140:8801::1:2
+
+; tsunami-mgmt (ipmi)
+tsunami-mgmt	IN A	169.229.226.5
+
+; dev-tsunami (server)
+dev-tsunami	IN A	169.229.226.6
+dev-tsunami	IN AAAA	2607:f140:8801::1:6
+dev-ssh	IN CNAME	dev-tsunami
 
 ; deceit (server)
 deceit	IN A	169.229.226.7
@@ -234,11 +242,6 @@ dev-dhcp	IN CNAME	dev-pestilence
 dev-rancid	IN CNAME	dev-pestilence
 dev-ns	IN A	169.229.226.40
 dev-ns	IN AAAA	2607:f140:8801::1:40
-
-; dev-tsunami (server)
-dev-tsunami	IN A	169.229.226.41
-dev-tsunami	IN AAAA	2607:f140:8801::1:41
-dev-ssh	IN CNAME	dev-tsunami
 
 ; dev-werewolves (server)
 dev-werewolves	IN A	169.229.226.42

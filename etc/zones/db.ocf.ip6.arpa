@@ -17,6 +17,7 @@
 $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 
 2.0.0.0 IN PTR blackhole.ocf.berkeley.edu.
+6.0.0.0 IN PTR dev-tsunami.ocf.berkeley.edu.
 7.0.0.0 IN PTR deceit.ocf.berkeley.edu.
 8.0.0.0 IN PTR ransomware.ocf.berkeley.edu.
 9.0.0.0 IN PTR ponzi.ocf.berkeley.edu.
@@ -45,7 +46,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 8.3.0.0 IN PTR dev-firestorm.ocf.berkeley.edu.
 9.3.0.0 IN PTR dev-anthrax.ocf.berkeley.edu.
 0.4.0.0 IN PTR dev-pestilence.ocf.berkeley.edu.
-1.4.0.0 IN PTR dev-tsunami.ocf.berkeley.edu.
 2.4.0.0 IN PTR dev-werewolves.ocf.berkeley.edu.
 3.4.0.0 IN PTR dev-flood.ocf.berkeley.edu.
 4.4.0.0 IN PTR zombies.ocf.berkeley.edu.

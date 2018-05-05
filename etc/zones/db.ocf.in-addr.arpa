@@ -9,6 +9,8 @@
 
 
 2 IN PTR blackhole.OCF.Berkeley.EDU.
+5 IN PTR tsunami-mgmt.OCF.Berkeley.EDU.
+6 IN PTR dev-tsunami.OCF.Berkeley.EDU.
 7 IN PTR deceit.OCF.Berkeley.EDU.
 8 IN PTR ransomware.OCF.Berkeley.EDU.
 9 IN PTR ponzi.OCF.Berkeley.EDU.
@@ -42,7 +44,6 @@
 38 IN PTR dev-firestorm.OCF.Berkeley.EDU.
 39 IN PTR dev-anthrax.OCF.Berkeley.EDU.
 40 IN PTR dev-pestilence.OCF.Berkeley.EDU.
-41 IN PTR dev-tsunami.OCF.Berkeley.EDU.
 42 IN PTR dev-werewolves.OCF.Berkeley.EDU.
 43 IN PTR dev-flood.OCF.Berkeley.EDU.
 44 IN PTR zombies.OCF.Berkeley.EDU.
