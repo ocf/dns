@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018050700 ; serial number
+2018050800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -383,6 +383,10 @@ dev-fallingrocks	IN AAAA	2607:f140:8801::1:63
 ; hozer-64 (server)
 hozer-64	IN A	169.229.226.64
 hozer-64	IN AAAA	2607:f140:8801::1:64
+
+; hozer-65 (server)
+hozer-65	IN A	169.229.226.65
+hozer-65	IN AAAA	2607:f140:8801::1:65
 
 ; hozer-66 (server)
 hozer-66	IN A	169.229.226.66
