@@ -66,7 +66,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 1.6.0.0 IN PTR segfault.ocf.berkeley.edu.
 2.6.0.0 IN PTR drm.ocf.berkeley.edu.
 3.6.0.0 IN PTR dev-fallingrocks.ocf.berkeley.edu.
-4.6.0.0 IN PTR hozer-64.ocf.berkeley.edu.
 5.6.0.0 IN PTR hozer-65.ocf.berkeley.edu.
 6.6.0.0 IN PTR hozer-66.ocf.berkeley.edu.
 7.6.0.0 IN PTR hozer-67.ocf.berkeley.edu.
