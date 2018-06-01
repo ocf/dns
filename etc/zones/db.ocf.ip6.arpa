@@ -35,6 +35,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.2.0.0 IN PTR thunder.ocf.berkeley.edu.
 7.2.0.0 IN PTR maelstrom.ocf.berkeley.edu.
 8.2.0.0 IN PTR democracy.ocf.berkeley.edu.
+9.2.0.0 IN PTR vampires.ocf.berkeley.edu.
 0.3.0.0 IN PTR fallingrocks.ocf.berkeley.edu.
 1.3.0.0 IN PTR flood.ocf.berkeley.edu.
 2.3.0.0 IN PTR radiation.ocf.berkeley.edu.
@@ -193,7 +194,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.0.2.0 IN PTR tempest.ocf.berkeley.edu.
 7.0.2.0 IN PTR gnats.ocf.berkeley.edu.
 8.0.2.0 IN PTR revolution.ocf.berkeley.edu.
-9.0.2.0 IN PTR vampires.ocf.berkeley.edu.
+9.0.2.0 IN PTR old-vampires.ocf.berkeley.edu.
 0.1.2.0 IN PTR panic.ocf.berkeley.edu.
 1.1.2.0 IN PTR blackrain.ocf.berkeley.edu.
 2.1.2.0 IN PTR war.ocf.berkeley.edu.

@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018051000 ; serial number
+2018060100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -170,6 +170,10 @@ mysql	IN CNAME	maelstrom
 democracy	IN A	169.229.226.28
 democracy	IN AAAA	2607:f140:8801::1:28
 syslog	IN CNAME	democracy
+
+; vampires (server)
+vampires	IN A	169.229.226.29
+vampires	IN AAAA	2607:f140:8801::1:29
 
 ; fallingrocks (server)
 fallingrocks	IN A	169.229.226.30
@@ -905,9 +909,9 @@ gnats	IN AAAA	2607:f140:8801::1:207
 revolution	IN A	169.229.226.208
 revolution	IN AAAA	2607:f140:8801::1:208
 
-; vampires (staffvm)
-vampires	IN A	169.229.226.209
-vampires	IN AAAA	2607:f140:8801::1:209
+; old-vampires (staffvm)
+old-vampires	IN A	169.229.226.209
+old-vampires	IN AAAA	2607:f140:8801::1:209
 
 ; panic (staffvm)
 panic	IN A	169.229.226.210
