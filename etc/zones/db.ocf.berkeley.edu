@@ -1,8 +1,9 @@
 $ORIGIN ocf.berkeley.edu.
 $TTL 5m
 
-@ IN NS srb-infoblox-nsm1.berkeley.edu.
-@ IN NS sut-infoblox-nsm2.berkeley.edu.
+@ IN NS ewdc-infoblox-nsm1.berkeley.edu.
+@ IN NS ewdc-infoblox-nsm2.berkeley.edu.
+@ IN NS ewdc-infoblox-nsm3.berkeley.edu.
 @ IN NS adns1.berkeley.edu.
 @ IN NS adns2.berkeley.edu.
 @ IN NS adns3.berkeley.edu.
