@@ -10,15 +10,24 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018060100 ; serial number
+2018062701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
                          30m        ; negative TTL
                        )
 
-firewall	IN CNAME	ocf-2.eac.berkeley.edu.
-dev-vhost	IN MX	5 anthrax
+firewall    IN A 128.32.84.11
+firewall    IN AAAA 2607:f140:b000:22::1
+firewall--ethernet1-21-594  IN A 128.32.82.170
+firewall--ethernet1-21-594  IN AAAA 2607:f140:b000:23::2
+firewall--ethernet1-22-594  IN A 128.32.82.174
+firewall--ethernet1-22-594  IN AAAA 2607:f140:b000:24::2
+firewall--ethernet1-22-595  IN AAAA 2607:f140:8801:1::2
+firewall--ethernet1-22-595  IN AAAA 2607:f140:8801:2::2
+
+
+dev-vhost   IN MX      5 anthrax
 dev-dev-vhost	IN MX	5 dev-anthrax
 decal		IN MX	5 anthrax
 
