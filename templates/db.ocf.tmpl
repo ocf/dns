@@ -9,19 +9,20 @@
                          30m        ; negative TTL
                        )
 
-firewall    IN A 128.32.84.11
-firewall    IN AAAA 2607:f140:b000:22::1
-firewall--ethernet1-21-594  IN A 128.32.82.170
-firewall--ethernet1-21-594  IN AAAA 2607:f140:b000:23::2
-firewall--ethernet1-22-594  IN A 128.32.82.174
-firewall--ethernet1-22-594  IN AAAA 2607:f140:b000:24::2
-firewall--ethernet1-22-595  IN AAAA 2607:f140:8801:1::2
-firewall--ethernet1-22-595  IN AAAA 2607:f140:8801:2::2
+firewall                      IN   A    128.32.84.11
+firewall                      IN   AAAA 2607:f140:b000:22::1
+firewall--ethernet1-21-594    IN   A    128.32.82.170
+firewall--ethernet1-21-594    IN   AAAA 2607:f140:b000:23::2
+firewall--ethernet1-22-594    IN   A    128.32.82.174
+firewall--ethernet1-22-594    IN   AAAA 2607:f140:b000:24::2
+firewall--ethernet1-21-595    IN   A    128.32.82.178
+firewall--ethernet1-21-595    IN   AAAA 2607:f140:8801:1::2
+firewall--ethernet1-22-595    IN   A    128.32.82.182
+firewall--ethernet1-22-595    IN   AAAA 2607:f140:8801:2::2
 
-
-dev-vhost   IN MX      5 anthrax
-dev-dev-vhost	IN MX	5 dev-anthrax
-decal		IN MX	5 anthrax
+dev-vhost                     IN   MX   5   anthrax
+dev-dev-vhost                 IN   MX   5   dev-anthrax
+decal                         IN   MX   5   anthrax
 
 test	IN A	169.229.226.255
 
