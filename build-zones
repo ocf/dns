@@ -30,6 +30,9 @@ BANNER = '''\
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 '''
 
+RDNS_V4_FILE = 'etc/zones/db.226.229.169'
+RDNS_V6_FILE = 'etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa'
+
 
 # TODO: maybe this is a useful thing to put in ocflib?
 class Host(namedtuple('Host', ('hostname',))):
@@ -199,11 +202,11 @@ def main(argv=None):
         f.write(ocf_zone)
 
     reverse_v4_zone = reverse_file_v4(hosts, serial)
-    with open('etc/zones/db.ocf.in-addr.arpa', 'w') as f:
+    with open(RDNS_V4_FILE, 'w') as f:
         f.write(reverse_v4_zone)
 
     reverse_v6_zone = reverse_file_v6(hosts, serial)
-    with open('etc/zones/db.ocf.ip6.arpa', 'w') as f:
+    with open(RDNS_V6_FILE, 'w') as f:
         f.write(reverse_v6_zone)
 
 
