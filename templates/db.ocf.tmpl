@@ -24,16 +24,15 @@ dev-vhost                     IN   MX   5   anthrax
 dev-dev-vhost                 IN   MX   5   dev-anthrax
 decal                         IN   MX   5   anthrax
 
-test	IN A	169.229.226.255
-
-; DNSSEC DS records to be published in the berkeley.edu zone
+; DNSSEC DS records published in the berkeley.edu zone
 @	IN DS	24784 8 1 49843D73409C0C76C35C1DC380B59F0013363AC4
 @	IN DS	24784 8 2 F54DA8CE8E213127A6FFE64FCC33696C6C77F6305C8B2002E0CCADD047BA86CD
 
 ; https://sslmate.com/labs/caa/
 @	IN	CAA	0 issue "comodoca.com"
-@	IN	CAA	0 issue "letsencrypt.org"
 @	IN	CAA	0 issuewild "comodoca.com"
+@	IN	CAA	0 issue "letsencrypt.org"
+@	IN	CAA	0 issuewild "letsencrypt.ocf"
 @	IN	CAA	0 iodef "mailto:security@ocf.berkeley.edu"
 
 {records}

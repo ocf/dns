@@ -33,6 +33,9 @@ BANNER = '''\
 RDNS_V4_FILE = 'etc/zones/db.226.229.169'
 RDNS_V6_FILE = 'etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa'
 
+LE_ROOT = '_acme-challenge.{record}\tIN CNAME\tletsencrypt.ocf.io.'
+LE_RECORD = '_acme-challenge.{record}\tIN CNAME\t{record}.letsencrypt.ocf.io.'
+
 
 # TODO: maybe this is a useful thing to put in ocflib?
 class Host(namedtuple('Host', ('hostname',))):
@@ -86,16 +89,30 @@ class Host(namedtuple('Host', ('hostname',))):
 
     def forward_dns_records(self):
         """Return forward DNS records."""
+
+        def add_letsencrypt(record):
+            if record == '@':
+                return LE_ROOT.format(record=record)
+            elif record.startswith('*.') or \
+                    self.ldap_attrs['type'] in {'server', 'staffvm'}:
+                record = record.lstrip('*.')
+                return LE_RECORD.format(record=record)
+            else:
+                return ''
+
+        yield add_letsencrypt(self.hostname)
         if self.ipv4:
             yield '{self.hostname}\tIN A\t{self.ipv4}'.format(self=self)
         if self.ipv6:
             yield '{self.hostname}\tIN AAAA\t{self.ipv6}'.format(self=self)
         for cname in self.ldap_attrs.get('dnsCname', []):
+            yield add_letsencrypt(cname)
             yield '{}\tIN CNAME\t{self.hostname}'.format(cname, self=self)
         for a in self.ldap_attrs.get('dnsA', []):
             # These are like CNAMEs but for special cases where CNAMEs are
             # illegal. Some examples: domain root, things used in MX or NS
             # records.
+            yield add_letsencrypt(a)
             yield '{}\tIN A\t{self.ipv4}'.format(a, self=self)
             yield '{}\tIN AAAA\t{self.ipv6}'.format(a, self=self)
 
@@ -137,7 +154,7 @@ def forward_file(hosts, serial):
         records='\n\n'.join(
             '\n'.join(
                 ['; {}'.format(host.description)] +
-                list(host.forward_dns_records()),
+                list(filter(None, host.forward_dns_records())),
             )
             for host in sorted(hosts, key=attrgetter('ipv4'))
         ),
