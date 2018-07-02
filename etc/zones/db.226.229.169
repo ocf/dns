@@ -1,5 +1,6 @@
 $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
+
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
 2015110500 ; serial number
                          1d         ; slave refresh schedule interval
@@ -7,13 +8,11 @@ $TTL 1d
                          4w         ; slave expiration of zone data
                          5m         ; negative TTL
                        )
+
 @ IN NS ns.ocf.berkeley.edu.
 
 ; gateway
 1 IN PTR vlan635.inr-350-reccev.berkeley.edu.
-
-; firewall
-253 IN PTR ocf-2.eac.berkeley.edu.
 
 $INCLUDE /srv/dns/etc/zones/db.ocf.in-addr.arpa
 
