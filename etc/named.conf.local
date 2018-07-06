@@ -19,6 +19,16 @@ zone "ocf.io" {
   file "/srv/dns/etc/zones/db.ocf.io";
 };
 
+zone "letsencrypt.ocf.io" {
+  type master;
+  notify no;
+  auto-dnssec maintain;
+  inline-signing yes;
+  file "/srv/dns/etc/zones/db.letsencrypt.ocf.io";
+  // Only allow dynamic updates to TXT records with key authentication
+  update-policy  { grant letsencrypt.ocf.io zonesub TXT; };
+};
+
 zone "asuc.org" {
   type master;
   notify no;
