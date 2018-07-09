@@ -33,7 +33,7 @@ BANNER = '''\
 RDNS_V4_FILE = 'etc/zones/db.226.229.169'
 RDNS_V6_FILE = 'etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa'
 
-LE_ROOT = '_acme-challenge.{record}\tIN CNAME\tletsencrypt.ocf.io.'
+LE_ROOT = '_acme-challenge\tIN CNAME\tletsencrypt.ocf.io.'
 LE_RECORD = '_acme-challenge.{record}\tIN CNAME\t{record}.letsencrypt.ocf.io.'
 
 
