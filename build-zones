@@ -94,7 +94,7 @@ class Host(namedtuple('Host', ('hostname',))):
             if record == '@':
                 return LE_ROOT.format(record=record)
             elif record.startswith('*.') or \
-                    self.ldap_attrs['type'] in {'server', 'staffvm'}:
+                    self.ldap_attrs['type'] in {'server', 'staffvm', 'vip'}:
                 record = record.lstrip('*.')
                 return LE_RECORD.format(record=record)
             else:
