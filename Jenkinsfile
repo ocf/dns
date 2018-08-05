@@ -33,7 +33,7 @@ pipeline {
       emailNotification()
     }
     always {
-      node {
+      node(label: 'slave') {
         ircNotification()
       }
     }
