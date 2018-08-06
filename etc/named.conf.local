@@ -38,7 +38,7 @@ zone "asuc.org" {
 zone "226.229.169.in-addr.arpa" {
   type master;
   notify yes;
-  file "/srv/dns/etc/zones/db.226.229.169";
+  file "/srv/dns/etc/zones/db.226.229.169.in-addr.arpa";
 };
 
 zone "0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa" {
