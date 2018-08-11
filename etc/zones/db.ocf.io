@@ -3,7 +3,7 @@ $TTL 1h
 @ IN NS ns1.ocf.berkeley.edu.
 @ IN NS ns2.ocf.berkeley.edu.
 
-$INCLUDE ../db.ocf
+$INCLUDE /srv/dns/etc/zones/db.ocf
 
 ; Sender Policy Framework (SPF) record
 @ IN TXT "v=spf1 -all"
