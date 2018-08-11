@@ -30,7 +30,7 @@ BANNER = '''\
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 '''
 
-RDNS_V4_FILE = 'etc/zones/db.226.229.169'
+RDNS_V4_FILE = 'etc/zones/db.226.229.169.in-addr.arpa'
 RDNS_V6_FILE = 'etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa'
 
 LE_ROOT = '_acme-challenge\tIN CNAME\tletsencrypt.ocf.io.'
@@ -215,7 +215,7 @@ def main(argv=None):
         f.write('{}\n'.format(serial))
 
     ocf_zone = forward_file(hosts, serial)
-    with open('etc/zones/db.ocf', 'w') as f:
+    with open('etc/db.ocf', 'w') as f:
         f.write(ocf_zone)
 
     reverse_v4_zone = reverse_file_v4(hosts, serial)

@@ -7,7 +7,7 @@ $TTL 5m
 @ IN NS adns1.berkeley.edu.
 @ IN NS adns2.berkeley.edu.
 
-$INCLUDE /srv/dns/etc/zones/db.ocf
+$INCLUDE ../db.ocf
 
 ; Mail delivery
 @ IN MX 1 aspmx.l.google.com.
