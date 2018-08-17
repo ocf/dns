@@ -23,6 +23,7 @@ pipeline {
         label 'deploy'
       }
       steps {
+        sh 'find /srv/dns \( -name "*.jbk" -o -name "*.signed*" \) -delete'
         puppetTrigger('ns')
       }
     }
