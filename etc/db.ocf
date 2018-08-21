@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018082000 ; serial number
+2018082100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -522,11 +522,6 @@ marathon3	IN CNAME	y2k
 _acme-challenge.fraud	IN CNAME	fraud.letsencrypt.ocf.io.
 fraud	IN A	169.229.226.56
 fraud	IN AAAA	2607:f140:8801::1:56
-
-; lowgpa (server)
-_acme-challenge.lowgpa	IN CNAME	lowgpa.letsencrypt.ocf.io.
-lowgpa	IN A	169.229.226.60
-lowgpa	IN AAAA	2607:f140:8801::1:60
 
 ; segfault (server)
 _acme-challenge.segfault	IN CNAME	segfault.letsencrypt.ocf.io.
