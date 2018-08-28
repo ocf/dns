@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018082100 ; serial number
+2018082800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1078,6 +1078,8 @@ mudslide	IN AAAA	2607:f140:8801::1:202
 _acme-challenge.leprosy	IN CNAME	leprosy.letsencrypt.ocf.io.
 leprosy	IN A	169.229.226.203
 leprosy	IN AAAA	2607:f140:8801::1:203
+_acme-challenge.discourse	IN CNAME	discourse.letsencrypt.ocf.io.
+discourse	IN CNAME	leprosy
 
 ; limniceruption (staffvm)
 _acme-challenge.limniceruption	IN CNAME	limniceruption.letsencrypt.ocf.io.
