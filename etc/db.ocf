@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018091303 ; serial number
+2018091400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -548,6 +548,12 @@ matrix	IN CNAME	hozer-65
 _acme-challenge.lethe	IN CNAME	lethe.letsencrypt.ocf.io.
 lethe	IN A	169.229.226.66
 lethe	IN AAAA	2607:f140:8801::1:66
+_acme-challenge.postgres	IN CNAME	postgres.letsencrypt.ocf.io.
+postgres	IN CNAME	lethe
+_acme-challenge.postgresql	IN CNAME	postgresql.letsencrypt.ocf.io.
+postgresql	IN CNAME	lethe
+_acme-challenge.pgsql	IN CNAME	pgsql.letsencrypt.ocf.io.
+pgsql	IN CNAME	lethe
 
 ; hozer-67 (server)
 _acme-challenge.hozer-67	IN CNAME	hozer-67.letsencrypt.ocf.io.
