@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018100701 ; serial number
+2018100800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -204,7 +204,6 @@ dev-prometheus	IN CNAME	dev-dementors
 ; tsunami (server)
 _acme-challenge.tsunami	IN CNAME	tsunami.letsencrypt.ocf.io.
 tsunami	IN A	169.229.226.25
-tsunami	IN AAAA	2607:f140:8801::1:25
 _acme-challenge.ssh	IN CNAME	ssh.letsencrypt.ocf.io.
 ssh	IN CNAME	tsunami
 
