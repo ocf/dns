@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018100801 ; serial number
+2018101300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -53,6 +53,12 @@ tsunami-mgmt	IN A	169.229.226.5
 _acme-challenge.dataloss	IN CNAME	dataloss.letsencrypt.ocf.io.
 dataloss	IN A	169.229.226.6
 dataloss	IN AAAA	2607:f140:8801::1:6
+_acme-challenge.filehost	IN CNAME	filehost.letsencrypt.ocf.io.
+filehost	IN CNAME	dataloss
+_acme-challenge.homes	IN CNAME	homes.letsencrypt.ocf.io.
+homes	IN CNAME	dataloss
+_acme-challenge.services	IN CNAME	services.letsencrypt.ocf.io.
+services	IN CNAME	dataloss
 
 ; deceit (server)
 _acme-challenge.deceit	IN CNAME	deceit.letsencrypt.ocf.io.
@@ -78,14 +84,8 @@ hal-mgmt	IN A	169.229.226.11
 _acme-challenge.jaws	IN CNAME	jaws.letsencrypt.ocf.io.
 jaws	IN A	169.229.226.12
 jaws	IN AAAA	2607:f140:8801::1:12
-_acme-challenge.filehost	IN CNAME	filehost.letsencrypt.ocf.io.
-filehost	IN CNAME	jaws
-_acme-challenge.homes	IN CNAME	homes.letsencrypt.ocf.io.
-homes	IN CNAME	jaws
 _acme-challenge.ntp3	IN CNAME	ntp3.letsencrypt.ocf.io.
 ntp3	IN CNAME	jaws
-_acme-challenge.services	IN CNAME	services.letsencrypt.ocf.io.
-services	IN CNAME	jaws
 
 ; jaws-mgmt (ipmi)
 jaws-mgmt	IN A	169.229.226.13
