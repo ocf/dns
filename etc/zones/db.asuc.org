@@ -29,9 +29,6 @@ www	IN CNAME	@
 ; Note to readers: all these www CNAMEs were imported when asuc.org
 ; transitioned from HostGator to OCF. Please don't add any new ones.
 
-dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
-www.dancemarathon	IN CNAME	death.OCF.Berkeley.EDU.
-
 elections	IN CNAME	death.OCF.Berkeley.EDU.
 www.elections	IN CNAME	death.OCF.Berkeley.EDU.
 
@@ -47,9 +44,6 @@ www.handbook	IN CNAME	death.OCF.Berkeley.EDU.
 wiki	IN CNAME	death.OCF.Berkeley.EDU.
 www.wiki	IN CNAME	death.OCF.Berkeley.EDU.
 
-modern	IN CNAME	death.OCF.Berkeley.EDU.
-www.modern	IN CNAME	death.OCF.Berkeley.EDU.
-
 perspectives	IN CNAME	death.OCF.Berkeley.EDU.
 
 pantry	IN CNAME	death.OCF.Berkeley.EDU.
@@ -64,19 +58,11 @@ www.president	IN CNAME	death.OCF.Berkeley.EDU.
 senate	IN CNAME	death.OCF.Berkeley.EDU.
 www.senate	IN CNAME	death.OCF.Berkeley.EDU.
 
-oldarchive	IN CNAME	death.OCF.Berkeley.EDU.
-
-archive	IN CNAME	death.OCF.Berkeley.EDU.
-www.archive	IN CNAME	death.OCF.Berkeley.EDU.
-
 evp	IN CNAME	death.OCF.Berkeley.EDU.
 www.evp	IN CNAME	death.OCF.Berkeley.EDU.
 
 aavp	IN CNAME	death.OCF.Berkeley.EDU.
 www.aavp	IN CNAME	death.OCF.Berkeley.EDU.
-
-bsf	IN CNAME	death.OCF.Berkeley.EDU.
-www.bsf	IN CNAME	death.OCF.Berkeley.EDU.
 
 decal	IN CNAME	death.OCF.Berkeley.EDU.
 
@@ -90,7 +76,5 @@ www.dev	IN CNAME	death.OCF.Berkeley.EDU.
 
 cfo	IN CNAME	death.OCF.Berkeley.EDU.
 www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
-
-old IN CNAME death.OCF.Berkeley.EDU.
 
 ; vim: noet ts=20 sts=20 sw=20 ft=bindzone
