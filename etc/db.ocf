@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018102901 ; serial number
+2018110800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -481,6 +481,8 @@ lb	IN A	169.229.226.53
 lb	IN AAAA	2607:f140:8801::1:53
 _acme-challenge.dev	IN CNAME	dev.letsencrypt.ocf.io.
 dev	IN CNAME	lb
+_acme-challenge.discourse-sso	IN CNAME	discourse-sso.letsencrypt.ocf.io.
+discourse-sso	IN CNAME	lb
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
 grafana	IN CNAME	lb
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
@@ -655,7 +657,7 @@ _acme-challenge.hozer-86	IN CNAME	hozer-86.letsencrypt.ocf.io.
 hozer-86	IN A	169.229.226.86
 hozer-86	IN AAAA	2607:f140:8801::1:86
 
-; hozer-87 (server)
+; hozer-87 (staffvm)
 _acme-challenge.hozer-87	IN CNAME	hozer-87.letsencrypt.ocf.io.
 hozer-87	IN A	169.229.226.87
 hozer-87	IN AAAA	2607:f140:8801::1:87
