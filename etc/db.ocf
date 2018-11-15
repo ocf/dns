@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018111400 ; serial number
+2018111401 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1216,6 +1216,11 @@ coldwave	IN AAAA	2607:f140:8801::1:227
 _acme-challenge.vortex	IN CNAME	vortex.letsencrypt.ocf.io.
 vortex	IN A	169.229.226.228
 vortex	IN AAAA	2607:f140:8801::1:228
+
+; worm (staffvm)
+_acme-challenge.worm	IN CNAME	worm.letsencrypt.ocf.io.
+worm	IN A	169.229.226.229
+worm	IN AAAA	2607:f140:8801::1:229
 
 ; pox (staffvm)
 _acme-challenge.pox	IN CNAME	pox.letsencrypt.ocf.io.
