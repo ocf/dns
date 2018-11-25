@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018111401 ; serial number
+2018112500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -527,6 +527,13 @@ _acme-challenge.fraud	IN CNAME	fraud.letsencrypt.ocf.io.
 fraud	IN A	169.229.226.56
 fraud	IN AAAA	2607:f140:8801::1:56
 
+; dev-tsunami (server)
+_acme-challenge.dev-tsunami	IN CNAME	dev-tsunami.letsencrypt.ocf.io.
+dev-tsunami	IN A	169.229.226.57
+dev-tsunami	IN AAAA	2607:f140:8801::1:57
+_acme-challenge.dev-ssh	IN CNAME	dev-ssh.letsencrypt.ocf.io.
+dev-ssh	IN CNAME	dev-tsunami
+
 ; segfault (server)
 _acme-challenge.segfault	IN CNAME	segfault.letsencrypt.ocf.io.
 segfault	IN A	169.229.226.61
@@ -659,7 +666,7 @@ _acme-challenge.hozer-86	IN CNAME	hozer-86.letsencrypt.ocf.io.
 hozer-86	IN A	169.229.226.86
 hozer-86	IN AAAA	2607:f140:8801::1:86
 
-; hozer-87 (staffvm)
+; hozer-87 (server)
 _acme-challenge.hozer-87	IN CNAME	hozer-87.letsencrypt.ocf.io.
 hozer-87	IN A	169.229.226.87
 hozer-87	IN AAAA	2607:f140:8801::1:87
