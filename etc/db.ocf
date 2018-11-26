@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018112501 ; serial number
+2018112600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -344,16 +344,16 @@ gridlock	IN AAAA	2607:f140:8801::1:41
 _acme-challenge.broker	IN CNAME	broker.letsencrypt.ocf.io.
 broker	IN CNAME	gridlock
 
-; dev-werewolves (server)
-_acme-challenge.dev-werewolves	IN CNAME	dev-werewolves.letsencrypt.ocf.io.
-dev-werewolves	IN A	169.229.226.42
-dev-werewolves	IN AAAA	2607:f140:8801::1:42
+; dev-vampires (server)
+_acme-challenge.dev-vampires	IN CNAME	dev-vampires.letsencrypt.ocf.io.
+dev-vampires	IN A	169.229.226.42
+dev-vampires	IN AAAA	2607:f140:8801::1:42
 _acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
-*.dev-apphost	IN CNAME	dev-werewolves
+*.dev-apphost	IN CNAME	dev-vampires
 _acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
-dev-apphost	IN CNAME	dev-werewolves
+dev-apphost	IN CNAME	dev-vampires
 _acme-challenge.dev-dev-app	IN CNAME	dev-dev-app.letsencrypt.ocf.io.
-dev-dev-app	IN CNAME	dev-werewolves
+dev-dev-app	IN CNAME	dev-vampires
 
 ; dev-flood (server)
 _acme-challenge.dev-flood	IN CNAME	dev-flood.letsencrypt.ocf.io.
