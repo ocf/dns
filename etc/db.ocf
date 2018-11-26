@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018112600 ; serial number
+2018112601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -415,6 +415,8 @@ _acme-challenge.apphost	IN CNAME	apphost.letsencrypt.ocf.io.
 apphost	IN CNAME	vampires
 _acme-challenge.dev-app	IN CNAME	dev-app.letsencrypt.ocf.io.
 dev-app	IN CNAME	vampires
+_acme-challenge.werewolves	IN CNAME	werewolves.letsencrypt.ocf.io.
+werewolves	IN CNAME	vampires
 
 ; whirlwind (server)
 _acme-challenge.whirlwind	IN CNAME	whirlwind.letsencrypt.ocf.io.
