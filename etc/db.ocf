@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018112500 ; serial number
+2018112501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -231,17 +231,6 @@ democracy	IN AAAA	2607:f140:8801::1:28
 _acme-challenge.syslog	IN CNAME	syslog.letsencrypt.ocf.io.
 syslog	IN CNAME	democracy
 
-; vampires (server)
-_acme-challenge.vampires	IN CNAME	vampires.letsencrypt.ocf.io.
-vampires	IN A	169.229.226.29
-vampires	IN AAAA	2607:f140:8801::1:29
-_acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
-*.dev-apphost	IN CNAME	vampires
-_acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
-dev-apphost	IN CNAME	vampires
-_acme-challenge.dev-dev-app	IN CNAME	dev-dev-app.letsencrypt.ocf.io.
-dev-dev-app	IN CNAME	vampires
-
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
 fallingrocks	IN A	169.229.226.30
@@ -359,6 +348,12 @@ broker	IN CNAME	gridlock
 _acme-challenge.dev-werewolves	IN CNAME	dev-werewolves.letsencrypt.ocf.io.
 dev-werewolves	IN A	169.229.226.42
 dev-werewolves	IN AAAA	2607:f140:8801::1:42
+_acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
+*.dev-apphost	IN CNAME	dev-werewolves
+_acme-challenge.dev-apphost	IN CNAME	dev-apphost.letsencrypt.ocf.io.
+dev-apphost	IN CNAME	dev-werewolves
+_acme-challenge.dev-dev-app	IN CNAME	dev-dev-app.letsencrypt.ocf.io.
+dev-dev-app	IN CNAME	dev-werewolves
 
 ; dev-flood (server)
 _acme-challenge.dev-flood	IN CNAME	dev-flood.letsencrypt.ocf.io.
@@ -406,20 +401,20 @@ reaper	IN AAAA	2607:f140:8801::1:48
 _acme-challenge.jenkins	IN CNAME	jenkins.letsencrypt.ocf.io.
 jenkins	IN CNAME	reaper
 
-; werewolves (server)
-_acme-challenge.werewolves	IN CNAME	werewolves.letsencrypt.ocf.io.
-werewolves	IN A	169.229.226.49
-werewolves	IN AAAA	2607:f140:8801::1:49
+; vampires (server)
+_acme-challenge.vampires	IN CNAME	vampires.letsencrypt.ocf.io.
+vampires	IN A	169.229.226.49
+vampires	IN AAAA	2607:f140:8801::1:49
 _acme-challenge.apphost	IN CNAME	apphost.letsencrypt.ocf.io.
-*.apphost	IN CNAME	werewolves
+*.apphost	IN CNAME	vampires
 _acme-challenge.api-dev.asuc	IN CNAME	api-dev.asuc.letsencrypt.ocf.io.
-api-dev.asuc	IN CNAME	werewolves
+api-dev.asuc	IN CNAME	vampires
 _acme-challenge.api.asuc	IN CNAME	api.asuc.letsencrypt.ocf.io.
-api.asuc	IN CNAME	werewolves
+api.asuc	IN CNAME	vampires
 _acme-challenge.apphost	IN CNAME	apphost.letsencrypt.ocf.io.
-apphost	IN CNAME	werewolves
+apphost	IN CNAME	vampires
 _acme-challenge.dev-app	IN CNAME	dev-app.letsencrypt.ocf.io.
-dev-app	IN CNAME	werewolves
+dev-app	IN CNAME	vampires
 
 ; whirlwind (server)
 _acme-challenge.whirlwind	IN CNAME	whirlwind.letsencrypt.ocf.io.
