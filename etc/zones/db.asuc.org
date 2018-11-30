@@ -32,6 +32,9 @@ www	IN CNAME	@
 elections	IN CNAME	death.OCF.Berkeley.EDU.
 www.elections	IN CNAME	death.OCF.Berkeley.EDU.
 
+elections	IN CNAME	death.OCF.Berkeley.EDU.
+www.elections	IN CNAME	death.OCF.Berkeley.EDU.
+
 wellnesscenter	IN CNAME	death.OCF.Berkeley.EDU.
 www.wellnesscenter	IN CNAME	death.OCF.Berkeley.EDU.
 
@@ -65,6 +68,9 @@ aavp	IN CNAME	death.OCF.Berkeley.EDU.
 www.aavp	IN CNAME	death.OCF.Berkeley.EDU.
 
 decal	IN CNAME	death.OCF.Berkeley.EDU.
+
+news	IN A	169.229.226.23
+news	IN AAAA	2607:f140:8801::1:23
 
 ocf	IN CNAME	death.OCF.Berkeley.EDU.
 
