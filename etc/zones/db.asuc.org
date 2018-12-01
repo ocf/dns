@@ -66,6 +66,9 @@ www.aavp	IN CNAME	death.OCF.Berkeley.EDU.
 
 decal	IN CNAME	death.OCF.Berkeley.EDU.
 
+news	IN A	169.229.226.23
+news	IN AAAA	2607:f140:8801::1:23
+
 ocf	IN CNAME	death.OCF.Berkeley.EDU.
 
 accountability	IN CNAME	death.OCF.Berkeley.EDU.
