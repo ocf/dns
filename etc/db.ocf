@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018122803 ; serial number
+2018122901 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -555,12 +555,12 @@ _acme-challenge.dev-fallingrocks	IN CNAME	dev-fallingrocks.letsencrypt.ocf.io.
 dev-fallingrocks	IN A	169.229.226.63
 dev-fallingrocks	IN AAAA	2607:f140:8801::1:63
 
-; hozer-65 (server)
-_acme-challenge.hozer-65	IN CNAME	hozer-65.letsencrypt.ocf.io.
-hozer-65	IN A	169.229.226.65
-hozer-65	IN AAAA	2607:f140:8801::1:65
-_acme-challenge.matrix	IN CNAME	matrix.letsencrypt.ocf.io.
-matrix	IN CNAME	hozer-65
+; pgp (server)
+_acme-challenge.pgp	IN CNAME	pgp.letsencrypt.ocf.io.
+pgp	IN A	169.229.226.65
+pgp	IN AAAA	2607:f140:8801::1:65
+_acme-challenge.keyserver	IN CNAME	keyserver.letsencrypt.ocf.io.
+keyserver	IN CNAME	pgp
 
 ; lethe (server)
 _acme-challenge.lethe	IN CNAME	lethe.letsencrypt.ocf.io.
