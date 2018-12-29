@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018121900 ; serial number
+2018122803 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -617,21 +617,21 @@ hozer-74	IN AAAA	2607:f140:8801::1:74
 _acme-challenge.hozer-75	IN CNAME	hozer-75.letsencrypt.ocf.io.
 hozer-75	IN A	169.229.226.75
 hozer-75	IN AAAA	2607:f140:8801::1:75
-_acme-challenge.dev-grafana	IN CNAME	dev-grafana.letsencrypt.ocf.io.
-dev-grafana	IN CNAME	hozer-75
-_acme-challenge.dev-pma	IN CNAME	dev-pma.letsencrypt.ocf.io.
-dev-pma	IN CNAME	hozer-75
-_acme-challenge.dev-templates	IN CNAME	dev-templates.letsencrypt.ocf.io.
-dev-templates	IN CNAME	hozer-75
+_acme-challenge.kubernetes0	IN CNAME	kubernetes0.letsencrypt.ocf.io.
+kubernetes0	IN CNAME	hozer-75
 _acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
-kubernetes	IN CNAME	hozer-75
-_acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
-mastodon	IN CNAME	hozer-75
+kubernetes	IN A	169.229.226.75
+kubernetes	IN AAAA	2607:f140:8801::1:75
 
 ; hozer-76 (server)
 _acme-challenge.hozer-76	IN CNAME	hozer-76.letsencrypt.ocf.io.
 hozer-76	IN A	169.229.226.76
 hozer-76	IN AAAA	2607:f140:8801::1:76
+_acme-challenge.kubernetes1	IN CNAME	kubernetes1.letsencrypt.ocf.io.
+kubernetes1	IN CNAME	hozer-76
+_acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
+kubernetes	IN A	169.229.226.76
+kubernetes	IN AAAA	2607:f140:8801::1:76
 
 ; hozer-77 (server)
 _acme-challenge.hozer-77	IN CNAME	hozer-77.letsencrypt.ocf.io.
@@ -642,11 +642,29 @@ hozer-77	IN AAAA	2607:f140:8801::1:77
 _acme-challenge.hozer-78	IN CNAME	hozer-78.letsencrypt.ocf.io.
 hozer-78	IN A	169.229.226.78
 hozer-78	IN AAAA	2607:f140:8801::1:78
+_acme-challenge.kubernetes2	IN CNAME	kubernetes2.letsencrypt.ocf.io.
+kubernetes2	IN CNAME	hozer-78
+_acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
+kubernetes	IN A	169.229.226.78
+kubernetes	IN AAAA	2607:f140:8801::1:78
 
 ; hozer-79 (server)
 _acme-challenge.hozer-79	IN CNAME	hozer-79.letsencrypt.ocf.io.
 hozer-79	IN A	169.229.226.79
 hozer-79	IN AAAA	2607:f140:8801::1:79
+
+; lb-kubernetes (vip)
+_acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
+lb-kubernetes	IN A	169.229.226.79
+lb-kubernetes	IN AAAA	2607:f140:8801::1:79
+_acme-challenge.dev-grafana	IN CNAME	dev-grafana.letsencrypt.ocf.io.
+dev-grafana	IN CNAME	lb-kubernetes
+_acme-challenge.dev-pma	IN CNAME	dev-pma.letsencrypt.ocf.io.
+dev-pma	IN CNAME	lb-kubernetes
+_acme-challenge.dev-templates	IN CNAME	dev-templates.letsencrypt.ocf.io.
+dev-templates	IN CNAME	lb-kubernetes
+_acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
+mastodon	IN CNAME	lb-kubernetes
 
 ; hozer-80 (server)
 _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
