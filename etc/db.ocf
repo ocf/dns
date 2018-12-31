@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2018122901 ; serial number
+2018123000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -613,12 +613,14 @@ _acme-challenge.hozer-74	IN CNAME	hozer-74.letsencrypt.ocf.io.
 hozer-74	IN A	169.229.226.74
 hozer-74	IN AAAA	2607:f140:8801::1:74
 
-; hozer-75 (server)
+; deadlock (server)
+_acme-challenge.deadlock	IN CNAME	deadlock.letsencrypt.ocf.io.
+deadlock	IN A	169.229.226.75
+deadlock	IN AAAA	2607:f140:8801::1:75
 _acme-challenge.hozer-75	IN CNAME	hozer-75.letsencrypt.ocf.io.
-hozer-75	IN A	169.229.226.75
-hozer-75	IN AAAA	2607:f140:8801::1:75
+hozer-75	IN CNAME	deadlock
 _acme-challenge.kubernetes0	IN CNAME	kubernetes0.letsencrypt.ocf.io.
-kubernetes0	IN CNAME	hozer-75
+kubernetes0	IN CNAME	deadlock
 _acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
 kubernetes	IN A	169.229.226.75
 kubernetes	IN AAAA	2607:f140:8801::1:75
@@ -648,11 +650,6 @@ _acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
 kubernetes	IN A	169.229.226.78
 kubernetes	IN AAAA	2607:f140:8801::1:78
 
-; hozer-79 (server)
-_acme-challenge.hozer-79	IN CNAME	hozer-79.letsencrypt.ocf.io.
-hozer-79	IN A	169.229.226.79
-hozer-79	IN AAAA	2607:f140:8801::1:79
-
 ; lb-kubernetes (vip)
 _acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
 lb-kubernetes	IN A	169.229.226.79
@@ -665,6 +662,11 @@ _acme-challenge.dev-templates	IN CNAME	dev-templates.letsencrypt.ocf.io.
 dev-templates	IN CNAME	lb-kubernetes
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
 mastodon	IN CNAME	lb-kubernetes
+
+; hozer-79 (server)
+_acme-challenge.hozer-79	IN CNAME	hozer-79.letsencrypt.ocf.io.
+hozer-79	IN A	169.229.226.79
+hozer-79	IN AAAA	2607:f140:8801::1:79
 
 ; hozer-80 (server)
 _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
