@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019010100 ; serial number
+2019010200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -51,10 +51,8 @@ _acme-challenge.scurvy	IN CNAME	scurvy.letsencrypt.ocf.io.
 scurvy	IN A	169.229.226.3
 scurvy	IN AAAA	2607:f140:8801::1:3
 
-; scurvy-mgmt (server)
-_acme-challenge.scurvy-mgmt	IN CNAME	scurvy-mgmt.letsencrypt.ocf.io.
+; scurvy-mgmt (ipmi)
 scurvy-mgmt	IN A	169.229.226.4
-scurvy-mgmt	IN AAAA	2607:f140:8801::1:4
 
 ; dataloss-mgmt (ipmi)
 dataloss-mgmt	IN A	169.229.226.5
@@ -519,15 +517,6 @@ dev-lightning	IN A	169.229.226.54
 dev-lightning	IN AAAA	2607:f140:8801::1:54
 _acme-challenge.dev-puppet	IN CNAME	dev-puppet.letsencrypt.ocf.io.
 dev-puppet	IN CNAME	dev-lightning
-
-; y2k (server)
-_acme-challenge.y2k	IN CNAME	y2k.letsencrypt.ocf.io.
-y2k	IN A	169.229.226.55
-y2k	IN AAAA	2607:f140:8801::1:55
-_acme-challenge.mesos3	IN CNAME	mesos3.letsencrypt.ocf.io.
-mesos3	IN CNAME	y2k
-_acme-challenge.marathon3	IN CNAME	marathon3.letsencrypt.ocf.io.
-marathon3	IN CNAME	y2k
 
 ; fraud (server)
 _acme-challenge.fraud	IN CNAME	fraud.letsencrypt.ocf.io.
