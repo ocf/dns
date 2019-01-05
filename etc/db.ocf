@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019010201 ; serial number
+2019010400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -264,6 +264,8 @@ wifi	IN CNAME	radiation
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
 dementors	IN A	169.229.226.33
 dementors	IN AAAA	2607:f140:8801::1:33
+_acme-challenge.alertmanager	IN CNAME	alertmanager.letsencrypt.ocf.io.
+alertmanager	IN CNAME	dementors
 _acme-challenge.labstats	IN CNAME	labstats.letsencrypt.ocf.io.
 labstats	IN CNAME	dementors
 _acme-challenge.munin	IN CNAME	munin.letsencrypt.ocf.io.
