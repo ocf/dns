@@ -12,4 +12,7 @@ $INCLUDE ../db.ocf
 letsencrypt	IN DS 57934 8 1 2201285F81BBD84AA166313B2835867708739376
 letsencrypt	IN DS 57934 8 2 1C256F913B230E300CD1BC4F4F339A174DAFE21A6D770A9574037E35DD5AF766
 
+; new status blog via github pages
+dev-status IN CNAME ocf.github.io.
+
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
