@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019030700 ; serial number
+2019031400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1192,10 +1192,10 @@ _acme-challenge.zerg	IN CNAME	zerg.letsencrypt.ocf.io.
 zerg	IN A	169.229.226.219
 zerg	IN AAAA	2607:f140:8801::1:219
 
-; quasar (staffvm)
-_acme-challenge.quasar	IN CNAME	quasar.letsencrypt.ocf.io.
-quasar	IN A	169.229.226.220
-quasar	IN AAAA	2607:f140:8801::1:220
+; stackclash (staffvm)
+_acme-challenge.stackclash	IN CNAME	stackclash.letsencrypt.ocf.io.
+stackclash	IN A	169.229.226.220
+stackclash	IN AAAA	2607:f140:8801::1:220
 
 ; fire (staffvm)
 _acme-challenge.fire	IN CNAME	fire.letsencrypt.ocf.io.
