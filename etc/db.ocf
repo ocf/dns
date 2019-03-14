@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019031401 ; serial number
+2019031402 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1121,11 +1121,6 @@ limniceruption	IN AAAA	2607:f140:8801::1:204
 _acme-challenge.meltdown	IN CNAME	meltdown.letsencrypt.ocf.io.
 meltdown	IN A	169.229.226.205
 meltdown	IN AAAA	2607:f140:8801::1:205
-
-; conspiracy (staffvm)
-_acme-challenge.conspiracy	IN CNAME	conspiracy.letsencrypt.ocf.io.
-conspiracy	IN A	169.229.226.206
-conspiracy	IN AAAA	2607:f140:8801::1:206
 
 ; tempest (staffvm)
 _acme-challenge.tempest	IN CNAME	tempest.letsencrypt.ocf.io.
