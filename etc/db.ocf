@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019031901 ; serial number
+2019032000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -636,8 +636,10 @@ _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
 grafana	IN CNAME	lb-kubernetes
 _acme-challenge.kanboard	IN CNAME	kanboard.letsencrypt.ocf.io.
 kanboard	IN CNAME	lb-kubernetes
-_acme-challenge.kubernetes-admin	IN CNAME	kubernetes-admin.letsencrypt.ocf.io.
-kubernetes-admin	IN CNAME	lb-kubernetes
+_acme-challenge.kube	IN CNAME	kube.letsencrypt.ocf.io.
+kube	IN CNAME	lb-kubernetes
+_acme-challenge.kubeadmin	IN CNAME	kubeadmin.letsencrypt.ocf.io.
+kubeadmin	IN CNAME	lb-kubernetes
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN CNAME	lb-kubernetes
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
