@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019033000 ; serial number
+2019033100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1304,10 +1304,10 @@ _acme-challenge.miasma	IN CNAME	miasma.letsencrypt.ocf.io.
 miasma	IN A	169.229.226.241
 miasma	IN AAAA	2607:f140:8801::1:241
 
-; cataclysm (staffvm)
-_acme-challenge.cataclysm	IN CNAME	cataclysm.letsencrypt.ocf.io.
-cataclysm	IN A	169.229.226.242
-cataclysm	IN AAAA	2607:f140:8801::1:242
+; night (staffvm)
+_acme-challenge.night	IN CNAME	night.letsencrypt.ocf.io.
+night	IN A	169.229.226.242
+night	IN AAAA	2607:f140:8801::1:242
 
 ; falsevacuum (staffvm)
 _acme-challenge.falsevacuum	IN CNAME	falsevacuum.letsencrypt.ocf.io.
