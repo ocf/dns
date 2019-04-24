@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019040100 ; serial number
+2019042400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -488,10 +488,6 @@ _acme-challenge.discourse-sso	IN CNAME	discourse-sso.letsencrypt.ocf.io.
 discourse-sso	IN CNAME	lb
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
 ircbot	IN CNAME	lb
-_acme-challenge.phpmyadmin	IN CNAME	phpmyadmin.letsencrypt.ocf.io.
-phpmyadmin	IN CNAME	lb
-_acme-challenge.pma	IN CNAME	pma.letsencrypt.ocf.io.
-pma	IN CNAME	lb
 _acme-challenge.sg	IN CNAME	sg.letsencrypt.ocf.io.
 sg	IN CNAME	lb
 _acme-challenge.sourcegraph	IN CNAME	sourcegraph.letsencrypt.ocf.io.
@@ -642,6 +638,10 @@ _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
 mastodon	IN CNAME	lb-kubernetes
 _acme-challenge.metabase	IN CNAME	metabase.letsencrypt.ocf.io.
 metabase	IN CNAME	lb-kubernetes
+_acme-challenge.phpmyadmin	IN CNAME	phpmyadmin.letsencrypt.ocf.io.
+phpmyadmin	IN CNAME	lb-kubernetes
+_acme-challenge.pma	IN CNAME	pma.letsencrypt.ocf.io.
+pma	IN CNAME	lb-kubernetes
 _acme-challenge.rt	IN CNAME	rt.letsencrypt.ocf.io.
 rt	IN CNAME	lb-kubernetes
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
@@ -682,7 +682,7 @@ _acme-challenge.hozer-86	IN CNAME	hozer-86.letsencrypt.ocf.io.
 hozer-86	IN A	169.229.226.86
 hozer-86	IN AAAA	2607:f140:8801::1:86
 
-; hozer-87 (server)
+; hozer-87 (staffvm)
 _acme-challenge.hozer-87	IN CNAME	hozer-87.letsencrypt.ocf.io.
 hozer-87	IN A	169.229.226.87
 hozer-87	IN AAAA	2607:f140:8801::1:87
