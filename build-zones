@@ -166,10 +166,12 @@ def reverse_file_v4(hosts, serial):
     return open('templates/db.ocf.in-addr.arpa.tmpl').read().format(
         banner=BANNER,
         serial=serial,
-        records='\n'.join(chain.from_iterable(
-            host.reverse_dns_records_v4()
-            for host in sorted(hosts, key=attrgetter('ipv4'))
-        )),
+        records='\n'.join(
+            chain.from_iterable(
+                host.reverse_dns_records_v4()
+                for host in sorted(hosts, key=attrgetter('ipv4'))
+            ),
+        ),
     )
 
 
@@ -177,13 +179,15 @@ def reverse_file_v6(hosts, serial):
     return open('templates/db.ocf.ip6.arpa.tmpl').read().format(
         banner=BANNER,
         serial=serial,
-        records='\n'.join(chain.from_iterable(
-            host.reverse_dns_records_v6()
-            for host in sorted(
-                filter(lambda host: host.ipv6, hosts),
-                key=attrgetter('ipv6'),
-            )
-        )),
+        records='\n'.join(
+            chain.from_iterable(
+                host.reverse_dns_records_v6()
+                for host in sorted(
+                    filter(lambda host: host.ipv6, hosts),
+                    key=attrgetter('ipv6'),
+                )
+            ),
+        ),
     )
 
 
