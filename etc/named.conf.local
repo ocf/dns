@@ -46,3 +46,9 @@ zone "0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa" {
   notify yes;
   file "/srv/dns/etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa";
 };
+
+zone "rpz" {
+  type master;
+  notify yes;
+  file "/srv/dns/etc/zones/db.rpz";
+};
