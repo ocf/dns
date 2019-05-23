@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019042800 ; serial number
+2019052200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -852,6 +852,9 @@ invasion	IN AAAA	2607:f140:8801::1:129
 typhoon	IN A	169.229.226.130
 typhoon	IN AAAA	2607:f140:8801::1:130
 
+; fallingrocks-mgmt (ipmi)
+fallingrocks-mgmt	IN A	169.229.226.131
+
 ; dhcp-169-229-226-140 (dhcp)
 dhcp-169-229-226-140	IN A	169.229.226.140
 dhcp-169-229-226-140	IN AAAA	2607:f140:8801::1:140
@@ -1092,11 +1095,6 @@ dhcp-169-229-226-198	IN AAAA	2607:f140:8801::1:198
 dhcp-169-229-226-199	IN A	169.229.226.199
 dhcp-169-229-226-199	IN AAAA	2607:f140:8801::1:199
 
-; raptors (staffvm)
-_acme-challenge.raptors	IN CNAME	raptors.letsencrypt.ocf.io.
-raptors	IN A	169.229.226.200
-raptors	IN AAAA	2607:f140:8801::1:200
-
 ; locusts (staffvm)
 _acme-challenge.locusts	IN CNAME	locusts.letsencrypt.ocf.io.
 locusts	IN A	169.229.226.201
@@ -1123,11 +1121,6 @@ _acme-challenge.limniceruption	IN CNAME	limniceruption.letsencrypt.ocf.io.
 limniceruption	IN A	169.229.226.204
 limniceruption	IN AAAA	2607:f140:8801::1:204
 
-; meltdown (staffvm)
-_acme-challenge.meltdown	IN CNAME	meltdown.letsencrypt.ocf.io.
-meltdown	IN A	169.229.226.205
-meltdown	IN AAAA	2607:f140:8801::1:205
-
 ; tempest (staffvm)
 _acme-challenge.tempest	IN CNAME	tempest.letsencrypt.ocf.io.
 tempest	IN A	169.229.226.206
@@ -1142,11 +1135,6 @@ gnats	IN AAAA	2607:f140:8801::1:207
 _acme-challenge.koolaid	IN CNAME	koolaid.letsencrypt.ocf.io.
 koolaid	IN A	169.229.226.208
 koolaid	IN AAAA	2607:f140:8801::1:208
-
-; old-vampires (staffvm)
-_acme-challenge.old-vampires	IN CNAME	old-vampires.letsencrypt.ocf.io.
-old-vampires	IN A	169.229.226.209
-old-vampires	IN AAAA	2607:f140:8801::1:209
 
 ; panic (staffvm)
 _acme-challenge.panic	IN CNAME	panic.letsencrypt.ocf.io.
@@ -1172,11 +1160,6 @@ quicksand	IN AAAA	2607:f140:8801::1:213
 _acme-challenge.failure	IN CNAME	failure.letsencrypt.ocf.io.
 failure	IN A	169.229.226.214
 failure	IN AAAA	2607:f140:8801::1:214
-
-; skynet (staffvm)
-_acme-challenge.skynet	IN CNAME	skynet.letsencrypt.ocf.io.
-skynet	IN A	169.229.226.215
-skynet	IN AAAA	2607:f140:8801::1:215
 
 ; sauron (staffvm)
 _acme-challenge.sauron	IN CNAME	sauron.letsencrypt.ocf.io.
@@ -1233,11 +1216,6 @@ _acme-challenge.fireball	IN CNAME	fireball.letsencrypt.ocf.io.
 fireball	IN A	169.229.226.226
 fireball	IN AAAA	2607:f140:8801::1:226
 
-; coldwave (staffvm)
-_acme-challenge.coldwave	IN CNAME	coldwave.letsencrypt.ocf.io.
-coldwave	IN A	169.229.226.227
-coldwave	IN AAAA	2607:f140:8801::1:227
-
 ; vortex (staffvm)
 _acme-challenge.vortex	IN CNAME	vortex.letsencrypt.ocf.io.
 vortex	IN A	169.229.226.228
@@ -1285,11 +1263,6 @@ _acme-challenge.riot	IN CNAME	riot.letsencrypt.ocf.io.
 riot	IN A	169.229.226.236
 riot	IN AAAA	2607:f140:8801::1:236
 
-; meteorite (staffvm)
-_acme-challenge.meteorite	IN CNAME	meteorite.letsencrypt.ocf.io.
-meteorite	IN A	169.229.226.237
-meteorite	IN AAAA	2607:f140:8801::1:237
-
 ; pompeii (staffvm)
 _acme-challenge.pompeii	IN CNAME	pompeii.letsencrypt.ocf.io.
 pompeii	IN A	169.229.226.238
@@ -1299,11 +1272,6 @@ pompeii	IN AAAA	2607:f140:8801::1:238
 _acme-challenge.oilspill	IN CNAME	oilspill.letsencrypt.ocf.io.
 oilspill	IN A	169.229.226.239
 oilspill	IN AAAA	2607:f140:8801::1:239
-
-; doom (staffvm)
-_acme-challenge.doom	IN CNAME	doom.letsencrypt.ocf.io.
-doom	IN A	169.229.226.240
-doom	IN AAAA	2607:f140:8801::1:240
 
 ; miasma (staffvm)
 _acme-challenge.miasma	IN CNAME	miasma.letsencrypt.ocf.io.
