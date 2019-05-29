@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019052800 ; serial number
+2019052900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -367,6 +367,8 @@ dev-flood	IN A	169.229.226.43
 dev-flood	IN AAAA	2607:f140:8801::1:43
 _acme-challenge.dev-irc	IN CNAME	dev-irc.letsencrypt.ocf.io.
 dev-irc	IN CNAME	dev-flood
+_acme-challenge.dev-xmpp	IN CNAME	dev-xmpp.letsencrypt.ocf.io.
+dev-xmpp	IN CNAME	dev-flood
 
 ; zombies (server)
 _acme-challenge.zombies	IN CNAME	zombies.letsencrypt.ocf.io.
