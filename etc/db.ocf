@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019053101 ; serial number
+2019053102 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -43,8 +43,8 @@ dev-dev-vhost                 IN   MX   5   dev-anthrax
 @	IN	CAA	0 iodef "mailto:security@ocf.berkeley.edu"
 
 ; SRV records for XMPP server
-_xmpp-client._tcp.ocf.berkeley.edu. 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
-_xmpp-server._tcp.ocf.berkeley.edu. 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
+_xmpp-client._tcp 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
+_xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
