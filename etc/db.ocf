@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019060100 ; serial number
+2019060101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -488,12 +488,6 @@ mesos	IN AAAA	2607:f140:8801::1:52
 _acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
 lb	IN A	169.229.226.53
 lb	IN AAAA	2607:f140:8801::1:53
-_acme-challenge.dev	IN CNAME	dev.letsencrypt.ocf.io.
-dev	IN CNAME	lb
-_acme-challenge.discourse-sso	IN CNAME	discourse-sso.letsencrypt.ocf.io.
-discourse-sso	IN CNAME	lb
-_acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
-static	IN CNAME	lb
 
 ; dev-lightning (server)
 _acme-challenge.dev-lightning	IN CNAME	dev-lightning.letsencrypt.ocf.io.
@@ -654,6 +648,8 @@ _acme-challenge.snmp-exporter	IN CNAME	snmp-exporter.letsencrypt.ocf.io.
 snmp-exporter	IN CNAME	lb-kubernetes
 _acme-challenge.sourcegraph	IN CNAME	sourcegraph.letsencrypt.ocf.io.
 sourcegraph	IN CNAME	lb-kubernetes
+_acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
+static	IN CNAME	lb-kubernetes
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
 templates	IN CNAME	lb-kubernetes
 
