@@ -33,5 +33,6 @@ g IN MX 5 alt2.aspmx.l.google.com.
 g IN MX 10 alt3.aspmx.l.google.com.
 g IN MX 10 alt4.aspmx.l.google.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
+@ IN TXT "google-site-verification=90n5U42IP0UQMEIAVccUIcM7qOmSXkiOihFbfDaIbRg"
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
