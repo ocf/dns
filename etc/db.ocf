@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019060700 ; serial number
+2019062200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -434,60 +434,23 @@ werewolves	IN CNAME	vampires
 _acme-challenge.whirlwind	IN CNAME	whirlwind.letsencrypt.ocf.io.
 whirlwind	IN A	169.229.226.50
 whirlwind	IN AAAA	2607:f140:8801::1:50
-_acme-challenge.marathon0	IN CNAME	marathon0.letsencrypt.ocf.io.
-marathon0	IN CNAME	whirlwind
-_acme-challenge.mesos0	IN CNAME	mesos0.letsencrypt.ocf.io.
-mesos0	IN CNAME	whirlwind
-_acme-challenge.agent.mesos	IN CNAME	agent.mesos.letsencrypt.ocf.io.
-*.agent.mesos	IN A	169.229.226.50
-*.agent.mesos	IN AAAA	2607:f140:8801::1:50
-_acme-challenge.marathon	IN CNAME	marathon.letsencrypt.ocf.io.
-marathon	IN A	169.229.226.50
-marathon	IN AAAA	2607:f140:8801::1:50
-_acme-challenge.mesos	IN CNAME	mesos.letsencrypt.ocf.io.
-mesos	IN A	169.229.226.50
-mesos	IN AAAA	2607:f140:8801::1:50
 
 ; pileup (server)
 _acme-challenge.pileup	IN CNAME	pileup.letsencrypt.ocf.io.
 pileup	IN A	169.229.226.51
 pileup	IN AAAA	2607:f140:8801::1:51
-_acme-challenge.marathon1	IN CNAME	marathon1.letsencrypt.ocf.io.
-marathon1	IN CNAME	pileup
-_acme-challenge.mesos1	IN CNAME	mesos1.letsencrypt.ocf.io.
-mesos1	IN CNAME	pileup
-_acme-challenge.agent.mesos	IN CNAME	agent.mesos.letsencrypt.ocf.io.
-*.agent.mesos	IN A	169.229.226.51
-*.agent.mesos	IN AAAA	2607:f140:8801::1:51
-_acme-challenge.marathon	IN CNAME	marathon.letsencrypt.ocf.io.
-marathon	IN A	169.229.226.51
-marathon	IN AAAA	2607:f140:8801::1:51
-_acme-challenge.mesos	IN CNAME	mesos.letsencrypt.ocf.io.
-mesos	IN A	169.229.226.51
-mesos	IN AAAA	2607:f140:8801::1:51
 
 ; monsoon (server)
 _acme-challenge.monsoon	IN CNAME	monsoon.letsencrypt.ocf.io.
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
-_acme-challenge.marathon2	IN CNAME	marathon2.letsencrypt.ocf.io.
-marathon2	IN CNAME	monsoon
-_acme-challenge.mesos2	IN CNAME	mesos2.letsencrypt.ocf.io.
-mesos2	IN CNAME	monsoon
-_acme-challenge.agent.mesos	IN CNAME	agent.mesos.letsencrypt.ocf.io.
-*.agent.mesos	IN A	169.229.226.52
-*.agent.mesos	IN AAAA	2607:f140:8801::1:52
-_acme-challenge.marathon	IN CNAME	marathon.letsencrypt.ocf.io.
-marathon	IN A	169.229.226.52
-marathon	IN AAAA	2607:f140:8801::1:52
-_acme-challenge.mesos	IN CNAME	mesos.letsencrypt.ocf.io.
-mesos	IN A	169.229.226.52
-mesos	IN AAAA	2607:f140:8801::1:52
 
 ; lb (vip)
 _acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
 lb	IN A	169.229.226.53
 lb	IN AAAA	2607:f140:8801::1:53
+_acme-challenge.inventory	IN CNAME	inventory.letsencrypt.ocf.io.
+inventory	IN CNAME	lb
 
 ; dev-lightning (server)
 _acme-challenge.dev-lightning	IN CNAME	dev-lightning.letsencrypt.ocf.io.
@@ -627,8 +590,6 @@ _acme-challenge.auth	IN CNAME	auth.letsencrypt.ocf.io.
 auth	IN CNAME	lb-kubernetes
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
 grafana	IN CNAME	lb-kubernetes
-_acme-challenge.inventory	IN CNAME	inventory.letsencrypt.ocf.io.
-inventory	IN CNAME	lb-kubernetes
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
 ircbot	IN CNAME	lb-kubernetes
 _acme-challenge.kafka-manager	IN CNAME	kafka-manager.letsencrypt.ocf.io.
