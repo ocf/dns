@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019062500 ; serial number
+2019062601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -510,10 +510,12 @@ postgresql	IN CNAME	lethe
 _acme-challenge.pgsql	IN CNAME	pgsql.letsencrypt.ocf.io.
 pgsql	IN CNAME	lethe
 
-; hozer-67 (server)
-_acme-challenge.hozer-67	IN CNAME	hozer-67.letsencrypt.ocf.io.
-hozer-67	IN A	169.229.226.67
-hozer-67	IN AAAA	2607:f140:8801::1:67
+; mutation (server)
+_acme-challenge.mutation	IN CNAME	mutation.letsencrypt.ocf.io.
+mutation	IN A	169.229.226.67
+mutation	IN AAAA	2607:f140:8801::1:67
+_acme-challenge.dev-discourse	IN CNAME	dev-discourse.letsencrypt.ocf.io.
+dev-discourse	IN CNAME	mutation
 
 ; hozer-68 (server)
 _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
@@ -588,8 +590,6 @@ lb-kubernetes	IN A	169.229.226.79
 lb-kubernetes	IN AAAA	2607:f140:8801::1:79
 _acme-challenge.dev-kubernetes	IN CNAME	dev-kubernetes.letsencrypt.ocf.io.
 *.dev-kubernetes	IN CNAME	lb-kubernetes
-_acme-challenge.dev-discourse	IN CNAME	dev-discourse.letsencrypt.ocf.io.
-dev-discourse	IN CNAME	lb-kubernetes
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
 grafana	IN CNAME	lb-kubernetes
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
