@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019070100 ; serial number
+2019070101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -445,11 +445,6 @@ _acme-challenge.monsoon	IN CNAME	monsoon.letsencrypt.ocf.io.
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 
-; lb (vip)
-_acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
-lb	IN A	169.229.226.53
-lb	IN AAAA	2607:f140:8801::1:53
-
 ; dev-lightning (server)
 _acme-challenge.dev-lightning	IN CNAME	dev-lightning.letsencrypt.ocf.io.
 dev-lightning	IN A	169.229.226.54
@@ -580,50 +575,50 @@ _acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
 kubernetes	IN A	169.229.226.77
 kubernetes	IN AAAA	2607:f140:8801::1:77
 
-; lb-kubernetes (vip)
-_acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
-lb-kubernetes	IN A	169.229.226.79
-lb-kubernetes	IN AAAA	2607:f140:8801::1:79
+; lb (vip)
+_acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
+lb	IN A	169.229.226.79
+lb	IN AAAA	2607:f140:8801::1:79
 _acme-challenge.dev-kubernetes	IN CNAME	dev-kubernetes.letsencrypt.ocf.io.
-*.dev-kubernetes	IN CNAME	lb-kubernetes
+*.dev-kubernetes	IN CNAME	lb
 _acme-challenge.auth	IN CNAME	auth.letsencrypt.ocf.io.
-auth	IN CNAME	lb-kubernetes
+auth	IN CNAME	lb
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
-grafana	IN CNAME	lb-kubernetes
+grafana	IN CNAME	lb
 _acme-challenge.inventory	IN CNAME	inventory.letsencrypt.ocf.io.
-inventory	IN CNAME	lb-kubernetes
+inventory	IN CNAME	lb
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
-ircbot	IN CNAME	lb-kubernetes
+ircbot	IN CNAME	lb
 _acme-challenge.kafka-manager	IN CNAME	kafka-manager.letsencrypt.ocf.io.
-kafka-manager	IN CNAME	lb-kubernetes
+kafka-manager	IN CNAME	lb
 _acme-challenge.kanboard	IN CNAME	kanboard.letsencrypt.ocf.io.
-kanboard	IN CNAME	lb-kubernetes
+kanboard	IN CNAME	lb
 _acme-challenge.kube	IN CNAME	kube.letsencrypt.ocf.io.
-kube	IN CNAME	lb-kubernetes
+kube	IN CNAME	lb
 _acme-challenge.kubeadmin	IN CNAME	kubeadmin.letsencrypt.ocf.io.
-kubeadmin	IN CNAME	lb-kubernetes
+kubeadmin	IN CNAME	lb
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
-labmap	IN CNAME	lb-kubernetes
+labmap	IN CNAME	lb
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
-mastodon	IN CNAME	lb-kubernetes
+mastodon	IN CNAME	lb
 _acme-challenge.metabase	IN CNAME	metabase.letsencrypt.ocf.io.
-metabase	IN CNAME	lb-kubernetes
+metabase	IN CNAME	lb
 _acme-challenge.phpmyadmin	IN CNAME	phpmyadmin.letsencrypt.ocf.io.
-phpmyadmin	IN CNAME	lb-kubernetes
+phpmyadmin	IN CNAME	lb
 _acme-challenge.pma	IN CNAME	pma.letsencrypt.ocf.io.
-pma	IN CNAME	lb-kubernetes
+pma	IN CNAME	lb
 _acme-challenge.rt	IN CNAME	rt.letsencrypt.ocf.io.
-rt	IN CNAME	lb-kubernetes
+rt	IN CNAME	lb
 _acme-challenge.sg	IN CNAME	sg.letsencrypt.ocf.io.
-sg	IN CNAME	lb-kubernetes
+sg	IN CNAME	lb
 _acme-challenge.snmp-exporter	IN CNAME	snmp-exporter.letsencrypt.ocf.io.
-snmp-exporter	IN CNAME	lb-kubernetes
+snmp-exporter	IN CNAME	lb
 _acme-challenge.sourcegraph	IN CNAME	sourcegraph.letsencrypt.ocf.io.
-sourcegraph	IN CNAME	lb-kubernetes
+sourcegraph	IN CNAME	lb
 _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
-static	IN CNAME	lb-kubernetes
+static	IN CNAME	lb
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
-templates	IN CNAME	lb-kubernetes
+templates	IN CNAME	lb
 
 ; hozer-80 (server)
 _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
