@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019070301 ; serial number
+2019071201 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -468,6 +468,8 @@ dev-ssh	IN CNAME	dev-tsunami
 _acme-challenge.phlegethon	IN CNAME	phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+_acme-challenge.mongodb	IN CNAME	mongodb.letsencrypt.ocf.io.
+mongodb	IN CNAME	phlegethon
 
 ; segfault (server)
 _acme-challenge.segfault	IN CNAME	segfault.letsencrypt.ocf.io.
