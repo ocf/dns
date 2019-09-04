@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019082200 ; serial number
+2019090400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -251,5 +251,6 @@ $TTL 1d
 249 IN PTR solarflare.OCF.Berkeley.EDU.
 250 IN PTR fallout.OCF.Berkeley.EDU.
 251 IN PTR calamity.OCF.Berkeley.EDU.
+252 IN PTR singularity.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
