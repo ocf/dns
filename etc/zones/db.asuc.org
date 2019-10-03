@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019011600 ; serial number
+2019100300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -79,5 +79,8 @@ www.dev	IN CNAME	death.OCF.Berkeley.EDU.
 
 cfo	IN CNAME	death.OCF.Berkeley.EDU.
 www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
+
+octo	IN CNAME	unruffled-shockley-567ba0.netlify.com.
+www.octo	IN CNAME	unruffled-shockley-567ba0.netlify.com.
 
 ; vim: noet ts=20 sts=20 sw=20 ft=bindzone
