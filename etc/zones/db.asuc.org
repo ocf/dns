@@ -26,9 +26,6 @@ $TTL 5m
 @	IN AAAA	2607:f140:8801::1:23
 www	IN CNAME	@
 
-; Note to readers: all these www CNAMEs were imported when asuc.org
-; transitioned from HostGator to OCF. Please don't add any new ones.
-
 elections	IN CNAME	death.OCF.Berkeley.EDU.
 www.elections	IN CNAME	death.OCF.Berkeley.EDU.
 
