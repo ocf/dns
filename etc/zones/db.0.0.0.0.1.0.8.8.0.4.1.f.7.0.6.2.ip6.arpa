@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019101600 ; serial number
+2019102100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -80,6 +80,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 9.5.0.0 IN PTR y2k.ocf.berkeley.edu.
 1.6.0.0 IN PTR segfault.ocf.berkeley.edu.
 3.6.0.0 IN PTR dev-fallingrocks.ocf.berkeley.edu.
+4.6.0.0 IN PTR bedbugs.ocf.berkeley.edu.
 5.6.0.0 IN PTR pgp.ocf.berkeley.edu.
 6.6.0.0 IN PTR lethe.ocf.berkeley.edu.
 7.6.0.0 IN PTR mutation.ocf.berkeley.edu.
