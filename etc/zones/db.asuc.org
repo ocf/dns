@@ -12,11 +12,11 @@ $TTL 5m
 @ IN NS ns1.ocf.berkeley.edu.
 @ IN NS ns2.ocf.berkeley.edu.
 
-@ IN MX 1 aspmx.l.google.com.
-@ IN MX 5 alt1.aspmx.l.google.com.
-@ IN MX 5 alt2.aspmx.l.google.com.
-@ IN MX 10 alt3.aspmx.l.google.com.
-@ IN MX 10 alt4.aspmx.l.google.com.
+@ 2d IN MX 1 aspmx.l.google.com.
+@ 2d IN MX 5 alt1.aspmx.l.google.com.
+@ 2d IN MX 5 alt2.aspmx.l.google.com.
+@ 2d IN MX 10 alt3.aspmx.l.google.com.
+@ 2d IN MX 10 alt4.aspmx.l.google.com.
 
 @ IN TXT "google-site-verification=hxbVM0Dyi3ZD8WK551bJxjQ3sNd4fqom1nWncOMMWuw"
 
