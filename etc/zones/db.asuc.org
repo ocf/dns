@@ -12,6 +12,7 @@ $TTL 5m
 @ IN NS ns1.ocf.berkeley.edu.
 @ IN NS ns2.ocf.berkeley.edu.
 
+; The 2d TTL here is temporary, to guard against power outage
 @ 2d IN MX 1 aspmx.l.google.com.
 @ 2d IN MX 5 alt1.aspmx.l.google.com.
 @ 2d IN MX 5 alt2.aspmx.l.google.com.
@@ -20,7 +21,8 @@ $TTL 5m
 
 @ IN TXT "google-site-verification=hxbVM0Dyi3ZD8WK551bJxjQ3sNd4fqom1nWncOMMWuw"
 
-@ IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
+; The 2d TTL here is temporary, to guard against power outage
+@ 2d IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
 
 @	IN A	169.229.226.23
 @	IN AAAA	2607:f140:8801::1:23
