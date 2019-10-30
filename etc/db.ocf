@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019102100 ; serial number
+2019102901 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1111,6 +1111,11 @@ _acme-challenge.limniceruption	IN CNAME	limniceruption.letsencrypt.ocf.io.
 limniceruption	IN A	169.229.226.204
 limniceruption	IN AAAA	2607:f140:8801::1:204
 
+; hellfire (staffvm)
+_acme-challenge.hellfire	IN CNAME	hellfire.letsencrypt.ocf.io.
+hellfire	IN A	169.229.226.205
+hellfire	IN AAAA	2607:f140:8801::1:205
+
 ; tempest (staffvm)
 _acme-challenge.tempest	IN CNAME	tempest.letsencrypt.ocf.io.
 tempest	IN A	169.229.226.206
@@ -1249,6 +1254,11 @@ apocalypse	IN AAAA	2607:f140:8801::1:234
 _acme-challenge.cloudburst	IN CNAME	cloudburst.letsencrypt.ocf.io.
 cloudburst	IN A	169.229.226.235
 cloudburst	IN AAAA	2607:f140:8801::1:235
+
+; rejection (staffvm)
+_acme-challenge.rejection	IN CNAME	rejection.letsencrypt.ocf.io.
+rejection	IN A	169.229.226.235
+rejection	IN AAAA	2607:f140:8801::1:235
 
 ; riot (staffvm)
 _acme-challenge.riot	IN CNAME	riot.letsencrypt.ocf.io.
