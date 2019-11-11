@@ -1250,11 +1250,6 @@ _acme-challenge.apocalypse	IN CNAME	apocalypse.letsencrypt.ocf.io.
 apocalypse	IN A	169.229.226.234
 apocalypse	IN AAAA	2607:f140:8801::1:234
 
-; cloudburst (staffvm)
-_acme-challenge.cloudburst	IN CNAME	cloudburst.letsencrypt.ocf.io.
-cloudburst	IN A	169.229.226.235
-cloudburst	IN AAAA	2607:f140:8801::1:235
-
 ; rejection (staffvm)
 _acme-challenge.rejection	IN CNAME	rejection.letsencrypt.ocf.io.
 rejection	IN A	169.229.226.235
