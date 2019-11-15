@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019111100 ; serial number
+2019111500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1211,6 +1211,11 @@ _acme-challenge.fireball	IN CNAME	fireball.letsencrypt.ocf.io.
 fireball	IN A	169.229.226.226
 fireball	IN AAAA	2607:f140:8801::1:226
 
+; bigrip (staffvm)
+_acme-challenge.bigrip	IN CNAME	bigrip.letsencrypt.ocf.io.
+bigrip	IN A	169.229.226.227
+bigrip	IN AAAA	2607:f140:8801::1:227
+
 ; vortex (staffvm)
 _acme-challenge.vortex	IN CNAME	vortex.letsencrypt.ocf.io.
 vortex	IN A	169.229.226.228
@@ -1259,6 +1264,11 @@ rejection	IN AAAA	2607:f140:8801::1:235
 _acme-challenge.riot	IN CNAME	riot.letsencrypt.ocf.io.
 riot	IN A	169.229.226.236
 riot	IN AAAA	2607:f140:8801::1:236
+
+; bolide (staffvm)
+_acme-challenge.bolide	IN CNAME	bolide.letsencrypt.ocf.io.
+bolide	IN A	169.229.226.237
+bolide	IN AAAA	2607:f140:8801::1:237
 
 ; pompeii (staffvm)
 _acme-challenge.pompeii	IN CNAME	pompeii.letsencrypt.ocf.io.
