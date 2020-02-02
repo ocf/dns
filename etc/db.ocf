@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2019111500 ; serial number
+2020020100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -268,14 +268,10 @@ wifi	IN CNAME	radiation
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
 dementors	IN A	169.229.226.33
 dementors	IN AAAA	2607:f140:8801::1:33
-_acme-challenge.labstats	IN CNAME	labstats.letsencrypt.ocf.io.
-labstats	IN CNAME	dementors
 _acme-challenge.munin	IN CNAME	munin.letsencrypt.ocf.io.
 munin	IN CNAME	dementors
 _acme-challenge.prometheus	IN CNAME	prometheus.letsencrypt.ocf.io.
 prometheus	IN CNAME	dementors
-_acme-challenge.stats	IN CNAME	stats.letsencrypt.ocf.io.
-stats	IN CNAME	dementors
 
 ; dev-maelstrom (server)
 _acme-challenge.dev-maelstrom	IN CNAME	dev-maelstrom.letsencrypt.ocf.io.
@@ -470,8 +466,6 @@ dev-ssh	IN CNAME	dev-tsunami
 _acme-challenge.phlegethon	IN CNAME	phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
-_acme-challenge.mongodb	IN CNAME	mongodb.letsencrypt.ocf.io.
-mongodb	IN CNAME	phlegethon
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	y2k.letsencrypt.ocf.io.
@@ -514,13 +508,6 @@ _acme-challenge.postgresql	IN CNAME	postgresql.letsencrypt.ocf.io.
 postgresql	IN CNAME	lethe
 _acme-challenge.pgsql	IN CNAME	pgsql.letsencrypt.ocf.io.
 pgsql	IN CNAME	lethe
-
-; mutation (server)
-_acme-challenge.mutation	IN CNAME	mutation.letsencrypt.ocf.io.
-mutation	IN A	169.229.226.67
-mutation	IN AAAA	2607:f140:8801::1:67
-_acme-challenge.dev-discourse	IN CNAME	dev-discourse.letsencrypt.ocf.io.
-dev-discourse	IN CNAME	mutation
 
 ; hozer-68 (server)
 _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
