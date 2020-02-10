@@ -1,6 +1,6 @@
 zone "ocf.berkeley.edu" {
   type master;
-  notify yes;
+  notify explicit;
   auto-dnssec maintain;
   inline-signing yes;
   file "/srv/dns/etc/zones/db.ocf.berkeley.edu";
@@ -37,12 +37,12 @@ zone "asuc.org" {
 
 zone "226.229.169.in-addr.arpa" {
   type master;
-  notify yes;
+  notify explicit;
   file "/srv/dns/etc/zones/db.226.229.169.in-addr.arpa";
 };
 
 zone "0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa" {
   type master;
-  notify yes;
+  notify explicit;
   file "/srv/dns/etc/zones/db.0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa";
 };
