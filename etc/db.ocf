@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020020902 ; serial number
+2020021300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1121,6 +1121,11 @@ gnats	IN AAAA	2607:f140:8801::1:207
 _acme-challenge.koolaid	IN CNAME	koolaid.letsencrypt.ocf.io.
 koolaid	IN A	169.229.226.208
 koolaid	IN AAAA	2607:f140:8801::1:208
+
+; trojan (staffvm)
+_acme-challenge.trojan	IN CNAME	trojan.letsencrypt.ocf.io.
+trojan	IN A	169.229.226.209
+trojan	IN AAAA	2607:f140:8801::1:209
 
 ; panic (staffvm)
 _acme-challenge.panic	IN CNAME	panic.letsencrypt.ocf.io.
