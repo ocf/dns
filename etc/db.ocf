@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020021300 ; serial number
+2020021900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -443,12 +443,22 @@ _acme-challenge.monsoon	IN CNAME	monsoon.letsencrypt.ocf.io.
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 
+; hozer-53 (server)
+_acme-challenge.hozer-53	IN CNAME	hozer-53.letsencrypt.ocf.io.
+hozer-53	IN A	169.229.226.53
+hozer-53	IN AAAA	2607:f140:8801::1:53
+
 ; dev-lightning (server)
 _acme-challenge.dev-lightning	IN CNAME	dev-lightning.letsencrypt.ocf.io.
 dev-lightning	IN A	169.229.226.54
 dev-lightning	IN AAAA	2607:f140:8801::1:54
 _acme-challenge.dev-puppet	IN CNAME	dev-puppet.letsencrypt.ocf.io.
 dev-puppet	IN CNAME	dev-lightning
+
+; hozer-55 (server)
+_acme-challenge.hozer-55	IN CNAME	hozer-55.letsencrypt.ocf.io.
+hozer-55	IN A	169.229.226.55
+hozer-55	IN AAAA	2607:f140:8801::1:55
 
 ; fraud (server)
 _acme-challenge.fraud	IN CNAME	fraud.letsencrypt.ocf.io.
@@ -472,6 +482,11 @@ _acme-challenge.y2k	IN CNAME	y2k.letsencrypt.ocf.io.
 y2k	IN A	169.229.226.59
 y2k	IN AAAA	2607:f140:8801::1:59
 
+; hozer-60 (server)
+_acme-challenge.hozer-60	IN CNAME	hozer-60.letsencrypt.ocf.io.
+hozer-60	IN A	169.229.226.60
+hozer-60	IN AAAA	2607:f140:8801::1:60
+
 ; segfault (server)
 _acme-challenge.segfault	IN CNAME	segfault.letsencrypt.ocf.io.
 segfault	IN A	169.229.226.61
@@ -480,6 +495,11 @@ _acme-challenge.hpcctl	IN CNAME	hpcctl.letsencrypt.ocf.io.
 hpcctl	IN CNAME	segfault
 _acme-challenge.hpcdb	IN CNAME	hpcdb.letsencrypt.ocf.io.
 hpcdb	IN CNAME	segfault
+
+; hozer-62 (server)
+_acme-challenge.hozer-62	IN CNAME	hozer-62.letsencrypt.ocf.io.
+hozer-62	IN A	169.229.226.62
+hozer-62	IN AAAA	2607:f140:8801::1:62
 
 ; dev-fallingrocks (server)
 _acme-challenge.dev-fallingrocks	IN CNAME	dev-fallingrocks.letsencrypt.ocf.io.
@@ -508,6 +528,11 @@ _acme-challenge.postgresql	IN CNAME	postgresql.letsencrypt.ocf.io.
 postgresql	IN CNAME	lethe
 _acme-challenge.pgsql	IN CNAME	pgsql.letsencrypt.ocf.io.
 pgsql	IN CNAME	lethe
+
+; hozer-67 (server)
+_acme-challenge.hozer-67	IN CNAME	hozer-67.letsencrypt.ocf.io.
+hozer-67	IN A	169.229.226.67
+hozer-67	IN AAAA	2607:f140:8801::1:67
 
 ; hozer-68 (server)
 _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
@@ -835,6 +860,14 @@ typhoon	IN AAAA	2607:f140:8801::1:130
 
 ; fallingrocks-mgmt (ipmi)
 fallingrocks-mgmt	IN A	169.229.226.131
+
+; wormhole (switch)
+wormhole	IN A	169.229.226.138
+wormhole	IN AAAA	2607:f140:8801::1:138
+
+; whitehole (switch)
+whitehole	IN A	169.229.226.139
+whitehole	IN AAAA	2607:f140:8801::1:139
 
 ; dhcp-169-229-226-140 (dhcp)
 dhcp-169-229-226-140	IN A	169.229.226.140

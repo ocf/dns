@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020021300 ; serial number
+2020021900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -70,16 +70,21 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 0.5.0.0 IN PTR whirlwind.ocf.berkeley.edu.
 1.5.0.0 IN PTR pileup.ocf.berkeley.edu.
 2.5.0.0 IN PTR monsoon.ocf.berkeley.edu.
+3.5.0.0 IN PTR hozer-53.ocf.berkeley.edu.
 4.5.0.0 IN PTR dev-lightning.ocf.berkeley.edu.
+5.5.0.0 IN PTR hozer-55.ocf.berkeley.edu.
 6.5.0.0 IN PTR fraud.ocf.berkeley.edu.
 7.5.0.0 IN PTR dev-tsunami.ocf.berkeley.edu.
 8.5.0.0 IN PTR phlegethon.ocf.berkeley.edu.
 9.5.0.0 IN PTR y2k.ocf.berkeley.edu.
+0.6.0.0 IN PTR hozer-60.ocf.berkeley.edu.
 1.6.0.0 IN PTR segfault.ocf.berkeley.edu.
+2.6.0.0 IN PTR hozer-62.ocf.berkeley.edu.
 3.6.0.0 IN PTR dev-fallingrocks.ocf.berkeley.edu.
 4.6.0.0 IN PTR bedbugs.ocf.berkeley.edu.
 5.6.0.0 IN PTR pgp.ocf.berkeley.edu.
 6.6.0.0 IN PTR lethe.ocf.berkeley.edu.
+7.6.0.0 IN PTR hozer-67.ocf.berkeley.edu.
 8.6.0.0 IN PTR hozer-68.ocf.berkeley.edu.
 9.6.0.0 IN PTR hozer-69.ocf.berkeley.edu.
 0.7.0.0 IN PTR hozer-70.ocf.berkeley.edu.
@@ -134,6 +139,8 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 8.2.1.0 IN PTR sinkhole.ocf.berkeley.edu.
 9.2.1.0 IN PTR invasion.ocf.berkeley.edu.
 0.3.1.0 IN PTR typhoon.ocf.berkeley.edu.
+8.3.1.0 IN PTR wormhole.ocf.berkeley.edu.
+9.3.1.0 IN PTR whitehole.ocf.berkeley.edu.
 0.4.1.0 IN PTR dhcp-169-229-226-140.ocf.berkeley.edu.
 1.4.1.0 IN PTR dhcp-169-229-226-141.ocf.berkeley.edu.
 2.4.1.0 IN PTR dhcp-169-229-226-142.ocf.berkeley.edu.
