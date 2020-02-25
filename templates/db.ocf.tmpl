@@ -38,6 +38,9 @@ dev-dev-vhost                 IN   MX   5   dev-anthrax
 _xmpp-client._tcp 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
 _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
 
+; SRV records for Matrix server
+_matrix._tcp 18000 IN SRV 0 5 443 matrix.ocf.berkeley.edu
+
 {records}
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
