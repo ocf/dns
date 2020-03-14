@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020030300 ; serial number
+2020031300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -443,10 +443,10 @@ _acme-challenge.monsoon	IN CNAME	monsoon.letsencrypt.ocf.io.
 monsoon	IN A	169.229.226.52
 monsoon	IN AAAA	2607:f140:8801::1:52
 
-; hozer-53 (server)
-_acme-challenge.hozer-53	IN CNAME	hozer-53.letsencrypt.ocf.io.
-hozer-53	IN A	169.229.226.53
-hozer-53	IN AAAA	2607:f140:8801::1:53
+; ceph (vip)
+_acme-challenge.ceph	IN CNAME	ceph.letsencrypt.ocf.io.
+ceph	IN A	169.229.226.53
+ceph	IN AAAA	2607:f140:8801::1:53
 
 ; dev-lightning (server)
 _acme-challenge.dev-lightning	IN CNAME	dev-lightning.letsencrypt.ocf.io.
