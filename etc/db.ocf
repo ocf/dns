@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020031300 ; serial number
+2020031800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -865,6 +865,9 @@ fallingrocks-mgmt	IN A	169.229.226.131
 
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
+
+; shock (ipmi)
+shock	IN A	169.229.226.137
 
 ; wormhole (switch)
 wormhole	IN A	169.229.226.138
