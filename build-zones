@@ -12,10 +12,8 @@ from operator import attrgetter
 
 import ldap3
 from cached_property import cached_property
-from ocflib.infra.hosts import HOST_TYPES_WITH_IPV6
 from ocflib.infra.ldap import ldap_ocf
 from ocflib.infra.ldap import OCF_LDAP_HOSTS
-from ocflib.infra.net import ipv4_to_ipv6
 from ocflib.infra.net import is_ocf_ip
 
 
@@ -39,18 +37,6 @@ LE_RECORD = '_acme-challenge.{record}\tIN CNAME\t{record}.letsencrypt.ocf.io.'
 
 # TODO: maybe this is a useful thing to put in ocflib?
 class Host(namedtuple('Host', ('hostname',))):
-
-    @classmethod
-    def from_ldap_record(cls, record):
-        attrs = record['attributes']
-        hostname, = attrs['cn']
-        ip, = ip_address(attrs['ipHostNumber'])
-        return cls(
-            hostname=hostname,
-            ip=ip,
-            cnames=set(),
-        )
-
     @cached_property
     def description(self):
         d = '{self.hostname} ({self.ldap_attrs[type]})'.format(self=self)
@@ -60,16 +46,15 @@ class Host(namedtuple('Host', ('hostname',))):
     def ipv4(self):
         ipv4, = self.ldap_attrs['ipHostNumber']
         ipv4 = ip_address(ipv4)
-        assert is_ocf_ip(ipv4), ipv4
+        assert is_ocf_ip(ipv4)
         return ipv4
 
     @cached_property
     def ipv6(self):
-        host_type = self.ldap_attrs['type']
-
-        if host_type in HOST_TYPES_WITH_IPV6:
-            ipv6 = ipv4_to_ipv6(self.ipv4)
-            assert is_ocf_ip(ipv6), ipv6  # just in case
+        if 'ip6HostNumber' in self.ldap_attrs:
+            ipv6, = self.ldap_attrs['ip6HostNumber']
+            ipv6 = ip_address(ipv6)
+            assert is_ocf_ip(ipv6)
             return ipv6
 
     @cached_property
