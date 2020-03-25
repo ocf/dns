@@ -46,7 +46,7 @@ class Host(namedtuple('Host', ('hostname',))):
     def ipv4(self):
         ipv4, = self.ldap_attrs['ipHostNumber']
         ipv4 = ip_address(ipv4)
-        assert is_ocf_ip(ipv4), ipv4
+        assert is_ocf_ip(ipv4)
         return ipv4
 
     @cached_property
@@ -54,7 +54,7 @@ class Host(namedtuple('Host', ('hostname',))):
         if 'ip6HostNumber' in self.ldap_attrs:
             ipv6, = self.ldap_attrs['ip6HostNumber']
             ipv6 = ip_address(ipv6)
-            assert is_ocf_ip(ipv6), ipv6
+            assert is_ocf_ip(ipv6)
             return ipv6
 
     @cached_property
