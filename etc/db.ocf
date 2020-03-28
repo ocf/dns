@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020032400 ; serial number
+2020032800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1193,6 +1193,11 @@ _acme-challenge.failure	IN CNAME	failure.letsencrypt.ocf.io.
 failure	IN A	169.229.226.214
 failure	IN AAAA	2607:f140:8801::1:214
 
+; spectre (staffvm)
+_acme-challenge.spectre	IN CNAME	spectre.letsencrypt.ocf.io.
+spectre	IN A	169.229.226.215
+spectre	IN AAAA	2607:f140:8801::1:215
+
 ; sauron (staffvm)
 _acme-challenge.sauron	IN CNAME	sauron.letsencrypt.ocf.io.
 sauron	IN A	169.229.226.216
@@ -1317,7 +1322,7 @@ _acme-challenge.oilspill	IN CNAME	oilspill.letsencrypt.ocf.io.
 oilspill	IN A	169.229.226.239
 oilspill	IN AAAA	2607:f140:8801::1:239
 
-; quarantine (server)
+; quarantine (staffvm)
 _acme-challenge.quarantine	IN CNAME	quarantine.letsencrypt.ocf.io.
 quarantine	IN A	169.229.226.241
 quarantine	IN AAAA	2607:f140:8801::1:241
