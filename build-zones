@@ -35,8 +35,13 @@ LE_ROOT = '_acme-challenge\tIN CNAME\tletsencrypt.ocf.io.'
 LE_RECORD = '_acme-challenge.{record}\tIN CNAME\t{record}.letsencrypt.ocf.io.'
 
 
-# TODO: maybe this is a useful thing to put in ocflib?
 class Host(namedtuple('Host', ('hostname',))):
+    def __new__(cls, attributes):
+        return super().__new__(cls, attributes['cn'][0])
+
+    def __init__(self, attributes):
+        self.ldap_attrs = attributes
+
     @cached_property
     def description(self):
         d = '{self.hostname} ({self.ldap_attrs[type]})'.format(self=self)
@@ -56,17 +61,6 @@ class Host(namedtuple('Host', ('hostname',))):
             ipv6 = ip_address(ipv6)
             assert is_ocf_ip(ipv6)
             return ipv6
-
-    @cached_property
-    def ldap_attrs(self):
-        with ldap_ocf() as c:
-            c.search(
-                OCF_LDAP_HOSTS,
-                '(cn={})'.format(self.hostname),
-                attributes=ldap3.ALL_ATTRIBUTES,
-            )
-            record, = c.response
-            return record['attributes']
 
     @cached_property
     def last_quad(self):
@@ -125,9 +119,13 @@ class Host(namedtuple('Host', ('hostname',))):
 def hosts_from_ldap():
     """Return set of hosts at the OCF."""
     with ldap_ocf() as c:
-        c.search(OCF_LDAP_HOSTS, '(cn=*)', attributes=['cn'])
+        c.search(
+            OCF_LDAP_HOSTS,
+            '(cn=*)',
+            attributes=ldap3.ALL_ATTRIBUTES,
+        )
         hosts = {
-            Host(record['attributes']['cn'][0])
+            Host(record['attributes'])
             for record in c.response
         }
     return hosts
