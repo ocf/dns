@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020032800 ; serial number
+2020041600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1276,11 +1276,6 @@ pox	IN A	169.229.226.230
 pox	IN AAAA	2607:f140:8801::1:230
 _acme-challenge.pox	IN CNAME	pox.letsencrypt.ocf.io.
 *.pox	IN CNAME	pox
-
-; nyx (staffvm)
-_acme-challenge.nyx	IN CNAME	nyx.letsencrypt.ocf.io.
-nyx	IN A	169.229.226.231
-nyx	IN AAAA	2607:f140:8801::1:231
 
 ; nuke (staffvm)
 _acme-challenge.nuke	IN CNAME	nuke.letsencrypt.ocf.io.
