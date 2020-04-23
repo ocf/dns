@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020041600 ; serial number
+2020042300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -505,6 +505,10 @@ hozer-62	IN AAAA	2607:f140:8801::1:62
 _acme-challenge.dev-fallingrocks	IN CNAME	dev-fallingrocks.letsencrypt.ocf.io.
 dev-fallingrocks	IN A	169.229.226.63
 dev-fallingrocks	IN AAAA	2607:f140:8801::1:63
+_acme-challenge.dev-mirrors	IN CNAME	dev-mirrors.letsencrypt.ocf.io.
+dev-mirrors	IN CNAME	dev-fallingrocks
+_acme-challenge.dev-apt	IN CNAME	dev-apt.letsencrypt.ocf.io.
+dev-apt	IN CNAME	dev-fallingrocks
 
 ; bedbugs (server)
 _acme-challenge.bedbugs	IN CNAME	bedbugs.letsencrypt.ocf.io.
