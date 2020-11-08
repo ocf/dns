@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020101000 ; serial number
+2020110800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -457,8 +457,7 @@ dev-lightning	IN AAAA	2607:f140:8801::1:54
 _acme-challenge.dev-puppet	IN CNAME	dev-puppet.letsencrypt.ocf.io.
 dev-puppet	IN CNAME	dev-lightning
 
-; hozer-55 (server)
-_acme-challenge.hozer-55	IN CNAME	hozer-55.letsencrypt.ocf.io.
+; hozer-55 (staffvm )
 hozer-55	IN A	169.229.226.55
 hozer-55	IN AAAA	2607:f140:8801::1:55
 
@@ -1308,5 +1307,10 @@ calamity	IN AAAA	2607:f140:8801::1:251
 _acme-challenge.singularity	IN CNAME	singularity.letsencrypt.ocf.io.
 singularity	IN A	169.229.226.252
 singularity	IN AAAA	2607:f140:8801::1:252
+
+; paranoia (server)
+_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.253
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
