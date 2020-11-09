@@ -1204,6 +1204,11 @@ _acme-challenge.fire	IN CNAME	fire.letsencrypt.ocf.io.
 fire	IN A	169.229.226.221
 fire	IN AAAA	2607:f140:8801::1:221
 
+; entropy (staffvm)
+_acme-challenge.entropy	IN CNAME	entropy.letsencrypt.ocf.io.
+entropy	IN A	169.229.226.222
+entropy	IN AAAA	2607:f140:8801::1:222
+
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	rapture.letsencrypt.ocf.io.
 rapture	IN A	169.229.226.225
