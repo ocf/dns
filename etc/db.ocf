@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020112900 ; serial number
+2020120100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -695,6 +695,9 @@ hozer-81	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.argo	IN CNAME	argo.letsencrypt.ocf.io.
 argo	IN A	169.229.226.81
 argo	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.vault	IN CNAME	vault.letsencrypt.ocf.io.
+vault	IN A	169.229.226.81
+vault	IN AAAA	2607:f140:8801::1:81
 
 ; hozer-82 (server)
 _acme-challenge.hozer-82	IN CNAME	hozer-82.letsencrypt.ocf.io.
