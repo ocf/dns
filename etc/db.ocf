@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020121001 ; serial number
+2020122200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -81,6 +81,11 @@ deceit	IN AAAA	2607:f140:8801::1:7
 _acme-challenge.ransomware	IN CNAME	ransomware.letsencrypt.ocf.io.
 ransomware	IN A	169.229.226.8
 ransomware	IN AAAA	2607:f140:8801::1:8
+
+; lockdown (server)
+_acme-challenge.lockdown	IN CNAME	lockdown.letsencrypt.ocf.io.
+lockdown	IN A	169.229.226.9
+lockdown	IN AAAA	2607:f140:8801::1:9
 
 ; hal (server)
 _acme-challenge.hal	IN CNAME	hal.letsencrypt.ocf.io.
