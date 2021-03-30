@@ -80,5 +80,5 @@ www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
 octo	IN CNAME	asuc-octo.github.io.
 www.octo	IN CNAME	asuc-octo.github.io.
 octo-api	IN A	34.117.31.96
-auth.octo IN CNAME api-team-292919.firebaseapp.com
+auth.octo IN CNAME api-team-292919.firebaseapp.com.
 ; vim: noet ts=20 sts=20 sw=20 ft=bindzone
