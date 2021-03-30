@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2020081000 ; serial number
+2021011801 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -81,6 +81,11 @@ deceit	IN AAAA	2607:f140:8801::1:7
 _acme-challenge.ransomware	IN CNAME	ransomware.letsencrypt.ocf.io.
 ransomware	IN A	169.229.226.8
 ransomware	IN AAAA	2607:f140:8801::1:8
+
+; lockdown (server)
+_acme-challenge.lockdown	IN CNAME	lockdown.letsencrypt.ocf.io.
+lockdown	IN A	169.229.226.9
+lockdown	IN AAAA	2607:f140:8801::1:9
 
 ; hal (server)
 _acme-challenge.hal	IN CNAME	hal.letsencrypt.ocf.io.
@@ -176,6 +181,8 @@ _acme-challenge.accounts	IN CNAME	accounts.letsencrypt.ocf.io.
 accounts	IN CNAME	death
 _acme-challenge.decal	IN CNAME	decal.letsencrypt.ocf.io.
 decal	IN CNAME	death
+_acme-challenge.dev-discourse	IN CNAME	dev-discourse.letsencrypt.ocf.io.
+dev-discourse	IN CNAME	death
 _acme-challenge.docs	IN CNAME	docs.letsencrypt.ocf.io.
 docs	IN CNAME	death
 _acme-challenge.hello	IN CNAME	hello.letsencrypt.ocf.io.
@@ -455,8 +462,7 @@ dev-lightning	IN AAAA	2607:f140:8801::1:54
 _acme-challenge.dev-puppet	IN CNAME	dev-puppet.letsencrypt.ocf.io.
 dev-puppet	IN CNAME	dev-lightning
 
-; hozer-55 (server)
-_acme-challenge.hozer-55	IN CNAME	hozer-55.letsencrypt.ocf.io.
+; hozer-55 (staffvm )
 hozer-55	IN A	169.229.226.55
 hozer-55	IN AAAA	2607:f140:8801::1:55
 
@@ -604,6 +610,11 @@ _acme-challenge.kubernetes	IN CNAME	kubernetes.letsencrypt.ocf.io.
 kubernetes	IN A	169.229.226.77
 kubernetes	IN AAAA	2607:f140:8801::1:77
 
+; kube-master (vip)
+_acme-challenge.kube-master	IN CNAME	kube-master.letsencrypt.ocf.io.
+kube-master	IN A	169.229.226.78
+kube-master	IN AAAA	2607:f140:8801::1:78
+
 ; lb (vip)
 _acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
 lb	IN A	169.229.226.79
@@ -614,10 +625,16 @@ _acme-challenge.api	IN CNAME	api.letsencrypt.ocf.io.
 api	IN CNAME	lb
 _acme-challenge.auth	IN CNAME	auth.letsencrypt.ocf.io.
 auth	IN CNAME	lb
+_acme-challenge.badges	IN CNAME	badges.letsencrypt.ocf.io.
+badges	IN CNAME	lb
+_acme-challenge.badgr-api	IN CNAME	badgr-api.letsencrypt.ocf.io.
+badgr-api	IN CNAME	lb
 _acme-challenge.chat	IN CNAME	chat.letsencrypt.ocf.io.
 chat	IN CNAME	lb
 _acme-challenge.cruisecontrol	IN CNAME	cruisecontrol.letsencrypt.ocf.io.
 cruisecontrol	IN CNAME	lb
+_acme-challenge.discord	IN CNAME	discord.letsencrypt.ocf.io.
+discord	IN CNAME	lb
 _acme-challenge.fava	IN CNAME	fava.letsencrypt.ocf.io.
 fava	IN CNAME	lb
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
@@ -640,6 +657,8 @@ _acme-challenge.kubeadmin	IN CNAME	kubeadmin.letsencrypt.ocf.io.
 kubeadmin	IN CNAME	lb
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN CNAME	lb
+_acme-challenge.lambda	IN CNAME	lambda.letsencrypt.ocf.io.
+lambda	IN CNAME	lb
 _acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
 lb-kubernetes	IN CNAME	lb
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
@@ -680,6 +699,27 @@ hozer-80	IN AAAA	2607:f140:8801::1:80
 _acme-challenge.hozer-81	IN CNAME	hozer-81.letsencrypt.ocf.io.
 hozer-81	IN A	169.229.226.81
 hozer-81	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.alerts	IN CNAME	alerts.letsencrypt.ocf.io.
+alerts	IN A	169.229.226.81
+alerts	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.argo	IN CNAME	argo.letsencrypt.ocf.io.
+argo	IN A	169.229.226.81
+argo	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.graf	IN CNAME	graf.letsencrypt.ocf.io.
+graf	IN A	169.229.226.81
+graf	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.harbor	IN CNAME	harbor.letsencrypt.ocf.io.
+harbor	IN A	169.229.226.81
+harbor	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.harbor-notary	IN CNAME	harbor-notary.letsencrypt.ocf.io.
+harbor-notary	IN A	169.229.226.81
+harbor-notary	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.prom	IN CNAME	prom.letsencrypt.ocf.io.
+prom	IN A	169.229.226.81
+prom	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.vault	IN CNAME	vault.letsencrypt.ocf.io.
+vault	IN A	169.229.226.81
+vault	IN AAAA	2607:f140:8801::1:81
 
 ; hozer-82 (server)
 _acme-challenge.hozer-82	IN CNAME	hozer-82.letsencrypt.ocf.io.
@@ -1131,18 +1171,6 @@ dhcp-169-229-226-198	IN AAAA	2607:f140:8801::1:198
 dhcp-169-229-226-199	IN A	169.229.226.199
 dhcp-169-229-226-199	IN AAAA	2607:f140:8801::1:199
 
-; locusts (staffvm)
-_acme-challenge.locusts	IN CNAME	locusts.letsencrypt.ocf.io.
-locusts	IN A	169.229.226.201
-locusts	IN AAAA	2607:f140:8801::1:201
-_acme-challenge.kochira	IN CNAME	kochira.letsencrypt.ocf.io.
-kochira	IN CNAME	locusts
-
-; mudslide (staffvm)
-_acme-challenge.mudslide	IN CNAME	mudslide.letsencrypt.ocf.io.
-mudslide	IN A	169.229.226.202
-mudslide	IN AAAA	2607:f140:8801::1:202
-
 ; leprosy (staffvm)
 _acme-challenge.leprosy	IN CNAME	leprosy.letsencrypt.ocf.io.
 leprosy	IN A	169.229.226.203
@@ -1151,11 +1179,6 @@ _acme-challenge.leprosy	IN CNAME	leprosy.letsencrypt.ocf.io.
 *.leprosy	IN CNAME	leprosy
 _acme-challenge.discourse	IN CNAME	discourse.letsencrypt.ocf.io.
 discourse	IN CNAME	leprosy
-
-; limniceruption (staffvm)
-_acme-challenge.limniceruption	IN CNAME	limniceruption.letsencrypt.ocf.io.
-limniceruption	IN A	169.229.226.204
-limniceruption	IN AAAA	2607:f140:8801::1:204
 
 ; hellfire (staffvm)
 _acme-challenge.hellfire	IN CNAME	hellfire.letsencrypt.ocf.io.
@@ -1167,16 +1190,6 @@ _acme-challenge.tempest	IN CNAME	tempest.letsencrypt.ocf.io.
 tempest	IN A	169.229.226.206
 tempest	IN AAAA	2607:f140:8801::1:206
 
-; gnats (staffvm)
-_acme-challenge.gnats	IN CNAME	gnats.letsencrypt.ocf.io.
-gnats	IN A	169.229.226.207
-gnats	IN AAAA	2607:f140:8801::1:207
-
-; koolaid (staffvm)
-_acme-challenge.koolaid	IN CNAME	koolaid.letsencrypt.ocf.io.
-koolaid	IN A	169.229.226.208
-koolaid	IN AAAA	2607:f140:8801::1:208
-
 ; trojan (staffvm)
 _acme-challenge.trojan	IN CNAME	trojan.letsencrypt.ocf.io.
 trojan	IN A	169.229.226.209
@@ -1186,11 +1199,6 @@ trojan	IN AAAA	2607:f140:8801::1:209
 _acme-challenge.panic	IN CNAME	panic.letsencrypt.ocf.io.
 panic	IN A	169.229.226.210
 panic	IN AAAA	2607:f140:8801::1:210
-
-; blackrain (staffvm)
-_acme-challenge.blackrain	IN CNAME	blackrain.letsencrypt.ocf.io.
-blackrain	IN A	169.229.226.211
-blackrain	IN AAAA	2607:f140:8801::1:211
 
 ; war (staffvm)
 _acme-challenge.war	IN CNAME	war.letsencrypt.ocf.io.
@@ -1212,25 +1220,10 @@ _acme-challenge.spectre	IN CNAME	spectre.letsencrypt.ocf.io.
 spectre	IN A	169.229.226.215
 spectre	IN AAAA	2607:f140:8801::1:215
 
-; sauron (staffvm)
-_acme-challenge.sauron	IN CNAME	sauron.letsencrypt.ocf.io.
-sauron	IN A	169.229.226.216
-sauron	IN AAAA	2607:f140:8801::1:216
-
 ; alamo (staffvm)
 _acme-challenge.alamo	IN CNAME	alamo.letsencrypt.ocf.io.
 alamo	IN A	169.229.226.217
 alamo	IN AAAA	2607:f140:8801::1:217
-
-; smallpox (staffvm)
-_acme-challenge.smallpox	IN CNAME	smallpox.letsencrypt.ocf.io.
-smallpox	IN A	169.229.226.218
-smallpox	IN AAAA	2607:f140:8801::1:218
-
-; zerg (staffvm)
-_acme-challenge.zerg	IN CNAME	zerg.letsencrypt.ocf.io.
-zerg	IN A	169.229.226.219
-zerg	IN AAAA	2607:f140:8801::1:219
 
 ; stackclash (staffvm)
 _acme-challenge.stackclash	IN CNAME	stackclash.letsencrypt.ocf.io.
@@ -1242,30 +1235,15 @@ _acme-challenge.fire	IN CNAME	fire.letsencrypt.ocf.io.
 fire	IN A	169.229.226.221
 fire	IN AAAA	2607:f140:8801::1:221
 
-; malaria (staffvm)
-_acme-challenge.malaria	IN CNAME	malaria.letsencrypt.ocf.io.
-malaria	IN A	169.229.226.222
-malaria	IN AAAA	2607:f140:8801::1:222
-
-; walpurgisnacht (staffvm)
-_acme-challenge.walpurgisnacht	IN CNAME	walpurgisnacht.letsencrypt.ocf.io.
-walpurgisnacht	IN A	169.229.226.223
-walpurgisnacht	IN AAAA	2607:f140:8801::1:223
-
-; aliens (staffvm)
-_acme-challenge.aliens	IN CNAME	aliens.letsencrypt.ocf.io.
-aliens	IN A	169.229.226.224
-aliens	IN AAAA	2607:f140:8801::1:224
+; entropy (staffvm)
+_acme-challenge.entropy	IN CNAME	entropy.letsencrypt.ocf.io.
+entropy	IN A	169.229.226.222
+entropy	IN AAAA	2607:f140:8801::1:222
 
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	rapture.letsencrypt.ocf.io.
 rapture	IN A	169.229.226.225
 rapture	IN AAAA	2607:f140:8801::1:225
-
-; fireball (staffvm)
-_acme-challenge.fireball	IN CNAME	fireball.letsencrypt.ocf.io.
-fireball	IN A	169.229.226.226
-fireball	IN AAAA	2607:f140:8801::1:226
 
 ; bigrip (staffvm)
 _acme-challenge.bigrip	IN CNAME	bigrip.letsencrypt.ocf.io.
@@ -1296,16 +1274,6 @@ _acme-challenge.nuke	IN CNAME	nuke.letsencrypt.ocf.io.
 nuke	IN A	169.229.226.232
 nuke	IN AAAA	2607:f140:8801::1:232
 
-; ragnarok (staffvm)
-_acme-challenge.ragnarok	IN CNAME	ragnarok.letsencrypt.ocf.io.
-ragnarok	IN A	169.229.226.233
-ragnarok	IN AAAA	2607:f140:8801::1:233
-
-; apocalypse (staffvm)
-_acme-challenge.apocalypse	IN CNAME	apocalypse.letsencrypt.ocf.io.
-apocalypse	IN A	169.229.226.234
-apocalypse	IN AAAA	2607:f140:8801::1:234
-
 ; rejection (staffvm)
 _acme-challenge.rejection	IN CNAME	rejection.letsencrypt.ocf.io.
 rejection	IN A	169.229.226.235
@@ -1320,11 +1288,6 @@ riot	IN AAAA	2607:f140:8801::1:236
 _acme-challenge.bolide	IN CNAME	bolide.letsencrypt.ocf.io.
 bolide	IN A	169.229.226.237
 bolide	IN AAAA	2607:f140:8801::1:237
-
-; pompeii (staffvm)
-_acme-challenge.pompeii	IN CNAME	pompeii.letsencrypt.ocf.io.
-pompeii	IN A	169.229.226.238
-pompeii	IN AAAA	2607:f140:8801::1:238
 
 ; oilspill (staffvm)
 _acme-challenge.oilspill	IN CNAME	oilspill.letsencrypt.ocf.io.
@@ -1356,11 +1319,6 @@ _acme-challenge.shipwreck	IN CNAME	shipwreck.letsencrypt.ocf.io.
 shipwreck	IN A	169.229.226.245
 shipwreck	IN AAAA	2607:f140:8801::1:245
 
-; coma (staffvm)
-_acme-challenge.coma	IN CNAME	coma.letsencrypt.ocf.io.
-coma	IN A	169.229.226.246
-coma	IN AAAA	2607:f140:8801::1:246
-
 ; fukushima (staffvm)
 _acme-challenge.fukushima	IN CNAME	fukushima.letsencrypt.ocf.io.
 fukushima	IN A	169.229.226.247
@@ -1376,11 +1334,6 @@ _acme-challenge.solarflare	IN CNAME	solarflare.letsencrypt.ocf.io.
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; fallout (staffvm)
-_acme-challenge.fallout	IN CNAME	fallout.letsencrypt.ocf.io.
-fallout	IN A	169.229.226.250
-fallout	IN AAAA	2607:f140:8801::1:250
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
@@ -1390,5 +1343,10 @@ calamity	IN AAAA	2607:f140:8801::1:251
 _acme-challenge.singularity	IN CNAME	singularity.letsencrypt.ocf.io.
 singularity	IN A	169.229.226.252
 singularity	IN AAAA	2607:f140:8801::1:252
+
+; paranoia (server)
+_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.253
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
