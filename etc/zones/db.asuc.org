@@ -86,5 +86,4 @@ octo-api	IN A	34.117.31.96
 
 auth.octo	IN A	151.101.1.195
 auth.octo	IN A	151.101.65.195
-
 ; vim: noet ts=20 sts=20 sw=20 ft=bindzone
