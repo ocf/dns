@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2021033002 ; serial number
+2021040300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -19,6 +19,8 @@ $TTL 5m
 @ IN MX 10 alt4.aspmx.l.google.com.
 
 @ IN TXT "google-site-verification=hxbVM0Dyi3ZD8WK551bJxjQ3sNd4fqom1nWncOMMWuw"
+
+@ IN TXT "google-site-verification=dxX_fSqWTqho3vU14RHPpqcGsgxx2XzJMRCwky-Rgkw"
 
 @ IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
 
