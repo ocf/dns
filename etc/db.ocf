@@ -187,6 +187,8 @@ _acme-challenge.docs	IN CNAME	docs.letsencrypt.ocf.io.
 docs	IN CNAME	death
 _acme-challenge.hello	IN CNAME	hello.letsencrypt.ocf.io.
 hello	IN CNAME	death
+_acme-challenge.merch	IN CNAME	merch.letsencrypt.ocf.io.
+merch	IN CNAME	death
 _acme-challenge.secure	IN CNAME	secure.letsencrypt.ocf.io.
 secure	IN CNAME	death
 _acme-challenge.staff	IN CNAME	staff.letsencrypt.ocf.io.
