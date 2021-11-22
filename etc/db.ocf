@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2021110100 ; serial number
+2021112100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1180,6 +1180,11 @@ dhcp-169-229-226-199	IN AAAA	2607:f140:8801::1:199
 _acme-challenge.midterm	IN CNAME	midterm.letsencrypt.ocf.io.
 midterm	IN A	169.229.226.201
 midterm	IN AAAA	2607:f140:8801::1:201
+
+; afterhours (server)
+_acme-challenge.afterhours	IN CNAME	afterhours.letsencrypt.ocf.io.
+afterhours	IN A	169.229.226.202
+afterhours	IN AAAA	2607:f140:8801::1:202
 
 ; leprosy (staffvm)
 _acme-challenge.leprosy	IN CNAME	leprosy.letsencrypt.ocf.io.
