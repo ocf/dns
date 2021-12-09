@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2021120200 ; serial number
+2021120800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -86,9 +86,6 @@ ransomware	IN AAAA	2607:f140:8801::1:8
 _acme-challenge.lockdown	IN CNAME	lockdown.letsencrypt.ocf.io.
 lockdown	IN A	169.229.226.9
 lockdown	IN AAAA	2607:f140:8801::1:9
-_acme-challenge.test-vaultwarden	IN CNAME	test-vaultwarden.letsencrypt.ocf.io.
-test-vaultwarden	IN A	169.229.226.9
-test-vaultwarden	IN AAAA	2607:f140:8801::1:9
 
 ; hal (server)
 _acme-challenge.hal	IN CNAME	hal.letsencrypt.ocf.io.
@@ -526,12 +523,9 @@ _acme-challenge.bedbugs	IN CNAME	bedbugs.letsencrypt.ocf.io.
 bedbugs	IN A	169.229.226.64
 bedbugs	IN AAAA	2607:f140:8801::1:64
 
-; pgp (server)
-_acme-challenge.pgp	IN CNAME	pgp.letsencrypt.ocf.io.
-pgp	IN A	169.229.226.65
-pgp	IN AAAA	2607:f140:8801::1:65
-_acme-challenge.keyserver	IN CNAME	keyserver.letsencrypt.ocf.io.
-keyserver	IN CNAME	pgp
+; bedbugs-mgmt (ipmi)
+bedbugs-mgmt	IN A	169.229.226.65
+bedbugs-mgmt	IN AAAA	2607:f140:8801::1:65
 
 ; lethe (server)
 _acme-challenge.lethe	IN CNAME	lethe.letsencrypt.ocf.io.
