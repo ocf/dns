@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2021120801 ; serial number
+2022020400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -249,6 +249,11 @@ democracy	IN A	169.229.226.28
 democracy	IN AAAA	2607:f140:8801::1:28
 _acme-challenge.syslog	IN CNAME	syslog.letsencrypt.ocf.io.
 syslog	IN CNAME	democracy
+
+; budgetcut (server)
+_acme-challenge.budgetcut	IN CNAME	budgetcut.letsencrypt.ocf.io.
+budgetcut	IN A	169.229.226.29
+budgetcut	IN AAAA	2607:f140:8801::1:29
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -926,6 +931,10 @@ fallingrocks-mgmt	IN A	169.229.226.131
 
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
+
+; budgetcut-mgmt (ipmi)
+budgetcut-mgmt	IN A	169.229.226.134
+budgetcut-mgmt	IN AAAA	2607:f140:8801::1:134
 
 ; shock (ipmi)
 shock	IN A	169.229.226.137
