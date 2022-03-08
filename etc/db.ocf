@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022020401 ; serial number
+2022030700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -638,8 +638,6 @@ _acme-challenge.cruisecontrol	IN CNAME	cruisecontrol.letsencrypt.ocf.io.
 cruisecontrol	IN CNAME	lb
 _acme-challenge.discord	IN CNAME	discord.letsencrypt.ocf.io.
 discord	IN CNAME	lb
-_acme-challenge.fava	IN CNAME	fava.letsencrypt.ocf.io.
-fava	IN CNAME	lb
 _acme-challenge.grafana	IN CNAME	grafana.letsencrypt.ocf.io.
 grafana	IN CNAME	lb
 _acme-challenge.help	IN CNAME	help.letsencrypt.ocf.io.
@@ -652,24 +650,18 @@ _acme-challenge.irclogs	IN CNAME	irclogs.letsencrypt.ocf.io.
 irclogs	IN CNAME	lb
 _acme-challenge.jukebox	IN CNAME	jukebox.letsencrypt.ocf.io.
 jukebox	IN CNAME	lb
-_acme-challenge.kanboard	IN CNAME	kanboard.letsencrypt.ocf.io.
-kanboard	IN CNAME	lb
 _acme-challenge.kube	IN CNAME	kube.letsencrypt.ocf.io.
 kube	IN CNAME	lb
 _acme-challenge.kubeadmin	IN CNAME	kubeadmin.letsencrypt.ocf.io.
 kubeadmin	IN CNAME	lb
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN CNAME	lb
-_acme-challenge.lambda	IN CNAME	lambda.letsencrypt.ocf.io.
-lambda	IN CNAME	lb
 _acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
 lb-kubernetes	IN CNAME	lb
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
 mastodon	IN CNAME	lb
 _acme-challenge.matrix	IN CNAME	matrix.letsencrypt.ocf.io.
 matrix	IN CNAME	lb
-_acme-challenge.metabase	IN CNAME	metabase.letsencrypt.ocf.io.
-metabase	IN CNAME	lb
 _acme-challenge.new	IN CNAME	new.letsencrypt.ocf.io.
 new	IN CNAME	lb
 _acme-challenge.notes	IN CNAME	notes.letsencrypt.ocf.io.
@@ -682,12 +674,8 @@ _acme-challenge.printlist	IN CNAME	printlist.letsencrypt.ocf.io.
 printlist	IN CNAME	lb
 _acme-challenge.rt	IN CNAME	rt.letsencrypt.ocf.io.
 rt	IN CNAME	lb
-_acme-challenge.sg	IN CNAME	sg.letsencrypt.ocf.io.
-sg	IN CNAME	lb
 _acme-challenge.snmp-exporter	IN CNAME	snmp-exporter.letsencrypt.ocf.io.
 snmp-exporter	IN CNAME	lb
-_acme-challenge.sourcegraph	IN CNAME	sourcegraph.letsencrypt.ocf.io.
-sourcegraph	IN CNAME	lb
 _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
 static	IN CNAME	lb
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
