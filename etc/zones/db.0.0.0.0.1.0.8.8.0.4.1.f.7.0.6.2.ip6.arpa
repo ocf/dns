@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022030700 ; serial number
+2022030701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -110,6 +110,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 9.8.0.0 IN PTR hozer-89.ocf.berkeley.edu.
 0.9.0.0 IN PTR tornado.ocf.berkeley.edu.
 4.9.0.0 IN PTR overheat.ocf.berkeley.edu.
+8.9.0.0 IN PTR radiation-mgmt.ocf.berkeley.edu.
 0.0.1.0 IN PTR eruption.ocf.berkeley.edu.
 1.0.1.0 IN PTR avalanche.ocf.berkeley.edu.
 2.0.1.0 IN PTR bigbang.ocf.berkeley.edu.
