@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022030701 ; serial number
+2022031101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -45,6 +45,15 @@ dev-dev-vhost                 IN   MX   5   dev-anthrax
 ; SRV records for XMPP server
 _xmpp-client._tcp 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
 _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
+
+; fallingrocks (server)
+_acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
+fallingrocks	IN A	169.229.200.70
+fallingrocks	IN AAAA	2607:f140:8801::1:30
+_acme-challenge.apt	IN CNAME	apt.letsencrypt.ocf.io.
+apt	IN CNAME	fallingrocks
+_acme-challenge.mirrors	IN CNAME	mirrors.letsencrypt.ocf.io.
+mirrors	IN CNAME	fallingrocks
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
@@ -254,15 +263,6 @@ syslog	IN CNAME	democracy
 _acme-challenge.budgetcut	IN CNAME	budgetcut.letsencrypt.ocf.io.
 budgetcut	IN A	169.229.226.29
 budgetcut	IN AAAA	2607:f140:8801::1:29
-
-; fallingrocks (server)
-_acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
-fallingrocks	IN A	169.229.226.30
-fallingrocks	IN AAAA	2607:f140:8801::1:30
-_acme-challenge.apt	IN CNAME	apt.letsencrypt.ocf.io.
-apt	IN CNAME	fallingrocks
-_acme-challenge.mirrors	IN CNAME	mirrors.letsencrypt.ocf.io.
-mirrors	IN CNAME	fallingrocks
 
 ; flood (server)
 _acme-challenge.flood	IN CNAME	flood.letsencrypt.ocf.io.
