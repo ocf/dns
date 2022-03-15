@@ -58,7 +58,7 @@ class Host(namedtuple('Host', ('hostname',))):
         if 'ip6HostNumber' in self.ldap_attrs:
             ipv6, = self.ldap_attrs['ip6HostNumber']
             ipv6 = ip_address(ipv6)
-            #assert is_ocf_ip(ipv6)
+            # assert is_ocf_ip(ipv6)
             return ipv6
 
     @cached_property
