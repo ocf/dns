@@ -1,0 +1,21 @@
+$ORIGIN cal.fyi.
+$TTL 5m
+
+@ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
+2022033001 ; serial number
+                         1d         ; slave refresh schedule interval
+                         30m        ; slave retry on failure interval
+                         4w         ; slave expiration of zone data
+                         30m        ; negative TTL
+                       )
+
+@ IN NS ns1.ocf.berkeley.edu.
+@ IN NS ns2.ocf.berkeley.edu.
+
+@ IN A 169.229.226.81
+@ IN AAAA 2607:f140:8801::1:81
+
+* IN A 169.229.226.81
+* IN AAAA 2607:f140:8801::1:81
+
+; vim: noet ts=20 sts=20 sw=20 ft=bindzone

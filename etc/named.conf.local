@@ -35,6 +35,14 @@ zone "asuc.org" {
   file "/srv/dns/etc/zones/db.asuc.org";
 };
 
+zone "cal.fyi" {
+  type master;
+  notify no;
+  auto-dnssec maintain;
+  inline-signing yes;
+  file "/srv/dns/etc/zones/db.cal.fyi";
+}
+
 zone "226.229.169.in-addr.arpa" {
   type master;
   notify explicit;
