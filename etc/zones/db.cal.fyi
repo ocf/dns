@@ -1,4 +1,4 @@
-$ORIGIN asuc.org.
+$ORIGIN cal.fyi.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
