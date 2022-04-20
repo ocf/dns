@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022041301 ; serial number
+2022041900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -93,8 +93,8 @@ $TTL 1d
 66 IN PTR lethe.OCF.Berkeley.EDU.
 67 IN PTR hozer-67.OCF.Berkeley.EDU.
 68 IN PTR hozer-68.OCF.Berkeley.EDU.
-69 IN PTR hozer-69.OCF.Berkeley.EDU.
 69 IN PTR dev-supernova.OCF.Berkeley.EDU.
+69 IN PTR hozer-69.OCF.Berkeley.EDU.
 70 IN PTR hozer-70.OCF.Berkeley.EDU.
 71 IN PTR hozer-71.OCF.Berkeley.EDU.
 72 IN PTR hozer-72.OCF.Berkeley.EDU.

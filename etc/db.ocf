@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022041301 ; serial number
+2022041900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -552,15 +552,15 @@ _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
 hozer-68	IN A	169.229.226.68
 hozer-68	IN AAAA	2607:f140:8801::1:68
 
-; hozer-69 (server)
-_acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
-hozer-69	IN A	169.229.226.69
-hozer-69	IN AAAA	2607:f140:8801::1:69
-
 ; dev-supernova (server)
 _acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
 dev-supernova	IN A	169.229.226.69
 dev-supernova	IN AAAA	2607:f140:8801::1:69
+
+; hozer-69 (server)
+_acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
+hozer-69	IN A	169.229.226.69
+hozer-69	IN AAAA	2607:f140:8801::1:69
 
 ; hozer-70 (server)
 _acme-challenge.hozer-70	IN CNAME	hozer-70.letsencrypt.ocf.io.
@@ -687,6 +687,8 @@ _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
 static	IN CNAME	lb
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
 templates	IN CNAME	lb
+_acme-challenge.vaultwarden	IN CNAME	vaultwarden.letsencrypt.ocf.io.
+vaultwarden	IN CNAME	lb
 
 ; hozer-80 (server)
 _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
