@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022041900 ; serial number
+2022042801 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -30,10 +30,6 @@ firewall--ethernet1-22-595    IN   AAAA 2607:f140:8801:2::2
 
 dev-vhost                     IN   MX   5   anthrax
 dev-dev-vhost                 IN   MX   5   dev-anthrax
-
-; DNSSEC DS records published in the berkeley.edu zone
-@	IN DS	24784 8 1 49843D73409C0C76C35C1DC380B59F0013363AC4
-@	IN DS	24784 8 2 F54DA8CE8E213127A6FFE64FCC33696C6C77F6305C8B2002E0CCADD047BA86CD
 
 ; https://sslmate.com/labs/caa/
 @	IN	CAA	0 issue "comodoca.com"
@@ -552,15 +548,15 @@ _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
 hozer-68	IN A	169.229.226.68
 hozer-68	IN AAAA	2607:f140:8801::1:68
 
-; dev-supernova (server)
-_acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
-dev-supernova	IN A	169.229.226.69
-dev-supernova	IN AAAA	2607:f140:8801::1:69
-
 ; hozer-69 (server)
 _acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
 hozer-69	IN A	169.229.226.69
 hozer-69	IN AAAA	2607:f140:8801::1:69
+
+; dev-supernova (server)
+_acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
+dev-supernova	IN A	169.229.226.69
+dev-supernova	IN AAAA	2607:f140:8801::1:69
 
 ; hozer-70 (server)
 _acme-challenge.hozer-70	IN CNAME	hozer-70.letsencrypt.ocf.io.
