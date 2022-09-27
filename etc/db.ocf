@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022092600 ; serial number
+2022092700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -548,15 +548,15 @@ _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
 hozer-68	IN A	169.229.226.68
 hozer-68	IN AAAA	2607:f140:8801::1:68
 
-; dev-supernova (server)
-_acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
-dev-supernova	IN A	169.229.226.69
-dev-supernova	IN AAAA	2607:f140:8801::1:69
-
 ; hozer-69 (server)
 _acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
 hozer-69	IN A	169.229.226.69
 hozer-69	IN AAAA	2607:f140:8801::1:69
+
+; dev-supernova (server)
+_acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
+dev-supernova	IN A	169.229.226.69
+dev-supernova	IN AAAA	2607:f140:8801::1:69
 
 ; hozer-70 (server)
 _acme-challenge.hozer-70	IN CNAME	hozer-70.letsencrypt.ocf.io.
@@ -623,6 +623,8 @@ kube-master	IN AAAA	2607:f140:8801::1:78
 _acme-challenge.lb	IN CNAME	lb.letsencrypt.ocf.io.
 lb	IN A	169.229.226.79
 lb	IN AAAA	2607:f140:8801::1:79
+_acme-challenge.code	IN CNAME	code.letsencrypt.ocf.io.
+*.code	IN CNAME	lb
 _acme-challenge.dev-kubernetes	IN CNAME	dev-kubernetes.letsencrypt.ocf.io.
 *.dev-kubernetes	IN CNAME	lb
 _acme-challenge.api	IN CNAME	api.letsencrypt.ocf.io.
