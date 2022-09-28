@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022092700 ; serial number
+2022092800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -548,15 +548,15 @@ _acme-challenge.hozer-68	IN CNAME	hozer-68.letsencrypt.ocf.io.
 hozer-68	IN A	169.229.226.68
 hozer-68	IN AAAA	2607:f140:8801::1:68
 
-; hozer-69 (server)
-_acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
-hozer-69	IN A	169.229.226.69
-hozer-69	IN AAAA	2607:f140:8801::1:69
-
 ; dev-supernova (server)
 _acme-challenge.dev-supernova	IN CNAME	dev-supernova.letsencrypt.ocf.io.
 dev-supernova	IN A	169.229.226.69
 dev-supernova	IN AAAA	2607:f140:8801::1:69
+
+; hozer-69 (server)
+_acme-challenge.hozer-69	IN CNAME	hozer-69.letsencrypt.ocf.io.
+hozer-69	IN A	169.229.226.69
+hozer-69	IN AAAA	2607:f140:8801::1:69
 
 ; hozer-70 (server)
 _acme-challenge.hozer-70	IN CNAME	hozer-70.letsencrypt.ocf.io.
@@ -1206,6 +1206,11 @@ _acme-challenge.leprosy	IN CNAME	leprosy.letsencrypt.ocf.io.
 *.leprosy	IN CNAME	leprosy
 _acme-challenge.discourse	IN CNAME	discourse.letsencrypt.ocf.io.
 discourse	IN CNAME	leprosy
+
+; windshear (staffvm)
+_acme-challenge.windshear	IN CNAME	windshear.letsencrypt.ocf.io.
+windshear	IN A	169.229.226.204
+windshear	IN AAAA	2607:f140:8801::1:204
 
 ; hellfire (staffvm)
 _acme-challenge.hellfire	IN CNAME	hellfire.letsencrypt.ocf.io.
