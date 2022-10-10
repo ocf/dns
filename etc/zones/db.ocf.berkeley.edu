@@ -25,9 +25,6 @@ status IN A 216.239.34.21
 status IN A 216.239.36.21
 status IN A 216.239.38.21
 
-; UptimeRobot status page
-uptime IN CNAME stats.uptimerobot.com.
-
 g IN MX 1 aspmx.l.google.com.
 g IN MX 5 alt1.aspmx.l.google.com.
 g IN MX 5 alt2.aspmx.l.google.com.
