@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022102800 ; serial number
+2022110100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -32,11 +32,8 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 2.0.0.0 IN PTR blackhole.ocf.berkeley.edu.
 3.0.0.0 IN PTR scurvy.ocf.berkeley.edu.
 6.0.0.0 IN PTR dataloss.ocf.berkeley.edu.
-7.0.0.0 IN PTR deceit.ocf.berkeley.edu.
-8.0.0.0 IN PTR ransomware.ocf.berkeley.edu.
-9.0.0.0 IN PTR lockdown.ocf.berkeley.edu.
-0.1.0.0 IN PTR hal.ocf.berkeley.edu.
-2.1.0.0 IN PTR jaws.ocf.berkeley.edu.
+1.1.0.0 IN PTR lockdown.ocf.berkeley.edu.
+2.1.0.0 IN PTR hal.ocf.berkeley.edu.
 4.1.0.0 IN PTR pandemic.ocf.berkeley.edu.
 6.1.0.0 IN PTR riptide.ocf.berkeley.edu.
 8.1.0.0 IN PTR corruption.ocf.berkeley.edu.
@@ -44,12 +41,10 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 1.2.0.0 IN PTR lightning.ocf.berkeley.edu.
 2.2.0.0 IN PTR pestilence.ocf.berkeley.edu.
 3.2.0.0 IN PTR death.ocf.berkeley.edu.
-4.2.0.0 IN PTR dev-dementors.ocf.berkeley.edu.
 5.2.0.0 IN PTR tsunami.ocf.berkeley.edu.
 6.2.0.0 IN PTR thunder.ocf.berkeley.edu.
 7.2.0.0 IN PTR maelstrom.ocf.berkeley.edu.
 8.2.0.0 IN PTR democracy.ocf.berkeley.edu.
-9.2.0.0 IN PTR budgetcut.ocf.berkeley.edu.
 1.3.0.0 IN PTR flood.ocf.berkeley.edu.
 2.3.0.0 IN PTR radiation.ocf.berkeley.edu.
 3.3.0.0 IN PTR dementors.ocf.berkeley.edu.
@@ -69,9 +64,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.4.0.0 IN PTR dev-whiteout.ocf.berkeley.edu.
 8.4.0.0 IN PTR reaper.ocf.berkeley.edu.
 9.4.0.0 IN PTR vampires.ocf.berkeley.edu.
-0.5.0.0 IN PTR whirlwind.ocf.berkeley.edu.
-1.5.0.0 IN PTR pileup.ocf.berkeley.edu.
-2.5.0.0 IN PTR monsoon.ocf.berkeley.edu.
 3.5.0.0 IN PTR ceph.ocf.berkeley.edu.
 4.5.0.0 IN PTR dev-lightning.ocf.berkeley.edu.
 5.5.0.0 IN PTR hozer-55.ocf.berkeley.edu.
@@ -82,7 +74,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 0.6.0.0 IN PTR hozer-60.ocf.berkeley.edu.
 1.6.0.0 IN PTR segfault.ocf.berkeley.edu.
 2.6.0.0 IN PTR hozer-62.ocf.berkeley.edu.
-3.6.0.0 IN PTR dev-fallingrocks.ocf.berkeley.edu.
 4.6.0.0 IN PTR bedbugs.ocf.berkeley.edu.
 6.6.0.0 IN PTR lethe.ocf.berkeley.edu.
 7.6.0.0 IN PTR hozer-67.ocf.berkeley.edu.

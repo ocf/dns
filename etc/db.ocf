@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2022102800 ; serial number
+2022110100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -77,40 +77,20 @@ homes	IN CNAME	dataloss
 _acme-challenge.services	IN CNAME	services.letsencrypt.ocf.io.
 services	IN CNAME	dataloss
 
-; deceit (server)
-_acme-challenge.deceit	IN CNAME	deceit.letsencrypt.ocf.io.
-deceit	IN A	169.229.226.7
-deceit	IN AAAA	2607:f140:8801::1:7
-
-; ransomware (server)
-_acme-challenge.ransomware	IN CNAME	ransomware.letsencrypt.ocf.io.
-ransomware	IN A	169.229.226.8
-ransomware	IN AAAA	2607:f140:8801::1:8
-
 ; lockdown (server)
 _acme-challenge.lockdown	IN CNAME	lockdown.letsencrypt.ocf.io.
-lockdown	IN A	169.229.226.9
-lockdown	IN AAAA	2607:f140:8801::1:9
+lockdown	IN A	169.229.226.11
+lockdown	IN AAAA	2607:f140:8801::1:11
 
 ; hal (server)
 _acme-challenge.hal	IN CNAME	hal.letsencrypt.ocf.io.
-hal	IN A	169.229.226.10
-hal	IN AAAA	2607:f140:8801::1:10
+hal	IN A	169.229.226.12
+hal	IN AAAA	2607:f140:8801::1:12
 _acme-challenge.ntp1	IN CNAME	ntp1.letsencrypt.ocf.io.
 ntp1	IN CNAME	hal
 
 ; hal-mgmt (ipmi)
-hal-mgmt	IN A	169.229.226.11
-
-; jaws (server)
-_acme-challenge.jaws	IN CNAME	jaws.letsencrypt.ocf.io.
-jaws	IN A	169.229.226.12
-jaws	IN AAAA	2607:f140:8801::1:12
-_acme-challenge.ntp3	IN CNAME	ntp3.letsencrypt.ocf.io.
-ntp3	IN CNAME	jaws
-
-; jaws-mgmt (ipmi)
-jaws-mgmt	IN A	169.229.226.13
+hal-mgmt	IN A	169.229.226.13
 
 ; pandemic (server)
 _acme-challenge.pandemic	IN CNAME	pandemic.letsencrypt.ocf.io.
@@ -216,15 +196,6 @@ _acme-challenge.dev-vhost-alias	IN CNAME	dev-vhost-alias.letsencrypt.ocf.io.
 dev-vhost-alias	IN A	169.229.226.23
 dev-vhost-alias	IN AAAA	2607:f140:8801::1:23
 
-; dev-dementors (server)
-_acme-challenge.dev-dementors	IN CNAME	dev-dementors.letsencrypt.ocf.io.
-dev-dementors	IN A	169.229.226.24
-dev-dementors	IN AAAA	2607:f140:8801::1:24
-_acme-challenge.dev-munin	IN CNAME	dev-munin.letsencrypt.ocf.io.
-dev-munin	IN CNAME	dev-dementors
-_acme-challenge.dev-prometheus	IN CNAME	dev-prometheus.letsencrypt.ocf.io.
-dev-prometheus	IN CNAME	dev-dementors
-
 ; tsunami (server)
 _acme-challenge.tsunami	IN CNAME	tsunami.letsencrypt.ocf.io.
 tsunami	IN A	169.229.226.25
@@ -254,11 +225,6 @@ democracy	IN A	169.229.226.28
 democracy	IN AAAA	2607:f140:8801::1:28
 _acme-challenge.syslog	IN CNAME	syslog.letsencrypt.ocf.io.
 syslog	IN CNAME	democracy
-
-; budgetcut (server)
-_acme-challenge.budgetcut	IN CNAME	budgetcut.letsencrypt.ocf.io.
-budgetcut	IN A	169.229.226.29
-budgetcut	IN AAAA	2607:f140:8801::1:29
 
 ; flood (server)
 _acme-challenge.flood	IN CNAME	flood.letsencrypt.ocf.io.
@@ -438,21 +404,6 @@ dev-app	IN CNAME	vampires
 _acme-challenge.werewolves	IN CNAME	werewolves.letsencrypt.ocf.io.
 werewolves	IN CNAME	vampires
 
-; whirlwind (server)
-_acme-challenge.whirlwind	IN CNAME	whirlwind.letsencrypt.ocf.io.
-whirlwind	IN A	169.229.226.50
-whirlwind	IN AAAA	2607:f140:8801::1:50
-
-; pileup (server)
-_acme-challenge.pileup	IN CNAME	pileup.letsencrypt.ocf.io.
-pileup	IN A	169.229.226.51
-pileup	IN AAAA	2607:f140:8801::1:51
-
-; monsoon (server)
-_acme-challenge.monsoon	IN CNAME	monsoon.letsencrypt.ocf.io.
-monsoon	IN A	169.229.226.52
-monsoon	IN AAAA	2607:f140:8801::1:52
-
 ; ceph (vip)
 _acme-challenge.ceph	IN CNAME	ceph.letsencrypt.ocf.io.
 ceph	IN A	169.229.226.53
@@ -509,15 +460,6 @@ hpcdb	IN CNAME	segfault
 _acme-challenge.hozer-62	IN CNAME	hozer-62.letsencrypt.ocf.io.
 hozer-62	IN A	169.229.226.62
 hozer-62	IN AAAA	2607:f140:8801::1:62
-
-; dev-fallingrocks (server)
-_acme-challenge.dev-fallingrocks	IN CNAME	dev-fallingrocks.letsencrypt.ocf.io.
-dev-fallingrocks	IN A	169.229.226.63
-dev-fallingrocks	IN AAAA	2607:f140:8801::1:63
-_acme-challenge.dev-mirrors	IN CNAME	dev-mirrors.letsencrypt.ocf.io.
-dev-mirrors	IN CNAME	dev-fallingrocks
-_acme-challenge.dev-apt	IN CNAME	dev-apt.letsencrypt.ocf.io.
-dev-apt	IN CNAME	dev-fallingrocks
 
 ; bedbugs (server)
 _acme-challenge.bedbugs	IN CNAME	bedbugs.letsencrypt.ocf.io.
@@ -925,14 +867,8 @@ invasion	IN AAAA	2607:f140:8801::1:129
 typhoon	IN A	169.229.226.130
 typhoon	IN AAAA	2607:f140:8801::1:130
 
-; fallingrocks-mgmt (ipmi)
-fallingrocks-mgmt	IN A	169.229.226.131
-
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
-
-; budgetcut-mgmt (ipmi)
-budgetcut-mgmt	IN A	169.229.226.134
 
 ; newton (desktop)
 newton	IN A	169.229.226.135
