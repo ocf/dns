@@ -19,6 +19,6 @@ letsencrypt	IN DS 57934 8 2 1C256F913B230E300CD1BC4F4F339A174DAFE21A6D770A957403
 uptime IN CNAME stats.uptimerobot.com.
 
 ; Kubernetes Control Plane Cluster 0
-k8s0 IN A 169.229.226.9
+k8s0 IN A 169.229.226.8
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
