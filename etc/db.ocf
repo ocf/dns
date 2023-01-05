@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023010400 ; serial number
+2023010500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -661,6 +661,9 @@ hozer-80	IN AAAA	2607:f140:8801::1:80
 _acme-challenge.hozer-81	IN CNAME	hozer-81.letsencrypt.ocf.io.
 hozer-81	IN A	169.229.226.81
 hozer-81	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
+*.xn--wxa	IN A	169.229.226.81
+*.xn--wxa	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.alerts	IN CNAME	alerts.letsencrypt.ocf.io.
 alerts	IN A	169.229.226.81
 alerts	IN AAAA	2607:f140:8801::1:81
@@ -700,6 +703,9 @@ vault	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.workflow	IN CNAME	workflow.letsencrypt.ocf.io.
 workflow	IN A	169.229.226.81
 workflow	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
+xn--wxa	IN A	169.229.226.81
+xn--wxa	IN AAAA	2607:f140:8801::1:81
 
 ; hozer-82 (server)
 _acme-challenge.hozer-82	IN CNAME	hozer-82.letsencrypt.ocf.io.
@@ -727,12 +733,6 @@ mc	IN AAAA	2607:f140:8801::1:83
 _acme-challenge.hozer-84	IN CNAME	hozer-84.letsencrypt.ocf.io.
 hozer-84	IN A	169.229.226.84
 hozer-84	IN AAAA	2607:f140:8801::1:84
-_acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
-*.xn--wxa	IN A	169.229.226.84
-*.xn--wxa	IN AAAA	2607:f140:8801::1:84
-_acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
-xn--wxa	IN A	169.229.226.84
-xn--wxa	IN AAAA	2607:f140:8801::1:84
 
 ; hozer-85 (server)
 _acme-challenge.hozer-85	IN CNAME	hozer-85.letsencrypt.ocf.io.
