@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023010500 ; serial number
+2023011800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -50,6 +50,11 @@ _acme-challenge.apt	IN CNAME	apt.letsencrypt.ocf.io.
 apt	IN CNAME	fallingrocks
 _acme-challenge.mirrors	IN CNAME	mirrors.letsencrypt.ocf.io.
 mirrors	IN CNAME	fallingrocks
+
+; corruption-new (server)
+_acme-challenge.corruption-new	IN CNAME	corruption-new.letsencrypt.ocf.io.
+corruption-new	IN A	169.229.200.71
+corruption-new	IN AAAA	2607:f140:0:32::71
 
 ; blackhole (switch)
 blackhole	IN A	169.229.226.2
