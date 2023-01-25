@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023011800 ; serial number
+2023012400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -27,7 +27,8 @@ $TTL 1d
 1 IN PTR vlan635.inr-350-reccev.berkeley.edu.
 
 70 IN PTR fallingrocks.OCF.Berkeley.EDU.
-71 IN PTR corruption-new.OCF.Berkeley.EDU.
+71 IN PTR corruption.OCF.Berkeley.EDU.
+72 IN PTR segfault.OCF.Berkeley.EDU.
 2 IN PTR blackhole.OCF.Berkeley.EDU.
 3 IN PTR scurvy.OCF.Berkeley.EDU.
 4 IN PTR scurvy-mgmt.OCF.Berkeley.EDU.
@@ -44,7 +45,6 @@ $TTL 1d
 15 IN PTR pandemic-mgmt.OCF.Berkeley.EDU.
 16 IN PTR riptide.OCF.Berkeley.EDU.
 17 IN PTR riptide-mgmt.OCF.Berkeley.EDU.
-18 IN PTR corruption.OCF.Berkeley.EDU.
 19 IN PTR corruption-mgmt.OCF.Berkeley.EDU.
 20 IN PTR firestorm.OCF.Berkeley.EDU.
 21 IN PTR lightning.OCF.Berkeley.EDU.
@@ -82,7 +82,6 @@ $TTL 1d
 58 IN PTR phlegethon.OCF.Berkeley.EDU.
 59 IN PTR y2k.OCF.Berkeley.EDU.
 60 IN PTR hozer-60.OCF.Berkeley.EDU.
-61 IN PTR segfault.OCF.Berkeley.EDU.
 62 IN PTR hozer-62.OCF.Berkeley.EDU.
 64 IN PTR bedbugs.OCF.Berkeley.EDU.
 65 IN PTR bedbugs-mgmt.OCF.Berkeley.EDU.
