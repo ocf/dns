@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023042600 ; serial number
+2023042700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -262,15 +262,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -621,8 +621,6 @@ _acme-challenge.kube	IN CNAME	kube.letsencrypt.ocf.io.
 kube	IN CNAME	lb
 _acme-challenge.kubeadmin	IN CNAME	kubeadmin.letsencrypt.ocf.io.
 kubeadmin	IN CNAME	lb
-_acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
-labmap	IN CNAME	lb
 _acme-challenge.lb-kubernetes	IN CNAME	lb-kubernetes.letsencrypt.ocf.io.
 lb-kubernetes	IN CNAME	lb
 _acme-challenge.mastodon	IN CNAME	mastodon.letsencrypt.ocf.io.
@@ -691,6 +689,9 @@ id	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.kibana	IN CNAME	kibana.letsencrypt.ocf.io.
 kibana	IN A	169.229.226.81
 kibana	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
+labmap	IN A	169.229.226.81
+labmap	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.o3	IN CNAME	o3.letsencrypt.ocf.io.
 o3	IN A	169.229.226.81
 o3	IN AAAA	2607:f140:8801::1:81
