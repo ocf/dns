@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023042701 ; serial number
+2023042702 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -262,15 +262,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -666,6 +666,9 @@ alerts	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.argo	IN CNAME	argo.letsencrypt.ocf.io.
 argo	IN A	169.229.226.81
 argo	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.dev-notes	IN CNAME	dev-notes.letsencrypt.ocf.io.
+dev-notes	IN A	169.229.226.81
+dev-notes	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.docs	IN CNAME	docs.letsencrypt.ocf.io.
 docs	IN A	169.229.226.81
 docs	IN AAAA	2607:f140:8801::1:81
