@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023051000 ; serial number
+2023051200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -253,6 +253,11 @@ democracy	IN AAAA	2607:f140:8801::1:28
 _acme-challenge.syslog	IN CNAME	syslog.letsencrypt.ocf.io.
 syslog	IN CNAME	democracy
 
+; implosion (server)
+_acme-challenge.implosion	IN CNAME	implosion.letsencrypt.ocf.io.
+implosion	IN A	169.229.226.30
+implosion	IN AAAA	2607:f140:8801::1:30
+
 ; flood (server)
 _acme-challenge.flood	IN CNAME	flood.letsencrypt.ocf.io.
 flood	IN A	169.229.226.31
@@ -262,15 +267,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
