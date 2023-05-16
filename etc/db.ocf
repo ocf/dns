@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023051500 ; serial number
+2023051501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -272,15 +272,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -762,6 +762,9 @@ mc	IN AAAA	2607:f140:8801::1:83
 _acme-challenge.hozer-84	IN CNAME	hozer-84.letsencrypt.ocf.io.
 hozer-84	IN A	169.229.226.84
 hozer-84	IN AAAA	2607:f140:8801::1:84
+_acme-challenge.minecraft	IN CNAME	minecraft.letsencrypt.ocf.io.
+minecraft	IN A	169.229.226.84
+minecraft	IN AAAA	2607:f140:8801::1:84
 
 ; hozer-85 (server)
 _acme-challenge.hozer-85	IN CNAME	hozer-85.letsencrypt.ocf.io.
