@@ -79,6 +79,27 @@ www.dev	IN CNAME	death.OCF.Berkeley.EDU.
 cfo	IN CNAME	death.OCF.Berkeley.EDU.
 www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
 
+grants	IN A	169.229.226.23
+grants  IN AAAA	2607:f140:8801::1:23
+www.grants	IN CNAME	death.OCF.Berkeley.EDU.
+grants IN MX  1 aspmx.l.google.com.
+grants IN MX  5 alt1.aspmx.l.google.com.
+grants IN MX  5 alt2.aspmx.l.google.com.
+grants IN MX  10 alt3.aspmx.l.google.com.
+grants IN MX  10 alt4.aspmx.l.google.com.
+grants IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
+grants  IN TXT  "google-site-verication=UykUEZruYUxPeE1Wc3Ya-Ir6ZJcP73mF6ptz1teHe-Y"
+psvdaot2ci5q.grants  IN  CNAME gv-hpsy6y2wwitqll.dv.googlehosted.com
+
+sao IN MX 1 aspmx.l.google.com.
+sao IN MX 5 alt1.aspmx.l.google.com.
+sao IN MX 5 alt2.aspmx.l.google.com.
+sao IN MX 10 alt3.aspmx.l.google.com.
+sao IN MX 10 alt4.aspmx.l.google.com.
+sao IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
+sao IN TXT  "google-site-verication=KpjaLSvdWSBl180Dc7dGxI4mQ45D1rYdh7ibtjD3yIg"
+v2v5zvpc2fdx.sao IN  CNAME gv-eegxjvcos4us2f.dv.googlehosted.com.
+
 octo	IN CNAME	asuc-octo.github.io.
 www.octo	IN CNAME	asuc-octo.github.io.
 
