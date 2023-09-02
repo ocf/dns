@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023090100 ; serial number
+2023090200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -445,6 +445,11 @@ _acme-challenge.dev-app	IN CNAME	dev-app.letsencrypt.ocf.io.
 dev-app	IN CNAME	vampires
 _acme-challenge.werewolves	IN CNAME	werewolves.letsencrypt.ocf.io.
 werewolves	IN CNAME	vampires
+
+; bermudatriangle (server)
+_acme-challenge.bermudatriangle	IN CNAME	bermudatriangle.letsencrypt.ocf.io.
+bermudatriangle	IN A	169.229.226.52
+bermudatriangle	IN AAAA	2607:f140:8801::1:52
 
 ; ceph (vip)
 _acme-challenge.ceph	IN CNAME	ceph.letsencrypt.ocf.io.
