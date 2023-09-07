@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023090200 ; serial number
+2023090700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -41,6 +41,11 @@ dev-dev-vhost                 IN   MX   5   dev-anthrax
 ; SRV records for XMPP server
 _xmpp-client._tcp 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
 _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
+
+; CNAME record for all OCF hosted sites
+hosting IN A    169.229.226.23
+hosting IN AAAA 2607:f140:8801::1:23
+hosting IN MX   5 anthrax
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
