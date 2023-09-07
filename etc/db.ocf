@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023090700 ; serial number
+2023090701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1217,6 +1217,11 @@ dhcp-169-229-226-198	IN AAAA	2607:f140:8801::1:198
 dhcp-169-229-226-199	IN A	169.229.226.199
 dhcp-169-229-226-199	IN AAAA	2607:f140:8801::1:199
 
+; 2020 (staffvm)
+_acme-challenge.2020	IN CNAME	2020.letsencrypt.ocf.io.
+2020	IN A	169.229.226.200
+2020	IN AAAA	2607:f140:8801::1:200
+
 ; midterm (staffvm)
 _acme-challenge.midterm	IN CNAME	midterm.letsencrypt.ocf.io.
 midterm	IN A	169.229.226.201
@@ -1359,6 +1364,11 @@ riot	IN AAAA	2607:f140:8801::1:236
 _acme-challenge.bolide	IN CNAME	bolide.letsencrypt.ocf.io.
 bolide	IN A	169.229.226.237
 bolide	IN AAAA	2607:f140:8801::1:237
+
+; renthike (staffvm)
+_acme-challenge.renthike	IN CNAME	renthike.letsencrypt.ocf.io.
+renthike	IN A	169.229.226.238
+renthike	IN AAAA	2607:f140:8801::1:238
 
 ; oilspill (staffvm)
 _acme-challenge.oilspill	IN CNAME	oilspill.letsencrypt.ocf.io.
