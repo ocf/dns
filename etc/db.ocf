@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023090701 ; serial number
+2023091100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -706,6 +706,9 @@ harbor-notary	IN A	169.229.226.81
 _acme-challenge.id	IN CNAME	id.letsencrypt.ocf.io.
 id	IN A	169.229.226.81
 ;id	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.idm	IN CNAME	idm.letsencrypt.ocf.io.
+idm	IN A	169.229.226.81
+idm	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.jukebox	IN CNAME	jukebox.letsencrypt.ocf.io.
 jukebox	IN A	169.229.226.81
 ;jukebox	IN AAAA	2607:f140:8801::1:81
