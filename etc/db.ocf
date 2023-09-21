@@ -708,7 +708,7 @@ id	IN A	169.229.226.81
 ;id	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.idm	IN CNAME	idm.letsencrypt.ocf.io.
 idm	IN A	169.229.226.81
-idm	IN AAAA	2607:f140:8801::1:81
+;idm	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.jukebox	IN CNAME	jukebox.letsencrypt.ocf.io.
 jukebox	IN A	169.229.226.81
 ;jukebox	IN AAAA	2607:f140:8801::1:81
