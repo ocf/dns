@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2023092100 ; serial number
+2023100800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -468,7 +468,8 @@ dev-lightning	IN AAAA	2607:f140:8801::1:54
 _acme-challenge.dev-puppet	IN CNAME	dev-puppet.letsencrypt.ocf.io.
 dev-puppet	IN CNAME	dev-lightning
 
-; hozer-55 (staffvm )
+; hozer-55 (staffvm)
+_acme-challenge.hozer-55	IN CNAME	hozer-55.letsencrypt.ocf.io.
 hozer-55	IN A	169.229.226.55
 hozer-55	IN AAAA	2607:f140:8801::1:55
 
@@ -647,8 +648,6 @@ _acme-challenge.matrix	IN CNAME	matrix.letsencrypt.ocf.io.
 matrix	IN CNAME	lb
 _acme-challenge.metabase	IN CNAME	metabase.letsencrypt.ocf.io.
 metabase	IN CNAME	lb
-_acme-challenge.new	IN CNAME	new.letsencrypt.ocf.io.
-new	IN CNAME	lb
 _acme-challenge.phpmyadmin	IN CNAME	phpmyadmin.letsencrypt.ocf.io.
 phpmyadmin	IN CNAME	lb
 _acme-challenge.pma	IN CNAME	pma.letsencrypt.ocf.io.
@@ -718,6 +717,9 @@ kibana	IN A	169.229.226.81
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN A	169.229.226.81
 ;labmap	IN AAAA	2607:f140:8801::1:81
+_acme-challenge.new	IN CNAME	new.letsencrypt.ocf.io.
+new	IN A	169.229.226.81
+;new	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.notes	IN CNAME	notes.letsencrypt.ocf.io.
 notes	IN A	169.229.226.81
 ;notes	IN AAAA	2607:f140:8801::1:81
