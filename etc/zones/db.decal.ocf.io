@@ -13,5 +13,6 @@ $TTL 1h
 
 @ IN A 169.229.226.23
 @ IN AAAA 2607:f140:8801::1:23
+_acme-challenge	IN CNAME decal.letsencrypt.ocf.io.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
