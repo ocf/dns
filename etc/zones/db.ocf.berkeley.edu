@@ -34,4 +34,8 @@ g IN MX 10 alt3.aspmx.l.google.com.
 g IN MX 10 alt4.aspmx.l.google.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
 
+; corresponding records for decal.ocf.io since it has its own zone
+decal IN A 169.229.226.23
+decal IN AAAA 2607:f140:8801::1:23
+
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
