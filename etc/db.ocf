@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024011900 ; serial number
+2024011901 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -43,6 +43,7 @@ _xmpp-client._tcp 18000 IN SRV 0 5 5222 flood.ocf.berkeley.edu.
 _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
 
 ; CNAME record for all OCF hosted sites
+hosting IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
 hosting IN A    169.229.226.23
 hosting IN AAAA 2607:f140:8801::1:23
 hosting IN MX   5 anthrax
