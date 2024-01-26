@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024011901 ; serial number
+2024012500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -276,15 +276,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -673,88 +673,88 @@ hozer-80	IN AAAA	2607:f140:8801::1:80
 ; hozer-81 (server)
 _acme-challenge.hozer-81	IN CNAME	hozer-81.letsencrypt.ocf.io.
 hozer-81	IN A	169.229.226.81
-;hozer-81	IN AAAA	2607:f140:8801::1:81
+hozer-81	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
 *.xn--wxa	IN A	169.229.226.81
-;*.xn--wxa	IN AAAA	2607:f140:8801::1:81
+*.xn--wxa	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.alerts	IN CNAME	alerts.letsencrypt.ocf.io.
 alerts	IN A	169.229.226.81
-;alerts	IN AAAA	2607:f140:8801::1:81
+alerts	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.argo	IN CNAME	argo.letsencrypt.ocf.io.
 argo	IN A	169.229.226.81
-;argo	IN AAAA	2607:f140:8801::1:81
+argo	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.dev	IN CNAME	dev.letsencrypt.ocf.io.
 dev	IN A	169.229.226.81
-;dev	IN AAAA	2607:f140:8801::1:81
+dev	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.dev-notes	IN CNAME	dev-notes.letsencrypt.ocf.io.
 dev-notes	IN A	169.229.226.81
-;dev-notes	IN AAAA	2607:f140:8801::1:81
+dev-notes	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.discord	IN CNAME	discord.letsencrypt.ocf.io.
 discord	IN A	169.229.226.81
-;discord	IN AAAA	2607:f140:8801::1:81
+discord	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.docs	IN CNAME	docs.letsencrypt.ocf.io.
 docs	IN A	169.229.226.81
-;docs	IN AAAA	2607:f140:8801::1:81
+docs	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.finder	IN CNAME	finder.letsencrypt.ocf.io.
 finder	IN A	169.229.226.81
-;finder	IN AAAA	2607:f140:8801::1:81
+finder	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.graf	IN CNAME	graf.letsencrypt.ocf.io.
 graf	IN A	169.229.226.81
-;graf	IN AAAA	2607:f140:8801::1:81
+graf	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.harbor	IN CNAME	harbor.letsencrypt.ocf.io.
 harbor	IN A	169.229.226.81
-;harbor	IN AAAA	2607:f140:8801::1:81
+harbor	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.harbor-notary	IN CNAME	harbor-notary.letsencrypt.ocf.io.
 harbor-notary	IN A	169.229.226.81
-;harbor-notary	IN AAAA	2607:f140:8801::1:81
+harbor-notary	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.id	IN CNAME	id.letsencrypt.ocf.io.
 id	IN A	169.229.226.81
-;id	IN AAAA	2607:f140:8801::1:81
+id	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.idm	IN CNAME	idm.letsencrypt.ocf.io.
 idm	IN A	169.229.226.81
-;idm	IN AAAA	2607:f140:8801::1:81
+idm	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.jukebox	IN CNAME	jukebox.letsencrypt.ocf.io.
 jukebox	IN A	169.229.226.81
-;jukebox	IN AAAA	2607:f140:8801::1:81
+jukebox	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.kibana	IN CNAME	kibana.letsencrypt.ocf.io.
 kibana	IN A	169.229.226.81
-;kibana	IN AAAA	2607:f140:8801::1:81
+kibana	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN A	169.229.226.81
-;labmap	IN AAAA	2607:f140:8801::1:81
+labmap	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.new	IN CNAME	new.letsencrypt.ocf.io.
 new	IN A	169.229.226.81
-;new	IN AAAA	2607:f140:8801::1:81
+new	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.notes	IN CNAME	notes.letsencrypt.ocf.io.
 notes	IN A	169.229.226.81
-;notes	IN AAAA	2607:f140:8801::1:81
+notes	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.o3	IN CNAME	o3.letsencrypt.ocf.io.
 o3	IN A	169.229.226.81
-;o3	IN AAAA	2607:f140:8801::1:81
+o3	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.prom	IN CNAME	prom.letsencrypt.ocf.io.
 prom	IN A	169.229.226.81
-;prom	IN AAAA	2607:f140:8801::1:81
+prom	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
 static	IN A	169.229.226.81
-;static	IN AAAA	2607:f140:8801::1:81
+static	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.supabase	IN CNAME	supabase.letsencrypt.ocf.io.
 supabase	IN A	169.229.226.81
-;supabase	IN AAAA	2607:f140:8801::1:81
+supabase	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.templates	IN CNAME	templates.letsencrypt.ocf.io.
 templates	IN A	169.229.226.81
-;templates	IN AAAA	2607:f140:8801::1:81
+templates	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.transpire	IN CNAME	transpire.letsencrypt.ocf.io.
 transpire	IN A	169.229.226.81
-;transpire	IN AAAA	2607:f140:8801::1:81
+transpire	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.vault	IN CNAME	vault.letsencrypt.ocf.io.
 vault	IN A	169.229.226.81
-;vault	IN AAAA	2607:f140:8801::1:81
+vault	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.workflow	IN CNAME	workflow.letsencrypt.ocf.io.
 workflow	IN A	169.229.226.81
-;workflow	IN AAAA	2607:f140:8801::1:81
+workflow	IN AAAA	2607:f140:8801::1:81
 _acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
 xn--wxa	IN A	169.229.226.81
-;xn--wxa	IN AAAA	2607:f140:8801::1:81
+xn--wxa	IN AAAA	2607:f140:8801::1:81
 
 ; hozer-82 (server)
 _acme-challenge.hozer-82	IN CNAME	hozer-82.letsencrypt.ocf.io.
@@ -835,6 +835,11 @@ _acme-challenge.pi	IN CNAME	pi.letsencrypt.ocf.io.
 pi	IN CNAME	overheat
 _acme-challenge.sign	IN CNAME	sign.letsencrypt.ocf.io.
 sign	IN CNAME	overheat
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.96
+doorplug	IN AAAA	2607:f140:8801::1:96
 
 ; radiation-mgmt (server)
 _acme-challenge.radiation-mgmt	IN CNAME	radiation-mgmt.letsencrypt.ocf.io.
