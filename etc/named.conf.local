@@ -53,6 +53,24 @@ zone "cal.fyi" {
   file "/srv/dns/etc/zones/db.cal.fyi";
 };
 
+zone "ocfhosted.com" {
+  type master;
+  notify no;
+  auto-dnssec maintain;
+  inline-signing yes;
+  file "/srv/dns/etc/zones/db.ocfhosted.com";
+};
+
+zone "decal.ocfhosted.com" {
+  type master;
+  notify no;
+  auto-dnssec maintain;
+  inline-signing yes;
+  file "/srv/dns/etc/zones/db.decal.ocfhosted.com";
+  // Only allow dynamic updates to A and AAAA records with key authentication
+  update-policy  { grant decal.ocfhosted.com zonesub A AAAA; };
+};
+
 zone "226.229.169.in-addr.arpa" {
   type master;
   notify explicit;
