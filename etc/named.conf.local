@@ -19,16 +19,6 @@ zone "ocf.io" {
   file "/srv/dns/etc/zones/db.ocf.io";
 };
 
-zone "decal.ocf.io" {
-  type master;
-  notify no;
-  auto-dnssec maintain;
-  inline-signing yes;
-  file "/srv/dns/etc/zones/db.decal.ocf.io";
-  // Only allow dynamic updates to A and AAAA records with key authentication
-  update-policy  { grant decal.ocf.io zonesub A AAAA; };
-};
-
 zone "letsencrypt.ocf.io" {
   type master;
   notify no;
