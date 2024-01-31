@@ -99,7 +99,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 8.7.0.0 IN PTR kube-master.ocf.berkeley.edu.
 9.7.0.0 IN PTR lb.ocf.berkeley.edu.
 0.8.0.0 IN PTR hozer-80.ocf.berkeley.edu.
-1.8.0.0 IN PTR hozer-81.ocf.berkeley.edu.
 2.8.0.0 IN PTR hozer-82.ocf.berkeley.edu.
 3.8.0.0 IN PTR hozer-83.ocf.berkeley.edu.
 4.8.0.0 IN PTR hozer-84.ocf.berkeley.edu.
