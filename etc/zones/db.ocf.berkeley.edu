@@ -15,7 +15,7 @@ $INCLUDE ../db.ocf
 @ IN MX 10 alt4.aspmx.l.google.com.
 
 ; Sender Policy Framework (SPF), DKIM, and DMARC records
-_spf IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu include:_spf.google.com -all"
+_spf IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu include:_spf.google.com include:_spf.berkeley.edu include:_spf2.berkeley.edu -all"
 @ IN TXT "v=spf1 include:_spf.ocf.berkeley.edu -all"
 google._domainkey IN TXT ("v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodgotNRIHYKQOfT5A7+HsmGyAKz4hCPk9qedctevKq3XLsmJqYMufUE3kdUOoVDAjKlt/4xwLGh+FvcyTCdX/0VtVzqWyta5uaHELxXvjUqWlKAK5CeHsOZCZiCbispRn6yPwyEPWizHVmPF0OyN1qj4QIZvG6E0lk98sE318eRhXFoiPEM6Wfk"
 "eUv8TECY76xyfP9htizrPXSdw/Fye043xCJg/2STpWb1knUucNsVRNDj5Gz0ZdjBsLUh2j9PUx/ufeUWmZ8/Us1k+OHkV5BUxISlHxcFwhN5LzoPO/6WLeLRpj1UHMdSBVa/rhmw28vsu7JYRJwfgGmsm+beisQIDAQAB")
