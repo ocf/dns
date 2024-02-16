@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021501 ; serial number
+2024021502 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1247,6 +1247,11 @@ _acme-challenge.tempest	IN CNAME	tempest.letsencrypt.ocf.io.
 tempest	IN A	169.229.226.206
 tempest	IN AAAA	2607:f140:8801::1:206
 
+; duststorm (staffvm)
+_acme-challenge.duststorm	IN CNAME	duststorm.letsencrypt.ocf.io.
+duststorm	IN A	169.229.226.208
+duststorm	IN AAAA	2607:f140:8801::1:208
+
 ; trojan (staffvm)
 _acme-challenge.trojan	IN CNAME	trojan.letsencrypt.ocf.io.
 trojan	IN A	169.229.226.209
@@ -1310,15 +1315,15 @@ _acme-challenge.hypoxia	IN CNAME	hypoxia.letsencrypt.ocf.io.
 hypoxia	IN A	169.229.226.223
 hypoxia	IN AAAA	2607:f140:8801::1:223
 
-; phantom (staffvm)
-_acme-challenge.phantom	IN CNAME	phantom.letsencrypt.ocf.io.
-phantom	IN A	169.229.226.224
-phantom	IN AAAA	2607:f140:8801::1:224
-
 ; shockwave (staffvm)
 _acme-challenge.shockwave	IN CNAME	shockwave.letsencrypt.ocf.io.
 shockwave	IN A	169.229.226.224
 shockwave	IN AAAA	2607:f140:8801::1:224
+
+; phantom (staffvm)
+_acme-challenge.phantom	IN CNAME	phantom.letsencrypt.ocf.io.
+phantom	IN A	169.229.226.224
+phantom	IN AAAA	2607:f140:8801::1:224
 
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	rapture.letsencrypt.ocf.io.
