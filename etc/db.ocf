@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021502 ; serial number
+2024021503 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -278,15 +278,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -1315,15 +1315,15 @@ _acme-challenge.hypoxia	IN CNAME	hypoxia.letsencrypt.ocf.io.
 hypoxia	IN A	169.229.226.223
 hypoxia	IN AAAA	2607:f140:8801::1:223
 
-; shockwave (staffvm)
-_acme-challenge.shockwave	IN CNAME	shockwave.letsencrypt.ocf.io.
-shockwave	IN A	169.229.226.224
-shockwave	IN AAAA	2607:f140:8801::1:224
-
 ; phantom (staffvm)
 _acme-challenge.phantom	IN CNAME	phantom.letsencrypt.ocf.io.
 phantom	IN A	169.229.226.224
 phantom	IN AAAA	2607:f140:8801::1:224
+
+; shockwave (staffvm)
+_acme-challenge.shockwave	IN CNAME	shockwave.letsencrypt.ocf.io.
+shockwave	IN A	169.229.226.224
+shockwave	IN AAAA	2607:f140:8801::1:224
 
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	rapture.letsencrypt.ocf.io.
@@ -1358,6 +1358,11 @@ _acme-challenge.pox	IN CNAME	pox.letsencrypt.ocf.io.
 _acme-challenge.nuke	IN CNAME	nuke.letsencrypt.ocf.io.
 nuke	IN A	169.229.226.232
 nuke	IN AAAA	2607:f140:8801::1:232
+
+; bitrot (staffvm)
+_acme-challenge.bitrot	IN CNAME	bitrot.letsencrypt.ocf.io.
+bitrot	IN A	169.229.226.233
+bitrot	IN AAAA	2607:f140:8801::1:233
 
 ; rejection (staffvm)
 _acme-challenge.rejection	IN CNAME	rejection.letsencrypt.ocf.io.
