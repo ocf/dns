@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021503 ; serial number
+2024021600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -57,8 +57,8 @@ $TTL 1d
 29 IN PTR frostbite.OCF.Berkeley.EDU.
 30 IN PTR implosion.OCF.Berkeley.EDU.
 31 IN PTR flood.OCF.Berkeley.EDU.
-32 IN PTR radiation.OCF.Berkeley.EDU.
 32 IN PTR dna.OCF.Berkeley.EDU.
+32 IN PTR radiation.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
 34 IN PTR dev-maelstrom.OCF.Berkeley.EDU.
 35 IN PTR anthrax.OCF.Berkeley.EDU.
@@ -236,8 +236,8 @@ $TTL 1d
 221 IN PTR fire.OCF.Berkeley.EDU.
 222 IN PTR entropy.OCF.Berkeley.EDU.
 223 IN PTR hypoxia.OCF.Berkeley.EDU.
-224 IN PTR phantom.OCF.Berkeley.EDU.
 224 IN PTR shockwave.OCF.Berkeley.EDU.
+224 IN PTR phantom.OCF.Berkeley.EDU.
 225 IN PTR rapture.OCF.Berkeley.EDU.
 227 IN PTR bigrip.OCF.Berkeley.EDU.
 228 IN PTR vortex.OCF.Berkeley.EDU.
@@ -245,6 +245,7 @@ $TTL 1d
 230 IN PTR pox.OCF.Berkeley.EDU.
 232 IN PTR nuke.OCF.Berkeley.EDU.
 233 IN PTR bitrot.OCF.Berkeley.EDU.
+234 IN PTR lemurseven.OCF.Berkeley.EDU.
 235 IN PTR rejection.OCF.Berkeley.EDU.
 236 IN PTR riot.OCF.Berkeley.EDU.
 237 IN PTR bolide.OCF.Berkeley.EDU.
