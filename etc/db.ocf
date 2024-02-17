@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021600 ; serial number
+2024021602 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1320,11 +1320,6 @@ _acme-challenge.shockwave	IN CNAME	shockwave.letsencrypt.ocf.io.
 shockwave	IN A	169.229.226.224
 shockwave	IN AAAA	2607:f140:8801::1:224
 
-; phantom (staffvm)
-_acme-challenge.phantom	IN CNAME	phantom.letsencrypt.ocf.io.
-phantom	IN A	169.229.226.224
-phantom	IN AAAA	2607:f140:8801::1:224
-
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	rapture.letsencrypt.ocf.io.
 rapture	IN A	169.229.226.225
@@ -1364,10 +1359,10 @@ _acme-challenge.bitrot	IN CNAME	bitrot.letsencrypt.ocf.io.
 bitrot	IN A	169.229.226.233
 bitrot	IN AAAA	2607:f140:8801::1:233
 
-; lemurseven (staffvm)
-_acme-challenge.lemurseven	IN CNAME	lemurseven.letsencrypt.ocf.io.
-lemurseven	IN A	169.229.226.234
-lemurseven	IN AAAA	2607:f140:8801::1:234
+; hyperinflation (staffvm)
+_acme-challenge.hyperinflation	IN CNAME	hyperinflation.letsencrypt.ocf.io.
+hyperinflation	IN A	169.229.226.234
+hyperinflation	IN AAAA	2607:f140:8801::1:234
 
 ; rejection (staffvm)
 _acme-challenge.rejection	IN CNAME	rejection.letsencrypt.ocf.io.
