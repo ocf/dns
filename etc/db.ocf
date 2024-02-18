@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021602 ; serial number
+2024021800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1284,6 +1284,11 @@ failure	IN AAAA	2607:f140:8801::1:214
 _acme-challenge.spectre	IN CNAME	spectre.letsencrypt.ocf.io.
 spectre	IN A	169.229.226.215
 spectre	IN AAAA	2607:f140:8801::1:215
+
+; emp (staffvm)
+_acme-challenge.emp	IN CNAME	emp.letsencrypt.ocf.io.
+emp	IN A	169.229.226.216
+emp	IN AAAA	2607:f140:8801::1:216
 
 ; alamo (staffvm)
 _acme-challenge.alamo	IN CNAME	alamo.letsencrypt.ocf.io.
