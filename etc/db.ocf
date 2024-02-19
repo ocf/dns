@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024021800 ; serial number
+2024021801 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -819,6 +819,10 @@ doorplug	IN AAAA	2607:f140:8801::1:96
 _acme-challenge.radiation-mgmt	IN CNAME	radiation-mgmt.letsencrypt.ocf.io.
 radiation-mgmt	IN A	169.229.226.98
 radiation-mgmt	IN AAAA	2607:f140:8801::1:98
+
+; snowball (desktop)
+snowball	IN A	169.229.226.99
+snowball	IN AAAA	2607:f140:8801::1:99
 
 ; eruption (desktop)
 eruption	IN A	169.229.226.100
