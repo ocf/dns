@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024031300 ; serial number
+2024031600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -278,15 +278,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -672,9 +672,9 @@ _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
 hozer-80	IN A	169.229.226.80
 hozer-80	IN AAAA	2607:f140:8801::1:80
 
-; hozer-81 (server)
-_acme-challenge.hozer-81	IN CNAME	hozer-81.letsencrypt.ocf.io.
-hozer-81	IN A	169.229.226.81
+; lb-81 (server)
+_acme-challenge.lb-81	IN CNAME	lb-81.letsencrypt.ocf.io.
+lb-81	IN A	169.229.226.81
 _acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
 *.xn--wxa	IN A	169.229.226.81
 _acme-challenge.alerts	IN CNAME	alerts.letsencrypt.ocf.io.
@@ -1046,14 +1046,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
