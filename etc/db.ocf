@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024031600 ; serial number
+2024041700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -47,6 +47,13 @@ hosting IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
 hosting IN A    169.229.226.23
 hosting IN AAAA 2607:f140:8801::1:23
 hosting IN MX   5 anthrax
+
+; eruption (desktop)
+eruption	IN A	128.32.128.100
+staffdesk	IN A	128.32.128.100
+
+; avalanche (desktop)
+avalanche	IN A	128.32.128.101
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -815,6 +822,10 @@ _acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.96
 doorplug	IN AAAA	2607:f140:8801::1:96
 
+; bigbang (desktop)
+bigbang	IN A	169.229.226.97
+bigbang	IN AAAA	2607:f140:8801::1:97
+
 ; radiation-mgmt (server)
 _acme-challenge.radiation-mgmt	IN CNAME	radiation-mgmt.letsencrypt.ocf.io.
 radiation-mgmt	IN A	169.229.226.98
@@ -824,19 +835,17 @@ radiation-mgmt	IN AAAA	2607:f140:8801::1:98
 snowball	IN A	169.229.226.99
 snowball	IN AAAA	2607:f140:8801::1:99
 
-; eruption (desktop)
-eruption	IN A	169.229.226.100
-eruption	IN AAAA	2607:f140:8801::1:100
-staffdesk	IN A	169.229.226.100
-staffdesk	IN AAAA	2607:f140:8801::1:100
+; smokey (desktop)
+smokey	IN A	169.229.226.100
+smokey	IN AAAA	2607:f140:8801::1:100
 
-; avalanche (desktop)
-avalanche	IN A	169.229.226.101
-avalanche	IN AAAA	2607:f140:8801::1:101
+; spots (desktop)
+spots	IN A	169.229.226.101
+spots	IN AAAA	2607:f140:8801::1:101
 
-; bigbang (desktop)
-bigbang	IN A	169.229.226.102
-bigbang	IN AAAA	2607:f140:8801::1:102
+; shadow (desktop)
+shadow	IN A	169.229.226.102
+shadow	IN AAAA	2607:f140:8801::1:102
 
 ; blizzard (desktop)
 blizzard	IN A	169.229.226.103
@@ -1046,14 +1055,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
+
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
-
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
