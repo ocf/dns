@@ -16,12 +16,15 @@ $INCLUDE ../db.ocf
 
 ; SPF and DKIM for anthrax
 _spf IN TXT "v=spf1 a:anthrax.ocf.berkeley.edu include:_spf.google.com include:_spf.berkeley.edu include:_spf2.berkeley.edu -all"
-_dkim IN TXT "v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzt+5pW7/ZYYPjyBW3aPtMnNiy9hfMvAvmqWI8GOjxhbVoAQueGXpT1TKkyUf+zPu9QesSzIlvNM7RLKpV0aQavNBrvCRO0lFcQbYCGARtBU5OUkrW4QwdllNV8c5APiUKPw6sYKlDmNbJnK5yZlWR9YCrbBKYrYBZJgGa2tnFGAFHMoEJChxkpjQaNKgkB33NpExk0ZSrjXXxi wANpnRnBZaUiuyXgFBdkr+b+WfKDFN3apJ1lGJZ+pFhS//lzRvvuFklWLpWoPa8/wF5sdODKdAB1PFKipJ185AHLTomunUq/sxnHYsH5he+6tRLy45wiPHkPdGkyPjiZfo5H3qXwIDAQAB"
+_dkim IN TXT ( "v=DKIM1; h=sha256; k=rsa; "
+	 "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzt+5pW7/ZYYPjyBW3aPtMnNiy9hfMvAvmqWI8GOjxhbVoAQueGXpT1TKkyUf+zPu9QesSzIlvNM7RLKpV0aQavNBrvCRO0lFcQbYCGARtBU5OUkrW4QwdllNV8c5APiUKPw6sYKlDmNbJnK5yZlWR9YCrbBKYrYBZJgGa2tnFGAFHMoEJChxkpjQaNKgkB33NpExk0ZSrjXXxi"
+	 "wANpnRnBZaUiuyXgFBdkr+b+WfKDFN3apJ1lGJZ+pFhS//lzRvvuFklWLpWoPa8/wF5sdODKdAB1PFKipJ185AHLTomunUq/sxnHYsH5he+6tRLy45wiPHkPdGkyPjiZfo5H3qXwIDAQAB" )
 
 ; SPF, DKIM, and DMARC for ocf.berkeley.edu
 @ IN TXT "v=spf1 include:_spf.ocf.berkeley.edu -all"
 ocf._domainkey IN CNAME _dkim.ocf.berkeley.edu.
-google._domainkey IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodgotNRIHYKQOfT5A7+HsmGyAKz4hCPk9qedctevKq3XLsmJqYMufUE3kdUOoVDAjKlt/4xwLGh+FvcyTCdX/0VtVzqWyta5uaHELxXvjUqWlKAK5CeHsOZCZiCbispRn6yPwyEPWizHVmPF0OyN1qj4QIZvG6E0lk98sE318eRhXFoiPEM6Wfk eUv8TECY76xyfP9htizrPXSdw/Fye043xCJg/2STpWb1knUucNsVRNDj5Gz0ZdjBsLUh2j9PUx/ufeUWmZ8/Us1k+OHkV5BUxISlHxcFwhN5LzoPO/6WLeLRpj1UHMdSBVa/rhmw28vsu7JYRJwfgGmsm+beisQIDAQAB"
+google._domainkey IN TXT ("v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodgotNRIHYKQOfT5A7+HsmGyAKz4hCPk9qedctevKq3XLsmJqYMufUE3kdUOoVDAjKlt/4xwLGh+FvcyTCdX/0VtVzqWyta5uaHELxXvjUqWlKAK5CeHsOZCZiCbispRn6yPwyEPWizHVmPF0OyN1qj4QIZvG6E0lk98sE318eRhXFoiPEM6Wfk"
+"eUv8TECY76xyfP9htizrPXSdw/Fye043xCJg/2STpWb1knUucNsVRNDj5Gz0ZdjBsLUh2j9PUx/ufeUWmZ8/Us1k+OHkV5BUxISlHxcFwhN5LzoPO/6WLeLRpj1UHMdSBVa/rhmw28vsu7JYRJwfgGmsm+beisQIDAQAB")
 _dmarc IN TXT "v=DMARC1; p=none"
 
 ; for systemstatus blog, only works on ocf.berkeley.edu domain (ocfblog.blogspot.com)
