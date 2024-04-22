@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024042100 ; serial number
+2024042101 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -285,15 +285,15 @@ irc	IN CNAME	flood
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -706,8 +706,6 @@ _acme-challenge.id	IN CNAME	id.letsencrypt.ocf.io.
 id	IN A	169.229.226.81
 _acme-challenge.idm	IN CNAME	idm.letsencrypt.ocf.io.
 idm	IN A	169.229.226.81
-_acme-challenge.irc-dev	IN CNAME	irc-dev.letsencrypt.ocf.io.
-irc-dev	IN A	169.229.226.81
 _acme-challenge.ircbot	IN CNAME	ircbot.letsencrypt.ocf.io.
 ircbot	IN A	169.229.226.81
 _acme-challenge.jukebox	IN CNAME	jukebox.letsencrypt.ocf.io.
@@ -756,12 +754,9 @@ tele	IN AAAA	2607:f140:8801::1:82
 _acme-challenge.hozer-83	IN CNAME	hozer-83.letsencrypt.ocf.io.
 hozer-83	IN A	169.229.226.83
 hozer-83	IN AAAA	2607:f140:8801::1:83
-_acme-challenge.mc	IN CNAME	mc.letsencrypt.ocf.io.
-*.mc	IN A	169.229.226.83
-*.mc	IN AAAA	2607:f140:8801::1:83
-_acme-challenge.mc	IN CNAME	mc.letsencrypt.ocf.io.
-mc	IN A	169.229.226.83
-mc	IN AAAA	2607:f140:8801::1:83
+_acme-challenge.irc-dev	IN CNAME	irc-dev.letsencrypt.ocf.io.
+irc-dev	IN A	169.229.226.83
+irc-dev	IN AAAA	2607:f140:8801::1:83
 
 ; hozer-84 (server)
 _acme-challenge.hozer-84	IN CNAME	hozer-84.letsencrypt.ocf.io.
@@ -1059,14 +1054,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
+
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
-
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
