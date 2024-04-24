@@ -40,4 +40,6 @@ g IN MX 10 alt3.aspmx.l.google.com.
 g IN MX 10 alt4.aspmx.l.google.com.
 g IN TXT "google-site-verification=4C50Ut260ZQBs2yuLmrRnO1OHvPGMdqlRgl7vIxC8YA"
 
+anthrax IN TXT "google-site-verification=1xD4dwBgOPGhS4ciL5vu5FE0kKKraZmraquZGDIFHRU"
+
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
