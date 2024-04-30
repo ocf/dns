@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024042401 ; serial number
+2024042900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -54,6 +54,12 @@ staffdesk	IN A	128.32.128.100
 
 ; avalanche (desktop)
 avalanche	IN A	128.32.128.101
+
+; firewhirl (desktop)
+firewhirl	IN A	128.32.128.104
+
+; destruction (desktop)
+destruction	IN A	128.32.128.105
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -850,13 +856,13 @@ blizzard	IN AAAA	2607:f140:8801::1:103
 frontdesk	IN A	169.229.226.103
 frontdesk	IN AAAA	2607:f140:8801::1:103
 
-; cyclone (desktop)
-cyclone	IN A	169.229.226.104
-cyclone	IN AAAA	2607:f140:8801::1:104
+; fred (desktop)
+fred	IN A	169.229.226.104
+fred	IN AAAA	2607:f140:8801::1:104
 
-; destruction (desktop)
-destruction	IN A	169.229.226.105
-destruction	IN AAAA	2607:f140:8801::1:105
+; pumpkin (desktop)
+pumpkin	IN A	169.229.226.105
+pumpkin	IN AAAA	2607:f140:8801::1:105
 
 ; hurricane (desktop)
 hurricane	IN A	169.229.226.106
@@ -902,9 +908,9 @@ asteroid	IN AAAA	2607:f140:8801::1:115
 cyanide	IN A	169.229.226.116
 cyanide	IN AAAA	2607:f140:8801::1:116
 
-; firewhirl (desktop)
-firewhirl	IN A	169.229.226.117
-firewhirl	IN AAAA	2607:f140:8801::1:117
+; cyclone (desktop)
+cyclone	IN A	169.229.226.117
+cyclone	IN AAAA	2607:f140:8801::1:117
 
 ; blackout (desktop)
 blackout	IN A	169.229.226.118
