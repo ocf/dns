@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024042900 ; serial number
+2024050100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -289,15 +289,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -829,10 +829,11 @@ doorplug	IN AAAA	2607:f140:8801::1:96
 bigbang	IN A	169.229.226.97
 bigbang	IN AAAA	2607:f140:8801::1:97
 
-; radiation-mgmt (server)
-_acme-challenge.radiation-mgmt	IN CNAME	radiation-mgmt.letsencrypt.ocf.io.
-radiation-mgmt	IN A	169.229.226.98
-radiation-mgmt	IN AAAA	2607:f140:8801::1:98
+; blizzard (desktop)
+blizzard	IN A	169.229.226.98
+blizzard	IN AAAA	2607:f140:8801::1:98
+frontdesk	IN A	169.229.226.98
+frontdesk	IN AAAA	2607:f140:8801::1:98
 
 ; snowball (desktop)
 snowball	IN A	169.229.226.99
@@ -850,11 +851,9 @@ spots	IN AAAA	2607:f140:8801::1:101
 shadow	IN A	169.229.226.102
 shadow	IN AAAA	2607:f140:8801::1:102
 
-; blizzard (desktop)
-blizzard	IN A	169.229.226.103
-blizzard	IN AAAA	2607:f140:8801::1:103
-frontdesk	IN A	169.229.226.103
-frontdesk	IN AAAA	2607:f140:8801::1:103
+; sunny (desktop)
+sunny	IN A	169.229.226.103
+sunny	IN AAAA	2607:f140:8801::1:103
 
 ; fred (desktop)
 fred	IN A	169.229.226.104
