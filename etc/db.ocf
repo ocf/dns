@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024050100 ; serial number
+2024050300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -60,6 +60,9 @@ firewhirl	IN A	128.32.128.104
 
 ; destruction (desktop)
 destruction	IN A	128.32.128.105
+
+; hurricane (desktop)
+hurricane	IN A	128.32.128.106
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -289,15 +292,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -863,9 +866,9 @@ fred	IN AAAA	2607:f140:8801::1:104
 pumpkin	IN A	169.229.226.105
 pumpkin	IN AAAA	2607:f140:8801::1:105
 
-; hurricane (desktop)
-hurricane	IN A	169.229.226.106
-hurricane	IN AAAA	2607:f140:8801::1:106
+; callie (desktop)
+callie	IN A	169.229.226.106
+callie	IN AAAA	2607:f140:8801::1:106
 
 ; madcow (desktop)
 madcow	IN A	169.229.226.107
@@ -1057,14 +1060,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
+
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
-
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
