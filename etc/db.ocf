@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024050300 ; serial number
+2024050301 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -61,8 +61,8 @@ firewhirl	IN A	128.32.128.104
 ; destruction (desktop)
 destruction	IN A	128.32.128.105
 
-; hurricane (desktop)
-hurricane	IN A	128.32.128.106
+; sinkhole (desktop)
+sinkhole	IN A	128.32.128.106
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -954,9 +954,9 @@ plague	IN AAAA	2607:f140:8801::1:126
 surge	IN A	169.229.226.127
 surge	IN AAAA	2607:f140:8801::1:127
 
-; sinkhole (desktop)
-sinkhole	IN A	169.229.226.128
-sinkhole	IN AAAA	2607:f140:8801::1:128
+; hurricane (desktop)
+hurricane	IN A	169.229.226.128
+hurricane	IN AAAA	2607:f140:8801::1:128
 
 ; invasion (desktop)
 invasion	IN A	169.229.226.129
