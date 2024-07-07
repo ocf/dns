@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024060400 ; serial number
+2024070700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -681,8 +681,6 @@ _acme-challenge.slidingsync.matrix	IN CNAME	slidingsync.matrix.letsencrypt.ocf.i
 slidingsync.matrix	IN CNAME	lb
 _acme-challenge.snmp-exporter	IN CNAME	snmp-exporter.letsencrypt.ocf.io.
 snmp-exporter	IN CNAME	lb
-_acme-challenge.vaultwarden	IN CNAME	vaultwarden.letsencrypt.ocf.io.
-vaultwarden	IN CNAME	lb
 
 ; hozer-80 (server)
 _acme-challenge.hozer-80	IN CNAME	hozer-80.letsencrypt.ocf.io.
@@ -746,6 +744,8 @@ _acme-challenge.transpire	IN CNAME	transpire.letsencrypt.ocf.io.
 transpire	IN A	169.229.226.81
 _acme-challenge.vault	IN CNAME	vault.letsencrypt.ocf.io.
 vault	IN A	169.229.226.81
+_acme-challenge.vaultwarden	IN CNAME	vaultwarden.letsencrypt.ocf.io.
+vaultwarden	IN A	169.229.226.81
 _acme-challenge.workflow	IN CNAME	workflow.letsencrypt.ocf.io.
 workflow	IN A	169.229.226.81
 _acme-challenge.xn--wxa	IN CNAME	xn--wxa.letsencrypt.ocf.io.
@@ -1065,14 +1065,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
