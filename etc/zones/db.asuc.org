@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2021040301 ; serial number
+2024081401 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -99,6 +99,15 @@ sao IN MX 10 alt4.aspmx.l.google.com.
 sao IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
 sao IN TXT  "google-site-verication=KpjaLSvdWSBl180Dc7dGxI4mQ45D1rYdh7ibtjD3yIg"
 v2v5zvpc2fdx.sao IN  CNAME gv-eegxjvcos4us2f.dv.googlehosted.com.
+
+superb IN A	169.229.226.23
+superb IN AAAA 2607:f140:8801::1:23
+superb IN MX 1 aspmx.l.google.com.
+superb IN MX 5 alt1.aspmx.l.google.com.
+superb IN MX 5 alt2.aspmx.l.google.com.
+superb IN MX 10 alt3.aspmx.l.google.com.
+superb IN MX 10 alt4.aspmx.l.google.com.
+superb IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
 
 octo	IN CNAME	asuc-octo.github.io.
 www.octo	IN CNAME	asuc-octo.github.io.
