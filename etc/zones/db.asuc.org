@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024082001 ; serial number
+2024082201 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -23,6 +23,16 @@ $TTL 5m
 @ IN TXT "google-site-verification=dxX_fSqWTqho3vU14RHPpqcGsgxx2XzJMRCwky-Rgkw"
 
 @ IN TXT "v=spf1 +a +mx a:anthrax.ocf.berkeley.edu include:_spf.google.com ?all"
+_dmarc IN TXT "v=DMARC1; p=none"
+
+@ IN TXT "stripe-verification=3ac29152aeff9fb73bdbaac23057b5d6ecb0b9d848a3d5f051e6d525bac7f4c8"
+scdcr2gjuuoubmqxcatyplalbkaxoscp._domainkey IN CNAME scdcr2gjuuoubmqxcatyplalbkaxoscp.dkim.custom-email-domain.stripe.com.
+5vapobmvgjp62kzgkgg6pk65zexgcqw7._domainkey IN CNAME 5vapobmvgjp62kzgkgg6pk65zexgcqw7.dkim.custom-email-domain.stripe.com.
+6dn24exlw67uivcpzulqxqwtwppfxywg._domainkey IN CNAME 6dn24exlw67uivcpzulqxqwtwppfxywg.dkim.custom-email-domain.stripe.com.
+tqriitt33eeet3ypuelwdrw7rpqp56pa._domainkey IN CNAME tqriitt33eeet3ypuelwdrw7rpqp56pa.dkim.custom-email-domain.stripe.com.
+rjkginhe3aprnbxduozaevtvaffe7met._domainkey IN CNAME rjkginhe3aprnbxduozaevtvaffe7met.dkim.custom-email-domain.stripe.com.
+sgeki334wetbtzisdcceju52b7yuhf27._domainkey IN CNAME sgeki334wetbtzisdcceju52b7yuhf27.dkim.custom-email-domain.stripe.com.
+bounce IN CNAME custom-email-domain.stripe.com.
 
 @	IN A	169.229.226.23
 @	IN AAAA	2607:f140:8801::1:23
