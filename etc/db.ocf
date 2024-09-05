@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024070700 ; serial number
+2024090400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -47,22 +47,6 @@ hosting IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
 hosting IN A    169.229.226.23
 hosting IN AAAA 2607:f140:8801::1:23
 hosting IN MX   5 anthrax
-
-; eruption (desktop)
-eruption	IN A	128.32.128.100
-staffdesk	IN A	128.32.128.100
-
-; avalanche (desktop)
-avalanche	IN A	128.32.128.101
-
-; firewhirl (desktop)
-firewhirl	IN A	128.32.128.104
-
-; destruction (desktop)
-destruction	IN A	128.32.128.105
-
-; sinkhole (desktop)
-sinkhole	IN A	128.32.128.106
 
 ; fallingrocks (server)
 _acme-challenge.fallingrocks	IN CNAME	fallingrocks.letsencrypt.ocf.io.
@@ -833,29 +817,23 @@ _acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.96
 doorplug	IN AAAA	2607:f140:8801::1:96
 
-; bigbang (desktop)
-bigbang	IN A	169.229.226.97
-bigbang	IN AAAA	2607:f140:8801::1:97
-
 ; snowball (desktop)
 snowball	IN A	169.229.226.99
 snowball	IN AAAA	2607:f140:8801::1:99
 
-; smokey (desktop)
-smokey	IN A	169.229.226.100
-smokey	IN AAAA	2607:f140:8801::1:100
+; eruption (desktop)
+eruption	IN A	169.229.226.100
+eruption	IN AAAA	2607:f140:8801::1:100
+staffdesk	IN A	169.229.226.100
+staffdesk	IN AAAA	2607:f140:8801::1:100
 
-; spots (desktop)
-spots	IN A	169.229.226.101
-spots	IN AAAA	2607:f140:8801::1:101
+; avalanche (desktop)
+avalanche	IN A	169.229.226.101
+avalanche	IN AAAA	2607:f140:8801::1:101
 
-; shadow (desktop)
-shadow	IN A	169.229.226.102
-shadow	IN AAAA	2607:f140:8801::1:102
-
-; sunny (desktop)
-sunny	IN A	169.229.226.103
-sunny	IN AAAA	2607:f140:8801::1:103
+; bigbang (desktop)
+bigbang	IN A	169.229.226.102
+bigbang	IN AAAA	2607:f140:8801::1:102
 
 ; blizzard (desktop)
 blizzard	IN A	169.229.226.103
@@ -863,17 +841,17 @@ blizzard	IN AAAA	2607:f140:8801::1:103
 frontdesk	IN A	169.229.226.103
 frontdesk	IN AAAA	2607:f140:8801::1:103
 
-; fred (desktop)
-fred	IN A	169.229.226.104
-fred	IN AAAA	2607:f140:8801::1:104
+; firewhirl (desktop)
+firewhirl	IN A	169.229.226.104
+firewhirl	IN AAAA	2607:f140:8801::1:104
 
-; pumpkin (desktop)
-pumpkin	IN A	169.229.226.105
-pumpkin	IN AAAA	2607:f140:8801::1:105
+; destruction (desktop)
+destruction	IN A	169.229.226.105
+destruction	IN AAAA	2607:f140:8801::1:105
 
-; callie (desktop)
-callie	IN A	169.229.226.106
-callie	IN AAAA	2607:f140:8801::1:106
+; sinkhole (desktop)
+sinkhole	IN A	169.229.226.106
+sinkhole	IN AAAA	2607:f140:8801::1:106
 
 ; madcow (desktop)
 madcow	IN A	169.229.226.107
@@ -993,9 +971,17 @@ whitehole	IN AAAA	2607:f140:8801::1:139
 dhcp-169-229-226-140	IN A	169.229.226.140
 dhcp-169-229-226-140	IN AAAA	2607:f140:8801::1:140
 
+; smokey (desktop)
+smokey	IN A	169.229.226.141
+smokey	IN AAAA	2607:f140:8801::1:141
+
 ; dhcp-169-229-226-141 (dhcp)
 dhcp-169-229-226-141	IN A	169.229.226.141
 dhcp-169-229-226-141	IN AAAA	2607:f140:8801::1:141
+
+; spots (desktop)
+spots	IN A	169.229.226.142
+spots	IN AAAA	2607:f140:8801::1:142
 
 ; dhcp-169-229-226-142 (dhcp)
 dhcp-169-229-226-142	IN A	169.229.226.142
@@ -1005,6 +991,14 @@ dhcp-169-229-226-142	IN AAAA	2607:f140:8801::1:142
 dhcp-169-229-226-143	IN A	169.229.226.143
 dhcp-169-229-226-143	IN AAAA	2607:f140:8801::1:143
 
+; shadow (desktop)
+shadow	IN A	169.229.226.143
+shadow	IN AAAA	2607:f140:8801::1:143
+
+; sunny (desktop)
+sunny	IN A	169.229.226.144
+sunny	IN AAAA	2607:f140:8801::1:144
+
 ; dhcp-169-229-226-144 (dhcp)
 dhcp-169-229-226-144	IN A	169.229.226.144
 dhcp-169-229-226-144	IN AAAA	2607:f140:8801::1:144
@@ -1013,9 +1007,21 @@ dhcp-169-229-226-144	IN AAAA	2607:f140:8801::1:144
 dhcp-169-229-226-145	IN A	169.229.226.145
 dhcp-169-229-226-145	IN AAAA	2607:f140:8801::1:145
 
+; fred (desktop)
+fred	IN A	169.229.226.145
+fred	IN AAAA	2607:f140:8801::1:145
+
 ; dhcp-169-229-226-146 (dhcp)
 dhcp-169-229-226-146	IN A	169.229.226.146
 dhcp-169-229-226-146	IN AAAA	2607:f140:8801::1:146
+
+; pumpkin (desktop)
+pumpkin	IN A	169.229.226.146
+pumpkin	IN AAAA	2607:f140:8801::1:146
+
+; callie (desktop)
+callie	IN A	169.229.226.147
+callie	IN AAAA	2607:f140:8801::1:147
 
 ; dhcp-169-229-226-147 (dhcp)
 dhcp-169-229-226-147	IN A	169.229.226.147
