@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090400 ; serial number
+2024090500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -971,45 +971,45 @@ whitehole	IN AAAA	2607:f140:8801::1:139
 dhcp-169-229-226-140	IN A	169.229.226.140
 dhcp-169-229-226-140	IN AAAA	2607:f140:8801::1:140
 
-; smokey (desktop)
-smokey	IN A	169.229.226.141
-smokey	IN AAAA	2607:f140:8801::1:141
-
 ; dhcp-169-229-226-141 (dhcp)
 dhcp-169-229-226-141	IN A	169.229.226.141
 dhcp-169-229-226-141	IN AAAA	2607:f140:8801::1:141
 
-; spots (desktop)
-spots	IN A	169.229.226.142
-spots	IN AAAA	2607:f140:8801::1:142
+; smokey (desktop)
+smokey	IN A	169.229.226.141
+smokey	IN AAAA	2607:f140:8801::1:141
 
 ; dhcp-169-229-226-142 (dhcp)
 dhcp-169-229-226-142	IN A	169.229.226.142
 dhcp-169-229-226-142	IN AAAA	2607:f140:8801::1:142
 
-; dhcp-169-229-226-143 (dhcp)
-dhcp-169-229-226-143	IN A	169.229.226.143
-dhcp-169-229-226-143	IN AAAA	2607:f140:8801::1:143
+; spots (desktop)
+spots	IN A	169.229.226.142
+spots	IN AAAA	2607:f140:8801::1:142
 
 ; shadow (desktop)
 shadow	IN A	169.229.226.143
 shadow	IN AAAA	2607:f140:8801::1:143
 
-; sunny (desktop)
-sunny	IN A	169.229.226.144
-sunny	IN AAAA	2607:f140:8801::1:144
+; dhcp-169-229-226-143 (dhcp)
+dhcp-169-229-226-143	IN A	169.229.226.143
+dhcp-169-229-226-143	IN AAAA	2607:f140:8801::1:143
 
 ; dhcp-169-229-226-144 (dhcp)
 dhcp-169-229-226-144	IN A	169.229.226.144
 dhcp-169-229-226-144	IN AAAA	2607:f140:8801::1:144
 
-; dhcp-169-229-226-145 (dhcp)
-dhcp-169-229-226-145	IN A	169.229.226.145
-dhcp-169-229-226-145	IN AAAA	2607:f140:8801::1:145
+; sunny (desktop)
+sunny	IN A	169.229.226.144
+sunny	IN AAAA	2607:f140:8801::1:144
 
 ; fred (desktop)
 fred	IN A	169.229.226.145
 fred	IN AAAA	2607:f140:8801::1:145
+
+; dhcp-169-229-226-145 (dhcp)
+dhcp-169-229-226-145	IN A	169.229.226.145
+dhcp-169-229-226-145	IN AAAA	2607:f140:8801::1:145
 
 ; dhcp-169-229-226-146 (dhcp)
 dhcp-169-229-226-146	IN A	169.229.226.146
@@ -1055,6 +1055,11 @@ dhcp-169-229-226-153	IN AAAA	2607:f140:8801::1:153
 dhcp-169-229-226-154	IN A	169.229.226.154
 dhcp-169-229-226-154	IN AAAA	2607:f140:8801::1:154
 
+; breezy (server)
+_acme-challenge.breezy	IN CNAME	breezy.letsencrypt.ocf.io.
+breezy	IN A	169.229.226.155
+breezy	IN AAAA	2607:f140:8801::1:155
+
 ; dhcp-169-229-226-155 (dhcp)
 dhcp-169-229-226-155	IN A	169.229.226.155
 dhcp-169-229-226-155	IN AAAA	2607:f140:8801::1:155
@@ -1071,14 +1076,14 @@ dhcp-169-229-226-157	IN AAAA	2607:f140:8801::1:157
 dhcp-169-229-226-158	IN A	169.229.226.158
 dhcp-169-229-226-158	IN AAAA	2607:f140:8801::1:158
 
+; dhcp-169-229-226-159 (dhcp)
+dhcp-169-229-226-159	IN A	169.229.226.159
+dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
+
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
-
-; dhcp-169-229-226-159 (dhcp)
-dhcp-169-229-226-159	IN A	169.229.226.159
-dhcp-169-229-226-159	IN AAAA	2607:f140:8801::1:159
 
 ; dhcp-169-229-226-160 (dhcp)
 dhcp-169-229-226-160	IN A	169.229.226.160
