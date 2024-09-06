@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090500 ; serial number
+2024090601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -157,45 +157,15 @@ $TTL 1d
 137 IN PTR shock.OCF.Berkeley.EDU.
 138 IN PTR wormhole.OCF.Berkeley.EDU.
 139 IN PTR whitehole.OCF.Berkeley.EDU.
-140 IN PTR dhcp-169-229-226-140.OCF.Berkeley.EDU.
-141 IN PTR dhcp-169-229-226-141.OCF.Berkeley.EDU.
 141 IN PTR smokey.OCF.Berkeley.EDU.
-142 IN PTR dhcp-169-229-226-142.OCF.Berkeley.EDU.
 142 IN PTR spots.OCF.Berkeley.EDU.
 143 IN PTR shadow.OCF.Berkeley.EDU.
-143 IN PTR dhcp-169-229-226-143.OCF.Berkeley.EDU.
-144 IN PTR dhcp-169-229-226-144.OCF.Berkeley.EDU.
 144 IN PTR sunny.OCF.Berkeley.EDU.
 145 IN PTR fred.OCF.Berkeley.EDU.
-145 IN PTR dhcp-169-229-226-145.OCF.Berkeley.EDU.
-146 IN PTR dhcp-169-229-226-146.OCF.Berkeley.EDU.
 146 IN PTR pumpkin.OCF.Berkeley.EDU.
 147 IN PTR callie.OCF.Berkeley.EDU.
-147 IN PTR dhcp-169-229-226-147.OCF.Berkeley.EDU.
-148 IN PTR dhcp-169-229-226-148.OCF.Berkeley.EDU.
-149 IN PTR dhcp-169-229-226-149.OCF.Berkeley.EDU.
-150 IN PTR dhcp-169-229-226-150.OCF.Berkeley.EDU.
-151 IN PTR dhcp-169-229-226-151.OCF.Berkeley.EDU.
-152 IN PTR dhcp-169-229-226-152.OCF.Berkeley.EDU.
-153 IN PTR dhcp-169-229-226-153.OCF.Berkeley.EDU.
-154 IN PTR dhcp-169-229-226-154.OCF.Berkeley.EDU.
 155 IN PTR breezy.OCF.Berkeley.EDU.
-155 IN PTR dhcp-169-229-226-155.OCF.Berkeley.EDU.
-156 IN PTR dhcp-169-229-226-156.OCF.Berkeley.EDU.
-157 IN PTR dhcp-169-229-226-157.OCF.Berkeley.EDU.
-158 IN PTR dhcp-169-229-226-158.OCF.Berkeley.EDU.
-159 IN PTR dhcp-169-229-226-159.OCF.Berkeley.EDU.
 159 IN PTR hanabi.OCF.Berkeley.EDU.
-160 IN PTR dhcp-169-229-226-160.OCF.Berkeley.EDU.
-161 IN PTR dhcp-169-229-226-161.OCF.Berkeley.EDU.
-162 IN PTR dhcp-169-229-226-162.OCF.Berkeley.EDU.
-163 IN PTR dhcp-169-229-226-163.OCF.Berkeley.EDU.
-164 IN PTR dhcp-169-229-226-164.OCF.Berkeley.EDU.
-165 IN PTR dhcp-169-229-226-165.OCF.Berkeley.EDU.
-166 IN PTR dhcp-169-229-226-166.OCF.Berkeley.EDU.
-167 IN PTR dhcp-169-229-226-167.OCF.Berkeley.EDU.
-168 IN PTR dhcp-169-229-226-168.OCF.Berkeley.EDU.
-169 IN PTR dhcp-169-229-226-169.OCF.Berkeley.EDU.
 170 IN PTR dhcp-169-229-226-170.OCF.Berkeley.EDU.
 171 IN PTR dhcp-169-229-226-171.OCF.Berkeley.EDU.
 172 IN PTR dhcp-169-229-226-172.OCF.Berkeley.EDU.

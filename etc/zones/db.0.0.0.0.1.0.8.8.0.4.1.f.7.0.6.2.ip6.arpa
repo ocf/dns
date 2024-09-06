@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090500 ; serial number
+2024090601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -146,45 +146,15 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.3.1.0 IN PTR newton.ocf.berkeley.edu.
 8.3.1.0 IN PTR wormhole.ocf.berkeley.edu.
 9.3.1.0 IN PTR whitehole.ocf.berkeley.edu.
-0.4.1.0 IN PTR dhcp-169-229-226-140.ocf.berkeley.edu.
-1.4.1.0 IN PTR dhcp-169-229-226-141.ocf.berkeley.edu.
 1.4.1.0 IN PTR smokey.ocf.berkeley.edu.
-2.4.1.0 IN PTR dhcp-169-229-226-142.ocf.berkeley.edu.
 2.4.1.0 IN PTR spots.ocf.berkeley.edu.
 3.4.1.0 IN PTR shadow.ocf.berkeley.edu.
-3.4.1.0 IN PTR dhcp-169-229-226-143.ocf.berkeley.edu.
-4.4.1.0 IN PTR dhcp-169-229-226-144.ocf.berkeley.edu.
 4.4.1.0 IN PTR sunny.ocf.berkeley.edu.
 5.4.1.0 IN PTR fred.ocf.berkeley.edu.
-5.4.1.0 IN PTR dhcp-169-229-226-145.ocf.berkeley.edu.
-6.4.1.0 IN PTR dhcp-169-229-226-146.ocf.berkeley.edu.
 6.4.1.0 IN PTR pumpkin.ocf.berkeley.edu.
 7.4.1.0 IN PTR callie.ocf.berkeley.edu.
-7.4.1.0 IN PTR dhcp-169-229-226-147.ocf.berkeley.edu.
-8.4.1.0 IN PTR dhcp-169-229-226-148.ocf.berkeley.edu.
-9.4.1.0 IN PTR dhcp-169-229-226-149.ocf.berkeley.edu.
-0.5.1.0 IN PTR dhcp-169-229-226-150.ocf.berkeley.edu.
-1.5.1.0 IN PTR dhcp-169-229-226-151.ocf.berkeley.edu.
-2.5.1.0 IN PTR dhcp-169-229-226-152.ocf.berkeley.edu.
-3.5.1.0 IN PTR dhcp-169-229-226-153.ocf.berkeley.edu.
-4.5.1.0 IN PTR dhcp-169-229-226-154.ocf.berkeley.edu.
 5.5.1.0 IN PTR breezy.ocf.berkeley.edu.
-5.5.1.0 IN PTR dhcp-169-229-226-155.ocf.berkeley.edu.
-6.5.1.0 IN PTR dhcp-169-229-226-156.ocf.berkeley.edu.
-7.5.1.0 IN PTR dhcp-169-229-226-157.ocf.berkeley.edu.
-8.5.1.0 IN PTR dhcp-169-229-226-158.ocf.berkeley.edu.
-9.5.1.0 IN PTR dhcp-169-229-226-159.ocf.berkeley.edu.
 9.5.1.0 IN PTR hanabi.ocf.berkeley.edu.
-0.6.1.0 IN PTR dhcp-169-229-226-160.ocf.berkeley.edu.
-1.6.1.0 IN PTR dhcp-169-229-226-161.ocf.berkeley.edu.
-2.6.1.0 IN PTR dhcp-169-229-226-162.ocf.berkeley.edu.
-3.6.1.0 IN PTR dhcp-169-229-226-163.ocf.berkeley.edu.
-4.6.1.0 IN PTR dhcp-169-229-226-164.ocf.berkeley.edu.
-5.6.1.0 IN PTR dhcp-169-229-226-165.ocf.berkeley.edu.
-6.6.1.0 IN PTR dhcp-169-229-226-166.ocf.berkeley.edu.
-7.6.1.0 IN PTR dhcp-169-229-226-167.ocf.berkeley.edu.
-8.6.1.0 IN PTR dhcp-169-229-226-168.ocf.berkeley.edu.
-9.6.1.0 IN PTR dhcp-169-229-226-169.ocf.berkeley.edu.
 0.7.1.0 IN PTR dhcp-169-229-226-170.ocf.berkeley.edu.
 1.7.1.0 IN PTR dhcp-169-229-226-171.ocf.berkeley.edu.
 2.7.1.0 IN PTR dhcp-169-229-226-172.ocf.berkeley.edu.
