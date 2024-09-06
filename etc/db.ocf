@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090601 ; serial number
+2024090602 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -994,6 +994,34 @@ pumpkin	IN AAAA	2607:f140:8801::1:146
 ; callie (desktop)
 callie	IN A	169.229.226.147
 callie	IN AAAA	2607:f140:8801::1:147
+
+; tabitha (desktop)
+tabitha	IN A	169.229.226.148
+tabitha	IN AAAA	2607:f140:8801::1:148
+
+; bandit (desktop)
+bandit	IN A	169.229.226.149
+bandit	IN AAAA	2607:f140:8801::1:149
+
+; gabriel (desktop)
+gabriel	IN A	169.229.226.150
+gabriel	IN AAAA	2607:f140:8801::1:150
+
+; marshmallow (desktop)
+marshmallow	IN A	169.229.226.151
+marshmallow	IN AAAA	2607:f140:8801::1:151
+
+; socks (desktop)
+socks	IN A	169.229.226.152
+socks	IN AAAA	2607:f140:8801::1:152
+
+; lexy (desktop)
+lexy	IN A	169.229.226.153
+lexy	IN AAAA	2607:f140:8801::1:153
+
+; bolt (desktop)
+bolt	IN A	169.229.226.154
+bolt	IN AAAA	2607:f140:8801::1:154
 
 ; breezy (desktop)
 breezy	IN A	169.229.226.155
