@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090603 ; serial number
+2024090900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1026,6 +1026,10 @@ bolt	IN AAAA	2607:f140:8801::1:154
 ; breezy (desktop)
 breezy	IN A	169.229.226.155
 breezy	IN AAAA	2607:f140:8801::1:155
+
+; misty (desktop)
+misty	IN A	169.229.226.156
+misty	IN AAAA	2607:f140:8801::1:156
 
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
