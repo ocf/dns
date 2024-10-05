@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024090900 ; serial number
+2024100500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -162,7 +162,12 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 4.5.1.0 IN PTR bolt.ocf.berkeley.edu.
 5.5.1.0 IN PTR breezy.ocf.berkeley.edu.
 6.5.1.0 IN PTR misty.ocf.berkeley.edu.
+7.5.1.0 IN PTR pickles.ocf.berkeley.edu.
+8.5.1.0 IN PTR pepper.ocf.berkeley.edu.
+9.5.1.0 IN PTR patches.ocf.berkeley.edu.
 9.5.1.0 IN PTR hanabi.ocf.berkeley.edu.
+0.6.1.0 IN PTR gozer.ocf.berkeley.edu.
+5.6.1.0 IN PTR spud.ocf.berkeley.edu.
 0.7.1.0 IN PTR dhcp-169-229-226-170.ocf.berkeley.edu.
 1.7.1.0 IN PTR dhcp-169-229-226-171.ocf.berkeley.edu.
 2.7.1.0 IN PTR dhcp-169-229-226-172.ocf.berkeley.edu.
