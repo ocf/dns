@@ -89,6 +89,9 @@ www.dev	IN CNAME	death.OCF.Berkeley.EDU.
 cfo	IN CNAME	death.OCF.Berkeley.EDU.
 www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
 
+instantcard IN CNAME hosting.ocf.berkeley.edu.
+www.instantcard IN CNAME instantcard
+
 grants	IN A	169.229.226.23
 grants  IN AAAA	2607:f140:8801::1:23
 www.grants	IN CNAME	death.OCF.Berkeley.EDU.
