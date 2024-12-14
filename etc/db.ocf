@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2024112200 ; serial number
+2024121300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1056,6 +1056,14 @@ hanabi	IN AAAA	2607:f140:8801::1:159
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
 gozer	IN AAAA	2607:f140:8801::1:160
+
+; cocoa (desktop)
+cocoa	IN A	169.229.226.161
+cocoa	IN AAAA	2607:f140:8801::1:161
+
+; princess (desktop)
+princess	IN A	169.229.226.162
+princess	IN AAAA	2607:f140:8801::1:162
 
 ; spud (desktop)
 spud	IN A	169.229.226.165
