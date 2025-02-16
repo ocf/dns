@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025021600 ; serial number
+2025021601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -58,8 +58,8 @@ $TTL 1d
 29 IN PTR frostbite.OCF.Berkeley.EDU.
 30 IN PTR implosion.OCF.Berkeley.EDU.
 31 IN PTR flood.OCF.Berkeley.EDU.
-32 IN PTR radiation.OCF.Berkeley.EDU.
 32 IN PTR dna.OCF.Berkeley.EDU.
+32 IN PTR radiation.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
 34 IN PTR dev-maelstrom.OCF.Berkeley.EDU.
 35 IN PTR anthrax.OCF.Berkeley.EDU.
@@ -176,8 +176,8 @@ $TTL 1d
 156 IN PTR misty.OCF.Berkeley.EDU.
 157 IN PTR pickles.OCF.Berkeley.EDU.
 158 IN PTR pepper.OCF.Berkeley.EDU.
-159 IN PTR patches.OCF.Berkeley.EDU.
 159 IN PTR hanabi.OCF.Berkeley.EDU.
+159 IN PTR patches.OCF.Berkeley.EDU.
 160 IN PTR gozer.OCF.Berkeley.EDU.
 161 IN PTR cocoa.OCF.Berkeley.EDU.
 162 IN PTR princess.OCF.Berkeley.EDU.
@@ -185,6 +185,8 @@ $TTL 1d
 164 IN PTR peaches.OCF.Berkeley.EDU.
 165 IN PTR spud.OCF.Berkeley.EDU.
 166 IN PTR mack.OCF.Berkeley.EDU.
+167 IN PTR speckles.OCF.Berkeley.EDU.
+169 IN PTR rascal.OCF.Berkeley.EDU.
 170 IN PTR dhcp-169-229-226-170.OCF.Berkeley.EDU.
 171 IN PTR dhcp-169-229-226-171.OCF.Berkeley.EDU.
 172 IN PTR dhcp-169-229-226-172.OCF.Berkeley.EDU.

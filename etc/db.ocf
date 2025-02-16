@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025021600 ; serial number
+2025021601 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -281,15 +281,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	dementors.letsencrypt.ocf.io.
@@ -1046,14 +1046,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1082,6 +1082,16 @@ spud	IN AAAA	2607:f140:8801::1:165
 ; mack (desktop)
 mack	IN A	169.229.226.166
 mack	IN AAAA	2607:f140:8801::1:166
+
+; speckles (server)
+_acme-challenge.speckles	IN CNAME	speckles.letsencrypt.ocf.io.
+speckles	IN A	169.229.226.167
+speckles	IN AAAA	2607:f140:8801::1:167
+
+; rascal (server)
+_acme-challenge.rascal	IN CNAME	rascal.letsencrypt.ocf.io.
+rascal	IN A	169.229.226.169
+rascal	IN AAAA	2607:f140:8801::1:169
 
 ; dhcp-169-229-226-170 (dhcp)
 dhcp-169-229-226-170	IN A	169.229.226.170
