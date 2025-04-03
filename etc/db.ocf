@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025021601 ; serial number
+2025040200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -828,132 +828,6 @@ doorplug	IN AAAA	2607:f140:8801::1:96
 snowball	IN A	169.229.226.99
 snowball	IN AAAA	2607:f140:8801::1:99
 
-; eruption (desktop)
-eruption	IN A	169.229.226.100
-eruption	IN AAAA	2607:f140:8801::1:100
-staffdesk	IN A	169.229.226.100
-staffdesk	IN AAAA	2607:f140:8801::1:100
-
-; avalanche (desktop)
-avalanche	IN A	169.229.226.101
-avalanche	IN AAAA	2607:f140:8801::1:101
-
-; bigbang (desktop)
-bigbang	IN A	169.229.226.102
-bigbang	IN AAAA	2607:f140:8801::1:102
-
-; blizzard (desktop)
-blizzard	IN A	169.229.226.103
-blizzard	IN AAAA	2607:f140:8801::1:103
-
-; firewhirl (desktop)
-firewhirl	IN A	169.229.226.104
-firewhirl	IN AAAA	2607:f140:8801::1:104
-
-; destruction (desktop)
-destruction	IN A	169.229.226.105
-destruction	IN AAAA	2607:f140:8801::1:105
-
-; sinkhole (desktop)
-sinkhole	IN A	169.229.226.106
-sinkhole	IN AAAA	2607:f140:8801::1:106
-
-; madcow (desktop)
-madcow	IN A	169.229.226.107
-madcow	IN AAAA	2607:f140:8801::1:107
-
-; outbreak (desktop)
-outbreak	IN A	169.229.226.108
-outbreak	IN AAAA	2607:f140:8801::1:108
-
-; volcano (desktop)
-volcano	IN A	169.229.226.109
-volcano	IN AAAA	2607:f140:8801::1:109
-
-; famine (desktop)
-famine	IN A	169.229.226.110
-famine	IN AAAA	2607:f140:8801::1:110
-
-; hailstorm (desktop)
-hailstorm	IN A	169.229.226.111
-hailstorm	IN AAAA	2607:f140:8801::1:111
-
-; headcrash (desktop)
-headcrash	IN A	169.229.226.112
-headcrash	IN AAAA	2607:f140:8801::1:112
-
-; heatwave (desktop)
-heatwave	IN A	169.229.226.113
-heatwave	IN AAAA	2607:f140:8801::1:113
-
-; acid (desktop)
-acid	IN A	169.229.226.114
-acid	IN AAAA	2607:f140:8801::1:114
-
-; asteroid (desktop)
-asteroid	IN A	169.229.226.115
-asteroid	IN AAAA	2607:f140:8801::1:115
-
-; cyanide (desktop)
-cyanide	IN A	169.229.226.116
-cyanide	IN AAAA	2607:f140:8801::1:116
-
-; cyclone (desktop)
-cyclone	IN A	169.229.226.117
-cyclone	IN AAAA	2607:f140:8801::1:117
-
-; blackout (desktop)
-blackout	IN A	169.229.226.118
-blackout	IN AAAA	2607:f140:8801::1:118
-
-; drought (desktop)
-drought	IN A	169.229.226.119
-drought	IN AAAA	2607:f140:8801::1:119
-
-; arsenic (desktop)
-arsenic	IN A	169.229.226.120
-arsenic	IN AAAA	2607:f140:8801::1:120
-
-; wildfire (desktop)
-wildfire	IN A	169.229.226.121
-wildfire	IN AAAA	2607:f140:8801::1:121
-
-; blight (desktop)
-blight	IN A	169.229.226.122
-blight	IN AAAA	2607:f140:8801::1:122
-
-; meteorstorm (desktop)
-meteorstorm	IN A	169.229.226.123
-meteorstorm	IN AAAA	2607:f140:8801::1:123
-
-; chaos (desktop)
-chaos	IN A	169.229.226.124
-chaos	IN AAAA	2607:f140:8801::1:124
-
-; venom (desktop)
-venom	IN A	169.229.226.125
-venom	IN AAAA	2607:f140:8801::1:125
-
-; plague (desktop)
-plague	IN A	169.229.226.126
-plague	IN AAAA	2607:f140:8801::1:126
-
-; surge (desktop)
-surge	IN A	169.229.226.127
-surge	IN AAAA	2607:f140:8801::1:127
-
-; hurricane (desktop)
-hurricane	IN A	169.229.226.128
-hurricane	IN AAAA	2607:f140:8801::1:128
-
-; invasion (desktop)
-invasion	IN A	169.229.226.129
-invasion	IN AAAA	2607:f140:8801::1:129
-
-; typhoon (desktop)
-typhoon	IN A	169.229.226.130
-typhoon	IN AAAA	2607:f140:8801::1:130
-
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
 
@@ -1128,6 +1002,10 @@ dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 ; dhcp-169-229-226-178 (dhcp)
 dhcp-169-229-226-178	IN A	169.229.226.178
 dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
+
+; famine (desktop)
+famine	IN A	169.229.226.178
+famine	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
