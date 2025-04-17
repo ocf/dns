@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025040801 ; serial number
+2025041703 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -233,6 +233,11 @@ dev-vhost	IN AAAA	2607:f140:8801::1:23
 _acme-challenge.dev-vhost-alias	IN CNAME	dev-vhost-alias.letsencrypt.ocf.io.
 dev-vhost-alias	IN A	169.229.226.23
 dev-vhost-alias	IN AAAA	2607:f140:8801::1:23
+
+; spike (server)
+_acme-challenge.spike	IN CNAME	spike.letsencrypt.ocf.io.
+spike	IN A	169.229.226.24
+spike	IN AAAA	2607:f140:8801::1:24
 
 ; tsunami (server)
 _acme-challenge.tsunami	IN CNAME	tsunami.letsencrypt.ocf.io.
@@ -926,14 +931,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
