@@ -92,6 +92,9 @@ www.cfo	IN CNAME	death.OCF.Berkeley.EDU.
 instantcard IN CNAME hosting.ocf.berkeley.edu.
 www.instantcard IN CNAME instantcard
 
+alumni in CNAME hosting.ocf.berkeley.edu.
+www.alumni in CNAME alumni
+
 grants	IN A	169.229.226.23
 grants  IN AAAA	2607:f140:8801::1:23
 www.grants	IN CNAME	death.OCF.Berkeley.EDU.
