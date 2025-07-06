@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025070300 ; serial number
+2025070600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -669,6 +669,8 @@ _acme-challenge.pma	IN CNAME	pma.letsencrypt.ocf.io.
 pma	IN CNAME	lb
 _acme-challenge.printlist	IN CNAME	printlist.letsencrypt.ocf.io.
 printlist	IN CNAME	lb
+_acme-challenge.rt	IN CNAME	rt.letsencrypt.ocf.io.
+rt	IN CNAME	lb
 _acme-challenge.slidingsync.matrix	IN CNAME	slidingsync.matrix.letsencrypt.ocf.io.
 slidingsync.matrix	IN CNAME	lb
 _acme-challenge.snmp-exporter	IN CNAME	snmp-exporter.letsencrypt.ocf.io.
@@ -730,8 +732,6 @@ _acme-challenge.odoo	IN CNAME	odoo.letsencrypt.ocf.io.
 odoo	IN A	169.229.226.81
 _acme-challenge.prom	IN CNAME	prom.letsencrypt.ocf.io.
 prom	IN A	169.229.226.81
-_acme-challenge.rt	IN CNAME	rt.letsencrypt.ocf.io.
-rt	IN A	169.229.226.81
 _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
 static	IN A	169.229.226.81
 _acme-challenge.supabase	IN CNAME	supabase.letsencrypt.ocf.io.
@@ -1015,13 +1015,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
@@ -1340,15 +1340,15 @@ _acme-challenge.solarflare	IN CNAME	solarflare.letsencrypt.ocf.io.
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; paranoia (staffvm)
-_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
-paranoia	IN A	169.229.226.251
-paranoia	IN AAAA	2607:f140:8801::1:253
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
 calamity	IN AAAA	2607:f140:8801::1:251
+
+; paranoia (staffvm)
+_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.251
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	singularity.letsencrypt.ocf.io.
