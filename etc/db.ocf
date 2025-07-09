@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025070600 ; serial number
+2025070800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -499,15 +499,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; doorplug (server)
-_acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
-doorplug	IN A	169.229.226.58
-doorplug	IN AAAA	2607:f140:8801::1:58
-
 ; phlegethon (server)
 _acme-challenge.phlegethon	IN CNAME	phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.58
+doorplug	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	y2k.letsencrypt.ocf.io.
@@ -732,6 +732,8 @@ _acme-challenge.odoo	IN CNAME	odoo.letsencrypt.ocf.io.
 odoo	IN A	169.229.226.81
 _acme-challenge.prom	IN CNAME	prom.letsencrypt.ocf.io.
 prom	IN A	169.229.226.81
+_acme-challenge.rt-dev	IN CNAME	rt-dev.letsencrypt.ocf.io.
+rt-dev	IN A	169.229.226.81
 _acme-challenge.static	IN CNAME	static.letsencrypt.ocf.io.
 static	IN A	169.229.226.81
 _acme-challenge.supabase	IN CNAME	supabase.letsencrypt.ocf.io.
@@ -1340,15 +1342,15 @@ _acme-challenge.solarflare	IN CNAME	solarflare.letsencrypt.ocf.io.
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; calamity (staffvm)
-_acme-challenge.calamity	IN CNAME	calamity.letsencrypt.ocf.io.
-calamity	IN A	169.229.226.251
-calamity	IN AAAA	2607:f140:8801::1:251
-
 ; paranoia (staffvm)
 _acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
 paranoia	IN A	169.229.226.251
 paranoia	IN AAAA	2607:f140:8801::1:253
+
+; calamity (staffvm)
+_acme-challenge.calamity	IN CNAME	calamity.letsencrypt.ocf.io.
+calamity	IN A	169.229.226.251
+calamity	IN AAAA	2607:f140:8801::1:251
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	singularity.letsencrypt.ocf.io.
