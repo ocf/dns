@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025071700 ; serial number
+2025071800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -74,7 +74,6 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 7.4.0.0 IN PTR dev-whiteout.ocf.berkeley.edu.
 8.4.0.0 IN PTR reaper.ocf.berkeley.edu.
 9.4.0.0 IN PTR vampires.ocf.berkeley.edu.
-0.5.0.0 IN PTR marecrisium.ocf.berkeley.edu.
 1.5.0.0 IN PTR hozer-51.ocf.berkeley.edu.
 2.5.0.0 IN PTR bermudatriangle.ocf.berkeley.edu.
 3.5.0.0 IN PTR ceph.ocf.berkeley.edu.
@@ -116,6 +115,11 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.9.0.0 IN PTR termites.ocf.berkeley.edu.
 8.9.0.0 IN PTR epson.ocf.berkeley.edu.
 9.9.0.0 IN PTR snowball.ocf.berkeley.edu.
+0.0.1.0 IN PTR gravitywell.ocf.berkeley.edu.
+1.0.1.0 IN PTR marecrisium.ocf.berkeley.edu.
+2.0.1.0 IN PTR stringofpearls.ocf.berkeley.edu.
+3.0.1.0 IN PTR krunmacula.ocf.berkeley.edu.
+4.0.1.0 IN PTR losulci.ocf.berkeley.edu.
 5.3.1.0 IN PTR newton.ocf.berkeley.edu.
 8.3.1.0 IN PTR wormhole.ocf.berkeley.edu.
 9.3.1.0 IN PTR whitehole.ocf.berkeley.edu.
@@ -138,8 +142,8 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.5.1.0 IN PTR misty.ocf.berkeley.edu.
 7.5.1.0 IN PTR pickles.ocf.berkeley.edu.
 8.5.1.0 IN PTR pepper.ocf.berkeley.edu.
-9.5.1.0 IN PTR patches.ocf.berkeley.edu.
 9.5.1.0 IN PTR hanabi.ocf.berkeley.edu.
+9.5.1.0 IN PTR patches.ocf.berkeley.edu.
 0.6.1.0 IN PTR gozer.ocf.berkeley.edu.
 1.6.1.0 IN PTR cocoa.ocf.berkeley.edu.
 2.6.1.0 IN PTR princess.ocf.berkeley.edu.
@@ -226,7 +230,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 9.4.2.0 IN PTR solarflare.ocf.berkeley.edu.
 1.5.2.0 IN PTR calamity.ocf.berkeley.edu.
 2.5.2.0 IN PTR singularity.ocf.berkeley.edu.
-3.5.2.0 IN PTR hypnomic.ocf.berkeley.edu.
 1.5.2.0 IN PTR paranoia.ocf.berkeley.edu.
+3.5.2.0 IN PTR hypnomic.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
