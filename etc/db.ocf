@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025072001 ; serial number
+2025072002 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -868,6 +868,10 @@ losulci	IN AAAA	2607:f140:8801::1:104
 ; lb-105 (server)
 _acme-challenge.lb-105	IN CNAME	lb-105.letsencrypt.ocf.io.
 lb-105	IN A	169.229.226.105
+_acme-challenge.dev-argo	IN CNAME	dev-argo.letsencrypt.ocf.io.
+dev-argo	IN A	169.229.226.105
+_acme-challenge.dev-vault	IN CNAME	dev-vault.letsencrypt.ocf.io.
+dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
 
