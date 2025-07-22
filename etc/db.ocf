@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025072200 ; serial number
+2025072201 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -499,15 +499,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; phlegethon (server)
-_acme-challenge.phlegethon	IN CNAME	phlegethon.letsencrypt.ocf.io.
-phlegethon	IN A	169.229.226.58
-phlegethon	IN AAAA	2607:f140:8801::1:58
-
 ; doorplug (server)
 _acme-challenge.doorplug	IN CNAME	doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.58
 doorplug	IN AAAA	2607:f140:8801::1:58
+
+; phlegethon (server)
+_acme-challenge.phlegethon	IN CNAME	phlegethon.letsencrypt.ocf.io.
+phlegethon	IN A	169.229.226.58
+phlegethon	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	y2k.letsencrypt.ocf.io.
@@ -718,8 +718,6 @@ _acme-challenge.kibana	IN CNAME	kibana.letsencrypt.ocf.io.
 kibana	IN A	169.229.226.81
 _acme-challenge.labmap	IN CNAME	labmap.letsencrypt.ocf.io.
 labmap	IN A	169.229.226.81
-_acme-challenge.mc	IN CNAME	mc.letsencrypt.ocf.io.
-mc	IN A	169.229.226.81
 _acme-challenge.mkdocs	IN CNAME	mkdocs.letsencrypt.ocf.io.
 mkdocs	IN A	169.229.226.81
 _acme-challenge.new	IN CNAME	new.letsencrypt.ocf.io.
@@ -782,6 +780,9 @@ minecraft	IN AAAA	2607:f140:8801::1:84
 _acme-challenge.hozer-85	IN CNAME	hozer-85.letsencrypt.ocf.io.
 hozer-85	IN A	169.229.226.85
 hozer-85	IN AAAA	2607:f140:8801::1:85
+_acme-challenge.mc	IN CNAME	mc.letsencrypt.ocf.io.
+mc	IN A	169.229.226.85
+mc	IN AAAA	2607:f140:8801::1:85
 
 ; hozer-86 (server)
 _acme-challenge.hozer-86	IN CNAME	hozer-86.letsencrypt.ocf.io.
@@ -989,14 +990,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1068,13 +1069,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
@@ -1393,15 +1394,15 @@ _acme-challenge.solarflare	IN CNAME	solarflare.letsencrypt.ocf.io.
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; paranoia (staffvm)
-_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
-paranoia	IN A	169.229.226.251
-paranoia	IN AAAA	2607:f140:8801::1:253
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
 calamity	IN AAAA	2607:f140:8801::1:251
+
+; paranoia (staffvm)
+_acme-challenge.paranoia	IN CNAME	paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.251
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	singularity.letsencrypt.ocf.io.
