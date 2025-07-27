@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025072700 ; serial number
+2025072701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -286,15 +286,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	_acme-challenge.xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	_acme-challenge.dementors.letsencrypt.ocf.io.
@@ -464,6 +464,8 @@ werewolves	IN CNAME	vampires
 _acme-challenge.amethyst	IN CNAME	_acme-challenge.amethyst.letsencrypt.ocf.io.
 amethyst	IN A	169.229.226.50
 amethyst	IN AAAA	2607:f140:8801::1:50
+_acme-challenge.bestdocs	IN CNAME	_acme-challenge.bestdocs.letsencrypt.ocf.io.
+bestdocs	IN CNAME	amethyst
 
 ; hozer-51 (server)
 _acme-challenge.hozer-51	IN CNAME	_acme-challenge.hozer-51.letsencrypt.ocf.io.
@@ -504,15 +506,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; doorplug (server)
-_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
-doorplug	IN A	169.229.226.58
-doorplug	IN AAAA	2607:f140:8801::1:58
-
 ; phlegethon (server)
 _acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.58
+doorplug	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -995,14 +997,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1074,13 +1076,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
@@ -1399,15 +1401,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; calamity (staffvm)
-_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
-calamity	IN A	169.229.226.251
-calamity	IN AAAA	2607:f140:8801::1:251
-
 ; paranoia (staffvm)
 _acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
 paranoia	IN A	169.229.226.251
 paranoia	IN AAAA	2607:f140:8801::1:253
+
+; calamity (staffvm)
+_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
+calamity	IN A	169.229.226.251
+calamity	IN AAAA	2607:f140:8801::1:251
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
