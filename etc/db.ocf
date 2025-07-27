@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025072600 ; serial number
+2025072700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -459,6 +459,11 @@ _acme-challenge.dev-app	IN CNAME	_acme-challenge.dev-app.letsencrypt.ocf.io.
 dev-app	IN CNAME	vampires
 _acme-challenge.werewolves	IN CNAME	_acme-challenge.werewolves.letsencrypt.ocf.io.
 werewolves	IN CNAME	vampires
+
+; amethyst (server)
+_acme-challenge.amethyst	IN CNAME	_acme-challenge.amethyst.letsencrypt.ocf.io.
+amethyst	IN A	169.229.226.50
+amethyst	IN AAAA	2607:f140:8801::1:50
 
 ; hozer-51 (server)
 _acme-challenge.hozer-51	IN CNAME	_acme-challenge.hozer-51.letsencrypt.ocf.io.
