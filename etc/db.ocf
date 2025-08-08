@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025080400 ; serial number
+2025080800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -404,8 +404,8 @@ dev-xmpp	IN CNAME	dev-flood
 _acme-challenge.zecora	IN CNAME	_acme-challenge.zecora.letsencrypt.ocf.io.
 zecora	IN A	169.229.226.44
 zecora	IN AAAA	2607:f140:8801::1:44
-_acme-challenge.dev-irc	IN CNAME	_acme-challenge.dev-irc.letsencrypt.ocf.io.
-dev-irc	IN CNAME	zecora
+_acme-challenge.irc	IN CNAME	_acme-challenge.irc.letsencrypt.ocf.io.
+irc	IN CNAME	zecora
 
 ; whiteout (server)
 _acme-challenge.whiteout	IN CNAME	_acme-challenge.whiteout.letsencrypt.ocf.io.
@@ -501,15 +501,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; phlegethon (server)
-_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
-phlegethon	IN A	169.229.226.58
-phlegethon	IN AAAA	2607:f140:8801::1:58
-
 ; doorplug (server)
 _acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.58
 doorplug	IN AAAA	2607:f140:8801::1:58
+
+; phlegethon (server)
+_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
+phlegethon	IN A	169.229.226.58
+phlegethon	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -766,9 +766,6 @@ tele	IN AAAA	2607:f140:8801::1:82
 _acme-challenge.hozer-83	IN CNAME	_acme-challenge.hozer-83.letsencrypt.ocf.io.
 hozer-83	IN A	169.229.226.83
 hozer-83	IN AAAA	2607:f140:8801::1:83
-_acme-challenge.irc	IN CNAME	_acme-challenge.irc.letsencrypt.ocf.io.
-irc	IN A	169.229.226.83
-irc	IN AAAA	2607:f140:8801::1:83
 
 ; hozer-84 (server)
 _acme-challenge.hozer-84	IN CNAME	_acme-challenge.hozer-84.letsencrypt.ocf.io.
@@ -1396,15 +1393,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; paranoia (staffvm)
-_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
-paranoia	IN A	169.229.226.251
-paranoia	IN AAAA	2607:f140:8801::1:253
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
 calamity	IN AAAA	2607:f140:8801::1:251
+
+; paranoia (staffvm)
+_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.251
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
