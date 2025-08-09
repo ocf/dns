@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025080800 ; serial number
+2025080801 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -267,10 +267,10 @@ democracy	IN AAAA	2607:f140:8801::1:28
 _acme-challenge.syslog	IN CNAME	_acme-challenge.syslog.letsencrypt.ocf.io.
 syslog	IN CNAME	democracy
 
-; frostbite (server)
-_acme-challenge.frostbite	IN CNAME	_acme-challenge.frostbite.letsencrypt.ocf.io.
-frostbite	IN A	169.229.226.29
-frostbite	IN AAAA	2607:f140:8801::1:29
+; scootaloo (server)
+_acme-challenge.scootaloo	IN CNAME	_acme-challenge.scootaloo.letsencrypt.ocf.io.
+scootaloo	IN A	169.229.226.29
+scootaloo	IN AAAA	2607:f140:8801::1:29
 
 ; implosion (server)
 _acme-challenge.implosion	IN CNAME	_acme-challenge.implosion.letsencrypt.ocf.io.
@@ -1068,13 +1068,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; famine (desktop)
-famine	IN A	169.229.226.178
-famine	IN AAAA	2607:f140:8801::1:178
-
 ; dhcp-169-229-226-178 (dhcp)
 dhcp-169-229-226-178	IN A	169.229.226.178
 dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
+
+; famine (desktop)
+famine	IN A	169.229.226.178
+famine	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
