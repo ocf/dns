@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025080900 ; serial number
+2025081000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -505,15 +505,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; doorplug (server)
-_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
-doorplug	IN A	169.229.226.58
-doorplug	IN AAAA	2607:f140:8801::1:58
-
 ; phlegethon (server)
 _acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.58
+doorplug	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -647,8 +647,6 @@ _acme-challenge.code	IN CNAME	_acme-challenge.code.letsencrypt.ocf.io.
 code	IN CNAME	lb
 _acme-challenge.cruisecontrol	IN CNAME	_acme-challenge.cruisecontrol.letsencrypt.ocf.io.
 cruisecontrol	IN CNAME	lb
-_acme-challenge.grafana	IN CNAME	_acme-challenge.grafana.letsencrypt.ocf.io.
-grafana	IN CNAME	lb
 _acme-challenge.help	IN CNAME	_acme-challenge.help.letsencrypt.ocf.io.
 help	IN CNAME	lb
 _acme-challenge.inventory	IN CNAME	_acme-challenge.inventory.letsencrypt.ocf.io.
@@ -704,6 +702,8 @@ _acme-challenge.gitea	IN CNAME	_acme-challenge.gitea.letsencrypt.ocf.io.
 gitea	IN A	169.229.226.81
 _acme-challenge.graf	IN CNAME	_acme-challenge.graf.letsencrypt.ocf.io.
 graf	IN A	169.229.226.81
+_acme-challenge.grafana	IN CNAME	_acme-challenge.grafana.letsencrypt.ocf.io.
+grafana	IN A	169.229.226.81
 _acme-challenge.harbor	IN CNAME	_acme-challenge.harbor.letsencrypt.ocf.io.
 harbor	IN A	169.229.226.81
 _acme-challenge.harbor-notary	IN CNAME	_acme-challenge.harbor-notary.letsencrypt.ocf.io.
@@ -989,14 +989,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
