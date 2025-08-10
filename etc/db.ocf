@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025080802 ; serial number
+2025080900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -271,6 +271,8 @@ syslog	IN CNAME	democracy
 _acme-challenge.scootaloo	IN CNAME	_acme-challenge.scootaloo.letsencrypt.ocf.io.
 scootaloo	IN A	169.229.226.29
 scootaloo	IN AAAA	2607:f140:8801::1:29
+_acme-challenge.chat	IN CNAME	_acme-challenge.chat.letsencrypt.ocf.io.
+chat	IN CNAME	scootaloo
 _acme-challenge.matrix	IN CNAME	_acme-challenge.matrix.letsencrypt.ocf.io.
 matrix	IN CNAME	scootaloo
 
@@ -286,15 +288,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	_acme-challenge.xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	_acme-challenge.dementors.letsencrypt.ocf.io.
@@ -641,8 +643,6 @@ _acme-challenge.badges	IN CNAME	_acme-challenge.badges.letsencrypt.ocf.io.
 badges	IN CNAME	lb
 _acme-challenge.badgr-api	IN CNAME	_acme-challenge.badgr-api.letsencrypt.ocf.io.
 badgr-api	IN CNAME	lb
-_acme-challenge.chat	IN CNAME	_acme-challenge.chat.letsencrypt.ocf.io.
-chat	IN CNAME	lb
 _acme-challenge.code	IN CNAME	_acme-challenge.code.letsencrypt.ocf.io.
 code	IN CNAME	lb
 _acme-challenge.cruisecontrol	IN CNAME	_acme-challenge.cruisecontrol.letsencrypt.ocf.io.
