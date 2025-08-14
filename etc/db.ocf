@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025081000 ; serial number
+2025081400 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -273,6 +273,8 @@ scootaloo	IN A	169.229.226.29
 scootaloo	IN AAAA	2607:f140:8801::1:29
 _acme-challenge.chat	IN CNAME	_acme-challenge.chat.letsencrypt.ocf.io.
 chat	IN CNAME	scootaloo
+_acme-challenge.irc	IN CNAME	_acme-challenge.irc.letsencrypt.ocf.io.
+irc	IN CNAME	scootaloo
 _acme-challenge.matrix	IN CNAME	_acme-challenge.matrix.letsencrypt.ocf.io.
 matrix	IN CNAME	scootaloo
 
@@ -408,8 +410,6 @@ dev-xmpp	IN CNAME	dev-flood
 _acme-challenge.zecora	IN CNAME	_acme-challenge.zecora.letsencrypt.ocf.io.
 zecora	IN A	169.229.226.44
 zecora	IN AAAA	2607:f140:8801::1:44
-_acme-challenge.irc	IN CNAME	_acme-challenge.irc.letsencrypt.ocf.io.
-irc	IN CNAME	zecora
 
 ; whiteout (server)
 _acme-challenge.whiteout	IN CNAME	_acme-challenge.whiteout.letsencrypt.ocf.io.
@@ -505,15 +505,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; phlegethon (server)
-_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
-phlegethon	IN A	169.229.226.58
-phlegethon	IN AAAA	2607:f140:8801::1:58
-
 ; doorplug (server)
 _acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.58
 doorplug	IN AAAA	2607:f140:8801::1:58
+
+; phlegethon (server)
+_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
+phlegethon	IN A	169.229.226.58
+phlegethon	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -1068,13 +1068,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
