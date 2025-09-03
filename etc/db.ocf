@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025081400 ; serial number
+2025090300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -667,8 +667,6 @@ _acme-challenge.phpmyadmin	IN CNAME	_acme-challenge.phpmyadmin.letsencrypt.ocf.i
 phpmyadmin	IN CNAME	lb
 _acme-challenge.pma	IN CNAME	_acme-challenge.pma.letsencrypt.ocf.io.
 pma	IN CNAME	lb
-_acme-challenge.printlist	IN CNAME	_acme-challenge.printlist.letsencrypt.ocf.io.
-printlist	IN CNAME	lb
 _acme-challenge.slidingsync.matrix	IN CNAME	_acme-challenge.slidingsync.matrix.letsencrypt.ocf.io.
 slidingsync.matrix	IN CNAME	lb
 _acme-challenge.snmp-exporter	IN CNAME	_acme-challenge.snmp-exporter.letsencrypt.ocf.io.
@@ -730,6 +728,8 @@ _acme-challenge.o3	IN CNAME	_acme-challenge.o3.letsencrypt.ocf.io.
 o3	IN A	169.229.226.81
 _acme-challenge.odoo	IN CNAME	_acme-challenge.odoo.letsencrypt.ocf.io.
 odoo	IN A	169.229.226.81
+_acme-challenge.printlist	IN CNAME	_acme-challenge.printlist.letsencrypt.ocf.io.
+printlist	IN A	169.229.226.81
 _acme-challenge.prom	IN CNAME	_acme-challenge.prom.letsencrypt.ocf.io.
 prom	IN A	169.229.226.81
 _acme-challenge.rt	IN CNAME	_acme-challenge.rt.letsencrypt.ocf.io.
@@ -1026,8 +1026,7 @@ spud	IN AAAA	2607:f140:8801::1:165
 mack	IN A	169.229.226.166
 mack	IN AAAA	2607:f140:8801::1:166
 
-; speckles (server)
-_acme-challenge.speckles	IN CNAME	_acme-challenge.speckles.letsencrypt.ocf.io.
+; speckles (desktop)
 speckles	IN A	169.229.226.167
 speckles	IN AAAA	2607:f140:8801::1:167
 
