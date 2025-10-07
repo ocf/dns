@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025090300 ; serial number
+2025100700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -893,6 +893,11 @@ _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
 
+; fluttershy (server)
+_acme-challenge.fluttershy	IN CNAME	_acme-challenge.fluttershy.letsencrypt.ocf.io.
+fluttershy	IN A	169.229.226.130
+fluttershy	IN AAAA	2607:f140:8801::1:130
+
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
 
@@ -1030,8 +1035,7 @@ mack	IN AAAA	2607:f140:8801::1:166
 speckles	IN A	169.229.226.167
 speckles	IN AAAA	2607:f140:8801::1:167
 
-; rascal (server)
-_acme-challenge.rascal	IN CNAME	_acme-challenge.rascal.letsencrypt.ocf.io.
+; rascal (desktop)
 rascal	IN A	169.229.226.169
 rascal	IN AAAA	2607:f140:8801::1:169
 
