@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025100700 ; serial number
+2025101700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -85,8 +85,8 @@ $TTL 1d
 55 IN PTR hozer-55.OCF.Berkeley.EDU.
 56 IN PTR fraud.OCF.Berkeley.EDU.
 57 IN PTR dev-tsunami.OCF.Berkeley.EDU.
-58 IN PTR doorplug.OCF.Berkeley.EDU.
 58 IN PTR phlegethon.OCF.Berkeley.EDU.
+58 IN PTR doorplug.OCF.Berkeley.EDU.
 59 IN PTR y2k.OCF.Berkeley.EDU.
 60 IN PTR hozer-60.OCF.Berkeley.EDU.
 62 IN PTR hozer-62.OCF.Berkeley.EDU.
@@ -132,6 +132,7 @@ $TTL 1d
 105 IN PTR lb-105.OCF.Berkeley.EDU.
 106 IN PTR lb-106.OCF.Berkeley.EDU.
 107 IN PTR lb-107.OCF.Berkeley.EDU.
+129 IN PTR rainbowdash.OCF.Berkeley.EDU.
 130 IN PTR fluttershy.OCF.Berkeley.EDU.
 132 IN PTR y2k-mgmt.OCF.Berkeley.EDU.
 135 IN PTR newton.OCF.Berkeley.EDU.
@@ -157,8 +158,8 @@ $TTL 1d
 156 IN PTR misty.OCF.Berkeley.EDU.
 157 IN PTR pickles.OCF.Berkeley.EDU.
 158 IN PTR pepper.OCF.Berkeley.EDU.
-159 IN PTR hanabi.OCF.Berkeley.EDU.
 159 IN PTR patches.OCF.Berkeley.EDU.
+159 IN PTR hanabi.OCF.Berkeley.EDU.
 160 IN PTR gozer.OCF.Berkeley.EDU.
 161 IN PTR cocoa.OCF.Berkeley.EDU.
 162 IN PTR princess.OCF.Berkeley.EDU.
@@ -176,8 +177,8 @@ $TTL 1d
 175 IN PTR dhcp-169-229-226-175.OCF.Berkeley.EDU.
 176 IN PTR dhcp-169-229-226-176.OCF.Berkeley.EDU.
 177 IN PTR dhcp-169-229-226-177.OCF.Berkeley.EDU.
-178 IN PTR famine.OCF.Berkeley.EDU.
 178 IN PTR dhcp-169-229-226-178.OCF.Berkeley.EDU.
+178 IN PTR famine.OCF.Berkeley.EDU.
 179 IN PTR dhcp-169-229-226-179.OCF.Berkeley.EDU.
 180 IN PTR dhcp-169-229-226-180.OCF.Berkeley.EDU.
 181 IN PTR dhcp-169-229-226-181.OCF.Berkeley.EDU.
@@ -243,8 +244,8 @@ $TTL 1d
 247 IN PTR fukushima.OCF.Berkeley.EDU.
 248 IN PTR sarin.OCF.Berkeley.EDU.
 249 IN PTR solarflare.OCF.Berkeley.EDU.
-251 IN PTR paranoia.OCF.Berkeley.EDU.
 251 IN PTR calamity.OCF.Berkeley.EDU.
+251 IN PTR paranoia.OCF.Berkeley.EDU.
 252 IN PTR singularity.OCF.Berkeley.EDU.
 253 IN PTR hypnomic.OCF.Berkeley.EDU.
 
