@@ -2,7 +2,7 @@ $ORIGIN asuc.org.
 $TTL 5m
 
 @ IN SOA ns1.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025101501 ; serial number
+2025102201 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -129,8 +129,8 @@ superb IN TXT "google-site-verification=WD4FjWC8xw5Bo4uAs6wNghJ6AQ2IgDxlRLa85hCK
 octo	IN CNAME	asuc-octo.github.io.
 www.octo	IN CNAME	asuc-octo.github.io.
 
-bearbites IN CNAME apphost.ocf.berkeley.edu.
-www.bearbites IN CNAME apphost.ocf.berkeley.edu
+bearbites IN CNAME hosting.ocf.berkeley.edu.
+www.bearbites IN CNAME hosting.ocf.berkeley.edu.
 
 octo-api	IN A	34.117.31.96
 
