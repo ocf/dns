@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025101700 ; serial number
+2025110200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -505,15 +505,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; phlegethon (server)
-_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
-phlegethon	IN A	169.229.226.58
-phlegethon	IN AAAA	2607:f140:8801::1:58
-
 ; doorplug (server)
 _acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.58
 doorplug	IN AAAA	2607:f140:8801::1:58
+
+; phlegethon (server)
+_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
+phlegethon	IN A	169.229.226.58
+phlegethon	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -999,14 +999,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1076,13 +1076,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
@@ -1247,10 +1247,10 @@ _acme-challenge.spectre	IN CNAME	_acme-challenge.spectre.letsencrypt.ocf.io.
 spectre	IN A	169.229.226.215
 spectre	IN AAAA	2607:f140:8801::1:215
 
-; emp (staffvm)
-_acme-challenge.emp	IN CNAME	_acme-challenge.emp.letsencrypt.ocf.io.
-emp	IN A	169.229.226.216
-emp	IN AAAA	2607:f140:8801::1:216
+; joe (staffvm)
+_acme-challenge.joe	IN CNAME	_acme-challenge.joe.letsencrypt.ocf.io.
+joe	IN A	169.229.226.216
+joe	IN AAAA	2607:f140:8801::1:216
 
 ; alamo (staffvm)
 _acme-challenge.alamo	IN CNAME	_acme-challenge.alamo.letsencrypt.ocf.io.
