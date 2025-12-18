@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025121601 ; serial number
+2025121700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -44,8 +44,8 @@ _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
 
 ; CNAME record for all OCF hosted sites
 hosting IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
-hosting IN A    169.229.226.43
-hosting IN AAAA 2607:f140:8801::1:43
+hosting IN A    169.229.226.23
+hosting IN AAAA 2607:f140:8801::1:23
 hosting IN MX   5 anthrax
 
 ; fallingrocks (server)
@@ -200,8 +200,8 @@ ns2	IN AAAA	2607:f140:8801::1:22
 
 ; death (server)
 _acme-challenge.death	IN CNAME	_acme-challenge.death.letsencrypt.ocf.io.
-death	IN A	169.229.226.43
-death	IN AAAA	2607:f140:8801::1:43
+death	IN A	169.229.226.23
+death	IN AAAA	2607:f140:8801::1:23
 _acme-challenge.accounts	IN CNAME	_acme-challenge.accounts.letsencrypt.ocf.io.
 accounts	IN CNAME	death
 _acme-challenge.dev-discourse	IN CNAME	_acme-challenge.dev-discourse.letsencrypt.ocf.io.
@@ -223,8 +223,8 @@ www	IN CNAME	death
 _acme-challenge.xkcd	IN CNAME	_acme-challenge.xkcd.letsencrypt.ocf.io.
 xkcd	IN CNAME	death
 _acme-challenge	IN CNAME	_acme-challenge.letsencrypt.ocf.io.
-@	IN A	169.229.226.43
-@	IN AAAA	2607:f140:8801::1:43
+@	IN A	169.229.226.23
+@	IN AAAA	2607:f140:8801::1:23
 _acme-challenge.dev-vhost	IN CNAME	_acme-challenge.dev-vhost.letsencrypt.ocf.io.
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
@@ -898,13 +898,11 @@ _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf
 trenderhoof	IN A	169.229.226.128
 trenderhoof	IN AAAA	2607:f140:8801::1:128
 
-; rainbowdash (server)
-_acme-challenge.rainbowdash	IN CNAME	_acme-challenge.rainbowdash.letsencrypt.ocf.io.
+; rainbowdash (vm)
 rainbowdash	IN A	169.229.226.129
 rainbowdash	IN AAAA	2607:f140:8801::1:129
 
-; fluttershy (server)
-_acme-challenge.fluttershy	IN CNAME	_acme-challenge.fluttershy.letsencrypt.ocf.io.
+; fluttershy (vm)
 fluttershy	IN A	169.229.226.130
 fluttershy	IN AAAA	2607:f140:8801::1:130
 
