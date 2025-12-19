@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025121701 ; serial number
+2025121800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -44,8 +44,8 @@ _xmpp-server._tcp 18000 IN SRV 0 5 5269 flood.ocf.berkeley.edu.
 
 ; CNAME record for all OCF hosted sites
 hosting IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
-hosting IN A    169.229.226.43
-hosting IN AAAA 2607:f140:8801::1:43
+hosting IN A    169.229.226.23
+hosting IN AAAA 2607:f140:8801::1:23
 hosting IN MX   5 anthrax
 
 ; fallingrocks (server)
@@ -200,10 +200,12 @@ ns2	IN AAAA	2607:f140:8801::1:22
 
 ; death (server)
 _acme-challenge.death	IN CNAME	_acme-challenge.death.letsencrypt.ocf.io.
-death	IN A	169.229.226.43
-death	IN AAAA	2607:f140:8801::1:43
+death	IN A	169.229.226.23
+death	IN AAAA	2607:f140:8801::1:23
 _acme-challenge.accounts	IN CNAME	_acme-challenge.accounts.letsencrypt.ocf.io.
 accounts	IN CNAME	death
+_acme-challenge.dev-death	IN CNAME	_acme-challenge.dev-death.letsencrypt.ocf.io.
+dev-death	IN CNAME	death
 _acme-challenge.dev-discourse	IN CNAME	_acme-challenge.dev-discourse.letsencrypt.ocf.io.
 dev-discourse	IN CNAME	death
 _acme-challenge.hello	IN CNAME	_acme-challenge.hello.letsencrypt.ocf.io.
@@ -223,8 +225,8 @@ www	IN CNAME	death
 _acme-challenge.xkcd	IN CNAME	_acme-challenge.xkcd.letsencrypt.ocf.io.
 xkcd	IN CNAME	death
 _acme-challenge	IN CNAME	_acme-challenge.letsencrypt.ocf.io.
-@	IN A	169.229.226.43
-@	IN AAAA	2607:f140:8801::1:43
+@	IN A	169.229.226.23
+@	IN AAAA	2607:f140:8801::1:23
 _acme-challenge.dev-vhost	IN CNAME	_acme-challenge.dev-vhost.letsencrypt.ocf.io.
 dev-vhost	IN A	169.229.226.23
 dev-vhost	IN AAAA	2607:f140:8801::1:23
@@ -333,27 +335,6 @@ _acme-challenge.admin	IN CNAME	_acme-challenge.admin.letsencrypt.ocf.io.
 admin	IN CNAME	supernova
 _acme-challenge.create	IN CNAME	_acme-challenge.create.letsencrypt.ocf.io.
 create	IN CNAME	supernova
-
-; dev-death (server)
-_acme-challenge.dev-death	IN CNAME	_acme-challenge.dev-death.letsencrypt.ocf.io.
-dev-death	IN A	169.229.226.37
-dev-death	IN AAAA	2607:f140:8801::1:37
-_acme-challenge.dev-accounts	IN CNAME	_acme-challenge.dev-accounts.letsencrypt.ocf.io.
-dev-accounts	IN CNAME	dev-death
-_acme-challenge.dev-hello	IN CNAME	_acme-challenge.dev-hello.letsencrypt.ocf.io.
-dev-hello	IN CNAME	dev-death
-_acme-challenge.dev-ocf-io	IN CNAME	_acme-challenge.dev-ocf-io.letsencrypt.ocf.io.
-dev-ocf-io	IN CNAME	dev-death
-_acme-challenge.dev-wiki	IN CNAME	_acme-challenge.dev-wiki.letsencrypt.ocf.io.
-dev-wiki	IN CNAME	dev-death
-_acme-challenge.dev-www	IN CNAME	_acme-challenge.dev-www.letsencrypt.ocf.io.
-dev-www	IN CNAME	dev-death
-_acme-challenge.dev-dev-vhost	IN CNAME	_acme-challenge.dev-dev-vhost.letsencrypt.ocf.io.
-dev-dev-vhost	IN A	169.229.226.37
-dev-dev-vhost	IN AAAA	2607:f140:8801::1:37
-_acme-challenge.dev-dev-vhost-alias	IN CNAME	_acme-challenge.dev-dev-vhost-alias.letsencrypt.ocf.io.
-dev-dev-vhost-alias	IN A	169.229.226.37
-dev-dev-vhost-alias	IN AAAA	2607:f140:8801::1:37
 
 ; dev-firestorm (server)
 _acme-challenge.dev-firestorm	IN CNAME	_acme-challenge.dev-firestorm.letsencrypt.ocf.io.
