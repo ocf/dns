@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025121800 ; serial number
+2025122200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -59,8 +59,8 @@ $TTL 1d
 29 IN PTR scootaloo.OCF.Berkeley.EDU.
 30 IN PTR implosion.OCF.Berkeley.EDU.
 31 IN PTR flood.OCF.Berkeley.EDU.
-32 IN PTR radiation.OCF.Berkeley.EDU.
 32 IN PTR dna.OCF.Berkeley.EDU.
+32 IN PTR radiation.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
 34 IN PTR dev-maelstrom.OCF.Berkeley.EDU.
 35 IN PTR anthrax.OCF.Berkeley.EDU.
@@ -84,8 +84,8 @@ $TTL 1d
 55 IN PTR hozer-55.OCF.Berkeley.EDU.
 56 IN PTR fraud.OCF.Berkeley.EDU.
 57 IN PTR dev-tsunami.OCF.Berkeley.EDU.
-58 IN PTR doorplug.OCF.Berkeley.EDU.
 58 IN PTR phlegethon.OCF.Berkeley.EDU.
+58 IN PTR doorplug.OCF.Berkeley.EDU.
 59 IN PTR y2k.OCF.Berkeley.EDU.
 60 IN PTR hozer-60.OCF.Berkeley.EDU.
 62 IN PTR hozer-62.OCF.Berkeley.EDU.
@@ -249,5 +249,6 @@ $TTL 1d
 251 IN PTR paranoia.OCF.Berkeley.EDU.
 252 IN PTR singularity.OCF.Berkeley.EDU.
 253 IN PTR hypnomic.OCF.Berkeley.EDU.
+254 IN PTR blake.OCF.Berkeley.EDU.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
