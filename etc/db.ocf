@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025121800 ; serial number
+2025122200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -486,15 +486,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; doorplug (server)
-_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
-doorplug	IN A	169.229.226.58
-doorplug	IN AAAA	2607:f140:8801::1:58
-
 ; phlegethon (server)
 _acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.58
+doorplug	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -879,13 +879,11 @@ _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf
 trenderhoof	IN A	169.229.226.128
 trenderhoof	IN AAAA	2607:f140:8801::1:128
 
-; rainbowdash (server)
-_acme-challenge.rainbowdash	IN CNAME	_acme-challenge.rainbowdash.letsencrypt.ocf.io.
+; rainbowdash (vm)
 rainbowdash	IN A	169.229.226.129
 rainbowdash	IN AAAA	2607:f140:8801::1:129
 
-; fluttershy (server)
-_acme-challenge.fluttershy	IN CNAME	_acme-challenge.fluttershy.letsencrypt.ocf.io.
+; fluttershy (vm)
 fluttershy	IN A	169.229.226.130
 fluttershy	IN AAAA	2607:f140:8801::1:130
 
@@ -1411,5 +1409,10 @@ singularity	IN AAAA	2607:f140:8801::1:252
 _acme-challenge.hypnomic	IN CNAME	_acme-challenge.hypnomic.letsencrypt.ocf.io.
 hypnomic	IN A	169.229.226.253
 hypnomic	IN AAAA	2607:f140:8801::1:253
+
+; blake (server)
+_acme-challenge.blake	IN CNAME	_acme-challenge.blake.letsencrypt.ocf.io.
+blake	IN A	169.229.226.254
+blake	IN AAAA	2607:f140:8801::1:254
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
