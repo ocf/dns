@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025122200 ; serial number
+2026010100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -158,8 +158,8 @@ $TTL 1d
 156 IN PTR misty.OCF.Berkeley.EDU.
 157 IN PTR pickles.OCF.Berkeley.EDU.
 158 IN PTR pepper.OCF.Berkeley.EDU.
-159 IN PTR hanabi.OCF.Berkeley.EDU.
 159 IN PTR patches.OCF.Berkeley.EDU.
+159 IN PTR hanabi.OCF.Berkeley.EDU.
 160 IN PTR gozer.OCF.Berkeley.EDU.
 161 IN PTR cocoa.OCF.Berkeley.EDU.
 162 IN PTR princess.OCF.Berkeley.EDU.
@@ -177,8 +177,8 @@ $TTL 1d
 175 IN PTR dhcp-169-229-226-175.OCF.Berkeley.EDU.
 176 IN PTR dhcp-169-229-226-176.OCF.Berkeley.EDU.
 177 IN PTR dhcp-169-229-226-177.OCF.Berkeley.EDU.
-178 IN PTR famine.OCF.Berkeley.EDU.
 178 IN PTR dhcp-169-229-226-178.OCF.Berkeley.EDU.
+178 IN PTR famine.OCF.Berkeley.EDU.
 179 IN PTR dhcp-169-229-226-179.OCF.Berkeley.EDU.
 180 IN PTR dhcp-169-229-226-180.OCF.Berkeley.EDU.
 181 IN PTR dhcp-169-229-226-181.OCF.Berkeley.EDU.
@@ -222,7 +222,7 @@ $TTL 1d
 221 IN PTR fire.OCF.Berkeley.EDU.
 222 IN PTR entropy.OCF.Berkeley.EDU.
 223 IN PTR hypoxia.OCF.Berkeley.EDU.
-224 IN PTR shockwave.OCF.Berkeley.EDU.
+224 IN PTR nikki.OCF.Berkeley.EDU.
 225 IN PTR rapture.OCF.Berkeley.EDU.
 227 IN PTR bigrip.OCF.Berkeley.EDU.
 228 IN PTR vortex.OCF.Berkeley.EDU.
@@ -245,8 +245,8 @@ $TTL 1d
 247 IN PTR fukushima.OCF.Berkeley.EDU.
 248 IN PTR sarin.OCF.Berkeley.EDU.
 249 IN PTR solarflare.OCF.Berkeley.EDU.
-251 IN PTR calamity.OCF.Berkeley.EDU.
 251 IN PTR paranoia.OCF.Berkeley.EDU.
+251 IN PTR calamity.OCF.Berkeley.EDU.
 252 IN PTR singularity.OCF.Berkeley.EDU.
 253 IN PTR hypnomic.OCF.Berkeley.EDU.
 254 IN PTR blake.OCF.Berkeley.EDU.
