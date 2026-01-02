@@ -12,7 +12,7 @@ $ORIGIN 0.0.0.0.1.0.8.8.0.4.1.f.7.0.6.2.ip6.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2025122200 ; serial number
+2026010100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -146,8 +146,8 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 6.5.1.0 IN PTR misty.ocf.berkeley.edu.
 7.5.1.0 IN PTR pickles.ocf.berkeley.edu.
 8.5.1.0 IN PTR pepper.ocf.berkeley.edu.
-9.5.1.0 IN PTR hanabi.ocf.berkeley.edu.
 9.5.1.0 IN PTR patches.ocf.berkeley.edu.
+9.5.1.0 IN PTR hanabi.ocf.berkeley.edu.
 0.6.1.0 IN PTR gozer.ocf.berkeley.edu.
 1.6.1.0 IN PTR cocoa.ocf.berkeley.edu.
 2.6.1.0 IN PTR princess.ocf.berkeley.edu.
@@ -165,8 +165,8 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 5.7.1.0 IN PTR dhcp-169-229-226-175.ocf.berkeley.edu.
 6.7.1.0 IN PTR dhcp-169-229-226-176.ocf.berkeley.edu.
 7.7.1.0 IN PTR dhcp-169-229-226-177.ocf.berkeley.edu.
-8.7.1.0 IN PTR famine.ocf.berkeley.edu.
 8.7.1.0 IN PTR dhcp-169-229-226-178.ocf.berkeley.edu.
+8.7.1.0 IN PTR famine.ocf.berkeley.edu.
 9.7.1.0 IN PTR dhcp-169-229-226-179.ocf.berkeley.edu.
 0.8.1.0 IN PTR dhcp-169-229-226-180.ocf.berkeley.edu.
 1.8.1.0 IN PTR dhcp-169-229-226-181.ocf.berkeley.edu.
@@ -210,7 +210,7 @@ $ORIGIN 1.0.0.0.0.0.0.0.0.0.0.0
 1.2.2.0 IN PTR fire.ocf.berkeley.edu.
 2.2.2.0 IN PTR entropy.ocf.berkeley.edu.
 3.2.2.0 IN PTR hypoxia.ocf.berkeley.edu.
-4.2.2.0 IN PTR shockwave.ocf.berkeley.edu.
+4.2.2.0 IN PTR nikki.ocf.berkeley.edu.
 5.2.2.0 IN PTR rapture.ocf.berkeley.edu.
 7.2.2.0 IN PTR bigrip.ocf.berkeley.edu.
 8.2.2.0 IN PTR vortex.ocf.berkeley.edu.
