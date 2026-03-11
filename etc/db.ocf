@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026031001 ; serial number
+2026031002 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -880,8 +880,7 @@ _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
 tule	IN A	169.229.226.127
 tule	IN AAAA	2607:f140:8801::1:127
 _acme-challenge.printhost-dev	IN CNAME	_acme-challenge.printhost-dev.letsencrypt.ocf.io.
-printhost-dev	IN A	169.229.226.127
-printhost-dev	IN AAAA	2607:f140:8801::1:127
+printhost-dev	IN CNAME	tule
 
 ; trenderhoof (server)
 _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf.io.
@@ -1399,15 +1398,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; calamity (staffvm)
-_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
-calamity	IN A	169.229.226.251
-calamity	IN AAAA	2607:f140:8801::1:251
-
 ; paranoia (staffvm)
 _acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
 paranoia	IN A	169.229.226.251
 paranoia	IN AAAA	2607:f140:8801::1:253
+
+; calamity (staffvm)
+_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
+calamity	IN A	169.229.226.251
+calamity	IN AAAA	2607:f140:8801::1:251
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
