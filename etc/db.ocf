@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026022502 ; serial number
+2026031001 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -875,6 +875,14 @@ _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
 
+; tule (server)
+_acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
+tule	IN A	169.229.226.127
+tule	IN AAAA	2607:f140:8801::1:127
+_acme-challenge.printhost-dev	IN CNAME	_acme-challenge.printhost-dev.letsencrypt.ocf.io.
+printhost-dev	IN A	169.229.226.127
+printhost-dev	IN AAAA	2607:f140:8801::1:127
+
 ; trenderhoof (server)
 _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf.io.
 trenderhoof	IN A	169.229.226.128
@@ -984,14 +992,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1391,15 +1399,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; paranoia (staffvm)
-_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
-paranoia	IN A	169.229.226.251
-paranoia	IN AAAA	2607:f140:8801::1:253
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
 calamity	IN AAAA	2607:f140:8801::1:251
+
+; paranoia (staffvm)
+_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.251
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
