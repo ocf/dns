@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026032000 ; serial number
+2026040300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -243,8 +243,6 @@ spike	IN AAAA	2607:f140:8801::1:24
 _acme-challenge.tsunami	IN CNAME	_acme-challenge.tsunami.letsencrypt.ocf.io.
 tsunami	IN A	169.229.226.25
 tsunami	IN AAAA	2607:f140:8801::1:25
-_acme-challenge.ssh	IN CNAME	_acme-challenge.ssh.letsencrypt.ocf.io.
-ssh	IN CNAME	tsunami
 
 ; thunder (server)
 _acme-challenge.thunder	IN CNAME	_acme-challenge.thunder.letsencrypt.ocf.io.
@@ -331,10 +329,6 @@ smtp	IN CNAME	anthrax
 _acme-challenge.supernova	IN CNAME	_acme-challenge.supernova.letsencrypt.ocf.io.
 supernova	IN A	169.229.226.36
 supernova	IN AAAA	2607:f140:8801::1:36
-_acme-challenge.admin	IN CNAME	_acme-challenge.admin.letsencrypt.ocf.io.
-admin	IN CNAME	supernova
-_acme-challenge.create	IN CNAME	_acme-challenge.create.letsencrypt.ocf.io.
-create	IN CNAME	supernova
 
 ; dev-firestorm (server)
 _acme-challenge.dev-firestorm	IN CNAME	_acme-challenge.dev-firestorm.letsencrypt.ocf.io.
@@ -887,13 +881,16 @@ _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf
 trenderhoof	IN A	169.229.226.128
 trenderhoof	IN AAAA	2607:f140:8801::1:128
 
-; rainbowdash (vm)
-rainbowdash	IN A	169.229.226.129
-rainbowdash	IN AAAA	2607:f140:8801::1:129
+; koi (vm)
+koi	IN A	169.229.226.129
+koi	IN AAAA	2607:f140:8801::1:129
+admin	IN CNAME	koi
+create	IN CNAME	koi
 
-; fluttershy (vm)
-fluttershy	IN A	169.229.226.130
-fluttershy	IN AAAA	2607:f140:8801::1:130
+; carp (vm)
+carp	IN A	169.229.226.130
+carp	IN AAAA	2607:f140:8801::1:130
+ssh	IN CNAME	carp
 
 ; y2k-mgmt (ipmi)
 y2k-mgmt	IN A	169.229.226.132
