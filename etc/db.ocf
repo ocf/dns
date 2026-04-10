@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026040300 ; serial number
+2026041000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -290,15 +290,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	_acme-challenge.xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
-
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
+
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	_acme-challenge.dementors.letsencrypt.ocf.io.
@@ -881,15 +881,20 @@ _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf
 trenderhoof	IN A	169.229.226.128
 trenderhoof	IN AAAA	2607:f140:8801::1:128
 
-; koi (vm)
+; koi (server)
+_acme-challenge.koi	IN CNAME	_acme-challenge.koi.letsencrypt.ocf.io.
 koi	IN A	169.229.226.129
 koi	IN AAAA	2607:f140:8801::1:129
+_acme-challenge.admin	IN CNAME	_acme-challenge.admin.letsencrypt.ocf.io.
 admin	IN CNAME	koi
+_acme-challenge.create	IN CNAME	_acme-challenge.create.letsencrypt.ocf.io.
 create	IN CNAME	koi
 
-; carp (vm)
+; carp (server)
+_acme-challenge.carp	IN CNAME	_acme-challenge.carp.letsencrypt.ocf.io.
 carp	IN A	169.229.226.130
 carp	IN AAAA	2607:f140:8801::1:130
+_acme-challenge.ssh	IN CNAME	_acme-challenge.ssh.letsencrypt.ocf.io.
 ssh	IN CNAME	carp
 
 ; y2k-mgmt (ipmi)
@@ -988,14 +993,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
+
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
-
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1065,13 +1070,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
@@ -1395,15 +1400,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; paranoia (staffvm)
-_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
-paranoia	IN A	169.229.226.251
-paranoia	IN AAAA	2607:f140:8801::1:253
-
 ; calamity (staffvm)
 _acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
 calamity	IN A	169.229.226.251
 calamity	IN AAAA	2607:f140:8801::1:251
+
+; paranoia (staffvm)
+_acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
+paranoia	IN A	169.229.226.251
+paranoia	IN AAAA	2607:f140:8801::1:253
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
