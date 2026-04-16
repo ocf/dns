@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026041000 ; serial number
+2026041500 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -805,9 +805,6 @@ sign	IN CNAME	overheat
 _acme-challenge.termites	IN CNAME	_acme-challenge.termites.letsencrypt.ocf.io.
 termites	IN A	169.229.226.95
 termites	IN AAAA	2607:f140:8801::1:95
-_acme-challenge.jukebox	IN CNAME	_acme-challenge.jukebox.letsencrypt.ocf.io.
-jukebox	IN A	169.229.226.95
-jukebox	IN AAAA	2607:f140:8801::1:95
 
 ; epson (server)
 _acme-challenge.epson	IN CNAME	_acme-challenge.epson.letsencrypt.ocf.io.
@@ -852,6 +849,14 @@ _acme-challenge.dev-vault	IN CNAME	_acme-challenge.dev-vault.letsencrypt.ocf.io.
 dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
+
+; anglerfish (server)
+_acme-challenge.anglerfish	IN CNAME	_acme-challenge.anglerfish.letsencrypt.ocf.io.
+anglerfish	IN A	169.229.226.106
+anglerfish	IN AAAA	2607:f140:8801::1:106
+_acme-challenge.jukebox	IN CNAME	_acme-challenge.jukebox.letsencrypt.ocf.io.
+jukebox	IN A	169.229.226.106
+jukebox	IN AAAA	2607:f140:8801::1:106
 
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
@@ -1070,13 +1075,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; famine (desktop)
-famine	IN A	169.229.226.178
-famine	IN AAAA	2607:f140:8801::1:178
-
 ; dhcp-169-229-226-178 (dhcp)
 dhcp-169-229-226-178	IN A	169.229.226.178
 dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
+
+; famine (desktop)
+famine	IN A	169.229.226.178
+famine	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
