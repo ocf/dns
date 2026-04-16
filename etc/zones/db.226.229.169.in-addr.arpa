@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026041500 ; serial number
+2026041501 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -59,8 +59,8 @@ $TTL 1d
 29 IN PTR scootaloo.OCF.Berkeley.EDU.
 30 IN PTR implosion.OCF.Berkeley.EDU.
 31 IN PTR flood.OCF.Berkeley.EDU.
-32 IN PTR dna.OCF.Berkeley.EDU.
 32 IN PTR radiation.OCF.Berkeley.EDU.
+32 IN PTR dna.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
 34 IN PTR dev-maelstrom.OCF.Berkeley.EDU.
 35 IN PTR anthrax.OCF.Berkeley.EDU.
@@ -129,8 +129,8 @@ $TTL 1d
 103 IN PTR krunmacula.OCF.Berkeley.EDU.
 104 IN PTR losulci.OCF.Berkeley.EDU.
 105 IN PTR lb-105.OCF.Berkeley.EDU.
-106 IN PTR anglerfish.OCF.Berkeley.EDU.
 106 IN PTR lb-106.OCF.Berkeley.EDU.
+106 IN PTR anglerfish.OCF.Berkeley.EDU.
 107 IN PTR lb-107.OCF.Berkeley.EDU.
 127 IN PTR tule.OCF.Berkeley.EDU.
 128 IN PTR trenderhoof.OCF.Berkeley.EDU.
@@ -160,8 +160,8 @@ $TTL 1d
 156 IN PTR misty.OCF.Berkeley.EDU.
 157 IN PTR pickles.OCF.Berkeley.EDU.
 158 IN PTR pepper.OCF.Berkeley.EDU.
-159 IN PTR patches.OCF.Berkeley.EDU.
 159 IN PTR hanabi.OCF.Berkeley.EDU.
+159 IN PTR patches.OCF.Berkeley.EDU.
 160 IN PTR gozer.OCF.Berkeley.EDU.
 161 IN PTR cocoa.OCF.Berkeley.EDU.
 162 IN PTR princess.OCF.Berkeley.EDU.
