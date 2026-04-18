@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026041700 ; serial number
+2026041701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -390,10 +390,6 @@ zecora	IN AAAA	2607:f140:8801::1:44
 _acme-challenge.whiteout	IN CNAME	_acme-challenge.whiteout.letsencrypt.ocf.io.
 whiteout	IN A	169.229.226.45
 whiteout	IN AAAA	2607:f140:8801::1:45
-_acme-challenge.p	IN CNAME	_acme-challenge.p.letsencrypt.ocf.io.
-p	IN CNAME	whiteout
-_acme-challenge.printhost	IN CNAME	_acme-challenge.printhost.letsencrypt.ocf.io.
-printhost	IN CNAME	whiteout
 
 ; biohazard (server)
 _acme-challenge.biohazard	IN CNAME	_acme-challenge.biohazard.letsencrypt.ocf.io.
@@ -480,15 +476,15 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
-; doorplug (server)
-_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
-doorplug	IN A	169.229.226.58
-doorplug	IN AAAA	2607:f140:8801::1:58
-
 ; phlegethon (server)
 _acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
 phlegethon	IN A	169.229.226.58
 phlegethon	IN AAAA	2607:f140:8801::1:58
+
+; doorplug (server)
+_acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
+doorplug	IN A	169.229.226.58
+doorplug	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -848,6 +844,16 @@ dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
 
+; anglerfish (server)
+_acme-challenge.anglerfish	IN CNAME	_acme-challenge.anglerfish.letsencrypt.ocf.io.
+anglerfish	IN A	169.229.226.106
+anglerfish	IN AAAA	2607:f140:8801::1:106
+_acme-challenge.tv	IN CNAME	_acme-challenge.tv.letsencrypt.ocf.io.
+tv	IN CNAME	anglerfish
+_acme-challenge.jukebox	IN CNAME	_acme-challenge.jukebox.letsencrypt.ocf.io.
+jukebox	IN A	169.229.226.106
+jukebox	IN AAAA	2607:f140:8801::1:106
+
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
 lb-106	IN A	169.229.226.106
@@ -859,31 +865,23 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
-; anglerfish (server)
-_acme-challenge.anglerfish	IN CNAME	_acme-challenge.anglerfish.letsencrypt.ocf.io.
-anglerfish	IN A	169.229.226.106
-anglerfish	IN AAAA	2607:f140:8801::1:106
-_acme-challenge.tv	IN CNAME	_acme-challenge.tv.letsencrypt.ocf.io.
-tv	IN CNAME	anglerfish
-_acme-challenge.jukebox	IN CNAME	_acme-challenge.jukebox.letsencrypt.ocf.io.
-jukebox	IN A	169.229.226.106
-jukebox	IN AAAA	2607:f140:8801::1:106
+; fishpaper (printer)
+fishpaper	IN A	169.229.226.107
+fishpaper	IN AAAA	2607:f140:8801::1:107
 
 ; lb-107 (server)
 _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
 
-; fishpaper (printer)
-fishpaper	IN A	169.229.226.107
-fishpaper	IN AAAA	2607:f140:8801::1:107
-
 ; tule (server)
 _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
 tule	IN A	169.229.226.127
 tule	IN AAAA	2607:f140:8801::1:127
-_acme-challenge.printhost-dev	IN CNAME	_acme-challenge.printhost-dev.letsencrypt.ocf.io.
-printhost-dev	IN CNAME	tule
+_acme-challenge.p	IN CNAME	_acme-challenge.p.letsencrypt.ocf.io.
+p	IN CNAME	tule
+_acme-challenge.printhost	IN CNAME	_acme-challenge.printhost.letsencrypt.ocf.io.
+printhost	IN CNAME	tule
 
 ; trenderhoof (server)
 _acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf.io.
@@ -1002,14 +1000,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
@@ -1079,13 +1077,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; famine (desktop)
-famine	IN A	169.229.226.178
-famine	IN AAAA	2607:f140:8801::1:178
-
 ; dhcp-169-229-226-178 (dhcp)
 dhcp-169-229-226-178	IN A	169.229.226.178
 dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
+
+; famine (desktop)
+famine	IN A	169.229.226.178
+famine	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179

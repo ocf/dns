@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026041700 ; serial number
+2026041701 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -84,8 +84,8 @@ $TTL 1d
 55 IN PTR hozer-55.OCF.Berkeley.EDU.
 56 IN PTR fraud.OCF.Berkeley.EDU.
 57 IN PTR dev-tsunami.OCF.Berkeley.EDU.
-58 IN PTR doorplug.OCF.Berkeley.EDU.
 58 IN PTR phlegethon.OCF.Berkeley.EDU.
+58 IN PTR doorplug.OCF.Berkeley.EDU.
 59 IN PTR y2k.OCF.Berkeley.EDU.
 60 IN PTR hozer-60.OCF.Berkeley.EDU.
 62 IN PTR hozer-62.OCF.Berkeley.EDU.
@@ -129,10 +129,10 @@ $TTL 1d
 103 IN PTR krunmacula.OCF.Berkeley.EDU.
 104 IN PTR losulci.OCF.Berkeley.EDU.
 105 IN PTR lb-105.OCF.Berkeley.EDU.
-106 IN PTR lb-106.OCF.Berkeley.EDU.
 106 IN PTR anglerfish.OCF.Berkeley.EDU.
-107 IN PTR lb-107.OCF.Berkeley.EDU.
+106 IN PTR lb-106.OCF.Berkeley.EDU.
 107 IN PTR fishpaper.OCF.Berkeley.EDU.
+107 IN PTR lb-107.OCF.Berkeley.EDU.
 127 IN PTR tule.OCF.Berkeley.EDU.
 128 IN PTR trenderhoof.OCF.Berkeley.EDU.
 129 IN PTR koi.OCF.Berkeley.EDU.
@@ -161,8 +161,8 @@ $TTL 1d
 156 IN PTR misty.OCF.Berkeley.EDU.
 157 IN PTR pickles.OCF.Berkeley.EDU.
 158 IN PTR pepper.OCF.Berkeley.EDU.
-159 IN PTR patches.OCF.Berkeley.EDU.
 159 IN PTR hanabi.OCF.Berkeley.EDU.
+159 IN PTR patches.OCF.Berkeley.EDU.
 160 IN PTR gozer.OCF.Berkeley.EDU.
 161 IN PTR cocoa.OCF.Berkeley.EDU.
 162 IN PTR princess.OCF.Berkeley.EDU.
@@ -180,8 +180,8 @@ $TTL 1d
 175 IN PTR dhcp-169-229-226-175.OCF.Berkeley.EDU.
 176 IN PTR dhcp-169-229-226-176.OCF.Berkeley.EDU.
 177 IN PTR dhcp-169-229-226-177.OCF.Berkeley.EDU.
-178 IN PTR famine.OCF.Berkeley.EDU.
 178 IN PTR dhcp-169-229-226-178.OCF.Berkeley.EDU.
+178 IN PTR famine.OCF.Berkeley.EDU.
 179 IN PTR dhcp-169-229-226-179.OCF.Berkeley.EDU.
 180 IN PTR dhcp-169-229-226-180.OCF.Berkeley.EDU.
 181 IN PTR dhcp-169-229-226-181.OCF.Berkeley.EDU.
