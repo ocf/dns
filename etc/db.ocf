@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026041701 ; serial number
+2026042100 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -778,12 +778,15 @@ tornado	IN A	169.229.226.90
 tornado	IN AAAA	2607:f140:8801::1:90
 
 ; pagefault (printer)
+_acme-challenge.pagefault	IN CNAME	_acme-challenge.pagefault.letsencrypt.ocf.io.
 pagefault	IN A	169.229.226.91
 
 ; logjam (printer)
+_acme-challenge.logjam	IN CNAME	_acme-challenge.logjam.letsencrypt.ocf.io.
 logjam	IN A	169.229.226.92
 
 ; papercut (printer)
+_acme-challenge.papercut	IN CNAME	_acme-challenge.papercut.letsencrypt.ocf.io.
 papercut	IN A	169.229.226.93
 
 ; overheat (server)
@@ -865,14 +868,15 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
-; fishpaper (printer)
-fishpaper	IN A	169.229.226.107
-fishpaper	IN AAAA	2607:f140:8801::1:107
-
 ; lb-107 (server)
 _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
+
+; fishpaper (printer)
+_acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
+fishpaper	IN A	169.229.226.107
+fishpaper	IN AAAA	2607:f140:8801::1:107
 
 ; tule (server)
 _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
@@ -1077,13 +1081,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; dhcp-169-229-226-178 (dhcp)
-dhcp-169-229-226-178	IN A	169.229.226.178
-dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
-
 ; famine (desktop)
 famine	IN A	169.229.226.178
 famine	IN AAAA	2607:f140:8801::1:178
+
+; dhcp-169-229-226-178 (dhcp)
+dhcp-169-229-226-178	IN A	169.229.226.178
+dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
