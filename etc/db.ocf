@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026050601 ; serial number
+2026050602 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -159,6 +159,11 @@ _acme-challenge.cloudsdale	IN CNAME	_acme-challenge.cloudsdale.letsencrypt.ocf.i
 cloudsdale	IN A	169.229.226.18
 cloudsdale	IN AAAA	2607:f140:8801::1:18
 
+; reef (server)
+_acme-challenge.reef	IN CNAME	_acme-challenge.reef.letsencrypt.ocf.io.
+reef	IN A	169.229.226.18
+reef	IN AAAA	2607:f140:8801::1:18
+
 ; corruption-mgmt (ipmi)
 corruption-mgmt	IN A	169.229.226.19
 
@@ -292,15 +297,15 @@ flood	IN AAAA	2607:f140:8801::1:31
 _acme-challenge.xmpp	IN CNAME	_acme-challenge.xmpp.letsencrypt.ocf.io.
 xmpp	IN CNAME	flood
 
-; dna (vip)
-_acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
-dna	IN A	169.229.226.32
-dna	IN AAAA	2607:f140:8801::1:32
-
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
 radiation	IN AAAA	2607:f140:8801::1:32
 wifi	IN CNAME	radiation
+
+; dna (vip)
+_acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
+dna	IN A	169.229.226.32
+dna	IN AAAA	2607:f140:8801::1:32
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	_acme-challenge.dementors.letsencrypt.ocf.io.
@@ -847,12 +852,6 @@ dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
 
-; anglerfish (tv)
-anglerfish	IN A	169.229.226.106
-anglerfish	IN AAAA	2607:f140:8801::1:106
-jukebox	IN CNAME	anglerfish
-tv	IN CNAME	anglerfish
-
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
 lb-106	IN A	169.229.226.106
@@ -863,6 +862,12 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
+
+; anglerfish (tv)
+anglerfish	IN A	169.229.226.106
+anglerfish	IN AAAA	2607:f140:8801::1:106
+jukebox	IN CNAME	anglerfish
+tv	IN CNAME	anglerfish
 
 ; fishpaper (printer)
 _acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
@@ -1076,13 +1081,13 @@ dhcp-169-229-226-176	IN AAAA	2607:f140:8801::1:176
 dhcp-169-229-226-177	IN A	169.229.226.177
 dhcp-169-229-226-177	IN AAAA	2607:f140:8801::1:177
 
-; famine (desktop)
-famine	IN A	169.229.226.178
-famine	IN AAAA	2607:f140:8801::1:178
-
 ; dhcp-169-229-226-178 (dhcp)
 dhcp-169-229-226-178	IN A	169.229.226.178
 dhcp-169-229-226-178	IN AAAA	2607:f140:8801::1:178
+
+; famine (desktop)
+famine	IN A	169.229.226.178
+famine	IN AAAA	2607:f140:8801::1:178
 
 ; dhcp-169-229-226-179 (dhcp)
 dhcp-169-229-226-179	IN A	169.229.226.179
