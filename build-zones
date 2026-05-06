@@ -6,12 +6,12 @@ the result needs to be checked in to git.
 """
 import time
 from collections import namedtuple
+from functools import cached_property
 from ipaddress import ip_address
 from itertools import chain
 from operator import attrgetter
 
 import ldap3
-from cached_property import cached_property
 from ocflib.infra.ldap import ldap_ocf
 from ocflib.infra.ldap import OCF_LDAP_HOSTS
 
@@ -74,7 +74,9 @@ class Host(namedtuple('Host', ('hostname',))):
             if record == '@':
                 return LE_ROOT.format(record=record)
             elif record.startswith('*.') or \
-                    self.ldap_attrs['type'] in {'server', 'staffvm', 'vip', 'printer'}:
+                    self.ldap_attrs['type'] in {
+                        'server', 'staffvm', 'vip', 'printer',
+                    }:
                 # FIXME: make this more easily configurable; global var? ^^
                 record = record.lstrip('*.')
                 return LE_RECORD.format(record=record)

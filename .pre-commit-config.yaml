@@ -1,7 +1,7 @@
 exclude: ^vendor/
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks.git
-    rev: v2.2.1
+    rev: v6.0.0
     hooks:
     -   id: check-added-large-files
     -   id: check-docstring-first
@@ -20,26 +20,21 @@ repos:
     -   id: requirements-txt-fixer
     -   id: sort-simple-yaml
     -   id: trailing-whitespace
--   repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v1.4.4
-    hooks:
-    -   id: autopep8
 -   repo: https://github.com/pycqa/flake8
-    rev: 5.0.4
+    rev: 7.3.0
     hooks:
     - id: flake8
-      language_version: python3.7
+      language_version: python3.12
 -   repo: https://github.com/asottile/reorder_python_imports.git
-    rev: v1.4.0
+    rev: v3.16.0
     hooks:
     -   id: reorder-python-imports
 -   repo: https://github.com/asottile/add-trailing-comma.git
-    rev: v1.0.0
+    rev: v4.0.0
     hooks:
     -   id: add-trailing-comma
-        args: ['--py36-plus']
 -   repo: https://github.com/Lucas-C/pre-commit-hooks.git
-    rev: v1.1.6
+    rev: v1.5.6
     hooks:
     -   id: remove-tabs
         exclude: ^((etc|templates)/|(.*/)?Makefile$)
