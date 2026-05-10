@@ -1,3 +1,5 @@
+## If you make a change to LDAP, please *immediately* rebuild DNS and push to this repo.
+
 # dns
 
 [![Build Status](https://jenkins.ocf.berkeley.edu/buildStatus/icon?job=ocf/dns/master)](https://jenkins.ocf.berkeley.edu/job/ocf/job/dns/job/master)
