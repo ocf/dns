@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026050900 ; serial number
+2026050901 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -823,10 +823,10 @@ epson	IN AAAA	2607:f140:8801::1:97
 _acme-challenge.eel	IN CNAME	_acme-challenge.eel.letsencrypt.ocf.io.
 eel	IN A	169.229.226.98
 eel	IN AAAA	2607:f140:8801::1:98
-_acme-challenge.kerberos0	IN CNAME	_acme-challenge.kerberos0.letsencrypt.ocf.io.
-kerberos0	IN CNAME	eel
-_acme-challenge.ldap0	IN CNAME	_acme-challenge.ldap0.letsencrypt.ocf.io.
-ldap0	IN CNAME	eel
+_acme-challenge.kdc	IN CNAME	_acme-challenge.kdc.letsencrypt.ocf.io.
+kdc	IN CNAME	eel
+_acme-challenge.ldap	IN CNAME	_acme-challenge.ldap.letsencrypt.ocf.io.
+ldap	IN CNAME	eel
 
 ; snowball (desktop)
 snowball	IN A	169.229.226.99
@@ -867,12 +867,6 @@ dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
 
-; anglerfish (tv)
-anglerfish	IN A	169.229.226.106
-anglerfish	IN AAAA	2607:f140:8801::1:106
-jukebox	IN CNAME	anglerfish
-tv	IN CNAME	anglerfish
-
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
 lb-106	IN A	169.229.226.106
@@ -884,15 +878,21 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
-; fishpaper (printer)
-_acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
-fishpaper	IN A	169.229.226.107
-fishpaper	IN AAAA	2607:f140:8801::1:107
+; anglerfish (tv)
+anglerfish	IN A	169.229.226.106
+anglerfish	IN AAAA	2607:f140:8801::1:106
+jukebox	IN CNAME	anglerfish
+tv	IN CNAME	anglerfish
 
 ; lb-107 (server)
 _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
+
+; fishpaper (printer)
+_acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
+fishpaper	IN A	169.229.226.107
+fishpaper	IN AAAA	2607:f140:8801::1:107
 
 ; tule (server)
 _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
@@ -1426,15 +1426,15 @@ _acme-challenge.solarflare	IN CNAME	_acme-challenge.solarflare.letsencrypt.ocf.i
 solarflare	IN A	169.229.226.249
 solarflare	IN AAAA	2607:f140:8801::1:249
 
-; calamity (staffvm)
-_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
-calamity	IN A	169.229.226.251
-calamity	IN AAAA	2607:f140:8801::1:251
-
 ; paranoia (staffvm)
 _acme-challenge.paranoia	IN CNAME	_acme-challenge.paranoia.letsencrypt.ocf.io.
 paranoia	IN A	169.229.226.251
 paranoia	IN AAAA	2607:f140:8801::1:253
+
+; calamity (staffvm)
+_acme-challenge.calamity	IN CNAME	_acme-challenge.calamity.letsencrypt.ocf.io.
+calamity	IN A	169.229.226.251
+calamity	IN AAAA	2607:f140:8801::1:251
 
 ; singularity (staffvm)
 _acme-challenge.singularity	IN CNAME	_acme-challenge.singularity.letsencrypt.ocf.io.
