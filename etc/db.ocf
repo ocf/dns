@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026050901 ; serial number
+2026050902 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -154,17 +154,17 @@ ntp4	IN CNAME	riptide
 ; riptide-mgmt (ipmi)
 riptide-mgmt	IN A	169.229.226.17
 
+; cloudsdale (server)
+_acme-challenge.cloudsdale	IN CNAME	_acme-challenge.cloudsdale.letsencrypt.ocf.io.
+cloudsdale	IN A	169.229.226.18
+cloudsdale	IN AAAA	2607:f140:8801::1:18
+
 ; reef (server)
 _acme-challenge.reef	IN CNAME	_acme-challenge.reef.letsencrypt.ocf.io.
 reef	IN A	169.229.226.18
 reef	IN AAAA	2607:f140:8801::1:18
 _acme-challenge.pve1	IN CNAME	_acme-challenge.pve1.letsencrypt.ocf.io.
 pve1	IN CNAME	reef
-
-; cloudsdale (server)
-_acme-challenge.cloudsdale	IN CNAME	_acme-challenge.cloudsdale.letsencrypt.ocf.io.
-cloudsdale	IN A	169.229.226.18
-cloudsdale	IN AAAA	2607:f140:8801::1:18
 
 ; corruption-mgmt (ipmi)
 corruption-mgmt	IN A	169.229.226.19
@@ -487,17 +487,17 @@ dev-tsunami	IN AAAA	2607:f140:8801::1:57
 _acme-challenge.dev-ssh	IN CNAME	_acme-challenge.dev-ssh.letsencrypt.ocf.io.
 dev-ssh	IN CNAME	dev-tsunami
 
+; phlegethon (server)
+_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
+phlegethon	IN A	169.229.226.58
+phlegethon	IN AAAA	2607:f140:8801::1:58
+
 ; doorplug (server)
 _acme-challenge.doorplug	IN CNAME	_acme-challenge.doorplug.letsencrypt.ocf.io.
 doorplug	IN A	169.229.226.58
 doorplug	IN AAAA	2607:f140:8801::1:58
 _acme-challenge.pve0	IN CNAME	_acme-challenge.pve0.letsencrypt.ocf.io.
 pve0	IN CNAME	doorplug
-
-; phlegethon (server)
-_acme-challenge.phlegethon	IN CNAME	_acme-challenge.phlegethon.letsencrypt.ocf.io.
-phlegethon	IN A	169.229.226.58
-phlegethon	IN AAAA	2607:f140:8801::1:58
 
 ; y2k (server)
 _acme-challenge.y2k	IN CNAME	_acme-challenge.y2k.letsencrypt.ocf.io.
@@ -825,8 +825,8 @@ eel	IN A	169.229.226.98
 eel	IN AAAA	2607:f140:8801::1:98
 _acme-challenge.kdc	IN CNAME	_acme-challenge.kdc.letsencrypt.ocf.io.
 kdc	IN CNAME	eel
-_acme-challenge.ldap	IN CNAME	_acme-challenge.ldap.letsencrypt.ocf.io.
-ldap	IN CNAME	eel
+_acme-challenge.ldap0	IN CNAME	_acme-challenge.ldap0.letsencrypt.ocf.io.
+ldap0	IN CNAME	eel
 
 ; snowball (desktop)
 snowball	IN A	169.229.226.99
@@ -867,6 +867,12 @@ dev-vault	IN A	169.229.226.105
 _acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
 devkube	IN A	169.229.226.105
 
+; anglerfish (tv)
+anglerfish	IN A	169.229.226.106
+anglerfish	IN AAAA	2607:f140:8801::1:106
+jukebox	IN CNAME	anglerfish
+tv	IN CNAME	anglerfish
+
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
 lb-106	IN A	169.229.226.106
@@ -878,21 +884,15 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
-; anglerfish (tv)
-anglerfish	IN A	169.229.226.106
-anglerfish	IN AAAA	2607:f140:8801::1:106
-jukebox	IN CNAME	anglerfish
-tv	IN CNAME	anglerfish
+; fishpaper (printer)
+_acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
+fishpaper	IN A	169.229.226.107
+fishpaper	IN AAAA	2607:f140:8801::1:107
 
 ; lb-107 (server)
 _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
 lb-107	IN A	169.229.226.107
 lb-107	IN AAAA	2607:f140:8801::1:107
-
-; fishpaper (printer)
-_acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
-fishpaper	IN A	169.229.226.107
-fishpaper	IN AAAA	2607:f140:8801::1:107
 
 ; tule (server)
 _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
