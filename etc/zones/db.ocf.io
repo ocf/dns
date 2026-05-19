@@ -15,9 +15,6 @@ $INCLUDE ../db.ocf
 @ IN MX 10 alt3.aspmx.l.google.com.
 @ IN MX 10 alt4.aspmx.l.google.com.
 
-; status blog via github pages
-status IN CNAME status.ocf.berkeley.edu.
-
 ; DNSSEC support for Let's Encrypt records
 letsencrypt	IN DS 57934 8 1 2201285F81BBD84AA166313B2835867708739376
 letsencrypt	IN DS 57934 8 2 1C256F913B230E300CD1BC4F4F339A174DAFE21A6D770A9574037E35DD5AF766
