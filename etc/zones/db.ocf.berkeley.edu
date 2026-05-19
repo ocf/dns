@@ -28,8 +28,8 @@ google._domainkey IN TXT ("v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMII
 _dmarc IN TXT "v=DMARC1; p=none"
 
 ; status blog via github pages
-status IN CNAME ocf.github.io.
 _github-pages-challenge-ocf.status IN TXT "906323d132fd36ffa235efca5a4d93"
+status IN CNAME ocf.github.io.
 
 g IN MX 1 aspmx.l.google.com.
 g IN MX 5 alt1.aspmx.l.google.com.
