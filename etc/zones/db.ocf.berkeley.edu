@@ -29,6 +29,7 @@ _dmarc IN TXT "v=DMARC1; p=none"
 
 ; status blog via github pages
 status IN CNAME ocf.github.io.
+_github-pages-challenge-ocf.status.ocf IN TXT "906323d132fd36ffa235efca5a4d93"
 
 g IN MX 1 aspmx.l.google.com.
 g IN MX 5 alt1.aspmx.l.google.com.
