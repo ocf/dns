@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026052200 ; serial number
+2026052401 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -131,8 +131,10 @@ hal	IN AAAA	2607:f140:8801::1:12
 _acme-challenge.ntp1	IN CNAME	_acme-challenge.ntp1.letsencrypt.ocf.io.
 ntp1	IN CNAME	hal
 
-; hal-mgmt (ipmi)
-hal-mgmt	IN A	169.229.226.13
+; paws-mgmt (ipmi)
+paws-mgmt	IN A	169.229.226.13
+hals-mgmt	IN CNAME	paws-mgmt
+jaws-mgmt	IN CNAME	paws-mgmt
 
 ; pandemic (server)
 _acme-challenge.pandemic	IN CNAME	_acme-challenge.pandemic.letsencrypt.ocf.io.
