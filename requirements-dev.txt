@@ -1,3 +1,0 @@
-ldap3
-ocflib
-pre-commit>=1.0.0
