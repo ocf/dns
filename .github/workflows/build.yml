@@ -1,0 +1,11 @@
+name: build
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ci-ocf-dns
+    steps:
+      - uses: actions/checkout@v4
+      - run: nix develop .#deploy -c bash check-zones

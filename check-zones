@@ -1,0 +1,8 @@
+set -e
+
+cd etc/zones
+
+for zone in *
+do
+    named-checkzone ${zone#*db.} $zone
+done

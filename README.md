@@ -2,8 +2,6 @@
 
 # dns
 
-[![Build Status](https://jenkins.ocf.berkeley.edu/buildStatus/icon?job=ocf/dns/master)](https://jenkins.ocf.berkeley.edu/job/ocf/job/dns/job/master)
-
 DNS zones for the Open Computing Facility
 
 
@@ -16,7 +14,7 @@ attributes:
 * `dnsA` for A and AAAA records.
 
   Whether the host will automatically get IPv6 records depends on the type of
-  host. For an up-to-date listing, run:
+  host. For an up-to-date listing, run (in the dev shell):
 
   ```bash
   $ python3 -c 'import ocflib.infra.hosts; print(ocflib.infra.hosts.HOST_TYPES_WITH_IPV6)'
@@ -38,29 +36,27 @@ dnsCname: smtp
 There are some rare cases where it's necessary to use A records instead,
 usually mandated by some RFC. For example, the "apex" (root) of a domain cannot
 be a CNAME (because of the SOA record), so you must use dnsA. Another example
-is when one hostname needs multiple IPs (e.g. `mesos.ocf.berkeley.edu`).
+is when one hostname needs multiple IPs.
 
 
 ## Making changes
 
-When updating DNS, apply your changes to LDAP, and then run `make`. It will
-rebuild the primary DNS (`db.ocf`) and reverse DNS, including pulling host data
-from LDAP and bumping the serial number.
+When updating DNS, apply your changes to LDAP, and then run `nix develop` from koi.
+It will rebuild the primary DNS (`db.ocf`) and reverse DNS, including pulling host data
+from LDAP and bumping the serial number. It will automatically run named-checkzone on
+all the zone files to identify any mistakes.
 
 Sanity-check the diff before commiting to make sure the changes in LDAP make
-sense. If not, don't push!
+sense. If not, don't push! Additionally, changes must be made through a PR, and GitHub
+actions will run named-checkzones to verify the zone files before it can be merged.
+
+The name server will be updated the next time puppet triggers on pestilence, which
+should be at most 30 minutes after changes are merged.
 
 Some zones under `etc/zones` are not automatically generated (e.g. `asuc.org`).
 These have to be manually edited. Be sure to bump the serial.
 
-The Makefile targets you're intended to run are:
-
-- `make`: update the DNS
-- `make test`: run pre-commit hooks
-- `make install-hooks`: install pre-commit hooks so that they run automatically
-
-
 ## Hostname suggestions
 
 A list of proposed hostnames, if you can't think of one, is located at
-`~staff/server_name_ideas`.
+https://en.wikipedia.org/wiki/List_of_fish_by_common_name
