@@ -28,6 +28,7 @@
             python312Packages.ocflib
             python312Packages.ldap3
           ];
+          shellHook = "python build-zones && bash check-zones";
         };
       });
     };
