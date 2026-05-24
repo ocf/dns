@@ -30,6 +30,11 @@
           ];
           shellHook = "python build-zones && bash check-zones";
         };
+        deploy = pkgs.mkShell {
+          packages = with pkgs; [
+            bind
+          ];
+        };
       });
     };
 }
