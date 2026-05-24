@@ -2,7 +2,7 @@ $ORIGIN ocfhosted.com.
 $TTL 1h
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-        2023122900 ; serial number
+        2026052403 ; serial number
         1d         ; slave refresh schedule interval
         30m        ; slave retry on failure interval
         4w         ; slave expiration of zone data
@@ -16,6 +16,7 @@ $TTL 1h
 @ IN MX   5 anthrax.ocf.berkeley.edu.
 @ IN TXT  "v=spf1 include:_spf.ocf.berkeley.edu -all"
 
+decal IN NS ns.ocf.berkeley.edu.
 decal IN DS 60914 8 2 C423DDAFD52D15168FC96EB719BA6FA65835801EF2804AFBCF041B5876D31B70
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
