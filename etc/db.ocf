@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026052600 ; serial number
+2026070300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -915,10 +915,10 @@ p	IN CNAME	tule
 _acme-challenge.printhost	IN CNAME	_acme-challenge.printhost.letsencrypt.ocf.io.
 printhost	IN CNAME	tule
 
-; trenderhoof (server)
-_acme-challenge.trenderhoof	IN CNAME	_acme-challenge.trenderhoof.letsencrypt.ocf.io.
-trenderhoof	IN A	169.229.226.128
-trenderhoof	IN AAAA	2607:f140:8801::1:128
+; kobudai (server)
+_acme-challenge.kobudai	IN CNAME	_acme-challenge.kobudai.letsencrypt.ocf.io.
+kobudai	IN A	169.229.226.128
+kobudai	IN AAAA	2607:f140:8801::1:128
 
 ; koi (server)
 _acme-challenge.koi	IN CNAME	_acme-challenge.koi.letsencrypt.ocf.io.
