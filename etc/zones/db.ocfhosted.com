@@ -2,7 +2,7 @@ $ORIGIN ocfhosted.com.
 $TTL 1h
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-        2026071300 ; serial number
+        2026071301 ; serial number
         1d         ; slave refresh schedule interval
         30m        ; slave retry on failure interval
         4w         ; slave expiration of zone data
@@ -19,7 +19,7 @@ $TTL 1h
 decal IN NS ns.ocf.berkeley.edu.
 decal IN DS 60914 8 2 C423DDAFD52D15168FC96EB719BA6FA65835801EF2804AFBCF041B5876D31B70
 
-wptest.wp IN CNAME lb-85.ocf.berkeley.edu.
 _acme-challenge.wptest.wp IN CNAME _acme-challenge.wptest.wp.letsencrypt.ocf.io.
+wptest.wp IN CNAME lb-81.ocf.berkeley.edu.
 
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
