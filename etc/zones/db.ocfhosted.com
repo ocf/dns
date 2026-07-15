@@ -2,7 +2,7 @@ $ORIGIN ocfhosted.com.
 $TTL 1h
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-        2026071301 ; serial number
+        2026071400 ; serial number
         1d         ; slave refresh schedule interval
         30m        ; slave retry on failure interval
         4w         ; slave expiration of zone data
