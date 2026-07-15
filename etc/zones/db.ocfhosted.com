@@ -22,4 +22,7 @@ decal IN DS 60914 8 2 C423DDAFD52D15168FC96EB719BA6FA65835801EF2804AFBCF041B5876
 _acme-challenge.wptest.wp IN CNAME _acme-challenge.wptest.wp.letsencrypt.ocf.io.
 wptest.wp IN CNAME lb-81.ocf.berkeley.edu.
 
+_acme-challenge.advocate.wp IN CNAME _acme-challenge.advocate.wp.letsencrypt.ocf.io.
+advocate.wp IN CNAME lb-81.ocf.berkeley.edu.
+
 ; vim: noet ts=16 sts=16 sw=16 ft=bindzone
