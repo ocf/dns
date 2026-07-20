@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026072000 ; serial number
+2026072002 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -304,12 +304,6 @@ _acme-challenge.implosion	IN CNAME	_acme-challenge.implosion.letsencrypt.ocf.io.
 implosion	IN A	169.229.226.30
 implosion	IN AAAA	2607:f140:8801::1:30
 
-; flood (server)
-_acme-challenge.flood	IN CNAME	_acme-challenge.flood.letsencrypt.ocf.io.
-flood	IN A	169.229.226.31
-flood	IN AAAA	2607:f140:8801::1:31
-_acme-challenge.xmpp	IN CNAME	_acme-challenge.xmpp.letsencrypt.ocf.io.
-xmpp	IN CNAME	flood
 
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
@@ -415,13 +409,6 @@ _acme-challenge.docker	IN CNAME	_acme-challenge.docker.letsencrypt.ocf.io.
 docker	IN CNAME	biohazard
 _acme-challenge.docker-push	IN CNAME	_acme-challenge.docker-push.letsencrypt.ocf.io.
 docker-push	IN CNAME	biohazard
-
-; dev-whiteout (server)
-_acme-challenge.dev-whiteout	IN CNAME	_acme-challenge.dev-whiteout.letsencrypt.ocf.io.
-dev-whiteout	IN A	169.229.226.47
-dev-whiteout	IN AAAA	2607:f140:8801::1:47
-_acme-challenge.dev-printhost	IN CNAME	_acme-challenge.dev-printhost.letsencrypt.ocf.io.
-dev-printhost	IN CNAME	dev-whiteout
 
 ; reaper (server)
 _acme-challenge.reaper	IN CNAME	_acme-challenge.reaper.letsencrypt.ocf.io.
@@ -794,11 +781,6 @@ hozer-88	IN AAAA	2607:f140:8801::1:88
 _acme-challenge.hozer-89	IN CNAME	_acme-challenge.hozer-89.letsencrypt.ocf.io.
 hozer-89	IN A	169.229.226.89
 hozer-89	IN AAAA	2607:f140:8801::1:89
-
-; tornado (server)
-_acme-challenge.tornado	IN CNAME	_acme-challenge.tornado.letsencrypt.ocf.io.
-tornado	IN A	169.229.226.90
-tornado	IN AAAA	2607:f140:8801::1:90
 
 ; pagefault (printer)
 _acme-challenge.pagefault	IN CNAME	_acme-challenge.pagefault.letsencrypt.ocf.io.
