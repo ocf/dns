@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026071900 ; serial number
+2026072000 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -406,11 +406,6 @@ dev-xmpp	IN CNAME	dev-flood
 _acme-challenge.zecora	IN CNAME	_acme-challenge.zecora.letsencrypt.ocf.io.
 zecora	IN A	169.229.226.44
 zecora	IN AAAA	2607:f140:8801::1:44
-
-; whiteout (server)
-_acme-challenge.whiteout	IN CNAME	_acme-challenge.whiteout.letsencrypt.ocf.io.
-whiteout	IN A	169.229.226.45
-whiteout	IN AAAA	2607:f140:8801::1:45
 
 ; biohazard (server)
 _acme-challenge.biohazard	IN CNAME	_acme-challenge.biohazard.letsencrypt.ocf.io.
