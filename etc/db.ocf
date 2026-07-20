@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026071300 ; serial number
+2026071900 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -896,15 +896,15 @@ dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
 ; anglerfish (tv)
-anglerfish	IN A	169.229.226.106
-anglerfish	IN AAAA	2607:f140:8801::1:106
+anglerfish	IN A	169.229.226.108
+anglerfish	IN AAAA	2607:f140:8801::1:108
 jukebox	IN CNAME	anglerfish
 tv	IN CNAME	anglerfish
 
 ; fishpaper (printer)
 _acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
-fishpaper	IN A	169.229.226.107
-fishpaper	IN AAAA	2607:f140:8801::1:107
+fishpaper	IN A	169.229.226.109
+fishpaper	IN AAAA	2607:f140:8801::1:109
 
 ; lb-107 (server)
 _acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
