@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026072002 ; serial number
+2026082800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -91,17 +91,14 @@ scurvy-mgmt	IN CNAME	yuu-mgmt
 ; dataloss-mgmt (ipmi)
 dataloss-mgmt	IN A	169.229.226.5
 
-; dataloss (server)
-_acme-challenge.dataloss	IN CNAME	_acme-challenge.dataloss.letsencrypt.ocf.io.
-dataloss	IN A	169.229.226.6
-dataloss	IN AAAA	2607:f140:8801::1:6
-
 ; kobudai (server)
 _acme-challenge.kobudai	IN CNAME	_acme-challenge.kobudai.letsencrypt.ocf.io.
 kobudai	IN A	169.229.226.6
 kobudai	IN AAAA	2607:f140:8801::1:6
 _acme-challenge.filehost	IN CNAME	_acme-challenge.filehost.letsencrypt.ocf.io.
 filehost	IN CNAME	kobudai
+_acme-challenge.dataloss	IN CNAME	_acme-challenge.dataloss.letsencrypt.ocf.io.
+dataloss	IN CNAME	kobudai
 _acme-challenge.homes	IN CNAME	_acme-challenge.homes.letsencrypt.ocf.io.
 homes	IN CNAME	kobudai
 _acme-challenge.services	IN CNAME	_acme-challenge.services.letsencrypt.ocf.io.
