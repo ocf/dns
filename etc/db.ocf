@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026082800 ; serial number
+2026090300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -301,16 +301,15 @@ _acme-challenge.implosion	IN CNAME	_acme-challenge.implosion.letsencrypt.ocf.io.
 implosion	IN A	169.229.226.30
 implosion	IN AAAA	2607:f140:8801::1:30
 
+; radiation (wifi)
+radiation	IN A	169.229.226.32
+radiation	IN AAAA	2607:f140:8801::1:32
+wifi	IN CNAME	radiation
 
 ; dna (vip)
 _acme-challenge.dna	IN CNAME	_acme-challenge.dna.letsencrypt.ocf.io.
 dna	IN A	169.229.226.32
 dna	IN AAAA	2607:f140:8801::1:32
-
-; radiation (wifi)
-radiation	IN A	169.229.226.32
-radiation	IN AAAA	2607:f140:8801::1:32
-wifi	IN CNAME	radiation
 
 ; dementors (server)
 _acme-challenge.dementors	IN CNAME	_acme-challenge.dementors.letsencrypt.ocf.io.
@@ -726,6 +725,8 @@ _acme-challenge.workflow	IN CNAME	_acme-challenge.workflow.letsencrypt.ocf.io.
 workflow	IN A	169.229.226.81
 _acme-challenge.xn--wxa	IN CNAME	_acme-challenge.xn--wxa.letsencrypt.ocf.io.
 xn--wxa	IN A	169.229.226.81
+_acme-challenge.bao	IN CNAME	_acme-challenge.bao.letsencrypt.ocf.io.
+bao	IN A	169.229.226.81
 
 ; hozer-82 (server)
 _acme-challenge.hozer-82	IN CNAME	_acme-challenge.hozer-82.letsencrypt.ocf.io.
@@ -869,6 +870,11 @@ _acme-challenge.dev-tele	IN CNAME	_acme-challenge.dev-tele.letsencrypt.ocf.io.
 dev-tele	IN A	169.229.226.106
 dev-tele	IN AAAA	2607:f140:8801::1:106
 
+; lb-107 (server)
+_acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
+lb-107	IN A	169.229.226.107
+lb-107	IN AAAA	2607:f140:8801::1:107
+
 ; anglerfish (tv)
 anglerfish	IN A	169.229.226.108
 anglerfish	IN AAAA	2607:f140:8801::1:108
@@ -879,11 +885,6 @@ tv	IN CNAME	anglerfish
 _acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
 fishpaper	IN A	169.229.226.109
 fishpaper	IN AAAA	2607:f140:8801::1:109
-
-; lb-107 (server)
-_acme-challenge.lb-107	IN CNAME	_acme-challenge.lb-107.letsencrypt.ocf.io.
-lb-107	IN A	169.229.226.107
-lb-107	IN AAAA	2607:f140:8801::1:107
 
 ; tule (server)
 _acme-challenge.tule	IN CNAME	_acme-challenge.tule.letsencrypt.ocf.io.
@@ -1005,14 +1006,14 @@ pickles	IN AAAA	2607:f140:8801::1:157
 pepper	IN A	169.229.226.158
 pepper	IN AAAA	2607:f140:8801::1:158
 
-; patches (desktop)
-patches	IN A	169.229.226.159
-patches	IN AAAA	2607:f140:8801::1:159
-
 ; hanabi (staffvm)
 _acme-challenge.hanabi	IN CNAME	_acme-challenge.hanabi.letsencrypt.ocf.io.
 hanabi	IN A	169.229.226.159
 hanabi	IN AAAA	2607:f140:8801::1:159
+
+; patches (desktop)
+patches	IN A	169.229.226.159
+patches	IN AAAA	2607:f140:8801::1:159
 
 ; gozer (desktop)
 gozer	IN A	169.229.226.160
