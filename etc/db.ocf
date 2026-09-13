@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026090401 ; serial number
+2026091300 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -444,6 +444,8 @@ _acme-challenge.sites	IN CNAME	_acme-challenge.sites.letsencrypt.ocf.io.
 *.sites	IN CNAME	amethyst
 _acme-challenge.bestdocs	IN CNAME	_acme-challenge.bestdocs.letsencrypt.ocf.io.
 bestdocs	IN CNAME	amethyst
+_acme-challenge.docs	IN CNAME	_acme-challenge.docs.letsencrypt.ocf.io.
+docs	IN CNAME	amethyst
 _acme-challenge.decal	IN CNAME	_acme-challenge.decal.letsencrypt.ocf.io.
 decal	IN CNAME	amethyst
 
@@ -515,10 +517,12 @@ _acme-challenge.hozer-62	IN CNAME	_acme-challenge.hozer-62.letsencrypt.ocf.io.
 hozer-62	IN A	169.229.226.62
 hozer-62	IN AAAA	2607:f140:8801::1:62
 
-; bedbugs (server)
+; uracil (server)
+_acme-challenge.uracil	IN CNAME	_acme-challenge.uracil.letsencrypt.ocf.io.
+uracil	IN A	169.229.226.64
+uracil	IN AAAA	2607:f140:8801::1:64
 _acme-challenge.bedbugs	IN CNAME	_acme-challenge.bedbugs.letsencrypt.ocf.io.
-bedbugs	IN A	169.229.226.64
-bedbugs	IN AAAA	2607:f140:8801::1:64
+bedbugs	IN CNAME	uracil
 
 ; bedbugs-mgmt (ipmi)
 bedbugs-mgmt	IN A	169.229.226.65
@@ -677,8 +681,6 @@ _acme-challenge.dev-notes	IN CNAME	_acme-challenge.dev-notes.letsencrypt.ocf.io.
 dev-notes	IN A	169.229.226.81
 _acme-challenge.discord	IN CNAME	_acme-challenge.discord.letsencrypt.ocf.io.
 discord	IN A	169.229.226.81
-_acme-challenge.docs	IN CNAME	_acme-challenge.docs.letsencrypt.ocf.io.
-docs	IN A	169.229.226.81
 _acme-challenge.finder	IN CNAME	_acme-challenge.finder.letsencrypt.ocf.io.
 finder	IN A	169.229.226.81
 _acme-challenge.openbao	IN CNAME	_acme-challenge.openbao.letsencrypt.ocf.io.
@@ -733,6 +735,8 @@ _acme-challenge.workflow	IN CNAME	_acme-challenge.workflow.letsencrypt.ocf.io.
 workflow	IN A	169.229.226.81
 _acme-challenge.xn--wxa	IN CNAME	_acme-challenge.xn--wxa.letsencrypt.ocf.io.
 xn--wxa	IN A	169.229.226.81
+_acme-challenge.outline	IN CNAME	_acme-challenge.outline.letsencrypt.ocf.io.
+outline	IN A	169.229.226.81
 _acme-challenge.bao	IN CNAME	_acme-challenge.bao.letsencrypt.ocf.io.
 bao	IN A	169.229.226.81
 
