@@ -12,7 +12,7 @@ $ORIGIN 226.229.169.in-addr.arpa.
 $TTL 1d
 
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026091400 ; serial number
+2026091600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -41,13 +41,14 @@ $TTL 1d
 11 IN PTR lockdown.OCF.Berkeley.EDU.
 12 IN PTR hal.OCF.Berkeley.EDU.
 13 IN PTR paws-mgmt.OCF.Berkeley.EDU.
-14 IN PTR pandemic.OCF.Berkeley.EDU.
-15 IN PTR pandemic-mgmt.OCF.Berkeley.EDU.
+14 IN PTR vaccine.OCF.Berkeley.EDU.
+15 IN PTR vaccine-mgmt.OCF.Berkeley.EDU.
 16 IN PTR riptide.OCF.Berkeley.EDU.
 17 IN PTR riptide-mgmt.OCF.Berkeley.EDU.
 18 IN PTR cloudsdale.OCF.Berkeley.EDU.
 18 IN PTR reef.OCF.Berkeley.EDU.
 19 IN PTR corruption-mgmt.OCF.Berkeley.EDU.
+19 IN PTR reef-mgmt.OCF.Berkeley.EDU.
 20 IN PTR firestorm.OCF.Berkeley.EDU.
 21 IN PTR lightning.OCF.Berkeley.EDU.
 22 IN PTR pestilence.OCF.Berkeley.EDU.
@@ -59,6 +60,7 @@ $TTL 1d
 28 IN PTR democracy.OCF.Berkeley.EDU.
 29 IN PTR scootaloo.OCF.Berkeley.EDU.
 30 IN PTR coral.OCF.Berkeley.EDU.
+31 IN PTR coral-mgmt.OCF.Berkeley.EDU.
 32 IN PTR radiation.OCF.Berkeley.EDU.
 32 IN PTR dna.OCF.Berkeley.EDU.
 33 IN PTR dementors.OCF.Berkeley.EDU.
