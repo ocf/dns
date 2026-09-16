@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026091400 ; serial number
+2026091600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -143,15 +143,15 @@ paws-mgmt	IN A	169.229.226.13
 hal-mgmt	IN CNAME	paws-mgmt
 jaws-mgmt	IN CNAME	paws-mgmt
 
-; pandemic (server)
-_acme-challenge.pandemic	IN CNAME	_acme-challenge.pandemic.letsencrypt.ocf.io.
-pandemic	IN A	169.229.226.14
-pandemic	IN AAAA	2607:f140:8801::1:14
+; vaccine (server)
+_acme-challenge.vaccine	IN CNAME	_acme-challenge.vaccine.letsencrypt.ocf.io.
+vaccine	IN A	169.229.226.14
+vaccine	IN AAAA	2607:f140:8801::1:14
 _acme-challenge.ntp2	IN CNAME	_acme-challenge.ntp2.letsencrypt.ocf.io.
-ntp2	IN CNAME	pandemic
+ntp2	IN CNAME	vaccine
 
-; pandemic-mgmt (ipmi)
-pandemic-mgmt	IN A	169.229.226.15
+; vaccine-mgmt (ipmi)
+vaccine-mgmt	IN A	169.229.226.15
 
 ; riptide (server)
 _acme-challenge.riptide	IN CNAME	_acme-challenge.riptide.letsencrypt.ocf.io.
@@ -177,6 +177,9 @@ pve1	IN CNAME	reef
 
 ; corruption-mgmt (ipmi)
 corruption-mgmt	IN A	169.229.226.19
+
+; reef-mgmt (ipmi)
+reef-mgmt	IN A	169.229.226.19
 
 ; firestorm (server)
 _acme-challenge.firestorm	IN CNAME	_acme-challenge.firestorm.letsencrypt.ocf.io.
@@ -218,6 +221,8 @@ ns2	IN AAAA	2607:f140:8801::1:22
 _acme-challenge.death	IN CNAME	_acme-challenge.death.letsencrypt.ocf.io.
 death	IN A	169.229.226.23
 death	IN AAAA	2607:f140:8801::1:23
+_acme-challenge.www	IN CNAME	_acme-challenge.www.letsencrypt.ocf.io.
+www	IN CNAME	death
 _acme-challenge.accounts	IN CNAME	_acme-challenge.accounts.letsencrypt.ocf.io.
 accounts	IN CNAME	death
 _acme-challenge.dev-death	IN CNAME	_acme-challenge.dev-death.letsencrypt.ocf.io.
@@ -236,12 +241,8 @@ _acme-challenge.unavailable	IN CNAME	_acme-challenge.unavailable.letsencrypt.ocf
 unavailable	IN CNAME	death
 _acme-challenge.wiki	IN CNAME	_acme-challenge.wiki.letsencrypt.ocf.io.
 wiki	IN CNAME	death
-_acme-challenge.www	IN CNAME	_acme-challenge.www.letsencrypt.ocf.io.
-www	IN CNAME	death
 _acme-challenge.xkcd	IN CNAME	_acme-challenge.xkcd.letsencrypt.ocf.io.
 xkcd	IN CNAME	death
-_acme-challenge.new	IN CNAME	_acme-challenge.new.letsencrypt.ocf.io.
-new	IN CNAME	death
 _acme-challenge	IN CNAME	_acme-challenge.letsencrypt.ocf.io.
 @	IN A	169.229.226.23
 @	IN AAAA	2607:f140:8801::1:23
@@ -306,6 +307,9 @@ _acme-challenge.implosion	IN CNAME	_acme-challenge.implosion.letsencrypt.ocf.io.
 implosion	IN CNAME	coral
 _acme-challenge.pve4	IN CNAME	_acme-challenge.pve4.letsencrypt.ocf.io.
 pve4	IN CNAME	coral
+
+; coral-mgmt (ipmi)
+coral-mgmt	IN A	169.229.226.31
 
 ; radiation (wifi)
 radiation	IN A	169.229.226.32
