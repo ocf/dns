@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026091600 ; serial number
+2026091700 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -126,10 +126,10 @@ _acme-challenge.thymine	IN CNAME	_acme-challenge.thymine.letsencrypt.ocf.io.
 thymine	IN A	169.229.226.10
 thymine	IN AAAA	2607:f140:8801::1:10
 
-; lockdown (server)
-_acme-challenge.lockdown	IN CNAME	_acme-challenge.lockdown.letsencrypt.ocf.io.
-lockdown	IN A	169.229.226.11
-lockdown	IN AAAA	2607:f140:8801::1:11
+; protozoa (server)
+_acme-challenge.protozoa	IN CNAME	_acme-challenge.protozoa.letsencrypt.ocf.io.
+protozoa	IN A	169.229.226.11
+protozoa	IN AAAA	2607:f140:8801::1:11
 
 ; hal (server)
 _acme-challenge.hal	IN CNAME	_acme-challenge.hal.letsencrypt.ocf.io.
