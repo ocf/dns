@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026091700 ; serial number
+2026092600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -868,12 +868,18 @@ losulci	IN AAAA	2607:f140:8801::1:104
 ; lb-105 (server)
 _acme-challenge.lb-105	IN CNAME	_acme-challenge.lb-105.letsencrypt.ocf.io.
 lb-105	IN A	169.229.226.105
-_acme-challenge.dev-argo	IN CNAME	_acme-challenge.dev-argo.letsencrypt.ocf.io.
-dev-argo	IN A	169.229.226.105
-_acme-challenge.dev-vault	IN CNAME	_acme-challenge.dev-vault.letsencrypt.ocf.io.
-dev-vault	IN A	169.229.226.105
-_acme-challenge.devkube	IN CNAME	_acme-challenge.devkube.letsencrypt.ocf.io.
-devkube	IN A	169.229.226.105
+_acme-challenge.staging	IN CNAME	_acme-challenge.staging.letsencrypt.ocf.io.
+staging	IN A	169.229.226.105
+_acme-challenge.staging-a	IN CNAME	_acme-challenge.staging-a.letsencrypt.ocf.io.
+staging-a	IN A	169.229.226.105
+_acme-challenge.staging-b	IN CNAME	_acme-challenge.staging-b.letsencrypt.ocf.io.
+staging-b	IN A	169.229.226.105
+_acme-challenge.staging-c	IN CNAME	_acme-challenge.staging-c.letsencrypt.ocf.io.
+staging-c	IN A	169.229.226.105
+_acme-challenge.staging-d	IN CNAME	_acme-challenge.staging-d.letsencrypt.ocf.io.
+staging-d	IN A	169.229.226.105
+_acme-challenge.staging-e	IN CNAME	_acme-challenge.staging-e.letsencrypt.ocf.io.
+staging-e	IN A	169.229.226.105
 
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
