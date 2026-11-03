@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026093000 ; serial number
+2026110200 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -882,6 +882,8 @@ _acme-challenge.staging-d	IN CNAME	_acme-challenge.staging-d.letsencrypt.ocf.io.
 staging-d	IN A	169.229.226.105
 _acme-challenge.staging-e	IN CNAME	_acme-challenge.staging-e.letsencrypt.ocf.io.
 staging-e	IN A	169.229.226.105
+_acme-challenge.o3.staging	IN CNAME	_acme-challenge.o3.staging.letsencrypt.ocf.io.
+o3.staging	IN A	169.229.226.105
 
 ; lb-106 (server)
 _acme-challenge.lb-106	IN CNAME	_acme-challenge.lb-106.letsencrypt.ocf.io.
