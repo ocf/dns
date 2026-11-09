@@ -1,7 +1,17 @@
+dnssec-policy "default-unlimited" {
+    # FIXME: lifetime is set to unlimited to mirror the old auto-dnssec
+    # maintain setup and make sure nothing breaks during the migration. this
+    # should be TEMPORARY and we should fix this.
+    keys {
+        ksk lifetime unlimited algorithm rsasha256;
+        zsk lifetime unlimited algorithm rsasha256;
+    };
+};
+
 zone "ocf.berkeley.edu" {
   type master;
   notify explicit;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.ocf.berkeley.edu";
 };
@@ -14,7 +24,7 @@ zone "mesos" {
 zone "ocf.io" {
   type master;
   notify no;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.ocf.io";
 };
@@ -22,7 +32,7 @@ zone "ocf.io" {
 zone "letsencrypt.ocf.io" {
   type master;
   notify no;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.letsencrypt.ocf.io";
   // Only allow dynamic updates to TXT records with key authentication
@@ -38,7 +48,7 @@ zone "asuc.org" {
 zone "cal.fyi" {
   type master;
   notify no;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.cal.fyi";
 };
@@ -46,7 +56,7 @@ zone "cal.fyi" {
 zone "ocfhosted.com" {
   type master;
   notify no;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.ocfhosted.com";
 };
@@ -54,7 +64,7 @@ zone "ocfhosted.com" {
 zone "decal.ocfhosted.com" {
   type master;
   notify no;
-  auto-dnssec maintain;
+  dnssec-policy "default-unlimited";
   inline-signing yes;
   file "/srv/dns/etc/zones/db.decal.ocfhosted.com";
   // Only allow dynamic updates to A and AAAA records with key authentication
