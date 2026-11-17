@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026110800 ; serial number
+2026111600 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -1331,10 +1331,10 @@ _acme-challenge.hypoxia	IN CNAME	_acme-challenge.hypoxia.letsencrypt.ocf.io.
 hypoxia	IN A	169.229.226.223
 hypoxia	IN AAAA	2607:f140:8801::1:223
 
-; nikki (staffvm)
-_acme-challenge.nikki	IN CNAME	_acme-challenge.nikki.letsencrypt.ocf.io.
-nikki	IN A	169.229.226.224
-nikki	IN AAAA	2607:f140:8801::1:224
+; tiffany (staffvm)
+_acme-challenge.tiffany	IN CNAME	_acme-challenge.tiffany.letsencrypt.ocf.io.
+tiffany	IN A	169.229.226.224
+tiffany	IN AAAA	2607:f140:8801::1:224
 
 ; rapture (staffvm)
 _acme-challenge.rapture	IN CNAME	_acme-challenge.rapture.letsencrypt.ocf.io.
