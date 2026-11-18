@@ -10,7 +10,7 @@
 
 ; ns.ocf is master server and hostmaster@ocf is technical contact
 @ IN SOA ns.ocf.berkeley.edu. hostmaster.ocf.berkeley.edu. (
-2026111600 ; serial number
+2026111800 ; serial number
                          1d         ; slave refresh schedule interval
                          30m        ; slave retry on failure interval
                          4w         ; slave expiration of zone data
@@ -915,6 +915,11 @@ tv	IN CNAME	anglerfish
 _acme-challenge.fishpaper	IN CNAME	_acme-challenge.fishpaper.letsencrypt.ocf.io.
 fishpaper	IN A	169.229.226.109
 fishpaper	IN AAAA	2607:f140:8801::1:109
+
+; pufferfish (server)
+_acme-challenge.pufferfish	IN CNAME	_acme-challenge.pufferfish.letsencrypt.ocf.io.
+pufferfish	IN A	169.229.226.110
+pufferfish	IN AAAA	2607:f140:8801::1:110
 
 ; advection (server)
 _acme-challenge.advection	IN CNAME	_acme-challenge.advection.letsencrypt.ocf.io.
